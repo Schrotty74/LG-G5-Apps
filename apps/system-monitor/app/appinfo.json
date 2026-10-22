@@ -1,0 +1,11 @@
+{
+  "id": "org.schrotty74.g5systemmonitor",
+  "version": "0.8.0",
+  "vendor": "Personal Homebrew",
+  "type": "web",
+  "main": "index.html",
+  "title": "G5 System Monitor",
+  "icon": "icon.png",
+  "largeIcon": "icon.png",
+  "disableBackHistoryAPI": true
+}
