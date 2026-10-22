@@ -14,8 +14,6 @@ Ein lokales, nur lesendes Dashboard für System- und Live-Messwerte eines geroot
 - **Download:** [G5 System Monitor für webOS herunterladen (IPK)](https://github.com/Schrotty74/LG-G5-Apps/raw/refs/heads/main/apps/system-monitor/g5-system-monitor_0.8.0_all.ipk)
 - **Quellcode und Anleitung:** [apps/system-monitor](apps/system-monitor/)
 
-Das webOS-Installationspaket hat die Endung `.ipk`; `.apk` bezeichnet Android-Pakete.
-
 ## Weitere Apps hinzufügen
 
 Jede weitere App erhält ein eigenes Verzeichnis unter `apps/<app-name>/`. Die App-Übersicht wird dann hier ergänzt.
