@@ -1,3 +1,5 @@
+![LG G5 Apps](assets/lg-g5-apps-logo.jpg)
+
 # LG-G5-Apps
 
 Kleine Homebrew-Apps und Werkzeuge für LG-Fernseher der G-Serie. Neue Anwendungen liegen gesammelt unter `apps/`, jeweils in einem eigenen Unterverzeichnis.
