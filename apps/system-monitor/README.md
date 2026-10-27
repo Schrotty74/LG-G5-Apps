@@ -1,44 +1,41 @@
 # G5 System Monitor 0.9.2
 
-Homebrew-Dashboard für LG G5 mit webOS 25. Die Oberfläche zeigt Systemwerte in einem dunklen, TV-gerechten Layout.
+A homebrew dashboard for the LG G5 running webOS 25, with a dark layout designed for TV screens.
 
-## Funktionen
+[English](README.md) | [Deutsch](README.de.md)
 
-- CPU- und RAM-Auslastung mit Verläufen der letzten 30 Messungen
-- Laufzeit, Kernel, Root-Status, Modell, Firmware, SDK- und Boardinformationen
-- Dateisysteme mit freier/belegter Kapazität und Balkenanzeige
-- Aktive Netzwerkschnittstelle, IPv4-Adresse und Standard-Gateway
-- Prozessmomentaufnahme und Swap-Belegung
-- Aktualisierungsintervall von 3, 5 oder 10 Sekunden
-- Scrollen per Magic Remote, Zurück-/Beenden-Schaltfläche und Mausrad
-- Kein Temperaturfeld: auf dem getesteten G5 ließ sich kein Sensorwert auslesen
+## Features
 
-## Dateien
+- CPU and RAM usage, with history charts for the last 30 readings
+- Uptime, kernel, root status, model, firmware, SDK, and board information
+- Filesystem free/used space with usage bars
+- Active network interface, IPv4 address, and default gateway
+- Snapshot of active processes and swap usage
+- Refresh interval selectable between 3, 5, and 10 seconds
+- Scrolling with the Magic Remote or mouse wheel; Back and Exit controls
+- No temperature tile: no readable sensor value was found on the tested G5
 
-- `app/` enthält den vollständigen App-Quellcode einschließlich Symbol
-- [IPK herunterladen](g5-system-monitor_0.9.2_all.ipk)
-- [Quellcode als ZIP herunterladen](g5-system-monitor-source-v0.9.2.zip)
+## Files
+
+- `app/` contains the complete app source, including its icon
+- [Download the IPK](g5-system-monitor_0.9.2_all.ipk)
+- [Download the source ZIP](g5-system-monitor-source-v0.9.2.zip)
 
 ## Installation
 
-Die IPK-Datei auf den Fernseher übertragen, zum Beispiel nach `/tmp`, und anschließend als root über den webOS-Installationsdienst installieren:
+Transfer the IPK to the TV, for example to `/tmp`, then install it as root through the webOS installation service:
 
 ```sh
 luna-send-pub -i 'luna://com.webos.appInstallService/dev/install' '{"id":"com.ares.defaultName","ipkUrl":"/tmp/g5-system-monitor_0.9.2_all.ipk","subscribe":true}'
 ```
 
-Die App-ID lautet `org.schrotty74.g5systemmonitor`. Bei einer Aktualisierung die vorhandene Installation mit derselben Paket-ID aktualisieren. Vor dem Befehl den tatsächlichen Dateipfad prüfen.
+The app ID is `org.schrotty74.g5systemmonitor`. For an update, install the package with the same app ID. Check that the path in the command matches the transferred file.
 
-## Sicherheit und Grenzen
+## Safety and limitations
 
-Die App liest Werte über den vorhandenen Homebrew-Luna-Dienst und lokale Systemdateien. Sie stellt keine frei eingebbaren Shell-Befehle bereit, startet keinen Hintergrunddienst und ändert weder Systempartitionen noch Firmware, Root-Konfiguration oder Autostart. Die Aktualisierungseinstellung gilt nur für die laufende Sitzung.
+The app reads system values through the existing Homebrew Luna service and local system files. It does not accept user-entered shell commands, run a background service, or change system partitions, firmware, root configuration, or autostart. The refresh interval is only kept for the current session.
 
-## Version 0.9.2
+## Development documentation
 
-- Harte, versetzte Schlagschatten entfernt, die wie eine zweite Kachelkante wirkten.
-- Weiche Schatten behalten den räumlichen Eindruck.
-
-## Weiterentwicklung
-
-- [Entwicklungsnotizen](DEVELOPMENT.md): aktueller technischer Stand, Aufbau, Datenquellen, Prüfungen, bekannte UI-Beobachtung und Leitplanken.
-- [Änderungsprotokoll](CHANGELOG.md): Entwicklungsschritte und Nutzeranforderungen nach Versionen.
+- [Development notes](DEVELOPMENT.md): architecture, data sources, checks, current UI observation, and constraints for future work.
+- [Changelog](CHANGELOG.md): development history and user requirements by version.
