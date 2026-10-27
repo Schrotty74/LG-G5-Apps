@@ -37,3 +37,8 @@ Die App liest Werte über den vorhandenen Homebrew-Luna-Dienst und lokale System
 
 - Harte, versetzte Schlagschatten entfernt, die wie eine zweite Kachelkante wirkten.
 - Weiche Schatten behalten den räumlichen Eindruck.
+
+## Weiterentwicklung
+
+- [Entwicklungsnotizen](DEVELOPMENT.md): aktueller technischer Stand, Aufbau, Datenquellen, Prüfungen, bekannte UI-Beobachtung und Leitplanken.
+- [Änderungsprotokoll](CHANGELOG.md): Entwicklungsschritte und Nutzeranforderungen nach Versionen.
