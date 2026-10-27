@@ -38,4 +38,4 @@ Die App liest Werte über den vorhandenen Homebrew-Luna-Dienst und lokale System
 ## Dokumentation zur Weiterentwicklung
 
 - [Entwicklungsnotizen](DEVELOPMENT.md): Aufbau, Datenquellen, Prüfungen, aktueller UI-Hinweis und Vorgaben für weitere Arbeit.
-- [Änderungsprotokoll](CHANGELOG.md): Entwicklungsschritte und Nutzeranforderungen nach Versionen.
+- [Changelog (English)](CHANGELOG.md): Entwicklungsschritte und Anforderungen nach Versionen.
