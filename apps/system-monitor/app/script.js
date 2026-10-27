@@ -130,7 +130,7 @@
     disks.forEach(function(disk){
       var entry=document.createElement('div'),row=document.createElement('div'),label=document.createElement('span'),value=document.createElement('strong');
       var bar=document.createElement('div'),fill=document.createElement('div');
-      entry.className='storage-entry';row.className='detail';label.textContent=disk.mount;
+      entry.className='storage-entry';row.className='storage-row';label.className='storage-mount';value.className='storage-value';label.textContent=disk.mount;label.title=disk.mount;
       value.textContent=formatGiB(disk.available)+' frei / '+formatGiB(disk.total)+' · '+disk.percent+' % belegt';
       row.appendChild(label);row.appendChild(value);
       bar.className='storage-bar';bar.setAttribute('role','progressbar');bar.setAttribute('aria-valuemin','0');bar.setAttribute('aria-valuemax','100');bar.setAttribute('aria-valuenow',String(disk.percent));

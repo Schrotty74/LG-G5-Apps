@@ -1,41 +1,39 @@
-# G5 System Monitor 0.8.0
+# G5 System Monitor 0.9.2
 
-Read-only System-Dashboard für den LG G5 mit webOS 25 und Homebrew Channel.
+Homebrew-Dashboard für LG G5 mit webOS 25. Die Oberfläche zeigt Systemwerte in einem dunklen, TV-gerechten Layout.
 
 ## Funktionen
 
-- CPU- und RAM-Auslastung mit jeweils bis zu 30 Verlaufsmessungen
-- Systemlaufzeit, Kernel, Root-Status und Momentaufnahme der zehn Prozesse aus `top`
-- Modell, Firmware-, SDK- und Board-Informationen über den webOS-Systemproperty-Dienst
-- Belegung erkannter Dateisysteme als Balken
-- Aktive Netzwerkschnittstellen, IPv4-Adressen und Standard-Gateway
-- Aktualisierungsintervall im Dashboard zwischen 3, 5 und 10 Sekunden umschaltbar
-- Navigation per Steuerkreuz und Mausrad; Beenden per Fernbedienung-Zurück-Taste oder Schaltfläche
+- CPU- und RAM-Auslastung mit Verläufen der letzten 30 Messungen
+- Laufzeit, Kernel, Root-Status, Modell, Firmware, SDK- und Boardinformationen
+- Dateisysteme mit freier/belegter Kapazität und Balkenanzeige
+- Aktive Netzwerkschnittstelle, IPv4-Adresse und Standard-Gateway
+- Prozessmomentaufnahme und Swap-Belegung
+- Aktualisierungsintervall von 3, 5 oder 10 Sekunden
+- Scrollen per Magic Remote, Zurück-/Beenden-Schaltfläche und Mausrad
+- Kein Temperaturfeld: auf dem getesteten G5 ließ sich kein Sensorwert auslesen
 
-Temperatur wird nicht angezeigt, weil auf dem getesteten Gerät über die geprüften Sensor-Schnittstellen kein Messwert verfügbar war.
+## Dateien
 
-## Download und Installation
+- `app/` enthält den vollständigen App-Quellcode einschließlich Symbol
+- [IPK herunterladen](g5-system-monitor_0.9.2_all.ipk)
+- [Quellcode als ZIP herunterladen](g5-system-monitor-source-v0.9.2.zip)
 
-Das webOS-Paket ist eine `.ipk`-Datei, keine Android-APK. Lade [g5-system-monitor_0.8.0_all.ipk](g5-system-monitor_0.8.0_all.ipk) herunter und übertrage sie per SFTP nach `/tmp/g5-system-monitor_0.8.0_all.ipk`. Dann per SSH auf dem Fernseher installieren:
+## Installation
 
-```sh
-luna-send -i -f 'luna://com.webos.appInstallService/dev/install' '{"id":"com.ares.defaultName","ipkUrl":"/tmp/g5-system-monitor_0.8.0_all.ipk","subscribe":true}'
-```
-
-Erfordert Root-Zugriff und den Homebrew-Luna-Dienst. Dieses Paket wurde noch nicht auf dem Fernseher getestet; vorherige App-Versionen wurden dort vom Nutzer erfolgreich geprüft.
-
-## Quellcode und Paket bauen
-
-- `app/appinfo.json` – webOS-App-Metadaten
-- `app/index.html`, `app/style.css`, `app/script.js` – Oberfläche, Darstellung und Messlogik
-- `app/icon.png` – App-Symbol
-
-Mit der LG webOS TV CLI im App-Verzeichnis bauen:
+Die IPK-Datei auf den Fernseher übertragen, zum Beispiel nach `/tmp`, und anschließend als root über den webOS-Installationsdienst installieren:
 
 ```sh
-ares-package ./app -o ./dist
+luna-send-pub -i 'luna://com.webos.appInstallService/dev/install' '{"id":"com.ares.defaultName","ipkUrl":"/tmp/g5-system-monitor_0.9.2_all.ipk","subscribe":true}'
 ```
 
-## Sicherheitsverhalten
+Die App-ID lautet `org.schrotty74.g5systemmonitor`. Bei einer Aktualisierung die vorhandene Installation mit derselben Paket-ID aktualisieren. Vor dem Befehl den tatsächlichen Dateipfad prüfen.
 
-Die App führt über den Homebrew-Dienst ausschließlich fest vorgegebene, lesende Systemabfragen aus. Sie ändert keine Systempartitionen, Firmware, Root-Konfiguration oder Autostart-Einstellungen und startet keinen Hintergrunddienst. Sie enthält keine frei eingebbare Shell.
+## Sicherheit und Grenzen
+
+Die App liest Werte über den vorhandenen Homebrew-Luna-Dienst und lokale Systemdateien. Sie stellt keine frei eingebbaren Shell-Befehle bereit, startet keinen Hintergrunddienst und ändert weder Systempartitionen noch Firmware, Root-Konfiguration oder Autostart. Die Aktualisierungseinstellung gilt nur für die laufende Sitzung.
+
+## Version 0.9.2
+
+- Harte, versetzte Schlagschatten entfernt, die wie eine zweite Kachelkante wirkten.
+- Weiche Schatten behalten den räumlichen Eindruck.

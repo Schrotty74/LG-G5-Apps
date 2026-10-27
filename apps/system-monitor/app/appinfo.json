@@ -1,6 +1,6 @@
 {
   "id": "org.schrotty74.g5systemmonitor",
-  "version": "0.8.0",
+  "version": "0.9.2",
   "vendor": "Personal Homebrew",
   "type": "web",
   "main": "index.html",
