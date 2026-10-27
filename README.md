@@ -17,6 +17,18 @@ Ein lokales, nur lesendes Dashboard für einen gerooteten LG G5 mit webOS 25. Es
 
 Die App benötigt den Homebrew Channel und dessen Luna-Exec-Dienst. Sie startet keine Hintergrunddienste und verändert keine Systemdateien oder Autostart-Einstellungen. Temperaturwerte werden nicht angezeigt, weil am getesteten Gerät kein auslesbarer Sensor verfügbar war.
 
+## IPK auf webOS installieren
+
+1. Die gewünschte `.ipk`-Datei herunterladen und per SFTP, zum Beispiel mit Termius, nach `/tmp` auf den Fernseher übertragen.
+2. Per SSH als root mit dem Fernseher verbinden.
+3. Den folgenden Befehl ausführen und `DATEINAME.ipk` durch den tatsächlichen Dateinamen ersetzen:
+
+```sh
+luna-send-pub -i 'luna://com.webos.appInstallService/dev/install' '{"id":"com.ares.defaultName","ipkUrl":"/tmp/DATEINAME.ipk","subscribe":true}'
+```
+
+Der Installationsdienst meldet den Status im Terminal. Bei Erfolg erscheint die App im Launcher. Dieser Weg setzt Root-Zugriff und eine installierte Homebrew-Umgebung voraus. Die Pakete in diesem Repository sind webOS-IPKs, keine Android-APKs.
+
 ## Weitere Apps hinzufügen
 
 Jede weitere App erhält ein eigenes Verzeichnis unter `apps/<app-name>/`; die Übersicht wird anschließend hier ergänzt.
