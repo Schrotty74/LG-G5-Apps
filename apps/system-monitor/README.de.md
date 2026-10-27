@@ -4,6 +4,10 @@ Homebrew-Dashboard für LG G5 mit webOS 25. Die Oberfläche zeigt Systemwerte in
 
 [English](README.md) | [Deutsch](README.de.md)
 
+![Vorschau der G5 System Monitor Oberfläche](preview.png)
+
+*Nur eine Vorschau: Alle angezeigten Werte sind Demodaten und keine Aufnahme vom Fernseher.*
+
 ## Funktionen
 
 - CPU- und RAM-Auslastung mit Verläufen der letzten 30 Messungen

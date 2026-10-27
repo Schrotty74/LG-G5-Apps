@@ -4,6 +4,10 @@ A homebrew dashboard for the LG G5 running webOS 25, with a dark layout designed
 
 [English](README.md) | [Deutsch](README.de.md)
 
+![G5 System Monitor UI preview](preview.png)
+
+*Preview only: all displayed values are sample data, not captured from a TV.*
+
 ## Features
 
 - CPU and RAM usage, with history charts for the last 30 readings
