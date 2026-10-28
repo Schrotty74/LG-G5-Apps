@@ -66,3 +66,15 @@
 /* Alle Eingänge gemeinsam in einer zentrierten Reihe. */
 .input-row{grid-template-columns:repeat(5,minmax(0,1fr));width:100%;max-width:1500px;gap:clamp(6px,0.8vw,14px);margin:7vh auto 0}
 .input-card{min-width:0;padding:12px;gap:10px}.input-card>span:nth-child(2){min-width:0;overflow:hidden}.input-card b,.input-card small{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.input-card .chevron{flex:none}
+/* Gleicher Bildbereich und Bildausschnitt wie in der Übersicht. */
+.scene.view-apps .feature,.scene.view-inputs .feature{display:block}
+.scene.view-apps .feature-content,.scene.view-apps .feature-caption,.scene.view-inputs .feature-content,.scene.view-inputs .feature-caption{display:none}
+.scene.view-apps .apps-area{position:relative;top:auto;bottom:auto;left:auto;right:auto;margin:3vh auto 0;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.scene.view-inputs .inputs-area{margin-top:3vh}
+.scene.view-inputs .input-row{margin-top:3vh}
+/* Seitenüberschriften stehen im gemeinsamen Landschaftsbild. */
+.feature-favorites,.feature-inputs{display:none}
+.scene.view-apps .feature-favorites,.scene.view-inputs .feature-inputs{display:block}
+.scene.view-apps .favorites-heading{justify-content:flex-end}
+.scene.view-apps .favorites-heading>div,.scene.view-inputs .inputs-area>.section-title>div,.scene.view-inputs .input-note{display:none}
+.scene.view-inputs .inputs-area>.section-title{justify-content:flex-end}

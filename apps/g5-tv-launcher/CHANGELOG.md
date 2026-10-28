@@ -2,6 +2,36 @@
 
 Changes to G5 TV Launcher. Versions refer to the app package; older entries describe development builds and are not a promise of compatibility with every TV.
 
+## 0.2.28
+- Add English and German throughout the launcher, including navigation, settings, buttons and messages. English is the default.
+- Add a language selector; save the selection on the TV and include it in settings backups. App names and custom input labels remain as supplied by the TV or user.
+
+## 0.2.27
+- Place the Favorites and Inputs headings and descriptions inside the illustrated banner, matching the Overview layout.
+- Keep the favorites dock, input shortcuts and their management controls below the banner.
+
+## 0.2.26
+- Show the chosen scene in a banner on Favorites and Inputs with the same framing as Overview.
+- Correct the oversized and cropped full-screen rendering introduced in the earlier intermediate build.
+
+## 0.2.25
+- Add a setting for the start page: Overview, Favorites or Inputs; Overview is the default.
+- Apply the selection when starting or reopening the launcher, and include it in settings backups.
+
+## 0.2.24
+- Return to Overview when webOS relaunches the app, including when opened through a Home-button shortcut, and close any open dialogs.
+- Add the selected landscape imagery to Favorites and Inputs; subsequent builds refine its framing and page titles.
+
+## 0.2.23
+- Add optional Home-button mapping through an installed, active Magic Mapper 1.1.2 configured to start on the TV.
+- Save the previous Home mapping and provide a way to restore it; preserve mappings for other buttons and detect conflicting changes.
+- Leave installation and startup configuration of Magic Mapper to the user.
+
+## 0.2.22
+- Replace the browser download and file picker with settings backup and restore through the Homebrew service.
+- Save JSON to `/media/developer/g5-tv-launcher/backup.json` on the TV, validate data when restoring, and allow the file to be copied via SFTP. Saving again replaces the existing backup.
+- Include launcher preferences, favorites and custom input labels in the backup.
+
 ## 0.2.21
 - Place HDMI 1–4 and Live TV in one centered row, farther below the Inputs heading.
 
