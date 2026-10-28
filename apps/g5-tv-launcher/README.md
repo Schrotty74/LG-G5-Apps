@@ -38,6 +38,7 @@ Click an image to view it full size.
 - [Download source ZIP](g5-tv-launcher-source_0.2.32.zip)
 - [Complete app source](app/)
 - [Development notes](DEVELOPMENT.md)
+- [Project status and continuation notes (German)](PROJECT_STATUS.md)
 - [Changelog](CHANGELOG.md)
 
 ## Installation

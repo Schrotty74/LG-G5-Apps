@@ -38,6 +38,7 @@ Zum Vergrößern auf ein Bild klicken.
 - [Quellcode-ZIP herunterladen](g5-tv-launcher-source_0.2.32.zip)
 - [Vollständiger App-Quellcode](app/)
 - [Entwicklungsnotizen (English)](DEVELOPMENT.md)
+- [Projektstand und Hinweise für die Weiterentwicklung](PROJECT_STATUS.md)
 - [Changelog (English)](CHANGELOG.md)
 
 ## Installation
