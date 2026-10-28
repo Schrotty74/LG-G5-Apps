@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#081324">
+  <title>G5 Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main id="scene" class="scene aurora">
+    <div class="ambient ambient-a"></div><div class="ambient ambient-b"></div><div class="ambient ambient-c"></div>
+    <header class="topbar">
+      <div class="brand"><span class="brand-icon">G</span><span>HOME</span></div>
+      <nav class="tabs" id="tabs" aria-label="Bereiche">
+        <button class="tab active" data-target="home">Übersicht</button>
+        <button class="tab" data-target="apps">Favoriten</button>
+        <button class="tab" data-target="inputs">Eingänge</button>
+      </nav>
+      <div class="top-right"><div class="weather" id="weather" hidden><span id="weather-icon">☀</span><span id="weather-value">Wetter</span></div><time id="clock">--:--</time><button id="settings-open" class="settings-button" aria-label="Einstellungen">⚙</button></div>
+    </header>
+
+    <section class="feature" id="home" aria-label="Start">
+      <div class="feature-content">
+        <div class="kicker"><span class="live-dot"></span> DEIN G5 · DEIN HOME</div>
+        <h1>Alles, was du<br>sehen willst.</h1>
+        <p>Deine Apps an einem Ort. Öffne deine Favoriten oder stöbere durch die installierten Apps.</p>
+        <button class="watch-button" id="browse-apps"><span class="play">▶</span> Favoriten ansehen</button>
+      </div>
+      <div class="feature-art" aria-hidden="true"><div class="planet planet-large"></div><div class="planet planet-small"></div><div class="light-ribbon ribbon-one"></div><div class="light-ribbon ribbon-two"></div></div>
+      <div class="feature-caption">G5 HOME <span>•</span> WEBOS 25</div>
+    </section>
+
+    <section class="apps-area" id="apps">
+      <div class="section-title"><div><div class="subhead">DEINE SAMMLUNG</div><h2>Apps</h2></div><div class="app-tools"><div id="app-status" class="app-status">Apps werden geladen …</div><button id="favorites-manage-overview" class="manage-favorites-button">Favoriten verwalten</button><button id="apps-left" class="rail-button" aria-label="App-Leiste nach links">‹</button><button id="apps-right" class="rail-button" aria-label="App-Leiste nach rechts">›</button></div></div>
+      <div class="app-strip" id="app-strip" tabindex="0" aria-label="Installierte Apps"><div class="empty-state">Verbinde mit dem Homebrew-Dienst …</div></div>
+      <div class="favorites-heading"><div><div class="subhead">DEINE AUSWAHL</div><h2>Favoriten</h2></div><button id="favorites-manage" class="manage-favorites-button">＋ Apps hinzufügen oder entfernen</button></div>
+      <div class="favorite-showcase" id="favorite-showcase" aria-label="Favoriten"></div>
+    </section>
+
+    <section class="library-area" id="library">
+      <div class="section-title"><div><div class="subhead">SCHNELLZUGRIFF</div><h2>Zuletzt verwendet</h2></div></div>
+      <div class="quick-row">
+        <button class="quick-card monitor" id="monitor-card"><span class="quick-symbol">◉</span><span><b>System Monitor</b><small>Live-Status deines G5</small></span><span class="chevron">›</span></button>
+        <button class="quick-card hb" id="hb-card"><span class="quick-symbol">✳</span><span><b>Homebrew Channel</b><small>Apps und Kataloge</small></span><span class="chevron">›</span></button>
+        <button class="quick-card settings-card" id="settings-card"><span class="quick-symbol">⚙</span><span><b>Einstellungen</b><small>TV-Systemeinstellungen</small></span><span class="chevron">›</span></button>
+      </div>
+    </section>
+
+    <section class="inputs-area" id="inputs">
+      <div class="section-title"><div><div class="subhead">QUELLEN</div><h2>Eingänge</h2></div><button id="input-label-open" class="manage-favorites-button">Eingänge benennen</button></div>
+      <p class="input-note">Wähle einen HDMI-Eingang oder öffne Live TV.</p>
+      <div class="input-row" id="input-row">
+        <button class="input-card" data-input="1"><span class="input-symbol">↗</span><span><b data-input-label="1">HDMI 1</b><small>HDMI 1 · öffnen</small></span><span class="chevron">›</span></button>
+        <button class="input-card" data-input="2"><span class="input-symbol">↗</span><span><b data-input-label="2">HDMI 2</b><small>HDMI 2 · öffnen</small></span><span class="chevron">›</span></button>
+        <button class="input-card" data-input="3"><span class="input-symbol">↗</span><span><b data-input-label="3">HDMI 3</b><small>HDMI 3 · öffnen</small></span><span class="chevron">›</span></button>
+        <button class="input-card" data-input="4"><span class="input-symbol">↗</span><span><b data-input-label="4">HDMI 4</b><small>HDMI 4 · öffnen</small></span><span class="chevron">›</span></button>
+      </div>
+      <div class="live-tv-row"><button class="input-card" id="live-tv-input"><span class="input-symbol">▣</span><span><b>Live TV</b><small>Fernsehprogramm öffnen</small></span><span class="chevron">›</span></button></div>
+    </section>
+
+    <footer class="footer"><span>← → navigieren <i>·</i> OK öffnen</span><span id="message" role="status">Bereit</span></footer>
+
+  </main>
+
+  <div class="modal-backdrop" id="settings-modal" hidden>
+    <section class="settings-panel" role="dialog" aria-modal="true" aria-labelledby="settings-title">
+      <header class="modal-head"><div><div class="subhead">PERSONALISIEREN</div><h2 id="settings-title">Einstellungen</h2></div><button id="settings-close" class="close-button" aria-label="Schließen">×</button></header>
+      <div class="setting-group"><h3>Darstellung</h3><label class="setting-row"><span><b>Hintergrund</b><small>Wähle eine Lichtszene für deinen Startbildschirm.</small></span><select id="background-select"><option value="aurora">Polarlicht</option><option value="ocean">Ozean</option><option value="sunset">Abendrot</option><option value="forest">Wald</option><option value="midnight">Mitternacht</option></select></label>
+        <label class="setting-row toggle-row"><span><b>Uhrzeit anzeigen</b><small>Uhr rechts oben einblenden.</small></span><input id="clock-toggle" type="checkbox"></label>
+        <label class="setting-row toggle-row"><span><b>Wetter anzeigen</b><small>Lokale Wetteranzeige rechts oben.</small></span><input id="weather-toggle" type="checkbox"></label>
+      </div>
+      <div class="setting-group"><h3>Wetterstandort</h3><label class="city-row"><input id="city-input" type="text" placeholder="Stadt, z. B. Wien" autocomplete="off"><button id="city-save" class="save-button">Speichern</button></label><small class="setting-note">Wetterdaten werden über Open-Meteo geladen. Standort wird nur für die Wetterabfrage verwendet.</small></div>
+      <div class="setting-group"><h3>Favoritenanzeige</h3><label class="setting-row toggle-row"><span><b>App-Namen anzeigen</b></span><input id="show-labels" type="checkbox"></label><label class="setting-row"><span><b>Symbolgröße ohne Text</b><small>Gilt für die Favoritenleiste ohne App-Namen.</small></span><select id="icon-size"><option value="small">Bisherige Größe</option><option value="medium">Größer</option><option value="large">Ganz groß</option></select></label></div><div class="setting-group"><h3>Backup und Wiederherstellen</h3><button id="backup-export" class="save-button">Backup herunterladen</button> <label class="save-button">Backup auswählen <input id="backup-import" type="file" accept=".json,application/json"></label><small class="setting-note" id="backup-status">Sichert die Launcher-Einstellungen als JSON-Datei.</small></div><div class="setting-group"><h3>Favoriten</h3><p class="setting-note">Favoriten kannst du über „Favoriten verwalten“ in der Übersicht oder „Apps hinzufügen oder entfernen“ im Reiter Favoriten ändern.</p></div>
+      <div class="modal-footer"><span id="settings-message">Änderungen werden auf diesem Fernseher gespeichert.</span><button id="done-button" class="save-button">Fertig</button></div>
+    </section>
+  </div>
+  <div class="modal-backdrop" id="favorites-modal" hidden>
+    <section class="settings-panel favorites-panel" role="dialog" aria-modal="true" aria-labelledby="favorites-title">
+      <header class="modal-head"><div><div class="subhead">FAVORITEN VERWALTEN</div><h2 id="favorites-title">Apps auswählen</h2></div><button id="favorites-close" class="close-button" aria-label="Schließen">×</button></header>
+      <p class="setting-note">Apps zu deinen Favoriten hinzufügen oder daraus entfernen. Die Auswahl wird auf diesem Fernseher gespeichert.</p>
+      <div id="favorite-list" class="favorite-list"><div class="empty-state">Installierte Apps werden geladen …</div></div>
+      <div class="modal-footer"><span id="favorites-message">Tippe eine App an, um sie umzuschalten.</span><button id="favorites-done" class="save-button">Fertig</button></div>
+    </section>
+  </div>
+  <div class="modal-backdrop" id="input-label-modal" hidden>
+    <section class="settings-panel input-label-panel" role="dialog" aria-modal="true" aria-labelledby="input-label-title">
+      <header class="modal-head"><div><div class="subhead">EINGÄNGE ANPASSEN</div><h2 id="input-label-title">Eigene Bezeichnungen</h2></div><button id="input-label-close" class="close-button" aria-label="Schließen">×</button></header>
+      <div class="input-label-list">
+        <label class="input-label-row"><span>HDMI 1</span><input id="input-label-1" type="text" maxlength="32" autocomplete="off"></label>
+        <label class="input-label-row"><span>HDMI 2</span><input id="input-label-2" type="text" maxlength="32" autocomplete="off"></label>
+        <label class="input-label-row"><span>HDMI 3</span><input id="input-label-3" type="text" maxlength="32" autocomplete="off"></label>
+        <label class="input-label-row"><span>HDMI 4</span><input id="input-label-4" type="text" maxlength="32" autocomplete="off"></label>
+      </div>
+      <div class="modal-footer"><span>Leer lassen: TV-Name verwenden. Eigene Namen gelten nur im Launcher.</span><button id="input-label-save" class="save-button">Speichern</button></div>
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
