@@ -1,6 +1,6 @@
 # Development notes
 
-- App ID: `org.schrotty74.g5launcher`; package version: 0.2.32.
+- App ID: `org.schrotty74.g5launcher`; package version: 0.2.39.
 - `app/` contains the webOS app: HTML, JavaScript, CSS, app icon, and five local SVG scenes. The IPK is built from this directory.
 - The app lists launch points using the existing Homebrew Channel Luna service and launches apps via the webOS Application Manager. HDMI launch points are filtered from the app collection but retained to resolve input labels. Live TV is exposed under Inputs.
 - The Homebrew exec service reads local icon paths with an allowlist and size limit. Fallback initials are used when an icon cannot be read. Weather requests go to Open-Meteo.
@@ -15,3 +15,5 @@
 - `i18n.js` translates launcher text and accessibility labels. Language defaults to English, is stored in `g5home.prefs`, and is included in JSON backups. TV-provided app names and user labels are preserved.
 
 - Version 0.2.32 adds app search, customizable shortcuts, background rotation, optional transitions and dock magnification, dock layout options and manual version checks. The update check reads the public app metadata from GitHub and does not install packages. Test TV rendering and remote navigation after changes.
+
+- Since 0.2.33, clock and weather have independent sizes, the settings menu is grouped, and weather refresh intervals are configurable. Weather lookup searches in both supported languages and allows choosing a matching location; the TV time zone is a preference, not a guarantee of the intended location. A selected location is stored in settings and backup. Sunrise and sunset determine day/night icon transitions. Do not hardcode a personal location.

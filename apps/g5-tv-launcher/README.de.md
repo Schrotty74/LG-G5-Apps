@@ -1,4 +1,4 @@
-# G5 TV Launcher 0.2.32
+# G5 TV Launcher 0.2.39
 
 [English](README.md) · [Deutsch](README.de.md)
 
@@ -32,10 +32,15 @@ Zum Vergrößern auf ein Bild klicken.
 - Abstand, Transparenz und vertikale Position der Favoritenleiste anpassen.
 - Manuell auf GitHub nach einer neueren Version suchen; Updates werden nicht automatisch installiert.
 
+- Uhrzeit und Wetter unabhängig voneinander vergrößern; Wetterdaten alle 15 Minuten, stündlich, zweimal täglich oder täglich aktualisieren.
+- Animierte Wettersymbole bei eingeschalteten Animationen, mit Varianten für Nacht, Wolken und Regen. Der Tag-Nacht-Wechsel nutzt Sonnenauf- und -untergang am Standort.
+- Wetterorte in englischer und deutscher Suche finden, Treffer in der TV-Zeitzone bevorzugen und passende Orte mit Region und Land auswählen.
+- Einstellungen über Kategorien aufrufen, damit weniger gescrollt werden muss.
+
 ## Downloads und Quellcode
 
-- [IPK 0.2.32 herunterladen](g5-tv-launcher_0.2.32_all.ipk)
-- [Quellcode-ZIP herunterladen](g5-tv-launcher-source_0.2.32.zip)
+- [IPK 0.2.39 herunterladen](g5-tv-launcher_0.2.39_all.ipk)
+- [Quellcode-ZIP herunterladen](g5-tv-launcher-source_0.2.39.zip)
 - [Vollständiger App-Quellcode](app/)
 - [Entwicklungsnotizen (English)](DEVELOPMENT.md)
 - [Projektstand und Hinweise für die Weiterentwicklung](PROJECT_STATUS.md)
@@ -46,7 +51,7 @@ Zum Vergrößern auf ein Bild klicken.
 Voraussetzungen sind ein gerooteter Fernseher und ein funktionierender Homebrew-Channel-Dienst. Die IPK per SFTP nach `/tmp` übertragen und dann per SSH installieren:
 
 ```sh
-luna-send-pub -i 'luna://com.webos.appInstallService/dev/install' '{"id":"com.ares.defaultName","ipkUrl":"/tmp/g5-tv-launcher_0.2.32_all.ipk","subscribe":true}'
+luna-send-pub -i 'luna://com.webos.appInstallService/dev/install' '{"id":"com.ares.defaultName","ipkUrl":"/tmp/g5-tv-launcher_0.2.39_all.ipk","subscribe":true}'
 ```
 
 Alternativ kann die IPK über Glasshouse hochgeladen werden. Die App-ID lautet `org.schrotty74.g5launcher`.
@@ -63,7 +68,7 @@ Python 3 installieren, das Terminal in diesem App-Ordner öffnen und ausführen:
 python3 build.py
 ```
 
-Das Paket liegt danach unter `dist/g5-tv-launcher_0.2.32_all.ipk`. Mit `python3 build.py --output /pfad/zum/ausgabeordner` lässt sich ein anderer Ausgabeordner wählen. Das Skript nutzt nur die Python-Standardbibliothek und benötigt keinen festen Pfad auf dem Computer.
+Das Paket liegt danach unter `dist/g5-tv-launcher_0.2.39_all.ipk`. Mit `python3 build.py --output /pfad/zum/ausgabeordner` lässt sich ein anderer Ausgabeordner wählen. Das Skript nutzt nur die Python-Standardbibliothek und benötigt keinen festen Pfad auf dem Computer.
 
 ## Optionale Home-Tastenbelegung
 

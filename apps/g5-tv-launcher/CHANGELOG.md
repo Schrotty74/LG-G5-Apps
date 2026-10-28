@@ -2,6 +2,29 @@
 
 Changes to G5 TV Launcher. Versions refer to the app package; older entries describe development builds and are not a promise of compatibility with every TV.
 
+## 0.2.39
+- Search weather locations in English and German, prefer a result matching the TV's time zone and show a selectable list with region and country.
+- Save the chosen location and ignore outdated asynchronous weather responses.
+
+## 0.2.38
+- Add a moon-behind-clouds icon for cloudy nights and a rain-cloud icon with optional animated raindrops.
+
+## 0.2.37
+- Show the cloudy-night icon for overcast conditions and switch day/night display using sunrise and sunset independently of the weather refresh interval.
+
+## 0.2.36
+- Add moon and partly cloudy night representations using the weather provider's day/night data.
+
+## 0.2.35
+- Organize the settings menu into categories, each with its own scrollable content.
+
+## 0.2.34
+- Make weather icon animations more visible while retaining the global animation setting.
+
+## 0.2.33
+- Add separate clock and weather sizes and optional weather icon animations.
+- Add weather refresh intervals of 15 minutes, one hour, 12 hours and 24 hours; store these settings in backups.
+
 ## 0.2.32
 - Fix dock spacing settings so Small, Medium and Large take precedence regardless of icon size or label visibility.
 
