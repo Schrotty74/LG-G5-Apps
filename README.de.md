@@ -27,4 +27,4 @@ Der Installationsdienst zeigt den Fortschritt im Terminal an. Nach erfolgreicher
 
 Jede neue App erhält ein eigenes Verzeichnis unter `apps/<app-name>/`. Ergänze sie anschließend als neue Tabellenzeile mit Links zum Quellcode, Paket, zur Dokumentation und zum Arbeitskontext.
 
-Im Repository bleiben pro App höchstens die drei neuesten IPK-Versionen verfügbar.
+Im Repository bleiben pro App höchstens die drei neuesten IPK-Pakete und die drei neuesten Quellcode-ZIPs verfügbar.
