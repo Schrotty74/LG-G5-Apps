@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="420" height="125" viewBox="0 0 420 125">
+ <defs><g id="deer" fill="#e8d9c5" stroke="#23344d" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"><ellipse cx="23" cy="50" rx="19" ry="11"/><path d="M36 47l8-18 9 3-6 18z"/><ellipse cx="51" cy="31" rx="9" ry="6"/><path d="M46 25l-3-9-5-4m6 10 4-9m5 10 3-11 5-4m-5 7 7-2" fill="none"/><path d="M12 56l-8 12-3-1m27-9 9 10 6 1m-26-8 7 10 5 1m0-12 8-9" fill="none" stroke-width="3"/></g></defs>
+ <path d="M10 94q8 10 83 10 22 0 28-13" fill="none" stroke="#ffdd94" stroke-width="4" stroke-linecap="round"/>
+ <path d="M18 61h72l14-9q-1 34-23 38H30q-10-1-12-29z" fill="#d74137" stroke="#ffe2a1" stroke-width="3"/><path d="M25 64h64" stroke="#ffe2a1" stroke-width="2"/>
+ <circle cx="57" cy="48" r="10" fill="#ffe2bf"/><path d="M43 61q0-13 14-13t17 14z" fill="#cb302c" stroke="#fff" stroke-width="2"/><path d="M47 39q10-17 21-10l4 11-8-5-15 8z" fill="#d73b35" stroke="#fff" stroke-width="2"/><circle cx="73" cy="38" r="3" fill="#fff"/><path d="M53 51q6 9 13 0" fill="#fff"/>
+ <path d="M96 60q40-14 74-14M167 47q49-9 95-3M258 43q38-8 72-4" fill="none" stroke="#f6d7a1" stroke-width="2"/>
+ <use xlink:href="#deer" x="132" y="0"/><use xlink:href="#deer" x="224" y="-5"/><use xlink:href="#deer" x="316" y="-10"/>
+</svg>

@@ -1,6 +1,6 @@
 # Development notes
 
-- App ID: `org.schrotty74.g5launcher`; package version: 0.2.44.
+- App ID: `org.schrotty74.g5launcher`; package version: 0.2.46.
 - `app/` contains the webOS app: HTML, JavaScript, CSS, app icon, and seven illustrated themes with local SVG assets. The IPK is built from this directory.
 - The app lists launch points using the existing Homebrew Channel Luna service and launches apps via the webOS Application Manager. HDMI launch points are filtered from the app collection but retained to resolve input labels. Live TV is exposed under Inputs.
 - The Homebrew exec service reads local icon paths with an allowlist and size limit. Fallback initials are used when an icon cannot be read. Weather requests go to Open-Meteo.
@@ -18,4 +18,4 @@
 
 - Since 0.2.33, clock and weather have independent sizes, the settings menu is grouped, and weather refresh intervals are configurable. Weather lookup searches in both supported languages and allows choosing a matching location; the TV time zone is a preference, not a guarantee of the intended location. A selected location is stored in settings and backup. Sunrise and sunset determine day/night icon transitions. Do not hardcode a personal location.
 
-- Version 0.2.44 adds Halloween and Christmas under Special themes. Seasonal effects run only when animations are enabled: the Halloween spider, flickering house and pumpkin lights, and Christmas snowfall. The spider uses a timer that stops when the theme or animation setting changes and while the document is hidden. Theme names are included in backup validation and random background rotation.
+- Version 0.2.46 includes Halloween and Christmas under Special themes. Seasonal effects run only when animations are enabled: the Halloween spider, flickering house and pumpkin lights, Christmas snowfall and Santa's alternating-direction sleigh (12 seconds flying, 5 seconds between flights). Seasonal timers stop when the active theme or animation setting changes and while the document is hidden. The spider uses a timer that stops when the theme or animation setting changes and while the document is hidden. Theme names are included in backup validation and random background rotation.

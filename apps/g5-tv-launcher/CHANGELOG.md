@@ -2,10 +2,10 @@
 
 Entries describe versions published in this repository. Each entry includes the relevant changes since the previous published version; intermediate test builds are grouped into the next published version.
 
-## 0.2.44
+## 0.2.46
 
 - Add Halloween and Christmas themes, grouped separately from the standard backgrounds.
-- Add optional seasonal animations: a descending spider at changing positions, flickering Halloween house windows and pumpkin face, and falling snow for Christmas. The effects follow the existing animation setting.
+- Add optional seasonal animations: a descending spider at changing positions, flickering Halloween house windows and pumpkin face, and falling snow for Christmas. A reindeer-drawn sleigh crosses the Christmas scene in alternating directions, with a 12-second flight and a 5-second pause. The effects follow the existing animation setting.
 - Include the new themes in background selection, random rotation and settings backup/restore validation.
 
 ## 0.2.39

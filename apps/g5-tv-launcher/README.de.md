@@ -1,4 +1,4 @@
-# G5 TV Launcher 0.2.44
+# G5 TV Launcher 0.2.46
 
 [English](README.md) · [Deutsch](README.de.md)
 
@@ -19,7 +19,7 @@ Zum Vergrößern auf ein Bild klicken.
 - Bedienung mit Steuerkreuz, Zeiger und Mausrad der Magic Remote.
 - HDMI 1–4 und Live TV öffnen. HDMI-Namen aus den Startpunkten des Fernsehers übernehmen oder selbst vergeben.
 - Zwischen sieben illustrierten Szenen wählen, die im Banner auf Übersicht, Favoriten und Eingängen angezeigt werden. Halloween und Weihnachten sind als Spezial-Themes gruppiert.
-- Bei eingeschalteten Animationen lässt sich an Halloween eine Spinne an wechselnden Stellen herab, das Hauslicht und das Kürbisgesicht flackern. Beim Weihnachtstheme fallen Schneeflocken; alle Effekte lassen sich über die Animationseinstellung abschalten.
+- Bei eingeschalteten Animationen lässt sich an Halloween eine Spinne an wechselnden Stellen herab, das Hauslicht und das Kürbisgesicht flackern. Beim Weihnachtstheme fallen Schneeflocken und der Weihnachtsmann fliegt mit dem Rentierschlitten abwechselnd in beide Richtungen: zwölf Sekunden Flug, fünf Sekunden Pause. Alle Effekte lassen sich über die Animationseinstellung abschalten.
 - Uhr und Wetter getrennt ein- oder ausblenden und einen Wetterstandort wählen.
 - Übersicht, Favoriten oder Eingänge als Startseite wählen; die Auswahl gilt auch beim erneuten Öffnen.
 - Die Oberfläche zwischen Englisch und Deutsch umschalten; Englisch ist voreingestellt.
@@ -40,8 +40,8 @@ Zum Vergrößern auf ein Bild klicken.
 
 ## Downloads und Quellcode
 
-- [IPK 0.2.44 herunterladen](g5-tv-launcher_0.2.44_all.ipk)
-- [Quellcode-ZIP herunterladen](g5-tv-launcher-source_0.2.44.zip)
+- [IPK 0.2.46 herunterladen](g5-tv-launcher_0.2.46_all.ipk)
+- [Quellcode-ZIP herunterladen](g5-tv-launcher-source_0.2.46.zip)
 - [Vollständiger App-Quellcode](app/)
 - [Entwicklungsnotizen (English)](DEVELOPMENT.md)
 - [Projektstand und Hinweise für die Weiterentwicklung](PROJECT_STATUS.md)
@@ -52,7 +52,7 @@ Zum Vergrößern auf ein Bild klicken.
 Voraussetzungen sind ein gerooteter Fernseher und ein funktionierender Homebrew-Channel-Dienst. Die IPK per SFTP nach `/tmp` übertragen und dann per SSH installieren:
 
 ```sh
-luna-send-pub -i 'luna://com.webos.appInstallService/dev/install' '{"id":"com.ares.defaultName","ipkUrl":"/tmp/g5-tv-launcher_0.2.44_all.ipk","subscribe":true}'
+luna-send-pub -i 'luna://com.webos.appInstallService/dev/install' '{"id":"com.ares.defaultName","ipkUrl":"/tmp/g5-tv-launcher_0.2.46_all.ipk","subscribe":true}'
 ```
 
 Alternativ kann die IPK über Glasshouse hochgeladen werden. Die App-ID lautet `org.schrotty74.g5launcher`.
@@ -69,7 +69,7 @@ Python 3 installieren, das Terminal in diesem App-Ordner öffnen und ausführen:
 python3 build.py
 ```
 
-Das Paket liegt danach unter `dist/g5-tv-launcher_0.2.44_all.ipk`. Mit `python3 build.py --output /pfad/zum/ausgabeordner` lässt sich ein anderer Ausgabeordner wählen. Das Skript nutzt nur die Python-Standardbibliothek und benötigt keinen festen Pfad auf dem Computer.
+Das Paket liegt danach unter `dist/g5-tv-launcher_0.2.46_all.ipk`. Mit `python3 build.py --output /pfad/zum/ausgabeordner` lässt sich ein anderer Ausgabeordner wählen. Das Skript nutzt nur die Python-Standardbibliothek und benötigt keinen festen Pfad auf dem Computer.
 
 ## Optionale Home-Tastenbelegung
 

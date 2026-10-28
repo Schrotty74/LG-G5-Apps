@@ -4,7 +4,7 @@ Diese Datei hält den Stand und wichtige Entscheidungen für spätere Weiterentw
 
 ## Aktueller Stand
 
-- Version: **0.2.44**; App-ID: `org.schrotty74.g5launcher`.
+- Version: **0.2.46**; App-ID: `org.schrotty74.g5launcher`.
 - Eigenständiger Homebrew-Launcher für einen gerooteten LG G5 mit webOS 25. Der Nutzer meldete, dass die Ortsanzeige beim Wechsel auf Englisch richtig war. Gerätetests einzelner Funktionen gelten für den verwendeten Fernseher.
 - Der vollständige Quellcode liegt unter [app/](app/); die IPK und das Quellcode-ZIP liegen im App-Verzeichnis. Die Anwendung ist eine Web-App mit HTML, CSS, JavaScript und lokalen SVG-Szenen.
 
@@ -17,7 +17,7 @@ Diese Datei hält den Stand und wichtige Entscheidungen für spätere Weiterentw
 - Magic Remote: Steuerkreuz und Zeiger; horizontaler Bildlauf in den App- und Favoritenleisten auch mit dem Mausrad. Fokusrahmen benötigen innerhalb scrollbarer Bereiche ausreichend Platz.
 - Vier HDMI-Eingänge und Live TV liegen in einer Reihe. Namen der HDMI-Eingänge können aus den webOS-Startpunkten übernommen oder im Launcher selbst gesetzt werden.
 - Sieben illustrierte Szenen im Banner aller drei Seiten; feste Szene, Wechsel beim Öffnen oder Auswahl nach Tageszeit. Uhr und Wetter sind separat abschaltbar; das Wetter nutzt Open-Meteo und einen gewählten Ort.
-- Halloween und Weihnachten stehen in der Hintergrundauswahl unter Spezial-Themes. Bei eingeschalteten Animationen bewegt sich eine Spinne, Hausfenster und Kürbisgesicht flackern, und im Weihnachtstheme fällt Schnee. Animationen lassen sich abschalten.
+- Halloween und Weihnachten stehen in der Hintergrundauswahl unter Spezial-Themes. Bei eingeschalteten Animationen bewegt sich eine Spinne, Hausfenster und Kürbisgesicht flackern, und im Weihnachtstheme fällt Schnee. Der Rentierschlitten fliegt abwechselnd in beide Richtungen, zwölf Sekunden lang mit fünf Sekunden Pause. Animationen lassen sich abschalten.
 - Uhr- und Wettergröße sind unabhängig einstellbar. Das Wetterintervall ist wählbar; Sonnenauf- und -untergang bestimmen den Tag-Nacht-Wechsel. Bei aktivierten Animationen bewegen sich die Wettersymbole, darunter Mond mit Wolken und Regenwolke.
 - Die Wetterortsuche fragt Treffer auf Deutsch und Englisch ab und bevorzugt die TV-Zeitzone. Der Treffer lässt sich anhand von Ort, Region und Land auswählen; Auswahl und Einstellungen werden gespeichert. Wetterdaten werden über Open-Meteo abgerufen.
 - Das Einstellungsmenü ist in Kategorien gegliedert.
@@ -32,7 +32,7 @@ Diese Datei hält den Stand und wichtige Entscheidungen für spätere Weiterentw
 
 ## Wichtige Regeln für künftige Änderungen
 
-- Versionsnummer bei Änderungen am Launcher erhöhen; `app/appinfo.json`, `build.py`, Versionsprüfung, Paketnamen und Dokumentation aufeinander abstimmen. Das englische [Changelog](CHANGELOG.md) nur für veröffentlichte Versionen führen und darunter sämtliche Änderungen seit der vorherigen veröffentlichten Version zusammenfassen; Zwischenbuilds erhalten keine eigenen Versionsüberschriften.
+- Versionsnummer bei Änderungen am Launcher erhöhen; `app/appinfo.json`, `build.py`, Versionsprüfung, Paketnamen und Dokumentation aufeinander abstimmen. Das englische [Changelog](CHANGELOG.md) nur für veröffentlichte Versionen führen und darunter sämtliche Änderungen seit der vorherigen veröffentlichten Version zusammenfassen; Zwischenbuilds erhalten keine eigenen Versionsüberschriften. Wenn der Nutzer eine kleine veröffentlichte Version ersetzen und zusammenfassen möchte, wird der Eintrag in die Ersatzversion übernommen.
 - Pro App im aktuellen Repository-Stand höchstens die **drei neuesten IPK-Pakete und die drei neuesten Quellcode-ZIPs** behalten. Ältere Pakete und ZIPs bei einer Veröffentlichung entfernen und auf veraltete Download-Links prüfen. Dateien bleiben ohne gesonderte Bereinigung in der Git-Historie erhalten.
 - Die deutschen und englischen Launcher-Anleitungen und bei Bedarf beide Startseiten aktualisieren. Screenshots der tatsächlichen Oberfläche als Fotos kennzeichnen; die Vorschau des System Monitors verwendet dagegen Demodaten.
 - Keine persönlichen Zugangsdaten, persönlichen IP-Adressen oder festen lokalen Computerpfade veröffentlichen. Die plattformbedingten webOS-Pfade im Code sind davon zu unterscheiden.

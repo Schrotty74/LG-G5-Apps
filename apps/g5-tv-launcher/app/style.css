@@ -183,3 +183,12 @@
 .scene.halloween .pumpkin-light{display:block}
 .scene.halloween.motion-subtle .pumpkin-light{animation:g5-pumpkin-flicker 3.6s linear infinite}
 @keyframes g5-pumpkin-flicker{0%,18%,25%,48%,55%,100%{opacity:.95}20%,23%,50%,53%{opacity:.22}21%,52%{opacity:.7}}
+
+/* Sleigh flies across the illustration behind the foreground text. */
+.christmas-sleigh{display:none;position:absolute;top:17%;left:0;width:clamp(170px,22vw,320px);aspect-ratio:420/125;pointer-events:none;z-index:0;will-change:transform}
+.sleigh-art{display:block;width:100%;height:100%;background:url('scenes/christmas-sleigh.svg') center / contain no-repeat}
+.scene.christmas.motion-subtle .christmas-sleigh.sleigh-right{display:block;animation:g5-sleigh-right 12s linear both}
+.scene.christmas.motion-subtle .christmas-sleigh.sleigh-left{display:block;animation:g5-sleigh-left 12s linear both}
+.christmas-sleigh.sleigh-left .sleigh-art{transform:scaleX(-1)}
+@keyframes g5-sleigh-right{from{left:0;transform:translateX(-100%)}to{left:100%;transform:translateX(0)}}
+@keyframes g5-sleigh-left{from{left:100%;transform:translateX(0)}to{left:0;transform:translateX(-100%)}}
