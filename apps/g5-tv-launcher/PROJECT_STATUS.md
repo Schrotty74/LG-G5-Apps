@@ -31,7 +31,7 @@ Diese Datei hält den Stand und wichtige Entscheidungen für spätere Weiterentw
 
 ## Wichtige Regeln für künftige Änderungen
 
-- Versionsnummer bei Änderungen am Launcher erhöhen; `app/appinfo.json`, `build.py`, Versionsprüfung, Paketnamen und Dokumentation aufeinander abstimmen. Das englische [Changelog](CHANGELOG.md) um alle Änderungen seit der vorherigen veröffentlichten Version ergänzen.
+- Versionsnummer bei Änderungen am Launcher erhöhen; `app/appinfo.json`, `build.py`, Versionsprüfung, Paketnamen und Dokumentation aufeinander abstimmen. Das englische [Changelog](CHANGELOG.md) nur für veröffentlichte Versionen führen und darunter sämtliche Änderungen seit der vorherigen veröffentlichten Version zusammenfassen; Zwischenbuilds erhalten keine eigenen Versionsüberschriften.
 - Pro App im aktuellen Repository-Stand höchstens die **drei neuesten IPK-Pakete und die drei neuesten Quellcode-ZIPs** behalten. Ältere Pakete und ZIPs bei einer Veröffentlichung entfernen und auf veraltete Download-Links prüfen. Dateien bleiben ohne gesonderte Bereinigung in der Git-Historie erhalten.
 - Die deutschen und englischen Launcher-Anleitungen und bei Bedarf beide Startseiten aktualisieren. Screenshots der tatsächlichen Oberfläche als Fotos kennzeichnen; die Vorschau des System Monitors verwendet dagegen Demodaten.
 - Keine persönlichen Zugangsdaten, persönlichen IP-Adressen oder festen lokalen Computerpfade veröffentlichen. Die plattformbedingten webOS-Pfade im Code sind davon zu unterscheiden.

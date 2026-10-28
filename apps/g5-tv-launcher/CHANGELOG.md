@@ -1,144 +1,48 @@
 # Changelog
 
-Changes to G5 TV Launcher. Versions refer to the app package; older entries describe development builds and are not a promise of compatibility with every TV.
+Entries describe versions published in this repository. Each entry includes the relevant changes since the previous published version; intermediate test builds are grouped into the next published version.
 
 ## 0.2.39
-- Search weather locations in English and German, prefer a result matching the TV's time zone and show a selectable list with region and country.
-- Save the chosen location and ignore outdated asynchronous weather responses.
 
-## 0.2.38
-- Add a moon-behind-clouds icon for cloudy nights and a rain-cloud icon with optional animated raindrops.
-
-## 0.2.37
-- Show the cloudy-night icon for overcast conditions and switch day/night display using sunrise and sunset independently of the weather refresh interval.
-
-## 0.2.36
-- Add moon and partly cloudy night representations using the weather provider's day/night data.
-
-## 0.2.35
-- Organize the settings menu into categories, each with its own scrollable content.
-
-## 0.2.34
-- Make weather icon animations more visible while retaining the global animation setting.
-
-## 0.2.33
-- Add separate clock and weather sizes and optional weather icon animations.
-- Add weather refresh intervals of 15 minutes, one hour, 12 hours and 24 hours; store these settings in backups.
+- Add independent clock and weather sizes and configurable weather refresh intervals of 15 minutes, one hour, 12 hours or 24 hours. Include these settings in backups.
+- Add optional weather animations, a moon for clear nights, a moon behind clouds for cloudy nights, and a rain-cloud icon with animated drops.
+- Switch day and night icons using the selected location's sunrise and sunset, independently of the weather refresh interval.
+- Search locations in English and German, prefer results matching the TV's time zone and let users select a result by city, region and country. Save the chosen location and discard outdated weather responses.
+- Organize the settings menu into categories with scrollable sections.
 
 ## 0.2.32
-- Fix dock spacing settings so Small, Medium and Large take precedence regardless of icon size or label visibility.
 
-## 0.2.31
-- Add optional macOS-inspired magnification of the favorite icon under the pointer or selected with directional controls.
-- Keep the effect controlled by the Animations setting and provide space around the dock.
-
-## 0.2.30
-- Restart the page transition on each navigation and make the favorite focus effect more noticeable when animations are enabled.
-- Add room around the overview app rail so selection outlines are less likely to be clipped.
-
-## 0.2.29
-- Add app search and customizable Overview shortcuts for apps, inputs and TV settings.
-- Add fixed, per-launch random and time-of-day background modes.
-- Add optional page and focus animations, dock spacing, transparency and position settings.
-- Add a manual GitHub version check; updates are not installed automatically.
-- Include the new preferences in settings backup and restore.
+- Add app search and customizable Overview shortcuts for apps, HDMI inputs and TV settings.
+- Allow backgrounds to stay fixed, change on launch or change with the time of day.
+- Add optional page transitions and macOS-inspired magnification of the favorite icon selected with the pointer or directional controls.
+- Add dock spacing, transparency and position settings; fix spacing selection across icon sizes and label modes.
+- Provide more room for focus outlines around the Overview app rail.
+- Add manual GitHub version checks without automatic installation, and include the new preferences in settings backups.
 
 ## 0.2.28
-- Add English and German throughout the launcher, including navigation, settings, buttons and messages. English is the default.
-- Add a language selector; save the selection on the TV and include it in settings backups. App names and custom input labels remain as supplied by the TV or user.
 
-## 0.2.27
-- Place the Favorites and Inputs headings and descriptions inside the illustrated banner, matching the Overview layout.
-- Keep the favorites dock, input shortcuts and their management controls below the banner.
-
-## 0.2.26
-- Show the chosen scene in a banner on Favorites and Inputs with the same framing as Overview.
-- Correct the oversized and cropped full-screen rendering introduced in the earlier intermediate build.
-
-## 0.2.25
-- Add a setting for the start page: Overview, Favorites or Inputs; Overview is the default.
-- Apply the selection when starting or reopening the launcher, and include it in settings backups.
-
-## 0.2.24
-- Return to Overview when webOS relaunches the app, including when opened through a Home-button shortcut, and close any open dialogs.
-- Add the selected landscape imagery to Favorites and Inputs; subsequent builds refine its framing and page titles.
-
-## 0.2.23
-- Add optional Home-button mapping through an installed, active Magic Mapper 1.1.2 configured to start on the TV.
-- Save the previous Home mapping and provide a way to restore it; preserve mappings for other buttons and detect conflicting changes.
-- Leave installation and startup configuration of Magic Mapper to the user.
-
-## 0.2.22
-- Replace the browser download and file picker with settings backup and restore through the Homebrew service.
-- Save JSON to `/media/developer/g5-tv-launcher/backup.json` on the TV, validate data when restoring, and allow the file to be copied via SFTP. Saving again replaces the existing backup.
-- Include launcher preferences, favorites and custom input labels in the backup.
+- Add an English and German interface and a language selector. English is the default; the selected language is saved and backed up. TV-provided app names and custom labels remain unchanged.
+- Allow Overview, Favorites or Inputs as the start page, including when the app is reopened via the Home button.
+- Show the same illustrated banner framing and page headings on all three pages.
+- Add optional Home-button mapping using an installed and active Magic Mapper 1.1.2 configured to start on the TV. Preserve other mappings, detect conflicts and allow restoring the previous Home mapping.
+- Replace browser download and file selection for settings backups with JSON save and restore through the Homebrew service. The backup is stored on the TV at `/media/developer/g5-tv-launcher/backup.json`, can be copied via SFTP, and is replaced by the next save.
 
 ## 0.2.21
-- Place HDMI 1–4 and Live TV in one centered row, farther below the Inputs heading.
 
-## 0.2.20
-- Add padding around the top navigation to prevent focus and pointer outlines from being clipped.
+- Place HDMI 1–4 and Live TV in one centered row below the Inputs heading.
+- Add space around the top navigation to prevent focus and pointer outlines from being clipped.
 
 ## 0.2.19
+
 - Add the TV-and-dock launcher icon in webOS-compatible PNG sizes.
 
 ## 0.2.18
-- Move the Live TV shortcut from the app collection to Inputs.
 
-## 0.2.17
-- Filter HDMI launch points from the app collection and favorites selection while retaining them for input names.
+First version published in this repository, incorporating earlier development builds:
 
-## 0.2.16
-- Add five illustrated overview scenes that change with the selected background.
-
-## 0.2.15
-- Add three selectable icon sizes for favorites without labels and increase spacing at larger sizes.
-
-## 0.2.14
-- Display optional favorite app names below their icons.
-
-## 0.2.13
-- Read supported local app icon files through the existing Homebrew service; keep the initial-letter fallback when an icon cannot be loaded.
-
-## 0.2.12
-- Derive HDMI labels from matching TV launch-point IDs; locally customized labels take precedence.
-
-## 0.2.11
-- Separate selected favorites from other apps in the management list and widen the favorites bar.
-
-## 0.2.10
-- Align favorites-management controls and improve focus and scrolling when reordering long lists.
-
-## 0.2.9
-- Add favorite ordering, app-icon loading attempts, optional labels, and JSON settings backup and restore.
-
-## 0.2.8
-- Arrange the four HDMI shortcuts in a centered row on wide screens.
-
-## 0.2.7
-- Remove the duplicate bottom favorites dock and present favorites in a compact central glass bar.
-- Add favorite management from the overview and Favorites tab, plus locally editable HDMI labels.
-
-## 0.2.6
-- Rename the navigation tabs to Overview, Favorites and Inputs.
-
-## 0.2.5
-- Remove the Library tab and display selected favorites in a larger centered view.
-
-## 0.2.4
-- Add favorite selection and HDMI shortcuts; update the TV settings shortcut.
-
-## 0.2.3
-- Add pointer-edge navigation and left/right controls for the app rail; use the webOS Application Manager for app launches.
-
-## 0.2.2
-- Simplify visual effects and scrolling for TV performance, load app tiles in batches, and make navigation tabs switch views.
-
-## 0.2.1
-- Repackage the IPK for Glasshouse and assign a distinct version.
-
-## 0.2.0
-- Redesign the home screen with five selectable backgrounds, optional clock and weather, location selection, a glass dock and wheel navigation.
-
-## 0.1.0
-- Initial standalone launcher with a TV-oriented interface, Homebrew app discovery, app launching and system shortcuts.
+- Add the standalone TV launcher with app discovery through the Homebrew service, app launching, system shortcuts and performance-oriented scrolling.
+- Provide Overview, Favorites and Inputs views with five illustrated backgrounds, optional clock and weather, location selection and a glass-style favorites dock.
+- Support Magic Remote directional controls, pointer-edge navigation and wheel navigation in app rails.
+- Add favorite selection, ordering, management, optional names under icons and selectable icon sizes. Read local app icons where available and fall back to initials.
+- Open four HDMI inputs and Live TV from Inputs; use TV launch points to derive HDMI names or allow locally customized labels. Exclude HDMI inputs and Live TV from the app collection.
+- Add settings backup and restore, focus and scrolling improvements for longer favorites lists, and packaging compatible with Glasshouse.
