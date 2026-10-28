@@ -4,6 +4,14 @@
 
 Ein eigenständiger Homebrew-Launcher für einen gerooteten LG G5 mit webOS 25. Die Oberfläche bietet eine anpassbare Favoritenleiste und Schnellzugriffe auf TV-Eingänge.
 
+## Einblicke
+
+Zum Vergrößern auf ein Bild klicken.
+
+<a href="screenshots/overview.jpg"><img src="screenshots/overview-thumb.jpg" alt="Übersicht" width="240"></a>
+<a href="screenshots/favorites.jpg"><img src="screenshots/favorites-thumb.jpg" alt="Favoriten" width="240"></a>
+<a href="screenshots/inputs.jpg"><img src="screenshots/inputs-thumb.jpg" alt="Eingänge" width="240"></a>
+
 ## Funktionen
 
 - Installierte Apps in der Übersicht durchsehen und starten

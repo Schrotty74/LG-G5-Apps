@@ -4,6 +4,14 @@
 
 A standalone homebrew launcher for a rooted LG G5 with webOS 25. It provides a TV-oriented interface with a customizable favorites dock and input shortcuts.
 
+## Screenshots
+
+Click an image to view it full size.
+
+<a href="screenshots/overview.jpg"><img src="screenshots/overview-thumb.jpg" alt="Overview" width="240"></a>
+<a href="screenshots/favorites.jpg"><img src="screenshots/favorites-thumb.jpg" alt="Favorites" width="240"></a>
+<a href="screenshots/inputs.jpg"><img src="screenshots/inputs-thumb.jpg" alt="Inputs" width="240"></a>
+
 ## Features
 
 - Browse installed apps and launch them from the overview
