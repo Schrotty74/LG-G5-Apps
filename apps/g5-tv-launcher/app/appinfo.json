@@ -1,11 +1,11 @@
 {
   "id": "org.schrotty74.g5launcher",
-  "version": "0.2.18",
+  "version": "0.2.19",
   "vendor": "Schrotty74",
   "type": "web",
   "main": "index.html",
   "title": "G5 TV Launcher",
-  "icon": "icon.svg",
-  "largeIcon": "icon.svg",
+  "icon": "icon.png",
+  "largeIcon": "largeIcon.png",
   "disableBackHistoryAPI": true
 }
