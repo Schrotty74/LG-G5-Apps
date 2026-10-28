@@ -26,3 +26,5 @@ The install service reports its progress in the terminal. After a successful ins
 ## Adding more apps
 
 Each additional app gets its own directory under `apps/<app-name>/`. Add it as a row in the table above, with links to its source, package, documentation, and continuation context.
+
+The repository keeps at most the three newest IPK versions per app.
