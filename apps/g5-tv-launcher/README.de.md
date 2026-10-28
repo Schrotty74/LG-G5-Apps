@@ -14,12 +14,16 @@ Zum Vergrößern auf ein Bild klicken.
 
 ## Funktionen
 
-- Installierte Apps in der Übersicht durchsehen und starten
-- Favoriten hinzufügen, entfernen und sortieren; App-Symbole mit oder ohne Namen anzeigen und für die Ansicht ohne Namen zwischen drei Größen wählen
-- Bedienung mit Steuerkreuz, Zeiger und Mausrad der Magic Remote
-- HDMI 1–4 und Live TV über den Reiter „Eingänge“ öffnen; HDMI-Namen aus den TV-Startpunkten übernehmen oder im Launcher selbst vergeben
-- Fünf illustrierte Hintergrundszenen; Uhr und Wetter optional anzeigen
-- Launcher-Einstellungen als JSON-Backup auf dem Fernseher speichern und wiederherstellen
+- Installierte Apps in der Übersicht durchsehen und starten; HDMI-Eingänge und Live TV haben eine eigene Seite „Eingänge“.
+- Favoriten in der Glas-Dockleiste hinzufügen, entfernen und sortieren. App-Symbole mit oder ohne Namen anzeigen und für die Ansicht ohne Namen zwischen drei Größen wählen.
+- Bedienung mit Steuerkreuz, Zeiger und Mausrad der Magic Remote.
+- HDMI 1–4 und Live TV öffnen. HDMI-Namen aus den Startpunkten des Fernsehers übernehmen oder selbst vergeben.
+- Zwischen fünf illustrierten Szenen wählen, die im Banner auf Übersicht, Favoriten und Eingängen angezeigt werden.
+- Uhr und Wetter getrennt ein- oder ausblenden und einen Wetterstandort wählen.
+- Übersicht, Favoriten oder Eingänge als Startseite wählen; die Auswahl gilt auch beim erneuten Öffnen.
+- Die Oberfläche zwischen Englisch und Deutsch umschalten; Englisch ist voreingestellt.
+- Die Home-Taste optional über Magic Mapper 1.1.2 diesem Launcher zuweisen und die vorherige Belegung wiederherstellen. [Voraussetzungen und Details](#optionale-home-tastenbelegung).
+- Launcher-Einstellungen, Favoriten und eigene Eingangsbezeichnungen als JSON-Backup auf dem Fernseher speichern und wiederherstellen.
 
 ## Downloads und Quellcode
 

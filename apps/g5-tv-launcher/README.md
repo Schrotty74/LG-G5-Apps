@@ -14,12 +14,16 @@ Click an image to view it full size.
 
 ## Features
 
-- Browse installed apps and launch them from the overview
-- Add, remove and reorder favorites; show app icons with or without names and choose from three icon sizes when names are hidden
-- Navigate using the Magic Remote directional controls, pointer and wheel
-- Open HDMI 1–4 and Live TV from the Inputs tab; HDMI labels can be read from TV launch points or customized in the launcher
-- Choose from five illustrated background scenes; optionally show the clock and weather
-- Save and restore launcher settings as a JSON backup on the TV
+- Browse and launch installed apps from Overview; HDMI inputs and Live TV have their own Inputs page.
+- Add, remove and reorder favorites in the glass-style dock. Show app icons with or without names and choose from three icon sizes when names are hidden.
+- Navigate using the Magic Remote directional controls, pointer and wheel.
+- Open HDMI 1–4 and Live TV. HDMI names can be read from the TV's launch points or customized.
+- Choose from five illustrated scenes, shown in the banner on Overview, Favorites and Inputs.
+- Show or hide the clock and weather independently, and choose a weather location.
+- Select Overview, Favorites or Inputs as the start page, including when reopening the launcher.
+- Switch the interface between English and German; English is the default.
+- Optionally assign the Home button to this launcher using Magic Mapper 1.1.2, and restore the previous mapping. [Requirements and details](#optional-home-button-mapping).
+- Save and restore launcher settings, favorites and custom input labels as a JSON backup on the TV.
 
 ## Downloads and source
 
