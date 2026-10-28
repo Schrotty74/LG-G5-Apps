@@ -61,3 +61,8 @@
 .scene.forest .feature-art{background-image:url('scenes/forest.svg')}
 .scene.midnight .feature-art{background-image:url('scenes/midnight.svg')}
 .live-tv-row{display:flex;justify-content:center;margin:14px auto 0;width:min(88vw,1200px)}.live-tv-row .input-card{width:min(100%,290px)}
+/* Raum für Fokus- und Hover-Rahmen innerhalb der scrollbaren Navigation. */
+.tabs{padding:8px;gap:14px;justify-content:flex-start;scroll-padding:8px}.tab{flex:0 0 auto}
+/* Alle Eingänge gemeinsam in einer zentrierten Reihe. */
+.input-row{grid-template-columns:repeat(5,minmax(0,1fr));width:100%;max-width:1500px;gap:clamp(6px,0.8vw,14px);margin:7vh auto 0}
+.input-card{min-width:0;padding:12px;gap:10px}.input-card>span:nth-child(2){min-width:0;overflow:hidden}.input-card b,.input-card small{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.input-card .chevron{flex:none}

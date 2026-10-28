@@ -1,4 +1,4 @@
-# G5 TV Launcher 0.2.19
+# G5 TV Launcher 0.2.21
 
 [English](README.md) · [Deutsch](README.de.md)
 
@@ -15,8 +15,8 @@ Ein eigenständiger Homebrew-Launcher für einen gerooteten LG G5 mit webOS 25. 
 
 ## Downloads und Quellcode
 
-- [IPK 0.2.19 herunterladen](g5-tv-launcher_0.2.19_all.ipk)
-- [Quellcode-ZIP herunterladen](g5-tv-launcher-source_0.2.19.zip)
+- [IPK 0.2.21 herunterladen](g5-tv-launcher_0.2.21_all.ipk)
+- [Quellcode-ZIP herunterladen](g5-tv-launcher-source_0.2.21.zip)
 - [Vollständiger App-Quellcode](app/)
 - [Entwicklungsnotizen (English)](DEVELOPMENT.md)
 
@@ -25,7 +25,7 @@ Ein eigenständiger Homebrew-Launcher für einen gerooteten LG G5 mit webOS 25. 
 Voraussetzungen sind ein gerooteter Fernseher und ein funktionierender Homebrew-Channel-Dienst. Die IPK per SFTP nach `/tmp` übertragen und dann per SSH installieren:
 
 ```sh
-luna-send-pub -i 'luna://com.webos.appInstallService/dev/install' '{"id":"com.ares.defaultName","ipkUrl":"/tmp/g5-tv-launcher_0.2.19_all.ipk","subscribe":true}'
+luna-send-pub -i 'luna://com.webos.appInstallService/dev/install' '{"id":"com.ares.defaultName","ipkUrl":"/tmp/g5-tv-launcher_0.2.21_all.ipk","subscribe":true}'
 ```
 
 Alternativ kann die IPK über Glasshouse hochgeladen werden. Die App-ID lautet `org.schrotty74.g5launcher`.
@@ -42,4 +42,4 @@ Python 3 installieren, das Terminal in diesem App-Ordner öffnen und ausführen:
 python3 build.py
 ```
 
-Das Paket liegt danach unter `dist/g5-tv-launcher_0.2.19_all.ipk`. Mit `python3 build.py --output /pfad/zum/ausgabeordner` lässt sich ein anderer Ausgabeordner wählen. Das Skript nutzt nur die Python-Standardbibliothek und benötigt keinen festen Pfad auf dem Computer.
+Das Paket liegt danach unter `dist/g5-tv-launcher_0.2.21_all.ipk`. Mit `python3 build.py --output /pfad/zum/ausgabeordner` lässt sich ein anderer Ausgabeordner wählen. Das Skript nutzt nur die Python-Standardbibliothek und benötigt keinen festen Pfad auf dem Computer.
