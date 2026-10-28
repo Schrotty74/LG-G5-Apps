@@ -78,3 +78,25 @@
 .scene.view-apps .favorites-heading{justify-content:flex-end}
 .scene.view-apps .favorites-heading>div,.scene.view-inputs .inputs-area>.section-title>div,.scene.view-inputs .input-note{display:none}
 .scene.view-inputs .inputs-area>.section-title{justify-content:flex-end}
+
+.app-search{width:150px;padding:8px;border:1px solid #ffffff55;border-radius:10px;background:#152a50;color:white}.quick-select{display:block;width:100%;margin:8px 0;padding:10px;border:1px solid #ffffff55;border-radius:10px;background:#111a2d;color:white}.motion-subtle .app-card{transition:transform .16s ease}.motion-subtle .app-card:focus,.motion-subtle .app-card:hover{transform:scale(1.04)}@keyframes g5appear{from{opacity:.65}to{opacity:1}}.scene.view-apps .favorite-showcase.gap-medium{gap:18px}.scene.view-apps .favorite-showcase.gap-large{gap:26px}.scene.view-apps .favorite-showcase.opacity-clear{background:rgba(40,65,100,.42)}.scene.view-apps .favorite-showcase.opacity-solid{background:rgba(30,48,78,.96)}.scene.view-apps.dock-lower .apps-area{transform:translateY(7vh)}
+
+/* Leave room for the focus ring and the focused card's scale in horizontal rails. */
+.app-strip{padding:16px 16px 18px;scroll-padding:16px;min-height:128px}
+.scene.view-apps .favorite-showcase{padding:18px 22px;scroll-padding:22px}
+.motion-subtle.view-transition .feature,.motion-subtle.view-transition .apps-area,.motion-subtle.view-transition .inputs-area,.motion-subtle.view-transition .library-area{animation:g5-page-in .42s ease-out both}
+@keyframes g5-page-in{from{opacity:.3;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.motion-subtle.view-apps.view-transition.dock-lower .apps-area{animation-name:g5-dock-lower-in}
+@keyframes g5-dock-lower-in{from{opacity:.3;transform:translateY(calc(7vh + 12px))}to{opacity:1;transform:translateY(7vh)}}
+.motion-subtle .showcase-app:focus,.motion-subtle .showcase-app:hover{transform:scale(1.12);z-index:4}
+.motion-subtle .app-card:active{transform:scale(.97)}
+
+/* Dock magnification follows Magic Remote pointer and keyboard focus. */
+.scene.view-apps .favorite-showcase{padding:24px 28px;overflow-y:hidden}
+.scene.view-apps .favorite-showcase .showcase-app{transition:transform .2s ease-out;transform-origin:center center}
+.scene.motion-subtle.view-apps .favorite-showcase .showcase-app:hover,.scene.motion-subtle.view-apps .favorite-showcase .showcase-app:focus{transform:scale(1.25);z-index:5}
+
+/* The selected dock spacing takes precedence for every icon size and label mode. */
+.scene.view-apps .favorite-showcase.gap-small,.scene.view-apps .favorite-showcase.icons-only.gap-small{gap:10px}
+.scene.view-apps .favorite-showcase.gap-medium,.scene.view-apps .favorite-showcase.icons-only.gap-medium{gap:20px}
+.scene.view-apps .favorite-showcase.gap-large,.scene.view-apps .favorite-showcase.icons-only.gap-large{gap:32px}

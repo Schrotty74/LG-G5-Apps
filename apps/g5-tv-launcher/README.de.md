@@ -1,4 +1,4 @@
-# G5 TV Launcher 0.2.28
+# G5 TV Launcher 0.2.32
 
 [English](README.md) · [Deutsch](README.de.md)
 
@@ -25,10 +25,17 @@ Zum Vergrößern auf ein Bild klicken.
 - Die Home-Taste optional über Magic Mapper 1.1.2 diesem Launcher zuweisen und die vorherige Belegung wiederherstellen. [Voraussetzungen und Details](#optionale-home-tastenbelegung).
 - Launcher-Einstellungen, Favoriten und eigene Eingangsbezeichnungen als JSON-Backup auf dem Fernseher speichern und wiederherstellen.
 
+- Installierte Apps nach Namen suchen.
+- Die drei Schnellzugriffe in der Übersicht mit Apps, HDMI-Eingängen oder den TV-Einstellungen belegen.
+- Hintergründe bei jedem Öffnen oder abhängig von der Tageszeit wechseln lassen.
+- Dezente Seitenübergänge und die Vergrößerung des ausgewählten Favoritensymbols ein- oder ausschalten.
+- Abstand, Transparenz und vertikale Position der Favoritenleiste anpassen.
+- Manuell auf GitHub nach einer neueren Version suchen; Updates werden nicht automatisch installiert.
+
 ## Downloads und Quellcode
 
-- [IPK 0.2.28 herunterladen](g5-tv-launcher_0.2.28_all.ipk)
-- [Quellcode-ZIP herunterladen](g5-tv-launcher-source_0.2.28.zip)
+- [IPK 0.2.32 herunterladen](g5-tv-launcher_0.2.32_all.ipk)
+- [Quellcode-ZIP herunterladen](g5-tv-launcher-source_0.2.32.zip)
 - [Vollständiger App-Quellcode](app/)
 - [Entwicklungsnotizen (English)](DEVELOPMENT.md)
 - [Changelog (English)](CHANGELOG.md)
@@ -38,7 +45,7 @@ Zum Vergrößern auf ein Bild klicken.
 Voraussetzungen sind ein gerooteter Fernseher und ein funktionierender Homebrew-Channel-Dienst. Die IPK per SFTP nach `/tmp` übertragen und dann per SSH installieren:
 
 ```sh
-luna-send-pub -i 'luna://com.webos.appInstallService/dev/install' '{"id":"com.ares.defaultName","ipkUrl":"/tmp/g5-tv-launcher_0.2.28_all.ipk","subscribe":true}'
+luna-send-pub -i 'luna://com.webos.appInstallService/dev/install' '{"id":"com.ares.defaultName","ipkUrl":"/tmp/g5-tv-launcher_0.2.32_all.ipk","subscribe":true}'
 ```
 
 Alternativ kann die IPK über Glasshouse hochgeladen werden. Die App-ID lautet `org.schrotty74.g5launcher`.
@@ -55,7 +62,7 @@ Python 3 installieren, das Terminal in diesem App-Ordner öffnen und ausführen:
 python3 build.py
 ```
 
-Das Paket liegt danach unter `dist/g5-tv-launcher_0.2.28_all.ipk`. Mit `python3 build.py --output /pfad/zum/ausgabeordner` lässt sich ein anderer Ausgabeordner wählen. Das Skript nutzt nur die Python-Standardbibliothek und benötigt keinen festen Pfad auf dem Computer.
+Das Paket liegt danach unter `dist/g5-tv-launcher_0.2.32_all.ipk`. Mit `python3 build.py --output /pfad/zum/ausgabeordner` lässt sich ein anderer Ausgabeordner wählen. Das Skript nutzt nur die Python-Standardbibliothek und benötigt keinen festen Pfad auf dem Computer.
 
 ## Optionale Home-Tastenbelegung
 

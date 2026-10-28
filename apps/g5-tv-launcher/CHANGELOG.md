@@ -2,6 +2,24 @@
 
 Changes to G5 TV Launcher. Versions refer to the app package; older entries describe development builds and are not a promise of compatibility with every TV.
 
+## 0.2.32
+- Fix dock spacing settings so Small, Medium and Large take precedence regardless of icon size or label visibility.
+
+## 0.2.31
+- Add optional macOS-inspired magnification of the favorite icon under the pointer or selected with directional controls.
+- Keep the effect controlled by the Animations setting and provide space around the dock.
+
+## 0.2.30
+- Restart the page transition on each navigation and make the favorite focus effect more noticeable when animations are enabled.
+- Add room around the overview app rail so selection outlines are less likely to be clipped.
+
+## 0.2.29
+- Add app search and customizable Overview shortcuts for apps, inputs and TV settings.
+- Add fixed, per-launch random and time-of-day background modes.
+- Add optional page and focus animations, dock spacing, transparency and position settings.
+- Add a manual GitHub version check; updates are not installed automatically.
+- Include the new preferences in settings backup and restore.
+
 ## 0.2.28
 - Add English and German throughout the launcher, including navigation, settings, buttons and messages. English is the default.
 - Add a language selector; save the selection on the TV and include it in settings backups. App names and custom input labels remain as supplied by the TV or user.

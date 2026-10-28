@@ -1,4 +1,4 @@
-# G5 TV Launcher 0.2.28
+# G5 TV Launcher 0.2.32
 
 [English](README.md) · [Deutsch](README.de.md)
 
@@ -25,10 +25,17 @@ Click an image to view it full size.
 - Optionally assign the Home button to this launcher using Magic Mapper 1.1.2, and restore the previous mapping. [Requirements and details](#optional-home-button-mapping).
 - Save and restore launcher settings, favorites and custom input labels as a JSON backup on the TV.
 
+- Search installed apps by name.
+- Customize the three Overview shortcuts with apps, HDMI inputs or TV settings.
+- Rotate backgrounds on each launch or according to the time of day.
+- Enable or disable subtle page transitions and magnification of the focused favorite icon.
+- Adjust favorite dock spacing, transparency and vertical position.
+- Manually check the GitHub source for a newer version; the launcher does not install updates automatically.
+
 ## Downloads and source
 
-- [Download IPK 0.2.28](g5-tv-launcher_0.2.28_all.ipk)
-- [Download source ZIP](g5-tv-launcher-source_0.2.28.zip)
+- [Download IPK 0.2.32](g5-tv-launcher_0.2.32_all.ipk)
+- [Download source ZIP](g5-tv-launcher-source_0.2.32.zip)
 - [Complete app source](app/)
 - [Development notes](DEVELOPMENT.md)
 - [Changelog](CHANGELOG.md)
@@ -38,7 +45,7 @@ Click an image to view it full size.
 A rooted TV and a working Homebrew Channel service are required. Transfer the IPK to `/tmp` using SFTP, then install it via SSH:
 
 ```sh
-luna-send-pub -i 'luna://com.webos.appInstallService/dev/install' '{"id":"com.ares.defaultName","ipkUrl":"/tmp/g5-tv-launcher_0.2.28_all.ipk","subscribe":true}'
+luna-send-pub -i 'luna://com.webos.appInstallService/dev/install' '{"id":"com.ares.defaultName","ipkUrl":"/tmp/g5-tv-launcher_0.2.32_all.ipk","subscribe":true}'
 ```
 
 Glasshouse's IPK upload can also be used. The app ID is `org.schrotty74.g5launcher`.
@@ -55,7 +62,7 @@ Install Python 3, open Terminal in this app directory, and run:
 python3 build.py
 ```
 
-The script writes `dist/g5-tv-launcher_0.2.28_all.ipk`. Use `python3 build.py --output /path/to/output` to choose another output directory. It uses only Python's standard library; no absolute path to the developer's computer is needed.
+The script writes `dist/g5-tv-launcher_0.2.32_all.ipk`. Use `python3 build.py --output /path/to/output` to choose another output directory. It uses only Python's standard library; no absolute path to the developer's computer is needed.
 
 ## Optional Home button mapping
 
