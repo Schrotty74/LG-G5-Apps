@@ -19,6 +19,7 @@ Ein eigenständiger Homebrew-Launcher für einen gerooteten LG G5 mit webOS 25. 
 - [Quellcode-ZIP herunterladen](g5-tv-launcher-source_0.2.21.zip)
 - [Vollständiger App-Quellcode](app/)
 - [Entwicklungsnotizen (English)](DEVELOPMENT.md)
+- [Changelog (English)](CHANGELOG.md)
 
 ## Installation
 
