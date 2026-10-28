@@ -149,3 +149,37 @@
 @keyframes g5-raindrops{0%,100%{opacity:.65;transform:translateY(-2px)}50%{opacity:1;transform:translateY(2px)}}
 
 #weather-location{max-width:300px;width:55%;min-width:0}
+
+/* Halloween: warm moonlight and a darker, purple autumn palette. */
+.scene.halloween{--accent:#ffbf7a;--glow:#bd4e68}
+.scene.halloween:before{background:linear-gradient(120deg,#130b25,#3a1743 48%,#704044)}
+.scene.halloween .feature-art{background-image:url('scenes/halloween.svg')}
+
+.scene.christmas{--accent:#a7e5f8;--glow:#5399bd}
+.scene.christmas:before{background:linear-gradient(120deg,#071629,#153757 48%,#285770)}
+.scene.christmas .feature-art{background-image:url('scenes/christmas.svg')}
+
+/* Decorative seasonal effects do not intercept the remote pointer. */
+.season-effects{position:absolute;inset:0;z-index:3;overflow:hidden;pointer-events:none}
+.halloween-spider{position:absolute;left:50%;top:-210px;width:48px;height:258px;display:none;will-change:transform}
+.spider-thread{height:210px;width:1px;margin:0 auto;background:#e5d5dc}
+.spider-body{width:48px;height:48px;display:block;filter:drop-shadow(0 1px 2px #fff8)}
+.scene.halloween.motion-subtle .halloween-spider.spider-active{display:block;animation:g5-spider-drop 8s ease-in-out both}
+@keyframes g5-spider-drop{0%{transform:translateY(0)}38%{transform:translateY(210px)}62%{transform:translateY(210px)}100%{transform:translateY(0)}}
+.snow-layer{position:absolute;inset:0;display:none;overflow:hidden}
+.scene.christmas.motion-subtle .snow-layer{display:block}
+.snowflake{position:absolute;top:-18px;width:6px;height:6px;border-radius:50%;background:#fff;opacity:.8;animation:g5-snow-fall 14s linear infinite}
+.snowflake:nth-child(3n){width:4px;height:4px;opacity:.6;animation-duration:19s}.snowflake:nth-child(4n){width:8px;height:8px;opacity:.75;animation-duration:17s}
+.snowflake:nth-child(1){left:4%;animation-delay:-2s}.snowflake:nth-child(2){left:11%;animation-delay:-10s}.snowflake:nth-child(3){left:18%;animation-delay:-5s}.snowflake:nth-child(4){left:25%;animation-delay:-14s}.snowflake:nth-child(5){left:32%;animation-delay:-7s}.snowflake:nth-child(6){left:39%;animation-delay:-16s}.snowflake:nth-child(7){left:46%;animation-delay:-3s}.snowflake:nth-child(8){left:53%;animation-delay:-12s}.snowflake:nth-child(9){left:60%;animation-delay:-8s}.snowflake:nth-child(10){left:67%;animation-delay:-1s}.snowflake:nth-child(11){left:74%;animation-delay:-15s}.snowflake:nth-child(12){left:81%;animation-delay:-6s}.snowflake:nth-child(13){left:88%;animation-delay:-11s}.snowflake:nth-child(14){left:95%;animation-delay:-4s}
+@keyframes g5-snow-fall{0%{transform:translate3d(0,-20px,0)}50%{transform:translate3d(22px,50vh,0)}100%{transform:translate3d(-12px,105vh,0)}}
+
+/* Windows share the illustration's viewBox, keeping them aligned at every screen size. */
+.scene.halloween .feature-art:before{content:"";position:absolute;inset:0;background-image:url('scenes/halloween-windows.svg');background-position:center;background-size:cover;background-repeat:no-repeat;opacity:.8;pointer-events:none}
+.scene.halloween.motion-subtle .feature-art:before{animation:g5-window-flicker 4s linear infinite}
+@keyframes g5-window-flicker{0%,29%,36%,58%,65%,100%{opacity:.85}31%,34%,60%,63%{opacity:.23}32%,62%{opacity:.68}}
+
+/* Pumpkin face remains lit when animation is disabled. */
+.pumpkin-light{display:none;position:absolute;inset:0;pointer-events:none;background-image:url('scenes/halloween-pumpkin-light.svg');background-position:center;background-size:cover;background-repeat:no-repeat;opacity:.95}
+.scene.halloween .pumpkin-light{display:block}
+.scene.halloween.motion-subtle .pumpkin-light{animation:g5-pumpkin-flicker 3.6s linear infinite}
+@keyframes g5-pumpkin-flicker{0%,18%,25%,48%,55%,100%{opacity:.95}20%,23%,50%,53%{opacity:.22}21%,52%{opacity:.7}}

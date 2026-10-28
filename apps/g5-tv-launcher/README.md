@@ -1,4 +1,4 @@
-# G5 TV Launcher 0.2.39
+# G5 TV Launcher 0.2.44
 
 [English](README.md) · [Deutsch](README.de.md)
 
@@ -18,7 +18,8 @@ Click an image to view it full size.
 - Add, remove and reorder favorites in the glass-style dock. Show app icons with or without names and choose from three icon sizes when names are hidden.
 - Navigate using the Magic Remote directional controls, pointer and wheel.
 - Open HDMI 1–4 and Live TV. HDMI names can be read from the TV's launch points or customized.
-- Choose from five illustrated scenes, shown in the banner on Overview, Favorites and Inputs.
+- Choose from seven illustrated scenes, shown in the banner on Overview, Favorites and Inputs. Halloween and Christmas are grouped under Special themes.
+- With animations enabled, Halloween features a spider descending at changing positions, flickering house windows and a glowing pumpkin face. Christmas features falling snow; the effects can be switched off with animations.
 - Show or hide the clock and weather independently, and choose a weather location.
 - Select Overview, Favorites or Inputs as the start page, including when reopening the launcher.
 - Switch the interface between English and German; English is the default.
@@ -39,8 +40,8 @@ Click an image to view it full size.
 
 ## Downloads and source
 
-- [Download IPK 0.2.39](g5-tv-launcher_0.2.39_all.ipk)
-- [Download source ZIP](g5-tv-launcher-source_0.2.39.zip)
+- [Download IPK 0.2.44](g5-tv-launcher_0.2.44_all.ipk)
+- [Download source ZIP](g5-tv-launcher-source_0.2.44.zip)
 - [Complete app source](app/)
 - [Development notes](DEVELOPMENT.md)
 - [Project status and continuation notes (German)](PROJECT_STATUS.md)
@@ -51,7 +52,7 @@ Click an image to view it full size.
 A rooted TV and a working Homebrew Channel service are required. Transfer the IPK to `/tmp` using SFTP, then install it via SSH:
 
 ```sh
-luna-send-pub -i 'luna://com.webos.appInstallService/dev/install' '{"id":"com.ares.defaultName","ipkUrl":"/tmp/g5-tv-launcher_0.2.39_all.ipk","subscribe":true}'
+luna-send-pub -i 'luna://com.webos.appInstallService/dev/install' '{"id":"com.ares.defaultName","ipkUrl":"/tmp/g5-tv-launcher_0.2.44_all.ipk","subscribe":true}'
 ```
 
 Glasshouse's IPK upload can also be used. The app ID is `org.schrotty74.g5launcher`.
@@ -68,7 +69,7 @@ Install Python 3, open Terminal in this app directory, and run:
 python3 build.py
 ```
 
-The script writes `dist/g5-tv-launcher_0.2.39_all.ipk`. Use `python3 build.py --output /path/to/output` to choose another output directory. It uses only Python's standard library; no absolute path to the developer's computer is needed.
+The script writes `dist/g5-tv-launcher_0.2.44_all.ipk`. Use `python3 build.py --output /path/to/output` to choose another output directory. It uses only Python's standard library; no absolute path to the developer's computer is needed.
 
 ## Optional Home button mapping
 

@@ -1,5 +1,8 @@
 (function(){
   var en={
+  "Standard-Themes": "Standard themes",
+  "Spezial-Themes": "Special themes",
+  "Weihnachten": "Christmas",
   "Gefundener Ort": "Matched location",
   "Prüfe Ort, Region und Land und wähle bei Bedarf einen anderen Treffer.": "Check the city, region and country and choose another result if needed.",
   "Ort wird gesucht …": "Searching for a location …",
@@ -223,7 +226,7 @@
 };
   var nodes=[],attrs=[];
   function t(value,lang){if(typeof value!=="string")return value;return lang==="de"?value:(en[value]||value);}
-  function capture(){nodes=[];attrs=[];var walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT,null,false),node;while((node=walker.nextNode())){var original=node.nodeValue,trimmed=original.trim();if(Object.prototype.hasOwnProperty.call(en,trimmed))nodes.push({node:node,value:original,key:trimmed});}document.querySelectorAll("[aria-label],[placeholder]").forEach(function(el){["aria-label","placeholder"].forEach(function(name){var value=el.getAttribute(name);if(value&&Object.prototype.hasOwnProperty.call(en,value))attrs.push({el:el,name:name,value:value});});});}
+  function capture(){nodes=[];attrs=[];var walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT,null,false),node;while((node=walker.nextNode())){var original=node.nodeValue,trimmed=original.trim();if(Object.prototype.hasOwnProperty.call(en,trimmed))nodes.push({node:node,value:original,key:trimmed});}document.querySelectorAll("[aria-label],[placeholder],optgroup[label]").forEach(function(el){["aria-label","placeholder","label"].forEach(function(name){var value=el.getAttribute(name);if(value&&Object.prototype.hasOwnProperty.call(en,value))attrs.push({el:el,name:name,value:value});});});}
   function apply(lang){document.documentElement.lang=lang;nodes.forEach(function(item){if(!document.body.contains(item.node))return;var translated=t(item.key,lang);item.node.nodeValue=item.value.replace(item.key,translated);});attrs.forEach(function(item){if(document.body.contains(item.el))item.el.setAttribute(item.name,t(item.value,lang));});}
   window.G5I18N={capture:capture,apply:apply,t:t};
 })();

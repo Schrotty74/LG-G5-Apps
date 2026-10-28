@@ -9,7 +9,7 @@ import tarfile
 
 ROOT = Path(__file__).resolve().parent
 APP = ROOT / 'app'
-VERSION = '0.2.39'
+VERSION = '0.2.44'
 APP_ID = 'org.schrotty74.g5launcher'
 
 def tar_bytes(entries):

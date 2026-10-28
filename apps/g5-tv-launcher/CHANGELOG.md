@@ -2,6 +2,12 @@
 
 Entries describe versions published in this repository. Each entry includes the relevant changes since the previous published version; intermediate test builds are grouped into the next published version.
 
+## 0.2.44
+
+- Add Halloween and Christmas themes, grouped separately from the standard backgrounds.
+- Add optional seasonal animations: a descending spider at changing positions, flickering Halloween house windows and pumpkin face, and falling snow for Christmas. The effects follow the existing animation setting.
+- Include the new themes in background selection, random rotation and settings backup/restore validation.
+
 ## 0.2.39
 
 - Add independent clock and weather sizes and configurable weather refresh intervals of 15 minutes, one hour, 12 hours or 24 hours. Include these settings in backups.

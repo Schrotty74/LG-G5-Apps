@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="480" viewBox="0 0 1600 480">
+ <defs>
+  <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#160d36"/><stop offset=".58" stop-color="#4f1c58"/><stop offset="1" stop-color="#c5633e"/></linearGradient>
+  <radialGradient id="moonlight"><stop stop-color="#ffce8c" stop-opacity=".7"/><stop offset="1" stop-color="#ff9b58" stop-opacity="0"/></radialGradient>
+  <linearGradient id="ground" x2="0" y2="1"><stop stop-color="#23132f"/><stop offset="1" stop-color="#090b1c"/></linearGradient>
+  <linearGradient id="pumpkin" x2="0" y2="1"><stop stop-color="#ff9a31"/><stop offset="1" stop-color="#b83916"/></linearGradient>
+ </defs>
+ <path fill="url(#sky)" d="M0 0h1600v480H0z"/><circle cx="1210" cy="115" r="180" fill="url(#moonlight)"/><circle cx="1210" cy="115" r="71" fill="#ffe0a7"/>
+ <g fill="#ffe3b0" opacity=".7"><circle cx="695" cy="60" r="2"/><circle cx="840" cy="125" r="2"/><circle cx="953" cy="46" r="3"/><circle cx="1030" cy="152" r="2"/><circle cx="1390" cy="65" r="2"/><circle cx="1490" cy="150" r="3"/></g>
+ <g fill="#21102e"><path d="M755 101q14-20 28 0 14-20 28 0-14-8-28 5-14-13-28-5z"/><path d="M985 70q10-15 20 0 10-15 20 0-10-5-20 4-10-9-20-4z"/><path d="M1370 205q12-18 24 0 12-18 24 0-12-6-24 5-12-11-24-5z"/></g>
+ <path fill="#321833" d="M0 362Q190 300 385 353T750 340T1100 344T1600 316V480H0z"/><path fill="url(#ground)" d="M0 410Q260 345 480 402T970 380T1600 360V480H0z"/>
+ <g fill="#130f22"><path d="M1435 375l11-206-29-55 39 36 12-69 10 78 39-42-29 66 14 190z"/><path d="M1408 130l38 42-4 14-48-42zM1498 201l44-46-30 59z"/><path d="M980 372v-111h120v111z"/><path d="M957 264l83-74 83 74z"/><path d="M1010 222v-35h24v16z"/><path d="M947 374h172v8H947z"/></g>
+ 
+ <g transform="translate(1265 332)"><path d="M63 28q-6-18 9-27h13q-11 10-6 27z" fill="#5a7041"/><ellipse cx="72" cy="74" rx="68" ry="53" fill="url(#pumpkin)"/><ellipse cx="72" cy="74" rx="42" ry="51" fill="none" stroke="#973c21" stroke-width="3" opacity=".55"/></g>
+ <g fill="#120d1d"><path d="M1168 410l11-57 5 57zM1155 410l-15-35 5 35zM1520 406l18-45-7 45zM1537 407l22-27-13 27z"/></g>
+</svg>
