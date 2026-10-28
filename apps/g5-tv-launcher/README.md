@@ -61,7 +61,7 @@ The script writes `dist/g5-tv-launcher_0.2.28_all.ipk`. Use `python3 build.py --
 
 The optional Home button mapping requires [Magic Mapper for webOS 1.1.2](https://github.com/afonsojramos/magic-mapper-webos/releases/tag/v1.1.2) to be installed, active and configured to start on the TV. This launcher integration checks for version 1.1.2. See the [Magic Mapper project and Homebrew installation instructions](https://github.com/afonsojramos/magic-mapper-webos#installing-from-homebrew-channel).
 
-In Settings, explicitly assign Home to this launcher. The previous Home mapping is saved locally and can be restored from the same screen; other button mappings are retained. Restore the previous mapping before uninstalling the launcher. Glasshouse Home or other Home remappers may interfere. This option does not install Magic Mapper or change its startup hook.
+In the launcher's Settings, explicitly assign Home to this launcher. You do not need to configure the Home button manually in Magic Mapper first; the launcher applies the mapping through Magic Mapper. The previous Home mapping is saved locally and can be restored from the same screen; other button mappings are retained. Restore the previous mapping before uninstalling the launcher. Glasshouse Home or other Home remappers may interfere. This option does not install Magic Mapper or change its startup hook.
 
 The launch view can be set to Overview, Favorites or Inputs and also applies when the launcher is reopened. The selected illustrated scene is shown in the banner on all three pages.
 
