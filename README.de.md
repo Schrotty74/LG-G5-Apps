@@ -27,4 +27,4 @@ Der Installationsdienst zeigt den Fortschritt im Terminal an. Nach erfolgreicher
 
 Jede neue App erhält ein eigenes Verzeichnis unter `apps/<app-name>/`. Ergänze sie anschließend als neue Tabellenzeile mit Links zum Quellcode, Paket, zur Dokumentation und zum Arbeitskontext.
 
-Im Repository bleiben pro App die drei neuesten veröffentlichten IPKs und Quellcode-ZIPs verfügbar. Der Entwicklungsstand des Launchers ist zusätzlich als Test-IPK und Quellcode-ZIP erhältlich.
+Im Repository bleiben pro App die drei neuesten IPK-Pakete und die zugehörigen Quellcode-ZIPs verfügbar, einschließlich Testversionen.

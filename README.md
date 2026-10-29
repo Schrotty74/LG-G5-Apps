@@ -27,4 +27,4 @@ The install service reports its progress in the terminal. After a successful ins
 
 Each additional app gets its own directory under `apps/<app-name>/`. Add it as a row in the table above, with links to its source, package, documentation, and continuation context.
 
-The repository retains the three newest released IPKs and source ZIPs per app. The launcher development snapshot is available separately as a test IPK and source ZIP.
+The repository retains the three newest IPK packages and the corresponding source ZIPs per app, including test versions.
