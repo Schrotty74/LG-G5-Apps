@@ -14,6 +14,14 @@ Diese Datei hält den technischen Stand und die Entscheidungen fest, damit spät
 - Fernbedienungsnavigation, Zurück-/Beenden-Schaltfläche und Mausrad-Scrollen sind enthalten.
 - Es gibt kein Temperaturfeld. Am G5 waren über `/sys/class/thermal` und `/sys/class/hwmon` keine nutzbaren Sensorwerte auffindbar; die geprüfte `dmesg`-Ausgabe lieferte ebenfalls keinen Temperaturwert.
 
+## Übergabe und Quellcode-Zwischenstände
+
+- Letzter auf GitHub dokumentierter Paketstand: 0.9.3. Die tatsächlichen Gerätetests und offenen Beobachtungen stehen unten; lokale Prüfungen ersetzen keinen TV-Test.
+- Nach jeder lokalen Testversion ein separat benanntes Quellcode-ZIP erstellen und im [Zwischenstandsordner](zwischenstaende/) auf GitHub sichern. Vor dem Upload Inhalt und Metadaten auf private Daten, Zugangsdaten und persönliche Pfade prüfen.
+- Im Zwischenstandsordner nur die drei neuesten Quellcode-ZIPs behalten. Ältere Zwischenstände erst nach erfolgreicher Sicherung des neuen Stands entfernen. Reguläre IPKs und Quellcode-ZIPs zählen getrennt.
+- Test-IPKs bleiben lokal, bis ihr Upload ausdrücklich beauftragt wird. Lokale Testversionen zählen in der letzten Versionsstelle fortlaufend; beim ausdrücklich beauftragten GitHub-Upload wird die Versionsnummer für diesen Stand festgelegt.
+- Nach wichtigen Schritten kurz festhalten, welche Testversion und Änderungen vorliegen, was tatsächlich geprüft wurde und was offen ist. Die Markdown-Datei beschreibt den Stand; sie ersetzt keine Sicherung des Quellcodes.
+
 ## Aufbau und Datenquellen
 
 - `app/index.html`: Dashboard-Kacheln, Diagramme, Prozessliste und Aktionsschaltflächen.
