@@ -1,0 +1,15 @@
+{
+  "id": "org.schrotty74.g5systemmonitor",
+  "version": "0.9.2",
+  "type": "web",
+  "title": "G5 System Monitor",
+  "appDescription": "Read-only system monitor for rooted LG G5 TVs.",
+  "iconUri": "https://raw.githubusercontent.com/Schrotty74/LG-G5-Apps/main/apps/system-monitor/app/icon.png",
+  "sourceUrl": "https://github.com/Schrotty74/LG-G5-Apps",
+  "rootRequired": true,
+  "ipkUrl": "https://raw.githubusercontent.com/Schrotty74/LG-G5-Apps/main/apps/system-monitor/g5-system-monitor_0.9.2_all.ipk",
+  "ipkHash": {
+    "sha256": "c14bb2d852e987e005b40bb1f4217e913d461b6baa461894ba1b7c992f8af1ef"
+  },
+  "ipkSize": 12004
+}
