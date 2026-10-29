@@ -1,6 +1,6 @@
 # Direct Home takeover — test build
 
-This is a local test build based on G5 TV Launcher 0.2.50. This is a development snapshot, not a new release. Installing the IPK does not enable Home takeover or alter startup/key mappings.
+This is G5 TV Launcher test version 0.2.60, based on the earlier 0.2.50 release. Installing the IPK does not enable Home takeover or alter startup/key mappings.
 
 ## Using the test
 
@@ -49,4 +49,4 @@ Always restore LG Home before uninstalling or upgrading this test build. The dir
 
 The approach was studied in Glasshouse's [home-takeover.js](https://github.com/rorygallagher2024/glasshouse/blob/main/server/lib/home-takeover.js), [samrescan.js](https://github.com/rorygallagher2024/glasshouse/blob/main/server/lib/samrescan.js) and [home.js](https://github.com/rorygallagher2024/glasshouse/blob/main/server/lib/home.js). Our implementation is independent and does not depend on Glasshouse's server or copy its source modules.
 
-Build with `python3 build.py`. Run the host-side tests with `python3 test_home_mode.py`. Build outputs keep the existing version for this unpublished test; use the clearly labelled test file rather than confusing it with the published 0.2.50 package.
+Build with `python3 build.py`. Run the host-side tests with `python3 test_home_mode.py`. The test package uses version 0.2.60 and is separate from the published 0.2.50 package.

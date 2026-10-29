@@ -4,14 +4,14 @@ Diese Datei hält den Stand und wichtige Entscheidungen für spätere Weiterentw
 
 ## Aktueller Stand
 
-- **Entwicklungsstand nach 0.2.50:** Direct Home Takeover, Wettersymbol-Sets Meteocons und Makin’ Things sowie GeoSphere Austria über Open-Meteo. Das getrennte [Testpaket](g5-launcher-direct-home-wetter-test.ipk) enthält diesen Stand; die veröffentlichte IPK 0.2.50 bleibt unverändert.
+- **Testversion 0.2.60 nach 0.2.50:** Direct Home Takeover, Wettersymbol-Sets Meteocons und Makin’ Things sowie GeoSphere Austria über Open-Meteo. Das getrennte [Testpaket](g5-tv-launcher_0.2.60_all.ipk) enthält diesen Stand; die veröffentlichte IPK 0.2.50 bleibt unverändert.
 - Direct Home und der Wechsel der Wettersymbol-Sets wurden auf dem Fernseher ausprobiert. Start nach kurzem Ausschalten funktionierte; der Test nach mehreren Stunden Standby steht aus. Die bisherige Home-Methode bleibt als Rückfalllösung erhalten. Die Ursache eines früheren Absturzes ist ungeklärt; derzeit tritt er laut Nutzer nicht mehr auf.
 - Wettersymbol-Animationen und der aktualisierte Wetterdienst wurden nicht umfassend auf dem Fernseher geprüft.
 
 - Autostart ist optional: Der Nutzer hat das korrigierte Paket auf seinem Fernseher erfolgreich getestet, einschließlich Start aus tiefem Standby. Vor der Deinstallation Autostart ausschalten.
 - IPK-Bauvorgaben für beide Apps und künftige Apps: [IPK_PACKAGING.md](../../IPK_PACKAGING.md).
 
-- Version: **0.2.50**; App-ID: `org.schrotty74.g5launcher`.
+- Version: **0.2.60**; App-ID: `org.schrotty74.g5launcher`.
 - Eigenständiger Homebrew-Launcher für einen gerooteten LG G5 mit webOS 25. Der Nutzer meldete, dass die Ortsanzeige beim Wechsel auf Englisch richtig war. Gerätetests einzelner Funktionen gelten für den verwendeten Fernseher.
 - Der vollständige Quellcode liegt unter [app/](app/); die IPK und das Quellcode-ZIP liegen im App-Verzeichnis. Die Anwendung ist eine Web-App mit HTML, CSS, JavaScript und lokalen SVG-Szenen.
 
@@ -41,7 +41,7 @@ Diese Datei hält den Stand und wichtige Entscheidungen für spätere Weiterentw
 
 ## Wichtige Regeln für künftige Änderungen
 
-- Bei ausdrücklich beauftragten Releases die Versionsnummer erhöhen; `app/appinfo.json`, `build.py`, Versionsprüfung, Paketnamen und Dokumentation aufeinander abstimmen. Das englische [Changelog](CHANGELOG.md) nur für veröffentlichte Versionen führen und darunter sämtliche Änderungen seit der vorherigen veröffentlichten Version zusammenfassen; Zwischenbuilds erhalten keine eigenen Versionsüberschriften. Wenn der Nutzer eine kleine veröffentlichte Version ersetzen und zusammenfassen möchte, wird der Eintrag in die Ersatzversion übernommen.
+- Bei ausdrücklich beauftragten Releases die Versionsnummer erhöhen; `app/appinfo.json`, `build.py`, Versionsprüfung, Paketnamen und Dokumentation aufeinander abstimmen. Das englische [Changelog](CHANGELOG.md) aus dem tatsächlich hochgeladenen Stand ableiten: Gegenüber der letzten dokumentierten veröffentlichten Version nur die im aktuellen Paket und Quellcode enthaltenen Änderungen als Gesamteintrag zusammenfassen. Zwischenbuilds und frühere, später verworfene Änderungen nicht einzeln aufführen. Ein unveröffentlichter Teststand kann gesammelt unter „Unreleased“ dokumentiert werden; bei einem Release geht dieser Gesamtstand in den Eintrag der neuen Version über. Wenn der Nutzer eine kleine veröffentlichte Version ersetzen und zusammenfassen möchte, wird der Eintrag in die Ersatzversion übernommen.
 - Pro App im aktuellen Repository-Stand höchstens die **drei neuesten IPK-Pakete und die drei neuesten Quellcode-ZIPs** behalten. Ältere Pakete und ZIPs bei einer Veröffentlichung entfernen und auf veraltete Download-Links prüfen. Dateien bleiben ohne gesonderte Bereinigung in der Git-Historie erhalten.
 - Die deutschen und englischen Launcher-Anleitungen und bei Bedarf beide Startseiten aktualisieren. Screenshots der tatsächlichen Oberfläche als Fotos kennzeichnen; die Vorschau des System Monitors verwendet dagegen Demodaten.
 - Keine persönlichen Zugangsdaten, persönlichen IP-Adressen oder festen lokalen Computerpfade veröffentlichen. Die plattformbedingten webOS-Pfade im Code sind davon zu unterscheiden.

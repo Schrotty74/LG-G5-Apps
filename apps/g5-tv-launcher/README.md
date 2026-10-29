@@ -1,6 +1,6 @@
-# G5 TV Launcher 0.2.50
+# G5 TV Launcher 0.2.60
 
-**Development snapshot:** The source includes newer Direct Home and weather changes. The separately labelled [test IPK](g5-launcher-direct-home-wetter-test.ipk) is not a new release; see [project status](PROJECT_STATUS.md).
+**Test version 0.2.60:** Direct Home and weather changes are available for testing. The long standby test remains open; see [project status](PROJECT_STATUS.md).
 
 [English](README.md) · [Deutsch](README.de.md)
 
@@ -31,9 +31,9 @@ See the complete [feature overview with full feature list](FEATURES.md) for furt
 
 ## Downloads and source
 
-- [Download current test IPK](g5-launcher-direct-home-wetter-test.ipk)
+- [Download current test IPK](g5-tv-launcher_0.2.60_all.ipk)
 - [Download released IPK 0.2.50](g5-tv-launcher_0.2.50_all.ipk)
-- [Download current test source ZIP](g5-launcher-direct-home-wetter-source.zip)
+- [Download current test source ZIP](g5-tv-launcher-source_0.2.60.zip)
 - [Complete app source](app/)
 - [Development notes](DEVELOPMENT.md)
 - [Project status and continuation notes (German)](PROJECT_STATUS.md)
@@ -44,7 +44,7 @@ See the complete [feature overview with full feature list](FEATURES.md) for furt
 A rooted TV and a working Homebrew Channel service are required. Transfer the IPK to `/tmp` using SFTP, then install it via SSH:
 
 ```sh
-luna-send-pub -i 'luna://com.webos.appInstallService/dev/install' '{"id":"com.ares.defaultName","ipkUrl":"/tmp/g5-launcher-direct-home-wetter-test.ipk","subscribe":true}'
+luna-send-pub -i 'luna://com.webos.appInstallService/dev/install' '{"id":"com.ares.defaultName","ipkUrl":"/tmp/g5-tv-launcher_0.2.60_all.ipk","subscribe":true}'
 ```
 
 Glasshouse's IPK upload can also be used. The app ID is `org.schrotty74.g5launcher`. If Direct Home takeover is active, restore LG Home before updating or uninstalling; re-enable takeover after installation. See [Direct Home test and recovery](HOME_TAKEOVER_TEST.md).
@@ -71,7 +71,7 @@ Install Python 3, open Terminal in this app directory, and run:
 python3 build.py
 ```
 
-The script writes `dist/g5-tv-launcher_0.2.50_all.ipk`. Use `python3 build.py --output /path/to/output` to choose another output directory. It uses only Python's standard library; no absolute path to the developer's computer is needed.
+The script writes `dist/g5-tv-launcher_0.2.60_all.ipk`. Use `python3 build.py --output /path/to/output` to choose another output directory. It uses only Python's standard library; no absolute path to the developer's computer is needed.
 
 ## Optional Home button mapping
 

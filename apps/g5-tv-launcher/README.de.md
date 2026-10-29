@@ -1,6 +1,6 @@
-# G5 TV Launcher 0.2.50
+# G5 TV Launcher 0.2.60
 
-**Entwicklungsstand:** Der Quellcode enthält neuere Direct-Home- und Wetteränderungen. Die separat gekennzeichnete [Test-IPK](g5-launcher-direct-home-wetter-test.ipk) ist kein neues Release; siehe [Projektstand](PROJECT_STATUS.md).
+**Testversion 0.2.60:** Direct Home und die Wetteränderungen stehen zum Test bereit. Der Test nach längerem Standby ist noch offen; siehe [Projektstand](PROJECT_STATUS.md).
 
 [English](README.md) · [Deutsch](README.de.md)
 
@@ -31,9 +31,9 @@ Die vollständige [Funktionsübersicht](FEATURES.de.md) enthält weitere Details
 
 ## Downloads und Quellcode
 
-- [Aktuelle Test-IPK herunterladen](g5-launcher-direct-home-wetter-test.ipk)
+- [Aktuelle Test-IPK herunterladen](g5-tv-launcher_0.2.60_all.ipk)
 - [Veröffentlichte IPK 0.2.50 herunterladen](g5-tv-launcher_0.2.50_all.ipk)
-- [Aktuelles Test-Quellcode-ZIP herunterladen](g5-launcher-direct-home-wetter-source.zip)
+- [Aktuelles Test-Quellcode-ZIP herunterladen](g5-tv-launcher-source_0.2.60.zip)
 - [Vollständiger App-Quellcode](app/)
 - [Entwicklungsnotizen (English)](DEVELOPMENT.md)
 - [Projektstand und Hinweise für die Weiterentwicklung](PROJECT_STATUS.md)
@@ -44,7 +44,7 @@ Die vollständige [Funktionsübersicht](FEATURES.de.md) enthält weitere Details
 Voraussetzungen sind ein gerooteter Fernseher und ein funktionierender Homebrew-Channel-Dienst. Die IPK per SFTP nach `/tmp` übertragen und dann per SSH installieren:
 
 ```sh
-luna-send-pub -i 'luna://com.webos.appInstallService/dev/install' '{"id":"com.ares.defaultName","ipkUrl":"/tmp/g5-launcher-direct-home-wetter-test.ipk","subscribe":true}'
+luna-send-pub -i 'luna://com.webos.appInstallService/dev/install' '{"id":"com.ares.defaultName","ipkUrl":"/tmp/g5-tv-launcher_0.2.60_all.ipk","subscribe":true}'
 ```
 
 Alternativ kann die IPK über Glasshouse hochgeladen werden. Die App-ID lautet `org.schrotty74.g5launcher`. Ist die direkte Home-Übernahme aktiv, vor einem Update oder der Deinstallation LG Home wiederherstellen; nach der Installation kann Direct Home erneut aktiviert werden. Siehe [Direct-Home-Test und Wiederherstellung](HOME_TAKEOVER_TEST.md).
@@ -71,7 +71,7 @@ Python 3 installieren, das Terminal in diesem App-Ordner öffnen und ausführen:
 python3 build.py
 ```
 
-Das Paket liegt danach unter `dist/g5-tv-launcher_0.2.50_all.ipk`. Mit `python3 build.py --output /pfad/zum/ausgabeordner` lässt sich ein anderer Ausgabeordner wählen. Das Skript nutzt nur die Python-Standardbibliothek und benötigt keinen festen Pfad auf dem Computer.
+Das Paket liegt danach unter `dist/g5-tv-launcher_0.2.60_all.ipk`. Mit `python3 build.py --output /pfad/zum/ausgabeordner` lässt sich ein anderer Ausgabeordner wählen. Das Skript nutzt nur die Python-Standardbibliothek und benötigt keinen festen Pfad auf dem Computer.
 
 ## Optionale Home-Tastenbelegung
 

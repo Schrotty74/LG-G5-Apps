@@ -1,8 +1,8 @@
 # Changelog
 
-The unreleased section describes the current test snapshot. Published entries group changes since the previous published version.
+Each entry summarizes the changes present in the uploaded build and source since the previous documented version. Intermediate builds are not listed separately.
 
-## Unreleased — development snapshot after 0.2.50
+## 0.2.60 (test version)
 
 - Add an opt-in TV Home screen selector with LG Home, the legacy Magic Mapper/autostart method and Direct Home takeover. Applying the selection requires confirmation; the legacy method remains available as a fallback.
 - Stage the launcher as the TV Home screen without overwriting LG Home files. Check for Glasshouse and other takeover conflicts, preserve unrelated key mappings and provide LG Home restoration and an SSH recovery command.
@@ -13,7 +13,7 @@ The unreleased section describes the current test snapshot. Published entries gr
 - Preserve the new weather settings in launcher backups and restore them with existing settings.
 - Add host-side tests for Home method transitions, recovery, bridge operations and staging of weather icons.
 
-Direct Home and weather icon switching were tested on the TV; the launcher returned after a short standby. Testing after several hours of standby remains open. A previous crash is no longer occurring, but its cause was not identified. The development IPK retains internal version 0.2.50 and is separate from the published 0.2.50 IPK.
+Direct Home and weather icon switching were tested on the TV; the launcher returned after a short standby. Testing after several hours of standby remains open. A previous crash is no longer occurring, but its cause was not identified. Version 0.2.60 is a test version and is separate from the published 0.2.50 IPK.
 
 ## 0.2.50
 
