@@ -4,6 +4,10 @@ Diese Datei hält den Stand und wichtige Entscheidungen für spätere Weiterentw
 
 ## Aktueller Stand
 
+- **Entwicklungsstand nach 0.2.50:** Direct Home Takeover, Wettersymbol-Sets Meteocons und Makin’ Things sowie GeoSphere Austria über Open-Meteo. Das getrennte [Testpaket](g5-launcher-direct-home-wetter-test.ipk) enthält diesen Stand; die veröffentlichte IPK 0.2.50 bleibt unverändert.
+- Direct Home und der Wechsel der Wettersymbol-Sets wurden auf dem Fernseher ausprobiert. Start nach kurzem Ausschalten funktionierte; der Test nach mehreren Stunden Standby steht aus. Die bisherige Home-Methode bleibt als Rückfalllösung erhalten. Die Ursache eines früheren Absturzes ist ungeklärt; derzeit tritt er laut Nutzer nicht mehr auf.
+- Wettersymbol-Animationen und der aktualisierte Wetterdienst wurden nicht umfassend auf dem Fernseher geprüft.
+
 - Autostart ist optional: Der Nutzer hat das korrigierte Paket auf seinem Fernseher erfolgreich getestet, einschließlich Start aus tiefem Standby. Vor der Deinstallation Autostart ausschalten.
 - IPK-Bauvorgaben für beide Apps und künftige Apps: [IPK_PACKAGING.md](../../IPK_PACKAGING.md).
 
@@ -35,7 +39,7 @@ Diese Datei hält den Stand und wichtige Entscheidungen für spätere Weiterentw
 
 ## Wichtige Regeln für künftige Änderungen
 
-- Versionsnummer bei Änderungen am Launcher erhöhen; `app/appinfo.json`, `build.py`, Versionsprüfung, Paketnamen und Dokumentation aufeinander abstimmen. Das englische [Changelog](CHANGELOG.md) nur für veröffentlichte Versionen führen und darunter sämtliche Änderungen seit der vorherigen veröffentlichten Version zusammenfassen; Zwischenbuilds erhalten keine eigenen Versionsüberschriften. Wenn der Nutzer eine kleine veröffentlichte Version ersetzen und zusammenfassen möchte, wird der Eintrag in die Ersatzversion übernommen.
+- Bei ausdrücklich beauftragten Releases die Versionsnummer erhöhen; `app/appinfo.json`, `build.py`, Versionsprüfung, Paketnamen und Dokumentation aufeinander abstimmen. Das englische [Changelog](CHANGELOG.md) nur für veröffentlichte Versionen führen und darunter sämtliche Änderungen seit der vorherigen veröffentlichten Version zusammenfassen; Zwischenbuilds erhalten keine eigenen Versionsüberschriften. Wenn der Nutzer eine kleine veröffentlichte Version ersetzen und zusammenfassen möchte, wird der Eintrag in die Ersatzversion übernommen.
 - Pro App im aktuellen Repository-Stand höchstens die **drei neuesten IPK-Pakete und die drei neuesten Quellcode-ZIPs** behalten. Ältere Pakete und ZIPs bei einer Veröffentlichung entfernen und auf veraltete Download-Links prüfen. Dateien bleiben ohne gesonderte Bereinigung in der Git-Historie erhalten.
 - Die deutschen und englischen Launcher-Anleitungen und bei Bedarf beide Startseiten aktualisieren. Screenshots der tatsächlichen Oberfläche als Fotos kennzeichnen; die Vorschau des System Monitors verwendet dagegen Demodaten.
 - Keine persönlichen Zugangsdaten, persönlichen IP-Adressen oder festen lokalen Computerpfade veröffentlichen. Die plattformbedingten webOS-Pfade im Code sind davon zu unterscheiden.

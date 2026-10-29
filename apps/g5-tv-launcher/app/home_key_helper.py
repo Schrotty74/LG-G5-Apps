@@ -98,6 +98,12 @@ def main(action):
     if not active or not installed:
         raise RuntimeError('Magic Mapper muss aktiv sein und bereits beim Start laufen. Es wurden keine Autostart-Einstellungen geändert.')
     if action == 'enable':
+        try:
+            mounted = os.path.samefile('/usr/palm/applications/com.webos.app.home', '/var/lib/webosbrew/g5-tv-launcher/home-mode/app')
+        except OSError:
+            mounted = False
+        if mounted:
+            raise RuntimeError('Direkte Home-Übernahme ist aktiv. Zuerst im Menü die Methode wechseln.')
         if is_target(config.get('home')):
             if not os.path.isfile(BACKUP):
                 raise RuntimeError('Home ist bereits zugeordnet, aber eine Sicherung der vorherigen Belegung fehlt.')

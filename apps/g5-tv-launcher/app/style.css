@@ -192,3 +192,5 @@
 .christmas-sleigh.sleigh-left .sleigh-art{transform:scaleX(-1)}
 @keyframes g5-sleigh-right{from{left:0;transform:translateX(-100%)}to{left:100%;transform:translateX(0)}}
 @keyframes g5-sleigh-left{from{left:100%;transform:translateX(0)}to{left:0;transform:translateX(-100%)}}
+
+#weather-icon img{display:block;width:1.8em;height:1.8em;object-fit:contain}

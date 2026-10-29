@@ -119,6 +119,12 @@ def get_status():
 
 
 def enable():
+    try:
+        mounted = os.path.samefile('/usr/palm/applications/com.webos.app.home', '/var/lib/webosbrew/g5-tv-launcher/home-mode/app')
+    except OSError:
+        mounted = False
+    if mounted:
+        raise RuntimeError('Direkte Home-Übernahme ist aktiv. Zuerst im Menü die Methode wechseln.')
     if os.path.lexists(HOOK) and not own_hook():
         raise RuntimeError('Autostart-Datei gehört nicht diesem Launcher.')
     check_files()

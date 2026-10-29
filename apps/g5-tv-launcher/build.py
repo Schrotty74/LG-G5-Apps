@@ -24,7 +24,7 @@ def tar_bytes(entries):
                 info.mode = 0o755
                 archive.addfile(info)
             else:
-                info.mode = 0o755 if name.endswith('/autostart_boot.sh') else 0o644
+                info.mode = 0o755 if (name.endswith('/autostart_boot.sh') or name.endswith('/home_mode_boot.sh')) else 0o644
                 info.size = len(data)
                 archive.addfile(info, io.BytesIO(data))
     raw = output.getvalue()

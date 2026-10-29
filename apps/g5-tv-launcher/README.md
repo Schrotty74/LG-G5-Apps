@@ -1,5 +1,7 @@
 # G5 TV Launcher 0.2.50
 
+**Development snapshot:** The source includes newer Direct Home and weather changes. The separately labelled [test IPK](g5-launcher-direct-home-wetter-test.ipk) is not a new release; see [project status](PROJECT_STATUS.md).
+
 [English](README.md) · [Deutsch](README.de.md)
 
 A standalone homebrew launcher for a rooted LG G5 with webOS 25. It provides a TV-oriented interface with a customizable favorites dock and input shortcuts.
