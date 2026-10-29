@@ -31,8 +31,9 @@ Die vollständige [Funktionsübersicht](FEATURES.de.md) enthält weitere Details
 
 ## Downloads und Quellcode
 
-- [IPK 0.2.50 herunterladen](g5-tv-launcher_0.2.50_all.ipk)
-- [Quellcode-ZIP herunterladen](g5-tv-launcher-source_0.2.50.zip)
+- [Aktuelle Test-IPK herunterladen](g5-launcher-direct-home-wetter-test.ipk)
+- [Veröffentlichte IPK 0.2.50 herunterladen](g5-tv-launcher_0.2.50_all.ipk)
+- [Aktuelles Test-Quellcode-ZIP herunterladen](g5-launcher-direct-home-wetter-source.zip)
 - [Vollständiger App-Quellcode](app/)
 - [Entwicklungsnotizen (English)](DEVELOPMENT.md)
 - [Projektstand und Hinweise für die Weiterentwicklung](PROJECT_STATUS.md)
@@ -43,7 +44,7 @@ Die vollständige [Funktionsübersicht](FEATURES.de.md) enthält weitere Details
 Voraussetzungen sind ein gerooteter Fernseher und ein funktionierender Homebrew-Channel-Dienst. Die IPK per SFTP nach `/tmp` übertragen und dann per SSH installieren:
 
 ```sh
-luna-send-pub -i 'luna://com.webos.appInstallService/dev/install' '{"id":"com.ares.defaultName","ipkUrl":"/tmp/g5-tv-launcher_0.2.50_all.ipk","subscribe":true}'
+luna-send-pub -i 'luna://com.webos.appInstallService/dev/install' '{"id":"com.ares.defaultName","ipkUrl":"/tmp/g5-launcher-direct-home-wetter-test.ipk","subscribe":true}'
 ```
 
 Alternativ kann die IPK über Glasshouse hochgeladen werden. Die App-ID lautet `org.schrotty74.g5launcher`.

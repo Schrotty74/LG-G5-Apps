@@ -7,7 +7,7 @@ Homebrew apps and tools for LG G-series TVs. Each app has its own directory with
 | Icon | App | Summary | Source, downloads & guide | Context |
 |---|---|---|---|---|
 | <img src="apps/system-monitor/app/icon.png" width="72" alt="G5 System Monitor"> | [G5 System Monitor](apps/system-monitor/README.md) | Read-only dashboard for CPU, RAM, uptime, system information, storage, network, and running processes | [English](apps/system-monitor/README.md) · [Deutsch](apps/system-monitor/README.de.md) · [IPK 0.9.3](https://github.com/Schrotty74/LG-G5-Apps/raw/refs/heads/main/apps/system-monitor/g5-system-monitor_0.9.3_all.ipk) · [Source ZIP](apps/system-monitor/g5-system-monitor-source-v0.9.3.zip) · [Source tree](apps/system-monitor/app/) | [Development notes](apps/system-monitor/DEVELOPMENT.md) · [Changelog](apps/system-monitor/CHANGELOG.md) · [UI preview](apps/system-monitor/preview.png) |
-| <img src="apps/g5-tv-launcher/app/icon.png" width="72" alt="G5 TV Launcher"> | [G5 TV Launcher](apps/g5-tv-launcher/README.md) | Customizable homebrew launcher with favorites, illustrated backgrounds, weather, and input shortcuts | [English](apps/g5-tv-launcher/README.md) · [Deutsch](apps/g5-tv-launcher/README.de.md) · [IPK 0.2.50](apps/g5-tv-launcher/g5-tv-launcher_0.2.50_all.ipk) · [Source ZIP](apps/g5-tv-launcher/g5-tv-launcher-source_0.2.50.zip) · [Source tree](apps/g5-tv-launcher/app/) | [Development notes](apps/g5-tv-launcher/DEVELOPMENT.md) · [Changelog](apps/g5-tv-launcher/CHANGELOG.md) |
+| <img src="apps/g5-tv-launcher/app/icon.png" width="72" alt="G5 TV Launcher"> | [G5 TV Launcher](apps/g5-tv-launcher/README.md) | Customizable homebrew launcher with favorites, illustrated backgrounds, weather, and input shortcuts | [English](apps/g5-tv-launcher/README.md) · [Deutsch](apps/g5-tv-launcher/README.de.md) · [Test-IPK](apps/g5-tv-launcher/g5-launcher-direct-home-wetter-test.ipk) · [Source ZIP](apps/g5-tv-launcher/g5-launcher-direct-home-wetter-source.zip) · [Source tree](apps/g5-tv-launcher/app/) | [Development notes](apps/g5-tv-launcher/DEVELOPMENT.md) · [Changelog](apps/g5-tv-launcher/CHANGELOG.md) |
 
 G5 System Monitor 0.9.3 is the current package. The UI preview is a mock-up based on the app source; every value shown in it is demo data, not a capture from the TV.
 
@@ -27,4 +27,4 @@ The install service reports its progress in the terminal. After a successful ins
 
 Each additional app gets its own directory under `apps/<app-name>/`. Add it as a row in the table above, with links to its source, package, documentation, and continuation context.
 
-The repository keeps at most the three newest IPK packages and the three newest source ZIPs per app.
+The repository retains the three newest released IPKs and source ZIPs per app. The launcher development snapshot is available separately as a test IPK and source ZIP.

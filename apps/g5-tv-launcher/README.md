@@ -31,8 +31,9 @@ See the complete [feature overview with full feature list](FEATURES.md) for furt
 
 ## Downloads and source
 
-- [Download IPK 0.2.50](g5-tv-launcher_0.2.50_all.ipk)
-- [Download source ZIP](g5-tv-launcher-source_0.2.50.zip)
+- [Download current test IPK](g5-launcher-direct-home-wetter-test.ipk)
+- [Download released IPK 0.2.50](g5-tv-launcher_0.2.50_all.ipk)
+- [Download current test source ZIP](g5-launcher-direct-home-wetter-source.zip)
 - [Complete app source](app/)
 - [Development notes](DEVELOPMENT.md)
 - [Project status and continuation notes (German)](PROJECT_STATUS.md)
@@ -43,7 +44,7 @@ See the complete [feature overview with full feature list](FEATURES.md) for furt
 A rooted TV and a working Homebrew Channel service are required. Transfer the IPK to `/tmp` using SFTP, then install it via SSH:
 
 ```sh
-luna-send-pub -i 'luna://com.webos.appInstallService/dev/install' '{"id":"com.ares.defaultName","ipkUrl":"/tmp/g5-tv-launcher_0.2.50_all.ipk","subscribe":true}'
+luna-send-pub -i 'luna://com.webos.appInstallService/dev/install' '{"id":"com.ares.defaultName","ipkUrl":"/tmp/g5-launcher-direct-home-wetter-test.ipk","subscribe":true}'
 ```
 
 Glasshouse's IPK upload can also be used. The app ID is `org.schrotty74.g5launcher`.
