@@ -4,7 +4,8 @@
 
 ## Funktionen
 
-- Launcher beim Start oder Aufwachen des Fernsehers optional automatisch öffnen; vor der Deinstallation ausschalten.
+- Unter TV-Homescreen LG Home, die bisherige Methode oder die direkte Home-Übernahme wählen. Direct Home benötigt keinen Magic Mapper; die bisherige Methode bleibt verfügbar. [Test und Wiederherstellung](HOME_TAKEOVER_TEST.md).
+- Bei LG Home oder der bisherigen Methode den Launcher optional automatisch starten; vor der Deinstallation ausschalten. Direct Home nutzt einen eigenen Startmechanismus.
 
 - Installierte Apps in der Übersicht durchsehen und starten; HDMI-Eingänge und Live TV haben eine eigene Seite „Eingänge“.
 - Favoriten in der Glas-Dockleiste hinzufügen, entfernen und sortieren. App-Symbole mit oder ohne Namen anzeigen und für die Ansicht ohne Namen zwischen drei Größen wählen.
@@ -15,7 +16,7 @@
 - Uhr und Wetter getrennt ein- oder ausblenden und einen Wetterstandort wählen.
 - Übersicht, Favoriten oder Eingänge als Startseite wählen; die Auswahl gilt auch beim erneuten Öffnen.
 - Die Oberfläche zwischen Englisch und Deutsch umschalten; Englisch ist voreingestellt.
-- Die Home-Taste optional über Magic Mapper 1.1.2 diesem Launcher zuweisen und die vorherige Belegung wiederherstellen. [Voraussetzungen und Details](#optionale-home-tastenbelegung).
+- Die Home-Taste optional über Magic Mapper 1.1.2 diesem Launcher zuweisen und die vorherige Belegung wiederherstellen. [Voraussetzungen und Details](README.de.md#optionale-home-tastenbelegung).
 - Launcher-Einstellungen, Favoriten und eigene Eingangsbezeichnungen als JSON-Backup auf dem Fernseher speichern und wiederherstellen.
 - Installierte Apps nach Namen suchen.
 - Die drei Schnellzugriffe in der Übersicht mit Apps, HDMI-Eingängen oder den TV-Einstellungen belegen.
@@ -24,6 +25,7 @@
 - Abstand, Transparenz und vertikale Position der Favoritenleiste anpassen.
 - Manuell auf GitHub nach einer neueren Version suchen; Updates werden nicht automatisch installiert.
 - Uhrzeit und Wetter unabhängig voneinander vergrößern; Wetterdaten alle 15 Minuten, stündlich, zweimal täglich oder täglich aktualisieren.
-- Animierte Wettersymbole bei eingeschalteten Animationen, mit Varianten für Nacht, Wolken und Regen. Der Tag-Nacht-Wechsel nutzt Sonnenauf- und -untergang am Standort.
+- Zwischen Meteocons und Makin’ Things wählen und die Animation für jedes Wettersymbol-Set getrennt ein- oder ausschalten. Der Tag-Nacht-Wechsel nutzt Sonnenauf- und -untergang am Standort.
+- Open-Meteo oder das AROME-Modell von GeoSphere Austria über Open-Meteo wählen.
 - Wetterorte in englischer und deutscher Suche finden, Treffer in der TV-Zeitzone bevorzugen und passende Orte mit Region und Land auswählen.
 - Einstellungen über Kategorien aufrufen, damit weniger gescrollt werden muss.

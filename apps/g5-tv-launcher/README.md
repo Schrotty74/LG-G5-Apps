@@ -20,12 +20,12 @@ Click an image to view it full size.
 - Add, remove and reorder favorites in the glass-style dock. Show app icons with or without names and choose from three icon sizes when names are hidden.
 - Open HDMI 1–4 and Live TV. HDMI names can be read from the TV's launch points or customized.
 - Choose from seven illustrated scenes, shown in the banner on Overview, Favorites and Inputs. Halloween and Christmas are grouped under Special themes.
-- With animations enabled, Halloween features a spider descending at changing positions, flickering house windows and a glowing pumpkin face. Christmas features falling snow and Santa's reindeer sleigh flying across the scene in alternating directions. The sleigh flies for 12 seconds with a 5-second pause; the effects can be switched off with animations.
-- Show or hide the clock and weather independently, and choose a weather location.
+- Choose LG Home, the legacy method or Direct Home takeover in the TV Home screen settings. Direct Home does not require Magic Mapper; the legacy method remains available as a fallback.
+- Show or hide the clock and weather independently; choose a location and either Open-Meteo or GeoSphere Austria data via Open-Meteo.
 - Select Overview, Favorites or Inputs as the start page, including when reopening the launcher.
 - Search installed apps by name.
 - Adjust clock and weather sizes independently; set the weather refresh interval to 15 minutes, hourly, twice daily or daily.
-- Show animated weather symbols when animations are enabled, with nighttime, cloudy and rainy variants. Day/night switching uses local sunrise and sunset times.
+- Choose Meteocons or Makin’ Things weather icons and independently enable or disable animation for each set. Day/night switching uses local sunrise and sunset times.
 
 See the complete [feature overview with full feature list](FEATURES.md) for further details.
 
@@ -47,15 +47,21 @@ A rooted TV and a working Homebrew Channel service are required. Transfer the IP
 luna-send-pub -i 'luna://com.webos.appInstallService/dev/install' '{"id":"com.ares.defaultName","ipkUrl":"/tmp/g5-launcher-direct-home-wetter-test.ipk","subscribe":true}'
 ```
 
-Glasshouse's IPK upload can also be used. The app ID is `org.schrotty74.g5launcher`.
+Glasshouse's IPK upload can also be used. The app ID is `org.schrotty74.g5launcher`. If Direct Home takeover is active, restore LG Home before updating or uninstalling; re-enable takeover after installation. See [Direct Home test and recovery](HOME_TAKEOVER_TEST.md).
+
+## TV Home screen
+
+Under Settings → Start & Home → TV Home screen, choose **LG Home**, **Legacy method**, or **Direct Home takeover**, then select **Apply method**. Direct Home uses the launcher as the TV Home screen without Magic Mapper. The legacy method uses the existing Home mapping and autostart as a fallback. Disable Glasshouse Home before switching methods. Restore LG Home before updating or uninstalling.
+
+Direct Home has been tested after a short standby; the test after several hours remains open. See [test and recovery instructions](HOME_TAKEOVER_TEST.md).
 
 ## Optional autostart
 
-Enable or disable autostart in Settings under Start & Home. The optional feature uses the Homebrew startup hook and starts the launcher after boot or wake-up. Disable it before uninstalling the launcher. Home-button mapping is configured separately.
+For LG Home and the legacy method, enable or disable the optional launcher autostart under Start & Home. Direct Home uses its own startup mechanism and disables the legacy autostart when switching. Restore LG Home and disable the optional autostart before uninstalling.
 
 ## Notes
 
-The launcher is an ordinary app. Installing it does not automatically replace LG Home or configure the Home button or autostart. It uses the Homebrew service to read launch points and local app icons; unavailable icons fall back to a letter. Weather uses Open-Meteo and requires an internet connection. Backups are stored at `/media/developer/g5-tv-launcher/backup.json` on the TV and can be copied via SFTP. Saving again replaces the previous backup. The Live TV shortcut and exact appearance should be checked on the target TV.
+Installing the launcher does not automatically replace LG Home or configure the Home button or autostart; these options require explicit activation. It uses the Homebrew service to read launch points and local app icons; unavailable icons fall back to a letter. Weather and location lookup use Open-Meteo and require an internet connection; the GeoSphere option selects GeoSphere Austria’s AROME model via Open-Meteo. Backups are stored at `/media/developer/g5-tv-launcher/backup.json` on the TV and can be copied via SFTP. Saving again replaces the previous backup. The Live TV shortcut and exact appearance should be checked on the target TV.
 
 ## Build from source on macOS
 

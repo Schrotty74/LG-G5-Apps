@@ -20,12 +20,12 @@ Zum Vergrößern auf ein Bild klicken.
 - Favoriten in der Glas-Dockleiste hinzufügen, entfernen und sortieren. App-Symbole mit oder ohne Namen anzeigen und für die Ansicht ohne Namen zwischen drei Größen wählen.
 - HDMI 1–4 und Live TV öffnen. HDMI-Namen aus den Startpunkten des Fernsehers übernehmen oder selbst vergeben.
 - Zwischen sieben illustrierten Szenen wählen, die im Banner auf Übersicht, Favoriten und Eingängen angezeigt werden. Halloween und Weihnachten sind als Spezial-Themes gruppiert.
-- Bei eingeschalteten Animationen lässt sich an Halloween eine Spinne an wechselnden Stellen herab, das Hauslicht und das Kürbisgesicht flackern. Beim Weihnachtstheme fallen Schneeflocken und der Weihnachtsmann fliegt mit dem Rentierschlitten abwechselnd in beide Richtungen: zwölf Sekunden Flug, fünf Sekunden Pause. Alle Effekte lassen sich über die Animationseinstellung abschalten.
-- Uhr und Wetter getrennt ein- oder ausblenden und einen Wetterstandort wählen.
+- In den TV-Homescreen-Einstellungen zwischen LG Home, der bisherigen Methode und der direkten Home-Übernahme wählen. Direct Home benötigt keinen Magic Mapper; die bisherige Methode bleibt als Rückfalllösung verfügbar.
+- Uhr und Wetter getrennt ein- oder ausblenden; einen Standort und Open-Meteo oder GeoSphere Austria über Open-Meteo wählen.
 - Übersicht, Favoriten oder Eingänge als Startseite wählen; die Auswahl gilt auch beim erneuten Öffnen.
 - Installierte Apps nach Namen suchen.
 - Uhrzeit und Wetter unabhängig voneinander vergrößern; Wetterdaten alle 15 Minuten, stündlich, zweimal täglich oder täglich aktualisieren.
-- Animierte Wettersymbole bei eingeschalteten Animationen, mit Varianten für Nacht, Wolken und Regen. Der Tag-Nacht-Wechsel nutzt Sonnenauf- und -untergang am Standort.
+- Zwischen Meteocons und Makin’ Things wählen und die Animation für jedes Wettersymbol-Set getrennt ein- oder ausschalten. Der Tag-Nacht-Wechsel nutzt Sonnenauf- und -untergang am Standort.
 
 Die vollständige [Funktionsübersicht](FEATURES.de.md) enthält weitere Details.
 
@@ -47,15 +47,21 @@ Voraussetzungen sind ein gerooteter Fernseher und ein funktionierender Homebrew-
 luna-send-pub -i 'luna://com.webos.appInstallService/dev/install' '{"id":"com.ares.defaultName","ipkUrl":"/tmp/g5-launcher-direct-home-wetter-test.ipk","subscribe":true}'
 ```
 
-Alternativ kann die IPK über Glasshouse hochgeladen werden. Die App-ID lautet `org.schrotty74.g5launcher`.
+Alternativ kann die IPK über Glasshouse hochgeladen werden. Die App-ID lautet `org.schrotty74.g5launcher`. Ist die direkte Home-Übernahme aktiv, vor einem Update oder der Deinstallation LG Home wiederherstellen; nach der Installation kann Direct Home erneut aktiviert werden. Siehe [Direct-Home-Test und Wiederherstellung](HOME_TAKEOVER_TEST.md).
+
+## TV-Homescreen
+
+Unter Einstellungen → Start & Home → TV-Homescreen **LG Home**, **Bisherige Methode** oder **Direkte Home-Übernahme** wählen und anschließend **Methode anwenden** drücken. Direct Home verwendet den Launcher als TV-Homescreen und benötigt keinen Magic Mapper. Die bisherige Methode mit Home-Tastenbelegung und Autostart bleibt als Rückfalllösung erhalten. Vor dem Wechsel Glasshouse Home ausschalten. Vor einem Update oder der Deinstallation LG Home wiederherstellen.
+
+Direct Home wurde nach kurzem Standby getestet; der Test nach mehreren Stunden steht noch aus. Weitere Hinweise stehen unter [Test und Wiederherstellung](HOME_TAKEOVER_TEST.md).
 
 ## Optionaler Autostart
 
-Autostart lässt sich in den Einstellungen unter Start & Home ein- und ausschalten. Er nutzt den Homebrew-Startmechanismus und öffnet den Launcher nach dem Start oder Aufwachen des Fernsehers. Vor der Deinstallation ausschalten. Die Belegung der Home-Taste ist separat.
+Für LG Home und die bisherige Methode lässt sich der optionale Launcher-Autostart unter Start & Home ein- und ausschalten. Direct Home nutzt einen eigenen Startmechanismus und schaltet den bisherigen Autostart beim Wechsel ab. Vor der Deinstallation LG Home wiederherstellen und den optionalen Autostart ausschalten.
 
 ## Hinweise
 
-Der Launcher ist eine normale App. Durch die Installation werden LG Home, die Home-Taste und der Autostart nicht automatisch umgestellt. Er nutzt den Homebrew-Dienst zum Lesen der App-Liste und lokaler App-Symbole; nicht verfügbare Symbole werden durch einen Buchstaben ersetzt. Das Wetter nutzt Open-Meteo und benötigt Internet. Das Backup liegt auf dem Fernseher unter `/media/developer/g5-tv-launcher/backup.json` und kann per SFTP kopiert werden. Eine neue Sicherung ersetzt die vorige. Der Live-TV-Schnellzugriff und die Darstellung sollten auf dem jeweiligen Fernseher geprüft werden.
+Durch die Installation werden LG Home, die Home-Taste und der Autostart nicht automatisch umgestellt; diese Optionen müssen ausdrücklich aktiviert werden. Er nutzt den Homebrew-Dienst zum Lesen der App-Liste und lokaler App-Symbole; nicht verfügbare Symbole werden durch einen Buchstaben ersetzt. Wetter und Standortsuche nutzen Open-Meteo und benötigen Internet; die GeoSphere-Auswahl verwendet das AROME-Modell von GeoSphere Austria über Open-Meteo. Das Backup liegt auf dem Fernseher unter `/media/developer/g5-tv-launcher/backup.json` und kann per SFTP kopiert werden. Eine neue Sicherung ersetzt die vorige. Der Live-TV-Schnellzugriff und die Darstellung sollten auf dem jeweiligen Fernseher geprüft werden.
 
 ## Auf dem Mac aus dem Quellcode bauen
 

@@ -4,7 +4,8 @@
 
 ## Features
 
-- Optionally start the launcher after a cold boot or wake-up; turn it off before uninstalling.
+- Choose LG Home, the legacy method or Direct Home takeover under TV Home screen. Direct Home does not require Magic Mapper; the legacy method remains available. [Test and recovery](HOME_TAKEOVER_TEST.md).
+- Optionally start the launcher with LG Home or the legacy method; turn it off before uninstalling. Direct Home uses its own startup mechanism.
 
 - Browse and launch installed apps from Overview; HDMI inputs and Live TV have their own Inputs page.
 - Add, remove and reorder favorites in the glass-style dock. Show app icons with or without names and choose from three icon sizes when names are hidden.
@@ -15,7 +16,7 @@
 - Show or hide the clock and weather independently, and choose a weather location.
 - Select Overview, Favorites or Inputs as the start page, including when reopening the launcher.
 - Switch the interface between English and German; English is the default.
-- Optionally assign the Home button to this launcher using Magic Mapper 1.1.2, and restore the previous mapping. [Requirements and details](#optional-home-button-mapping).
+- Optionally assign the Home button to this launcher using Magic Mapper 1.1.2, and restore the previous mapping. [Requirements and details](README.md#optional-home-button-mapping).
 - Save and restore launcher settings, favorites and custom input labels as a JSON backup on the TV.
 - Search installed apps by name.
 - Customize the three Overview shortcuts with apps, HDMI inputs or TV settings.
@@ -24,6 +25,7 @@
 - Adjust favorite dock spacing, transparency and vertical position.
 - Manually check the GitHub source for a newer version; the launcher does not install updates automatically.
 - Adjust clock and weather sizes independently; set the weather refresh interval to 15 minutes, hourly, twice daily or daily.
-- Show animated weather symbols when animations are enabled, with nighttime, cloudy and rainy variants. Day/night switching uses local sunrise and sunset times.
+- Choose Meteocons or Makin’ Things weather icons and independently enable or disable animation for each set. Day/night switching uses local sunrise and sunset times.
+- Select Open-Meteo or GeoSphere Austria’s AROME model via Open-Meteo.
 - Find weather locations in English and German, prefer a match in the TV's time zone, and choose among matching cities with region and country shown.
 - Navigate settings by category to reduce scrolling.

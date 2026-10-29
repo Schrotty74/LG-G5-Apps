@@ -1,6 +1,19 @@
 # Changelog
 
-Entries describe versions published in this repository. Each entry includes the relevant changes since the previous published version; intermediate test builds are grouped into the next published version.
+The unreleased section describes the current test snapshot. Published entries group changes since the previous published version.
+
+## Unreleased — development snapshot after 0.2.50
+
+- Add an opt-in TV Home screen selector with LG Home, the legacy Magic Mapper/autostart method and Direct Home takeover. Applying the selection requires confirmation; the legacy method remains available as a fallback.
+- Stage the launcher as the TV Home screen without overwriting LG Home files. Check for Glasshouse and other takeover conflicts, preserve unrelated key mappings and provide LG Home restoration and an SSH recovery command.
+- Add a local bridge for Direct Home access to app lists, icons, settings and backup operations, plus a heartbeat and recovery monitor. Share launcher preferences between the normal app and Direct Home.
+- Add Home method status, confirmation and guidance to the settings menu, including instructions to restore LG Home before updating or uninstalling. Switching to Direct Home disables the launcher-owned legacy autostart and mapping as needed.
+- Add a weather provider selection between Open-Meteo and GeoSphere Austria's AROME model via Open-Meteo. Keep the existing location search and day/night handling.
+- Add Meteocons and Makin’ Things SVG weather icon sets, with independent animation settings for each set. Include their licenses and copy the icons into the Direct Home stage.
+- Preserve the new weather settings in launcher backups and restore them with existing settings.
+- Add host-side tests for Home method transitions, recovery, bridge operations and staging of weather icons.
+
+Direct Home and weather icon switching were tested on the TV; the launcher returned after a short standby. Testing after several hours of standby remains open. A previous crash is no longer occurring, but its cause was not identified. The development IPK retains internal version 0.2.50 and is separate from the published 0.2.50 IPK.
 
 ## 0.2.50
 
