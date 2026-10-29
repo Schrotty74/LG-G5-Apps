@@ -4,7 +4,7 @@ Diese Datei hält den technischen Stand und die Entscheidungen fest, damit spät
 
 ## Aktueller Stand
 
-- Version: **0.9.2**
+- Version: **0.9.3**
 - Paket-ID: `org.schrotty74.g5systemmonitor`
 - Zielgerät: gerooteter LG G5 mit webOS 25 und Homebrew Channel
 - GitHub: [`Schrotty74/LG-G5-Apps`](https://github.com/Schrotty74/LG-G5-Apps), App-Verzeichnis `apps/system-monitor/`
@@ -21,8 +21,8 @@ Diese Datei hält den technischen Stand und die Entscheidungen fest, damit spät
 - `app/script.js`: Abfragen, Parsing, Aktualisierung, Diagrammverläufe und Bedienlogik.
 - `app/appinfo.json`: webOS-Metadaten und App-Version.
 - `app/icon.png`: App-Symbol.
-- `g5-system-monitor_0.9.2_all.ipk`: installierbares Paket.
-- `g5-system-monitor-source-v0.9.2.zip`: Quellcode-Archiv.
+- `g5-system-monitor_0.9.3_all.ipk`: installierbares Paket.
+- `g5-system-monitor-source-v0.9.3.zip`: Quellcode-Archiv.
 
 Für Messwerte wird ein fest kodierter, ausschließlich lesender Shell-Befehl über `org.webosbrew.hbchannel.service/exec` ausgeführt. Die App verwendet `webOS.service.request` und fällt auf `PalmServiceBridge` zurück. Systemwerte stammen unter anderem aus `/proc/stat`, `/proc/meminfo`, `/proc/uptime`, `uname`, `id`, `top`, `df`, `/sys/class/net`, `ip` und ersatzweise `ifconfig`. Modell, Firmware, SDK- und Boardangaben werden über `com.webos.service.tv.systemproperty/getSystemInfo` abgefragt.
 
@@ -34,7 +34,7 @@ Der Nutzer hat frühere Builds am Fernseher verwendet und CPU, RAM, Laufzeit, Fi
 
 Die Entwicklung seit dem ersten dokumentierten Build ist in `CHANGELOG.md` nach Versionen festgehalten. In der Reihenfolge kamen hinzu: Scrollen zur Prozessliste; Firmware-/SDK-Abfrage und Prüfung der Sensorschnittstellen; Temperaturfeld entfernen und App sauber über Zurück-Taste/Beenden verlassen; Mausradbedienung; Modell-, Firmware- und Boarddaten sowie Speicher- und Netzwerkwerte; RAM-Verlauf, Speicherbalken und einstellbares Messintervall; räumlichere Kacheln; robustes Layout langer Mount-Pfade; Abschwächung der Schattenkante.
 
-> Das aktuelle Foto zeigt an Kacheln eine zweite Kontur beziehungsweise einen Schatten, der wie eine überlagerte Kachel wirkt. Version 0.9.2 schwächt die harten, versetzten Schlagschatten ab. Beim nächsten TV-Test sollte geprüft werden, ob die Kontur damit verschwunden ist. Falls noch sichtbar, gezielt `box-shadow` und Randgestaltung in `app/style.css` prüfen; das dunkle Dashboard-Design beibehalten.
+> Das aktuelle Foto zeigt an Kacheln eine zweite Kontur beziehungsweise einen Schatten, der wie eine überlagerte Kachel wirkt. Version 0.9.3 schwächt die harten, versetzten Schlagschatten ab. Beim nächsten TV-Test sollte geprüft werden, ob die Kontur damit verschwunden ist. Falls noch sichtbar, gezielt `box-shadow` und Randgestaltung in `app/style.css` prüfen; das dunkle Dashboard-Design beibehalten.
 
 Die README-Datei beschreibt Installation und Nutzung. Dieses Dokument ist die technische Übergabe für spätere Weiterentwicklung; `CHANGELOG.md` bewahrt die Entwicklungsschritte und Nutzeranforderungen über die Versionen.
 

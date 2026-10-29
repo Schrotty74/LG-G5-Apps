@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.9.3
+
+- Corrected IPK archive paths so the Homebrew catalog validation can read its package metadata.
+
 ## 0.9.2
 
 - Softened hard, offset card shadows that looked like a second tile outline.

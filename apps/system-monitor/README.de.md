@@ -1,4 +1,4 @@
-# G5 System Monitor 0.9.2
+# G5 System Monitor 0.9.3
 
 Homebrew-Dashboard für LG G5 mit webOS 25. Die Oberfläche zeigt Systemwerte in einem dunklen, TV-gerechten Layout.
 
@@ -22,15 +22,15 @@ Homebrew-Dashboard für LG G5 mit webOS 25. Die Oberfläche zeigt Systemwerte in
 ## Dateien
 
 - `app/` enthält den vollständigen App-Quellcode einschließlich Symbol
-- [IPK herunterladen](g5-system-monitor_0.9.2_all.ipk)
-- [Quellcode als ZIP herunterladen](g5-system-monitor-source-v0.9.2.zip)
+- [IPK herunterladen](g5-system-monitor_0.9.3_all.ipk)
+- [Quellcode als ZIP herunterladen](g5-system-monitor-source-v0.9.3.zip)
 
 ## Installation
 
 Die IPK-Datei auf den Fernseher übertragen, zum Beispiel nach `/tmp`, und anschließend als root über den webOS-Installationsdienst installieren:
 
 ```sh
-luna-send-pub -i 'luna://com.webos.appInstallService/dev/install' '{"id":"com.ares.defaultName","ipkUrl":"/tmp/g5-system-monitor_0.9.2_all.ipk","subscribe":true}'
+luna-send-pub -i 'luna://com.webos.appInstallService/dev/install' '{"id":"com.ares.defaultName","ipkUrl":"/tmp/g5-system-monitor_0.9.3_all.ipk","subscribe":true}'
 ```
 
 Die App-ID lautet `org.schrotty74.g5systemmonitor`. Bei einer Aktualisierung die vorhandene Installation mit derselben Paket-ID aktualisieren. Vor dem Befehl den tatsächlichen Dateipfad prüfen.
