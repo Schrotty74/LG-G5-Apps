@@ -21,7 +21,7 @@ Diese Datei hält den Stand und wichtige Entscheidungen für spätere Weiterentw
 - Auf dem Fernseher läuft laut Nutzer noch der funktional gleiche Teststand mit interner Version 0.2.50. Die später erstellte 0.2.60 unterscheidet sich durch Versionsangaben und Updateprüfung; sie wurde nicht auf diesem Fernseher getestet.
 - Direct Home startet nach kurzem Ausschalten; der Test nach mehreren Stunden Standby steht noch aus. Die bisherige Methode bleibt als Rückfalllösung erhalten.
 - Nach wichtigen Arbeitsschritten diesen Abschnitt knapp aktualisieren: Was geändert wurde, welche lokale Testversion vorliegt, was tatsächlich getestet wurde, was offen ist und ob der Quellcode bereits auf GitHub liegt. Veraltete Zwischenstände ersetzen; keine persönlichen Daten eintragen.
-- Ein Markdown-Zwischenstand beschreibt die Arbeit, sichert aber keinen nicht hochgeladenen Quellcode und keine IPK. Lokale Quellcode- und Paketstände bis zu einem ausdrücklichen Upload-Auftrag gesondert sichern.
+- Ein Markdown-Zwischenstand beschreibt die Arbeit, ersetzt aber keine Sicherung des Quellcodes. Nach jeder lokalen Testversion ein separates versioniertes Quellcode-ZIP erstellen und im [Zwischenstandsordner](zwischenstaende/) sichern. Die zugehörige IPK bleibt lokal, bis ihr Upload ausdrücklich beauftragt wird.
 
 ## Oberfläche und Bedienung
 
@@ -49,7 +49,7 @@ Diese Datei hält den Stand und wichtige Entscheidungen für spätere Weiterentw
 
 ## Wichtige Regeln für künftige Änderungen
 
-- Lokale Testversionen fortlaufend in der letzten Versionsstelle um eins erhöhen (nach 0.2.60 beispielsweise 0.2.61, 0.2.62). App-Metadaten, Build, Updateprüfung und Paketname auf dieselbe Testversion abstimmen. Lokale Teststände nicht ohne ausdrücklichen Auftrag auf GitHub hochladen.
+- Lokale Testversionen fortlaufend in der letzten Versionsstelle um eins erhöhen (nach 0.2.60 beispielsweise 0.2.61, 0.2.62). App-Metadaten, Build, Updateprüfung und Paketname auf dieselbe Testversion abstimmen. Lokale Test-IPKs nicht ohne ausdrücklichen Auftrag auf GitHub hochladen. Für jede Testversion das zugehörige Quellcode-ZIP separat im Zwischenstandsordner sichern.
 - Für einen ausdrücklich beauftragten GitHub-Upload eine gemeinsame Versionsnummer für den hochzuladenden Stand festlegen (beispielsweise 0.2.70); keine automatische Aufrundungsregel annehmen. Der Changelog fasst nur die Änderungen des hochgeladenen Stands gegenüber der letzten auf GitHub dokumentierten Version zusammen, ohne einzelne lokale Zwischenversionen oder später verworfene Änderungen. Bei einem Release die Versionsangaben und Dokumentation aufeinander abstimmen. Ein unveröffentlichter Teststand kann gesammelt unter „Unreleased“ dokumentiert werden. Wenn der Nutzer eine kleine veröffentlichte Version ausdrücklich ersetzen und zusammenfassen möchte, wird der Eintrag in die Ersatzversion übernommen.
 
 - Pro App im aktuellen Repository-Stand höchstens die **drei neuesten IPK-Pakete und die drei neuesten Quellcode-ZIPs** behalten. Ältere Pakete und ZIPs bei einer Veröffentlichung entfernen und auf veraltete Download-Links prüfen. Dateien bleiben ohne gesonderte Bereinigung in der Git-Historie erhalten.
