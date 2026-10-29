@@ -2,6 +2,13 @@
 
 Entries describe versions published in this repository. Each entry includes the relevant changes since the previous published version; intermediate test builds are grouped into the next published version.
 
+## 0.2.50
+
+- Add optional autostart after a cold boot and when waking from standby. The launcher waits 10 seconds at cold boot and retries if needed; wake-up uses a shorter delay.
+- Use an app-owned boot script and a symbolic link for the Homebrew startup hook; migrate the earlier launcher-owned hook and preserve unrelated hooks.
+- Add settings to enable, disable and check autostart. Home-button mapping remains separate; disable autostart before uninstalling.
+- Correct IPK archive paths and add Installed-Size metadata for Homebrew catalog validation.
+
 ## 0.2.46
 
 - Add Halloween and Christmas themes, grouped separately from the standard backgrounds.

@@ -1,5 +1,23 @@
 (function(){
   var en={
+  "Autostart-Skript ist nicht ausführbar.": "Autostart script is not executable.",
+  "Autostart-Datei wurde zwischenzeitlich geändert.": "The autostart file changed during migration.",
+  "Autostart": "Autostart",
+  "Öffnet diesen Launcher nach einem Neustart oder beim Aufwachen aus dem Standby. Vor dem Deinstallieren des Launchers ausschalten. Die Home-Tastenbelegung bleibt unverändert.": "Opens this launcher after a reboot or when waking from standby. Turn it off before uninstalling the launcher. The Home button mapping remains unchanged.",
+  "Autostart einschalten": "Enable autostart",
+  "Autostart ausschalten": "Disable autostart",
+  "Autostart wird geprüft …": "Checking autostart …",
+  "Autostart wird geändert …": "Changing autostart …",
+  "Autostart ist ausgeschaltet.": "Autostart is off.",
+  "Autostart ist eingeschaltet; Überwachung läuft.": "Autostart is on; the wake monitor is running.",
+  "Autostart ist eingeschaltet, aber die Überwachung läuft nicht.": "Autostart is on, but the wake monitor is not running.",
+  "Autostart konnte nicht geändert werden.": "Could not change autostart.",
+  "Autostart-Datei gehört nicht diesem Launcher.": "The autostart file is not owned by this launcher.",
+  "Autostart-Helfer wurde nicht gefunden.": "Autostart helper was not found.",
+  "Autostart konnte nicht gestartet werden.": "Could not start autostart.",
+  "Autostart-Überwachung konnte nicht beendet werden.": "Could not stop the autostart monitor.",
+  "Autostart konnte nicht geprüft werden.": "Could not check autostart.",
+
   "Standard-Themes": "Standard themes",
   "Spezial-Themes": "Special themes",
   "Weihnachten": "Christmas",

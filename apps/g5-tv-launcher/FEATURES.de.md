@@ -4,6 +4,8 @@
 
 ## Funktionen
 
+- Launcher beim Start oder Aufwachen des Fernsehers optional automatisch öffnen; vor der Deinstallation ausschalten.
+
 - Installierte Apps in der Übersicht durchsehen und starten; HDMI-Eingänge und Live TV haben eine eigene Seite „Eingänge“.
 - Favoriten in der Glas-Dockleiste hinzufügen, entfernen und sortieren. App-Symbole mit oder ohne Namen anzeigen und für die Ansicht ohne Namen zwischen drei Größen wählen.
 - Bedienung mit Steuerkreuz, Zeiger und Mausrad der Magic Remote.

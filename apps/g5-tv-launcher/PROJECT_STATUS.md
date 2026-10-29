@@ -4,7 +4,10 @@ Diese Datei hält den Stand und wichtige Entscheidungen für spätere Weiterentw
 
 ## Aktueller Stand
 
-- Version: **0.2.46**; App-ID: `org.schrotty74.g5launcher`.
+- Autostart ist optional: Der Nutzer hat das korrigierte Paket auf seinem Fernseher erfolgreich getestet, einschließlich Start aus tiefem Standby. Vor der Deinstallation Autostart ausschalten.
+- IPK-Bauvorgaben für beide Apps und künftige Apps: [IPK_PACKAGING.md](../../IPK_PACKAGING.md).
+
+- Version: **0.2.50**; App-ID: `org.schrotty74.g5launcher`.
 - Eigenständiger Homebrew-Launcher für einen gerooteten LG G5 mit webOS 25. Der Nutzer meldete, dass die Ortsanzeige beim Wechsel auf Englisch richtig war. Gerätetests einzelner Funktionen gelten für den verwendeten Fernseher.
 - Der vollständige Quellcode liegt unter [app/](app/); die IPK und das Quellcode-ZIP liegen im App-Verzeichnis. Die Anwendung ist eine Web-App mit HTML, CSS, JavaScript und lokalen SVG-Szenen.
 

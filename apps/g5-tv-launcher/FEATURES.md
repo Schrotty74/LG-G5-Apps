@@ -4,6 +4,8 @@
 
 ## Features
 
+- Optionally start the launcher after a cold boot or wake-up; turn it off before uninstalling.
+
 - Browse and launch installed apps from Overview; HDMI inputs and Live TV have their own Inputs page.
 - Add, remove and reorder favorites in the glass-style dock. Show app icons with or without names and choose from three icon sizes when names are hidden.
 - Navigate using the Magic Remote directional controls, pointer and wheel.

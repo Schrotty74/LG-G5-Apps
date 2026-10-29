@@ -1,4 +1,4 @@
-# G5 TV Launcher 0.2.46
+# G5 TV Launcher 0.2.50
 
 [English](README.md) · [Deutsch](README.de.md)
 
@@ -25,12 +25,12 @@ Zum Vergrößern auf ein Bild klicken.
 - Uhrzeit und Wetter unabhängig voneinander vergrößern; Wetterdaten alle 15 Minuten, stündlich, zweimal täglich oder täglich aktualisieren.
 - Animierte Wettersymbole bei eingeschalteten Animationen, mit Varianten für Nacht, Wolken und Regen. Der Tag-Nacht-Wechsel nutzt Sonnenauf- und -untergang am Standort.
 
-Die vollständige [Funktionsübersicht mit allen 21 Funktionen](FEATURES.de.md) enthält weitere Details.
+Die vollständige [Funktionsübersicht](FEATURES.de.md) enthält weitere Details.
 
 ## Downloads und Quellcode
 
-- [IPK 0.2.46 herunterladen](g5-tv-launcher_0.2.46_all.ipk)
-- [Quellcode-ZIP herunterladen](g5-tv-launcher-source_0.2.46.zip)
+- [IPK 0.2.50 herunterladen](g5-tv-launcher_0.2.50_all.ipk)
+- [Quellcode-ZIP herunterladen](g5-tv-launcher-source_0.2.50.zip)
 - [Vollständiger App-Quellcode](app/)
 - [Entwicklungsnotizen (English)](DEVELOPMENT.md)
 - [Projektstand und Hinweise für die Weiterentwicklung](PROJECT_STATUS.md)
@@ -41,10 +41,14 @@ Die vollständige [Funktionsübersicht mit allen 21 Funktionen](FEATURES.de.md) 
 Voraussetzungen sind ein gerooteter Fernseher und ein funktionierender Homebrew-Channel-Dienst. Die IPK per SFTP nach `/tmp` übertragen und dann per SSH installieren:
 
 ```sh
-luna-send-pub -i 'luna://com.webos.appInstallService/dev/install' '{"id":"com.ares.defaultName","ipkUrl":"/tmp/g5-tv-launcher_0.2.46_all.ipk","subscribe":true}'
+luna-send-pub -i 'luna://com.webos.appInstallService/dev/install' '{"id":"com.ares.defaultName","ipkUrl":"/tmp/g5-tv-launcher_0.2.50_all.ipk","subscribe":true}'
 ```
 
 Alternativ kann die IPK über Glasshouse hochgeladen werden. Die App-ID lautet `org.schrotty74.g5launcher`.
+
+## Optionaler Autostart
+
+Autostart lässt sich in den Einstellungen unter Start & Home ein- und ausschalten. Er nutzt den Homebrew-Startmechanismus und öffnet den Launcher nach dem Start oder Aufwachen des Fernsehers. Vor der Deinstallation ausschalten. Die Belegung der Home-Taste ist separat.
 
 ## Hinweise
 
@@ -58,7 +62,7 @@ Python 3 installieren, das Terminal in diesem App-Ordner öffnen und ausführen:
 python3 build.py
 ```
 
-Das Paket liegt danach unter `dist/g5-tv-launcher_0.2.46_all.ipk`. Mit `python3 build.py --output /pfad/zum/ausgabeordner` lässt sich ein anderer Ausgabeordner wählen. Das Skript nutzt nur die Python-Standardbibliothek und benötigt keinen festen Pfad auf dem Computer.
+Das Paket liegt danach unter `dist/g5-tv-launcher_0.2.50_all.ipk`. Mit `python3 build.py --output /pfad/zum/ausgabeordner` lässt sich ein anderer Ausgabeordner wählen. Das Skript nutzt nur die Python-Standardbibliothek und benötigt keinen festen Pfad auf dem Computer.
 
 ## Optionale Home-Tastenbelegung
 

@@ -9,7 +9,7 @@ import tarfile
 
 ROOT = Path(__file__).resolve().parent
 APP = ROOT / 'app'
-VERSION = '0.2.46'
+VERSION = '0.2.50'
 APP_ID = 'org.schrotty74.g5launcher'
 
 def tar_bytes(entries):
@@ -24,7 +24,7 @@ def tar_bytes(entries):
                 info.mode = 0o755
                 archive.addfile(info)
             else:
-                info.mode = 0o644
+                info.mode = 0o755 if name.endswith('/autostart_boot.sh') else 0o644
                 info.size = len(data)
                 archive.addfile(info, io.BytesIO(data))
     raw = output.getvalue()
@@ -54,18 +54,19 @@ def main():
     metadata = json.loads((APP / 'appinfo.json').read_text(encoding='utf-8'))
     if metadata.get('version') != VERSION or metadata.get('id') != APP_ID:
         parser.error('build version or app ID does not match app/appinfo.json')
-    base = './usr/palm/applications/' + APP_ID
-    dirs = ['.', './usr', './usr/palm', './usr/palm/applications', base]
-    dirs.extend(base + '/' + d.relative_to(APP).as_posix() for d in sorted(APP.rglob('*')) if d.is_dir())
+    base = 'usr/palm/applications/' + APP_ID
+    dirs = ['usr', 'usr/palm', 'usr/palm/applications', base]
+    dirs.extend(base + '/' + d.relative_to(APP).as_posix() for d in sorted(APP.rglob('*')) if d.is_dir() and '__pycache__' not in d.parts)
     entries = [(d, None) for d in dirs]
-    entries += [(base + '/' + f.relative_to(APP).as_posix(), f.read_bytes()) for f in sorted(APP.rglob('*')) if f.is_file()]
-    control = (f'Package: {APP_ID}\nVersion: {VERSION}\nSection: utils\nArchitecture: all\nMaintainer: Schrotty74\nDescription: G5 Home launcher for LG webOS TV\n').encode()
+    entries += [(base + '/' + f.relative_to(APP).as_posix(), f.read_bytes()) for f in sorted(APP.rglob('*')) if f.is_file() and '__pycache__' not in f.parts and f.suffix != '.pyc']
+    installed_size = (sum(len(data) for _, data in entries if data is not None) + 1023) // 1024
+    control = (f'Package: {APP_ID}\nVersion: {VERSION}\nSection: utils\nArchitecture: all\nMaintainer: Schrotty74\nInstalled-Size: {installed_size}\nDescription: G5 Home launcher for LG webOS TV\n').encode()
     args.output.mkdir(parents=True, exist_ok=True)
     target = args.output / f'g5-tv-launcher_{VERSION}_all.ipk'
     with target.open('wb') as stream:
         stream.write(b'!<arch>\n')
         write_ar_entry(stream, 'debian-binary', b'2.0\n')
-        write_ar_entry(stream, 'control.tar.gz', tar_bytes([('./control', control)]))
+        write_ar_entry(stream, 'control.tar.gz', tar_bytes([('control', control)]))
         write_ar_entry(stream, 'data.tar.gz', tar_bytes(entries))
     print(target)
 

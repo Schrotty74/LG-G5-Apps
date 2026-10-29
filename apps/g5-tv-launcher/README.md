@@ -1,4 +1,4 @@
-# G5 TV Launcher 0.2.46
+# G5 TV Launcher 0.2.50
 
 [English](README.md) · [Deutsch](README.de.md)
 
@@ -25,12 +25,12 @@ Click an image to view it full size.
 - Adjust clock and weather sizes independently; set the weather refresh interval to 15 minutes, hourly, twice daily or daily.
 - Show animated weather symbols when animations are enabled, with nighttime, cloudy and rainy variants. Day/night switching uses local sunrise and sunset times.
 
-See the complete [feature overview with all 21 features](FEATURES.md) for further details.
+See the complete [feature overview with full feature list](FEATURES.md) for further details.
 
 ## Downloads and source
 
-- [Download IPK 0.2.46](g5-tv-launcher_0.2.46_all.ipk)
-- [Download source ZIP](g5-tv-launcher-source_0.2.46.zip)
+- [Download IPK 0.2.50](g5-tv-launcher_0.2.50_all.ipk)
+- [Download source ZIP](g5-tv-launcher-source_0.2.50.zip)
 - [Complete app source](app/)
 - [Development notes](DEVELOPMENT.md)
 - [Project status and continuation notes (German)](PROJECT_STATUS.md)
@@ -41,10 +41,14 @@ See the complete [feature overview with all 21 features](FEATURES.md) for furthe
 A rooted TV and a working Homebrew Channel service are required. Transfer the IPK to `/tmp` using SFTP, then install it via SSH:
 
 ```sh
-luna-send-pub -i 'luna://com.webos.appInstallService/dev/install' '{"id":"com.ares.defaultName","ipkUrl":"/tmp/g5-tv-launcher_0.2.46_all.ipk","subscribe":true}'
+luna-send-pub -i 'luna://com.webos.appInstallService/dev/install' '{"id":"com.ares.defaultName","ipkUrl":"/tmp/g5-tv-launcher_0.2.50_all.ipk","subscribe":true}'
 ```
 
 Glasshouse's IPK upload can also be used. The app ID is `org.schrotty74.g5launcher`.
+
+## Optional autostart
+
+Enable or disable autostart in Settings under Start & Home. The optional feature uses the Homebrew startup hook and starts the launcher after boot or wake-up. Disable it before uninstalling the launcher. Home-button mapping is configured separately.
 
 ## Notes
 
@@ -58,7 +62,7 @@ Install Python 3, open Terminal in this app directory, and run:
 python3 build.py
 ```
 
-The script writes `dist/g5-tv-launcher_0.2.46_all.ipk`. Use `python3 build.py --output /path/to/output` to choose another output directory. It uses only Python's standard library; no absolute path to the developer's computer is needed.
+The script writes `dist/g5-tv-launcher_0.2.50_all.ipk`. Use `python3 build.py --output /path/to/output` to choose another output directory. It uses only Python's standard library; no absolute path to the developer's computer is needed.
 
 ## Optional Home button mapping
 

@@ -59,3 +59,7 @@ Installationshinweise und der bisher verwendete Luna-Installationsbefehl stehen 
 - Keine privaten IP-Adressen, Zugangsdaten, SSH-Schlüssel, internen Pfade oder TV-Kennungen in Quellcode oder öffentliche Dokumente aufnehmen.
 - Version, Paketdateiname und Dokumentation zusammenhalten. Versionsnummern nur nach ausdrücklichem Auftrag ändern.
 - Vor dem Hochladen Quellcode, Paket und Dokumentation auf private Daten prüfen. Ein Build allein gilt nicht als erfolgreicher Gerätetest.
+
+## Paketierung für Homebrew
+
+Die gemeinsamen Vorgaben zur IPK-Struktur und Katalogprüfung stehen in [IPK_PACKAGING.md](../../IPK_PACKAGING.md).
