@@ -32,7 +32,6 @@ See the complete [feature overview with full feature list](FEATURES.md) for furt
 ## Downloads and source
 
 - [Download current test IPK](g5-tv-launcher_0.2.60_all.ipk)
-- [Download released IPK 0.2.50](g5-tv-launcher_0.2.50_all.ipk)
 - [Download current test source ZIP](g5-tv-launcher-source_0.2.60.zip)
 - [Complete app source](app/)
 - [Development notes](DEVELOPMENT.md)

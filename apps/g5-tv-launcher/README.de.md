@@ -32,7 +32,6 @@ Die vollständige [Funktionsübersicht](FEATURES.de.md) enthält weitere Details
 ## Downloads und Quellcode
 
 - [Aktuelle Test-IPK herunterladen](g5-tv-launcher_0.2.60_all.ipk)
-- [Veröffentlichte IPK 0.2.50 herunterladen](g5-tv-launcher_0.2.50_all.ipk)
 - [Aktuelles Test-Quellcode-ZIP herunterladen](g5-tv-launcher-source_0.2.60.zip)
 - [Vollständiger App-Quellcode](app/)
 - [Entwicklungsnotizen (English)](DEVELOPMENT.md)
