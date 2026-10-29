@@ -15,6 +15,14 @@ Diese Datei hält den Stand und wichtige Entscheidungen für spätere Weiterentw
 - Eigenständiger Homebrew-Launcher für einen gerooteten LG G5 mit webOS 25. Der Nutzer meldete, dass die Ortsanzeige beim Wechsel auf Englisch richtig war. Gerätetests einzelner Funktionen gelten für den verwendeten Fernseher.
 - Der vollständige Quellcode liegt unter [app/](app/); die IPK und das Quellcode-ZIP liegen im App-Verzeichnis. Die Anwendung ist eine Web-App mit HTML, CSS, JavaScript und lokalen SVG-Szenen.
 
+## Übergabe für den nächsten Chat
+
+- Letzter auf GitHub gesicherter Launcher-Stand: 0.2.60 mit zugehöriger IPK und Quellcode-ZIP. Die Dateien unter `app/` sind der maßgebliche Quellcode auf GitHub.
+- Auf dem Fernseher läuft laut Nutzer noch der funktional gleiche Teststand mit interner Version 0.2.50. Die später erstellte 0.2.60 unterscheidet sich durch Versionsangaben und Updateprüfung; sie wurde nicht auf diesem Fernseher getestet.
+- Direct Home startet nach kurzem Ausschalten; der Test nach mehreren Stunden Standby steht noch aus. Die bisherige Methode bleibt als Rückfalllösung erhalten.
+- Nach wichtigen Arbeitsschritten diesen Abschnitt knapp aktualisieren: Was geändert wurde, welche lokale Testversion vorliegt, was tatsächlich getestet wurde, was offen ist und ob der Quellcode bereits auf GitHub liegt. Veraltete Zwischenstände ersetzen; keine persönlichen Daten eintragen.
+- Ein Markdown-Zwischenstand beschreibt die Arbeit, sichert aber keinen nicht hochgeladenen Quellcode und keine IPK. Lokale Quellcode- und Paketstände bis zu einem ausdrücklichen Upload-Auftrag gesondert sichern.
+
 ## Oberfläche und Bedienung
 
 - Drei Seiten: Übersicht, Favoriten und Eingänge. Die Startseite ist auswählbar und gilt auch beim erneuten Öffnen.
