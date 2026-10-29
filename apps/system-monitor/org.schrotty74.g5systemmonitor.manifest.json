@@ -9,7 +9,7 @@
   "rootRequired": true,
   "ipkUrl": "https://raw.githubusercontent.com/Schrotty74/LG-G5-Apps/main/apps/system-monitor/g5-system-monitor_0.9.3_all.ipk",
   "ipkHash": {
-    "sha256": "866bdd493a3863604179ae9739a2ad3c21c97069367b42343cb0547fe803314c"
+    "sha256": "bef9fd2119c7b928ba9599cbe98126ba8248eb606bbfad8c36e916cd4574ee18"
   },
-  "ipkSize": 11880
+  "ipkSize": 11896
 }
