@@ -4,6 +4,9 @@ Diese Datei hält den Stand und wichtige Entscheidungen für spätere Weiterentw
 
 ## Aktueller Stand
 
+- **Lokaler Teststand 0.2.63 (30. Oktober 2026):** Vom Nutzer installiert. Direct Home prüft Magic Mapper beim Start nicht mehr; ein erweitertes Startprotokoll dokumentiert Ablaufschritt und Fehler-Traceback. Nach kurzem Aus- und Einschalten erschien LG Home; die Ursache ist offen. Der Nutzer testet den längeren Standby über Nacht. Glasshouse Home und dessen experimentelle Home-Anpassung waren laut Anzeige ausgeschaltet. Der Fernseher soll für den Test Home beim Einschalten öffnen. Der [Quellcode-Zwischenstand](zwischenstaende/g5-launcher-zwischenstand_0.2.63.zip) ist separat gesichert; die Test-IPK bleibt lokal.
+- Der frühere Startfehler lautete `Boot recovery: [Errno 13] Permission denied: ''`; dessen genaue Ursache ist offen. Die vorherige Vermutung zu einem leeren Python-Pfad ist nicht belegt.
+
 - **Testversion 0.2.60 nach 0.2.50:** Direct Home Takeover, Wettersymbol-Sets Meteocons und Makin’ Things sowie GeoSphere Austria über Open-Meteo. Das getrennte [Testpaket](g5-tv-launcher_0.2.60_all.ipk) enthält diesen Stand; die veröffentlichte IPK 0.2.50 bleibt unverändert.
 - Direct Home und der Wechsel der Wettersymbol-Sets wurden auf dem Fernseher ausprobiert. Start nach kurzem Ausschalten funktionierte; der Test nach mehreren Stunden Standby steht aus. Die bisherige Home-Methode bleibt als Rückfalllösung erhalten. Die Ursache eines früheren Absturzes ist ungeklärt; derzeit tritt er laut Nutzer nicht mehr auf.
 - Wettersymbol-Animationen und der aktualisierte Wetterdienst wurden nicht umfassend auf dem Fernseher geprüft.
@@ -17,8 +20,8 @@ Diese Datei hält den Stand und wichtige Entscheidungen für spätere Weiterentw
 
 ## Übergabe für den nächsten Chat
 
-- Letzter auf GitHub gesicherter Launcher-Stand: 0.2.60 mit zugehöriger IPK und Quellcode-ZIP. Die Dateien unter `app/` sind der maßgebliche Quellcode auf GitHub.
-- Auf dem Fernseher läuft laut Nutzer noch der funktional gleiche Teststand mit interner Version 0.2.50. Die später erstellte 0.2.60 unterscheidet sich durch Versionsangaben und Updateprüfung; sie wurde nicht auf diesem Fernseher getestet.
+- Regulärer Launcher-Stand unter `app/`: 0.2.60. Der aktuellere lokale Teststand 0.2.63 ist als separates Quellcode-ZIP im Zwischenstandsordner gesichert; seine IPK wurde nicht auf GitHub hochgeladen.
+- Auf dem Fernseher ist laut Nutzer inzwischen die lokale Testversion 0.2.63 installiert; der zugehörige Quellcode liegt separat im Zwischenstandsordner.
 - Direct Home startet nach kurzem Ausschalten; der Test nach mehreren Stunden Standby steht noch aus. Die bisherige Methode bleibt als Rückfalllösung erhalten.
 - Nach wichtigen Arbeitsschritten diesen Abschnitt knapp aktualisieren: Was geändert wurde, welche lokale Testversion vorliegt, was tatsächlich getestet wurde, was offen ist und ob der Quellcode bereits auf GitHub liegt. Veraltete Zwischenstände ersetzen; keine persönlichen Daten eintragen.
 - Ein Markdown-Zwischenstand beschreibt die Arbeit, ersetzt aber keine Sicherung des Quellcodes. Nach jeder lokalen Testversion ein separates versioniertes Quellcode-ZIP erstellen und im [Zwischenstandsordner](zwischenstaende/) sichern. Die zugehörige IPK bleibt lokal, bis ihr Upload ausdrücklich beauftragt wird.
