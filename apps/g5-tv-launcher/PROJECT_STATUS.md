@@ -18,6 +18,12 @@ Diese Datei hält den Stand und wichtige Entscheidungen für spätere Weiterentw
 - Eigenständiger Homebrew-Launcher für einen gerooteten LG G5 mit webOS 25. Der Nutzer meldete, dass die Ortsanzeige beim Wechsel auf Englisch richtig war. Gerätetests einzelner Funktionen gelten für den verwendeten Fernseher.
 - Der vollständige Quellcode liegt unter [app/](app/); die IPK und das Quellcode-ZIP liegen im App-Verzeichnis. Die Anwendung ist eine Web-App mit HTML, CSS, JavaScript und lokalen SVG-Szenen.
 
+## Wünsche für später
+
+- Nach dem Ergebnis des Standby-Tests gemeinsam ansehen: Apps auf der Startseite und bei den Favoriten ausblenden und sortieren; die vorhandene Favoritenverwaltung berücksichtigen.
+- Eine Notfallrückkehr zu LG Home per Fernbedienung prüfen. Geste und Umsetzung gemeinsam festlegen und auf dem TV testen.
+- Diese Wünsche sind vorgemerkt, nicht implementiert. Erst das Ergebnis des längeren Standby-Tests abwarten.
+
 ## Übergabe für den nächsten Chat
 
 - Regulärer Launcher-Stand unter `app/`: 0.2.60. Der aktuellere lokale Teststand 0.2.63 ist als separates Quellcode-ZIP im Zwischenstandsordner gesichert; seine IPK wurde nicht auf GitHub hochgeladen.
