@@ -20,7 +20,7 @@ Diese Datei hält den Stand und wichtige Entscheidungen für spätere Weiterentw
 
 ## Wünsche für später
 
-- Nach dem Ergebnis des Standby-Tests gemeinsam ansehen: Apps auf der Startseite und bei den Favoriten ausblenden und sortieren; die vorhandene Favoritenverwaltung berücksichtigen.
+- Nach dem Ergebnis des Standby-Tests gemeinsam ansehen: Apps auf der Startseite ausblenden und sortieren sowie Apps bei den Favoriten ausblenden. Favoriten lassen sich laut Nutzer bereits einzeln nach oben und unten verschieben; diese vorhandene Sortierung berücksichtigen.
 - Eine Notfallrückkehr zu LG Home per Fernbedienung prüfen. Geste und Umsetzung gemeinsam festlegen und auf dem TV testen.
 - Diese Wünsche sind vorgemerkt, nicht implementiert. Erst das Ergebnis des längeren Standby-Tests abwarten.
 
