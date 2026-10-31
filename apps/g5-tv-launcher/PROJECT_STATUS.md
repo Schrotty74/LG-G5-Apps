@@ -4,6 +4,8 @@ Diese Datei hält den Stand und wichtige Entscheidungen für spätere Weiterentw
 
 ## Aktueller Stand
 
+- **Lokaler Zwischenstand 0.2.64:** Zusätzlicher Wetterabruf fünf Sekunden nach Start, Wiederöffnen oder Sichtbarwerden; das eingestellte Intervall bleibt erhalten. Lokale Prüfungen bestanden; Browser- und Fernsehtest stehen aus. Laut Nutzer ist 0.2.63 installiert.
+
 - **Standby-Test am 31. Oktober 2026:** Laut Nutzer erschien der installierte G5 TV Launcher 0.2.63 nach dem Ausschalten über Nacht sofort. Zunächst meldete die Wetteranzeige „Wetter nicht verfügbar“; nach erneutem Speichern des unveränderten Wetterstandorts funktionierte sie sofort. Ursache offen. Der Code startet die Wetterabfrage sofort; eine noch nicht bereite Netzwerkverbindung ist eine mögliche Erklärung, kein gesicherter Befund. Die geplante Wartezeit im Boot-Skript beschreibt nicht notwendigerweise das sichtbare Aufwachen aus Standby.
 
 - **Lokaler Teststand 0.2.63 (30. Oktober 2026):** Vom Nutzer installiert. Direct Home prüft Magic Mapper beim Start nicht mehr; ein erweitertes Startprotokoll dokumentiert Ablaufschritt und Fehler-Traceback. Nach kurzem Aus- und Einschalten erschien LG Home; die Ursache ist offen. Der anschließende längere Standby-Test am 31. Oktober verlief laut Nutzer beim Start des Launchers erfolgreich; siehe aktuellen Eintrag oben. Glasshouse Home und dessen experimentelle Home-Anpassung waren laut Anzeige ausgeschaltet. Der Fernseher soll für den Test Home beim Einschalten öffnen. Der [Quellcode-Zwischenstand](zwischenstaende/g5-launcher-zwischenstand_0.2.63.zip) ist separat gesichert; die Test-IPK bleibt lokal.
