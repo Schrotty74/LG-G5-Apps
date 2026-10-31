@@ -11,6 +11,26 @@ Homebrew apps and tools for LG G-series TVs. Each app has its own directory with
 
 G5 System Monitor 0.9.3 is the current package. The UI preview is a mock-up based on the app source; every value shown in it is demo data, not a capture from the TV.
 
+## App catalog for Glasshouse and Homebrew Channel
+
+The [G5 Apps catalog](repo.json) contains the published versions of G5 TV Launcher and G5 System Monitor.
+
+**Glasshouse**
+
+1. Open Glasshouse and go to **Apps → Other app catalogs**.
+2. Choose the option to add a catalog and enter this repository address:
+   `https://github.com/Schrotty74/LG-G5-Apps`
+3. Add the catalog. Both apps should then appear for selection and installation.
+
+**Homebrew Channel**
+
+1. Open Homebrew Channel on the TV and choose **Settings → Add repository**.
+2. Enter and add the direct catalog address:
+   `https://raw.githubusercontent.com/Schrotty74/LG-G5-Apps/main/repo.json`
+3. Select and install the apps from the catalog.
+
+Adding the catalog in Glasshouse was tested on a TV. Setup in Homebrew Channel has not yet been tested on a TV.
+
 ## Installing an IPK
 
 1. Download the `.ipk` file and transfer it to the TV with SFTP, for example to `/tmp`.
