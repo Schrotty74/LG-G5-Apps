@@ -21,11 +21,12 @@ Die Angaben beschreiben lokale Tests, keine veröffentlichten Versionen. Bei all
 
 
 
-- **Animierte Import-Themes (interne Version 0.2.70):** Optionale Effekte neon, rain, snow und particles, Vorlage, Anleitung und importierbares Cyberpunk-Beispiel. Vorhandene statische Themes bleiben kompatibel. Lokale Prüfungen bestanden; Fernsehtest steht aus. [Quellcode-ZIP](g5-launcher-zwischenstand_0.2.70-animated-themes.zip).
 
 - **Cyberpunk-Leuchteffekt-Test (intern 0.2.70):** Der Leuchteffekt des eingebauten Cyberpunk-Themes wurde verstärkt; importierte Effekte bleiben enthalten. 31 automatisierte Prüfungen und Paketprüfung bestanden; Fernsehtest steht aus. [Quellcode-ZIP](g5-launcher-zwischenstand_0.2.70-cyberglow-test.zip).
 
 - **Cyberpunk-Fenster-Test (intern 0.2.70):** Kräftigere Neonfarben, verstärktes Neonlicht und wechselnd leuchtende Fenster im integrierten Cyberpunk-Theme. Die allgemeine Animationseinstellung steuert beides. Lokale Tests und Paketprüfung bestanden; Fernsehtest steht aus. [Quellcode-ZIP](g5-launcher-zwischenstand_0.2.70-cyberwindows-test.zip).
+
+- **Cyberpunk-Stadt-Test (intern 0.2.70):** Fenster in allen Gebäuden, leuchtende Fenstergruppen und animierte Bodenlinien. 31 automatisierte Tests sowie SVG-, IPK- und ZIP-Prüfung bestanden; Fernsehtest steht aus. [Quellcode-ZIP](g5-launcher-zwischenstand_0.2.70-cyber-city-test.zip).
 
 ## Verbindlicher Ablauf je Testversion
 

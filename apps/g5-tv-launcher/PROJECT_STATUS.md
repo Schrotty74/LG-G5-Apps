@@ -4,6 +4,8 @@ Diese Datei hält den Stand und wichtige Entscheidungen für spätere Weiterentw
 
 ## Aktueller Stand
 
+- **Cyberpunk-Stadt-Test (intern 0.2.70):** Ergänzt Fenster an bisher fensterlosen Gebäuden und animiert die Bodenlinien im integrierten Cyberpunk-Theme. Animationen sind über die vorhandene Einstellung steuerbar. 31 automatisierte Tests sowie SVG-, IPK- und ZIP-Prüfung bestanden; Fernsehtest steht aus. [Test-Quellcode](zwischenstaende/g5-launcher-zwischenstand_0.2.70-cyber-city-test.zip); Test-IPK bleibt lokal.
+
 - **Cyberpunk-Fenster-Test (intern 0.2.70):** Das eingebaute Cyberpunk-Theme hat kräftigere Neonfarben, ein verstärktes Neonlicht und zwei wechselnd leuchtende Fenstergruppen; die Animationseinstellung steuert beide Effekte. 31 automatisierte Tests sowie IPK- und ZIP-Prüfung bestanden; Fernsehtest steht aus. [Test-Quellcode](zwischenstaende/g5-launcher-zwischenstand_0.2.70-cyberwindows-test.zip); Test-IPK bleibt lokal.
 
 - **Cyberpunk-Leuchteffekt-Test (intern 0.2.70):** Nutzer meldete, dass das importierte Cyberpunk-Theme animiert ist, das integrierte jedoch nicht sichtbar. Dessen schwacher Lichteffekt wurde verstärkt. 31 automatisierte Tests und Paketprüfung bestanden; Fernsehtest steht aus. [Quellcode-ZIP](zwischenstaende/g5-launcher-zwischenstand_0.2.70-cyberglow-test.zip); Test-IPK bleibt lokal.
