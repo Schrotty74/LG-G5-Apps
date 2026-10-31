@@ -4,11 +4,16 @@ Diese Datei hält den Stand und wichtige Entscheidungen für spätere Weiterentw
 
 ## Aktueller Stand
 
+- **Wintertheme:** Das eigenständige [Wintertheme](themes/winter.json) ergänzt Frühling, Sommer und Herbst im öffentlichen Theme-Ordner. JSON-Format, Bild und Größenbegrenzungen wurden lokal geprüft; ein Import auf dem Fernseher wurde noch nicht getestet. Höchstens drei eigene Themes können gleichzeitig gespeichert werden.
+
+- **Launcher-Funktionen seit der vorigen veröffentlichten Version:** Direct Home startet ohne Magic-Mapper-Prüfung und schreibt bei Startfehlern genauere Diagnoseinformationen. Wetter wird zusätzlich fünf Sekunden nach Start, erneutem Öffnen oder Sichtbarwerden abgefragt. Die Uhr kann digital oder analog angezeigt werden. Apps auf der Übersicht lassen sich ausblenden, wieder einblenden und sortieren; die Favoritensortierung bleibt erhalten. Eigene JSON-Themes lassen sich über `/tmp` oder das Eingabefeld importieren, auswählen und entfernen; die Auswahl ist in Standard, Spezial und Importiert gegliedert. Eine experimentelle Home-Notfallgeste ist vorhanden.
+- **Nutzertests der vorherigen Teststände:** Umschalten der Uhr, App-Verwaltung auf der Übersicht, Theme-Import, Kategorien, Dateifilter, Theme-Entfernung und Leeren des Eingabefelds wurden laut Nutzer erfolgreich am Fernseher ausprobiert. Diese Rückmeldungen belegen keinen Test des später neu gebauten Pakets 0.2.70.
+
 - **Veröffentlichung 0.2.70:** Aus dem lokalen Teststand 0.2.69 neu gebaut. Die IPK 0.2.70 selbst wurde noch nicht auf dem Fernseher getestet; Nutzer bestätigte die Theme-Kategorien, Dateifilter, Import, Entfernung und Leeren des Eingabefelds im vorherigen Test. Der Wetter-Nachabruf und die experimentelle Notfallgeste benötigen noch einen Gerätetest.
 
-- **Lokaler Teststand 0.2.69:** Theme-Eingabefeld wird nach erfolgreicher Installation geleert; fehlerhafte Eingaben bleiben erhalten. Nutzer bestätigt Theme-Kategorien, Filterung der Dateien und Entfernen mit 0.2.68. Lokale und simulierte Tests bestanden; TV-Test von 0.2.69 steht aus.
+- **Lokaler Teststand 0.2.69:** Theme-Eingabefeld wird nach erfolgreicher Installation geleert; fehlerhafte Eingaben bleiben erhalten. Nutzer bestätigte die Theme-Kategorien, Dateifilterung und das Entfernen; ebenso bestätigte er nach der Änderung das Leeren des Eingabefelds. Lokale und simulierte Prüfungen wurden durchgeführt.
 
-- **Lokaler Teststand 0.2.68:** Getrennte Auswahl für Standard-, Spezial- und importierte Themes; Dateisuche zeigt nur gültige Theme-JSON-Dateien. Nutzer bestätigte den Theme-Import mit 0.2.67. Lokale Prüfungen bestanden, Fernsehtest von 0.2.68 steht aus.
+- **Lokaler Teststand 0.2.68:** Getrennte Auswahl für Standard-, Spezial- und importierte Themes; Dateisuche zeigt nur gültige Theme-JSON-Dateien. Der Nutzer bestätigte Theme-Import, Kategorien, Dateifilterung und Entfernung am Fernseher; lokale Prüfungen wurden durchgeführt.
 
 - **Lokaler Teststand 0.2.67:** Theme-JSON aus /tmp am Fernseher auswählen und importieren; Nutzer meldet Uhrwechsel und App-Auswahl von 0.2.66 als funktionierend. Funktion aus 0.2.67 lokal mit simulierten Diensten und Direct-Home-Bridge geprüft, Fernsehtest steht aus. Die unabhängige Notfallrückkehr und das vollständige austauschbare Theme-Layout sind weiterhin nicht nachgewiesen.
 
@@ -34,16 +39,17 @@ Diese Datei hält den Stand und wichtige Entscheidungen für spätere Weiterentw
 - Eigenständiger Homebrew-Launcher für einen gerooteten LG G5 mit webOS 25. Der Nutzer meldete, dass die Ortsanzeige beim Wechsel auf Englisch richtig war. Gerätetests einzelner Funktionen gelten für den verwendeten Fernseher.
 - Der vollständige Quellcode liegt unter [app/](app/); die IPK und das Quellcode-ZIP liegen im App-Verzeichnis. Die Anwendung ist eine Web-App mit HTML, CSS, JavaScript und lokalen SVG-Szenen.
 
-## Wünsche für später
+## Offene Punkte
 
-- Nach dem Ergebnis des Standby-Tests gemeinsam ansehen: Apps auf der Startseite ausblenden und sortieren sowie Apps bei den Favoriten ausblenden. Favoriten lassen sich laut Nutzer bereits einzeln nach oben und unten verschieben; diese vorhandene Sortierung berücksichtigen.
-- Eine Notfallrückkehr zu LG Home per Fernbedienung prüfen. Geste und Umsetzung gemeinsam festlegen und auf dem TV testen.
-- Ein Theme-System nach dem Vorbild von Clean Your TV prüfen: Nutzer sollen eigene Themes im Launcher installieren können; eine Theme-Vorlage und Anleitung sollen anderen das Erstellen eigener Themes ermöglichen. Umfang und Umsetzung nach dem Standby-Test gemeinsam besprechen.
-- Uhranzeige: Eine analoge Uhr als wählbare Alternative zur vorhandenen digitalen Anzeige prüfen.
-- Diese Wünsche sind vorgemerkt, nicht implementiert. Erst das Ergebnis des längeren Standby-Tests abwarten.
+- Apps in den Favoriten gezielt ausblenden: Der ursprüngliche Wunsch ist von der umgesetzten App-Verwaltung in der Übersicht getrennt zu betrachten; eine gesonderte Umsetzung ist nicht bestätigt.
+- Wetter-Nachabruf nach längerem Standby und experimentelle Notfallgeste auf dem Fernseher prüfen. Die Geste benötigt Home-Relaunch-Ereignisse und ist keine unabhängig geprüfte Rückfallebene bei eingefrorener Oberfläche.
+- Das separate Wintertheme auf dem Fernseher importieren und seine Darstellung prüfen. Bis zu drei importierte Themes können gleichzeitig gespeichert werden.
+- Ein vollständiges austauschbares Theme-Layout ist nicht umgesetzt; das vorhandene JSON-Format ändert Farben und Hintergrundbild.
 
 ## Übergabe für den nächsten Chat
 
+- Das eigenständige Wintertheme liegt auf GitHub im Theme-Ordner; Format und Bild wurden lokal geprüft, der Fernsehtest steht aus. Die Theme-Übersichten enthalten den Download.
+- Launcher-Änderungen und bestätigte Gerätetests stehen im Abschnitt „Aktueller Stand“; Wetter-Nachabruf und Notfallgeste bleiben zu prüfen.
 - Regulärer Launcher-Stand unter `app/`: 0.2.70. Die ZIP-Dateien im Zwischenstandsordner bleiben separate lokale Teststände.
 - Der Nutzer testete die Funktionen des vorherigen lokalen Stands; die neu gebaute Veröffentlichung 0.2.70 selbst ist noch nicht auf dem Fernseher getestet.
 - Direct Home startete im Teststand 0.2.63 nach einer Nacht im Standby. Das neu gebaute Paket 0.2.70 ist noch nicht auf dem Fernseher getestet. Die bisherige Methode bleibt als Rückfalllösung erhalten.
@@ -67,7 +73,7 @@ Diese Datei hält den Stand und wichtige Entscheidungen für spätere Weiterentw
 
 ## Home-Taste, Einstellungen und Backup
 
-- Unter TV-Homescreen stehen LG Home, die bisherige Methode und die direkte Home-Übernahme zur Auswahl. Direct Home benötigt keinen Magic Mapper; vor Updates oder der Deinstallation LG Home wiederherstellen. Der Langzeittest nach mehrstündigem Standby steht aus.
+- Unter TV-Homescreen stehen LG Home, die bisherige Methode und die direkte Home-Übernahme zur Auswahl. Direct Home benötigt keinen Magic Mapper; vor Updates oder der Deinstallation LG Home wiederherstellen. Ein früherer Teststand startete nach einer Nacht im Standby; für das veröffentlichte Paket steht dieser Test noch aus.
 
 - Das Installieren allein ändert die Home-Taste nicht. Die bisherige optionale Belegung wird in den Einstellungen des Launchers gesetzt und benötigt [Magic Mapper 1.1.2](https://github.com/afonsojramos/magic-mapper-webos/releases/tag/v1.1.2), installiert, aktiv und bereits für den Start eingerichtet. Die Home-Taste muss nicht zuerst manuell in Magic Mapper zugewiesen werden.
 - Die bisherige Home-Zuordnung wird gesichert und kann im Launcher wiederhergestellt werden. Andere Tastenbelegungen bleiben erhalten. Vor der Deinstallation die frühere Zuordnung wiederherstellen; andere Home-Mapper können in Konflikt stehen.
