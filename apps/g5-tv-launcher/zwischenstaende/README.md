@@ -14,11 +14,12 @@ Dieser Ordner ist für Quellcode-ZIPs lokaler Testversionen vorgesehen. Der Date
 Die Angaben beschreiben lokale Tests, keine veröffentlichten Versionen. Bei allen drei Versionen wurden automatisierte lokale Prüfungen durchgeführt; sie ersetzen keinen Fernsehtest.
 
 
-- **0.2.65:** Wetter-Nachabruf aus 0.2.64 und zusätzliche Option für analoge Uhr; laufender Entwicklungsstand, Gerätetest steht aus.
 
 - **0.2.66:** Zusätzlicher Wetterabruf, analoge Uhr, App-Übersicht verwalten, experimenteller Theme-JSON-Import samt Vorlage und experimentelle Notfallgeste; simulierte Oberflächen- und lokale Python-Tests, kein Fernsehtest. Die Notfallgeste ist nur bei zugestellten Home-Relaunch-Ereignissen wirksam und keine unabhängig geprüfte Rückfallebene.
 
 - **0.2.67:** Theme-JSON-Dateien aus /tmp am TV auswählen und importieren, einschließlich Direct-Home-Bridge. Lokale Prüfungen und simulierte Dienste bestanden; TV-Test steht aus.
+
+- **0.2.68:** Getrennte Theme-Kategorien und Anzeige nur gültiger Theme-JSON-Dateien aus /tmp. Nutzer meldet 0.2.67-Import erfolgreich. Lokal geprüft, TV-Test der Änderungen steht aus.
 
 ## Verbindlicher Ablauf je Testversion
 
