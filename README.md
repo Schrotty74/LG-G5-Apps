@@ -15,6 +15,8 @@ G5 System Monitor 0.9.3 is the current package. The UI preview is a mock-up base
 
 The [G5 Apps catalog](repo.json) contains the published versions of G5 TV Launcher and G5 System Monitor.
 
+The catalog updates automatically when a GitHub release is published with a matching IPK asset. Prereleases and test packages are excluded. Editing an already published release does not rerun the workflow.
+
 **Glasshouse**
 
 1. Open Glasshouse and go to **Apps → Other app catalogs**.
