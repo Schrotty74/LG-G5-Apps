@@ -4,6 +4,8 @@ Diese Datei hält den Stand und wichtige Entscheidungen für spätere Weiterentw
 
 ## Aktueller Stand
 
+- **Lokaler Zwischenstand 0.2.65:** Zusätzlich zu 0.2.64 analoge Uhr als wählbare Alternative eingebaut. In Entwicklung; UI- und TV-Test stehen aus. Weitere beauftragte Funktionen sind noch offen. Auf dem TV läuft laut Nutzer weiterhin 0.2.63.
+
 - **Lokaler Zwischenstand 0.2.64:** Zusätzlicher Wetterabruf fünf Sekunden nach Start, Wiederöffnen oder Sichtbarwerden; das eingestellte Intervall bleibt erhalten. Lokale Prüfungen bestanden; Browser- und Fernsehtest stehen aus. Laut Nutzer ist 0.2.63 installiert.
 
 - **Standby-Test am 31. Oktober 2026:** Laut Nutzer erschien der installierte G5 TV Launcher 0.2.63 nach dem Ausschalten über Nacht sofort. Zunächst meldete die Wetteranzeige „Wetter nicht verfügbar“; nach erneutem Speichern des unveränderten Wetterstandorts funktionierte sie sofort. Ursache offen. Der Code startet die Wetterabfrage sofort; eine noch nicht bereite Netzwerkverbindung ist eine mögliche Erklärung, kein gesicherter Befund. Die geplante Wartezeit im Boot-Skript beschreibt nicht notwendigerweise das sichtbare Aufwachen aus Standby.
