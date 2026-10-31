@@ -33,6 +33,21 @@ Der Katalog wird beim Veröffentlichen eines GitHub-Releases automatisch aktuali
 
 Das Hinzufügen in Glasshouse wurde auf einem Fernseher getestet. Die Einrichtung im Homebrew Channel ist noch nicht auf einem Fernseher getestet.
 
+## Glasshouse-Bildschirmschoner
+
+[Retro-Gaming und Jahreszeiten herunterladen](screensavers/g5-glasshouse-screensavers.zip). Die Bildschirmschoner benötigen Glasshouse auf einem gerooteten Fernseher. Retro-Gaming wurde auf einem LG G5 ausprobiert; die überarbeitete Jahreszeiten-Version ist noch nicht am Fernseher bestätigt.
+
+1. Die ZIP-Datei per SFTP, etwa mit Termius, nach `/tmp` auf den Fernseher übertragen.
+2. Per SSH verbinden und die beiden Ordner entpacken:
+
+   ```sh
+   mkdir -p /var/lib/tvweb/screensavers && unzip -n /tmp/g5-glasshouse-screensavers.zip -d /var/lib/tvweb/screensavers
+   ```
+
+3. In Glasshouse **Screensaver** öffnen und **Retro-Gaming** oder **Jahreszeiten** auswählen. Für einen sofortigen Test eine webOS-App am Fernseher öffnen und **Start screen saver** wählen. Eine Fernbedienungstaste beendet die Anzeige.
+
+`unzip -n` überschreibt keine vorhandenen Dateien. Bei einer bestehenden älteren Testversion müssen die Dateien gezielt aktualisiert und das Motiv anschließend in Glasshouse erneut ausgewählt werden.
+
 ## IPK installieren
 
 1. Die gewünschte `.ipk`-Datei herunterladen und per SFTP, zum Beispiel nach `/tmp` auf den Fernseher übertragen.

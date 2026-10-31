@@ -1,0 +1,10 @@
+{
+  "manifest": 1,
+  "version": "0.1.0",
+  "name": "Jahreszeiten",
+  "description": "Blüten, Glühwürmchen, Blätter und Schnee im Wechsel.",
+  "author": "Schrotty74",
+  "uses": [
+    "level"
+  ]
+}

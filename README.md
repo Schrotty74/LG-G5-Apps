@@ -33,6 +33,21 @@ The catalog updates automatically when a GitHub release is published with a matc
 
 Adding the catalog in Glasshouse was tested on a TV. Setup in Homebrew Channel has not yet been tested on a TV.
 
+## Glasshouse screen savers
+
+[Download Retro-Gaming and Seasons](screensavers/g5-glasshouse-screensavers.zip). These screen savers require Glasshouse on a rooted TV. Retro-Gaming has been tried on an LG G5; the revised Seasons version has not yet been confirmed on the TV.
+
+1. Transfer the ZIP to `/tmp` on the TV using SFTP, for example with Termius.
+2. Connect over SSH and extract both folders:
+
+   ```sh
+   mkdir -p /var/lib/tvweb/screensavers && unzip -n /tmp/g5-glasshouse-screensavers.zip -d /var/lib/tvweb/screensavers
+   ```
+
+3. Open **Screensaver** in Glasshouse and select **Retro-Gaming** or **Jahreszeiten**. To test immediately, open a webOS app on the TV and choose **Start screen saver**. Press a remote button to close it.
+
+`unzip -n` does not overwrite existing files. If an older test version is already installed, update its files explicitly and select the screen saver again in Glasshouse.
+
 ## Installing an IPK
 
 1. Download the `.ipk` file and transfer it to the TV with SFTP, for example to `/tmp`.

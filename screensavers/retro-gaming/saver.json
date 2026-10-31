@@ -1,0 +1,10 @@
+{
+  "manifest": 1,
+  "version": "0.1.0",
+  "name": "Retro-Gaming",
+  "description": "Pixel-Raumschiffe und Sterne in Bewegung.",
+  "author": "Schrotty74",
+  "uses": [
+    "level"
+  ]
+}
