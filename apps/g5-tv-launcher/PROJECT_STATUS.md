@@ -4,6 +4,8 @@ Diese Datei hält den Stand und wichtige Entscheidungen für spätere Weiterentw
 
 ## Aktueller Stand
 
+- **Lokaler Teststand 0.2.67:** Theme-JSON aus /tmp am Fernseher auswählen und importieren; Nutzer meldet Uhrwechsel und App-Auswahl von 0.2.66 als funktionierend. Funktion aus 0.2.67 lokal mit simulierten Diensten und Direct-Home-Bridge geprüft, Fernsehtest steht aus. Die unabhängige Notfallrückkehr und das vollständige austauschbare Theme-Layout sind weiterhin nicht nachgewiesen.
+
 - **Lokaler Teststand 0.2.66:** Wetter-Nachabruf, analoge Uhr, Apps in Übersicht verwalten, experimenteller Theme-JSON-Import samt Vorlage und experimentelle Notfallgeste. Lokale Tests und simulierte DOM-Tests durchgeführt; kein Test auf dem Fernseher. Notfallgeste hängt von Home-Relaunch-Ereignissen ab und bietet keine unabhängig geprüfte Wiederherstellung, wenn die Oberfläche nicht reagiert. Der Nutzer meldete 0.2.63 als installiert.
 
 - **Lokaler Zwischenstand 0.2.65:** Zusätzlich zu 0.2.64 analoge Uhr als wählbare Alternative eingebaut. In Entwicklung; UI- und TV-Test stehen aus. Weitere beauftragte Funktionen sind noch offen. Auf dem TV läuft laut Nutzer weiterhin 0.2.63.
