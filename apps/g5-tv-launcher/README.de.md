@@ -84,3 +84,6 @@ Die Startseite kann auf Übersicht, Favoriten oder Eingänge eingestellt werden 
 
 Englisch ist die Voreinstellung. Unter Einstellungen → Sprache lässt sich zwischen Englisch und Deutsch wechseln. Die Auswahl wird auf dem Fernseher gespeichert und im Einstellungen-Backup mitgesichert.
 
+## Eigene Themes
+
+[Themes, Importanleitung und Theme-Vorlage](themes/README.de.md). Der Import benötigt derzeit eine neuere lokale Testversion als die verlinkte IPK 0.2.60.

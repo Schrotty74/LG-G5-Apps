@@ -1,0 +1,9 @@
+{
+  "format": "g5-theme",
+  "version": 1,
+  "id": "my-first-theme",
+  "name": "My first theme",
+  "background": "#102030",
+  "accent": "#80d0ff",
+  "glow": "#4466aa"
+}

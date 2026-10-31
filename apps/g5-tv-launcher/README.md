@@ -84,3 +84,6 @@ The launch view can be set to Overview, Favorites or Inputs and also applies whe
 
 English is the default. Change the language to English or German under Settings → Language. The selection is stored on the TV and included in settings backups.
 
+## Custom themes
+
+[Download themes, import instructions and the theme template](themes/README.md). Theme import currently requires a newer local test version than the linked 0.2.60 IPK.

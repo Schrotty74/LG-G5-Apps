@@ -28,3 +28,7 @@ The install service reports its progress in the terminal. After a successful ins
 Each additional app gets its own directory under `apps/<app-name>/`. Add it as a row in the table above, with links to its source, package, documentation, and continuation context.
 
 The repository retains the three newest IPK packages and the corresponding source ZIPs per app, including test versions.
+
+## G5 TV Launcher themes
+
+[Download themes and learn how to import or create them](apps/g5-tv-launcher/themes/README.md). The importer currently requires a newer local test version; it is not included in the linked 0.2.60 package.

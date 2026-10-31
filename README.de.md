@@ -28,3 +28,7 @@ Der Installationsdienst zeigt den Fortschritt im Terminal an. Nach erfolgreicher
 Jede neue App erhält ein eigenes Verzeichnis unter `apps/<app-name>/`. Ergänze sie anschließend als neue Tabellenzeile mit Links zum Quellcode, Paket, zur Dokumentation und zum Arbeitskontext.
 
 Im Repository bleiben pro App die drei neuesten IPK-Pakete und die zugehörigen Quellcode-ZIPs verfügbar, einschließlich Testversionen.
+
+## Themes für den G5 TV Launcher
+
+[Themes herunterladen, importieren und selbst erstellen](apps/g5-tv-launcher/themes/README.de.md). Der Import benötigt derzeit eine neuere lokale Testversion; im verlinkten Paket 0.2.60 ist er noch nicht enthalten.
