@@ -4,6 +4,8 @@ Diese Datei hält den Stand und wichtige Entscheidungen für spätere Weiterentw
 
 ## Aktueller Stand
 
+- **Testversion 0.2.71:** Aktueller Teststand mit Cyberpunk-Stadt und konfigurierbaren Animationseffekten. Paketname, App-Metadaten und Updateprüfung sind auf 0.2.71 abgestimmt. Der vorherige Assistent hatte mehrere unterschiedliche Tests fälschlich intern 0.2.70 genannt; diese wurden nicht rückwirkend umnummeriert. 31 automatisierte Tests und Paket-/ZIP-Prüfung bestanden; Fernsehtest von 0.2.71 steht aus. [Quellcode-ZIP](zwischenstaende/g5-launcher-zwischenstand_0.2.71.zip); Test-IPK bleibt lokal.
+
 - **Konfigurierbare Theme-Effekte, Teststand (intern 0.2.70):** Importierte Themes können die vorhandenen Animationen optional über Farbe, Dauer, Deckkraft und Richtung konfigurieren. Bisherige Themes bleiben verwendbar. Validierungsprüfungen und 31 bestehende Tests sowie IPK-/ZIP-Prüfung bestanden; Bedienungs- und Fernsehtest stehen aus. Vorlage und Anleitung liegen im Test-Quellcode. [Test-Quellcode](zwischenstaende/g5-launcher-zwischenstand_0.2.70-effect-options.zip); Test-IPK bleibt lokal.
 
 - **Cyberpunk-Stadt-Test (intern 0.2.70):** Ergänzt Fenster an bisher fensterlosen Gebäuden und animiert die Bodenlinien im integrierten Cyberpunk-Theme. Animationen sind über die vorhandene Einstellung steuerbar. 31 automatisierte Tests sowie SVG-, IPK- und ZIP-Prüfung bestanden; Fernsehtest steht aus. [Test-Quellcode](zwischenstaende/g5-launcher-zwischenstand_0.2.70-cyber-city-test.zip); Test-IPK bleibt lokal.

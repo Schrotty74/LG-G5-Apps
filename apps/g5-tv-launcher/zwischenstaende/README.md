@@ -23,11 +23,12 @@ Die Angaben beschreiben lokale Tests, keine veröffentlichten Versionen. Bei all
 
 
 
-- **Cyberpunk-Fenster-Test (intern 0.2.70):** Kräftigere Neonfarben, verstärktes Neonlicht und wechselnd leuchtende Fenster im integrierten Cyberpunk-Theme. Die allgemeine Animationseinstellung steuert beides. Lokale Tests und Paketprüfung bestanden; Fernsehtest steht aus. [Quellcode-ZIP](g5-launcher-zwischenstand_0.2.70-cyberwindows-test.zip).
 
 - **Cyberpunk-Stadt-Test (intern 0.2.70):** Fenster in allen Gebäuden, leuchtende Fenstergruppen und animierte Bodenlinien. 31 automatisierte Tests sowie SVG-, IPK- und ZIP-Prüfung bestanden; Fernsehtest steht aus. [Quellcode-ZIP](g5-launcher-zwischenstand_0.2.70-cyber-city-test.zip).
 
 - **Konfigurierbare Theme-Effekte (intern 0.2.70):** Optionale Farbe, Dauer, Deckkraft und Richtung für importierte Animationen. Vorhandene Themes bleiben kompatibel. Lokale Validierungs- und Paketprüfungen bestanden; Fernsehtest steht aus. [Quellcode-ZIP](g5-launcher-zwischenstand_0.2.70-effect-options.zip).
+
+- **0.2.71:** Aktueller Teststand mit konfigurierbaren Theme-Effekten und Cyberpunk-Stadt; Versionsangaben in App, Updateprüfung und IPK angeglichen. Lokale automatisierte Prüfungen bestanden; Fernsehtest dieser IPK steht aus. [Quellcode-ZIP](g5-launcher-zwischenstand_0.2.71.zip).
 
 ## Verbindlicher Ablauf je Testversion
 
