@@ -10,13 +10,14 @@ Dieser Ordner ist für Quellcode-ZIPs lokaler Testversionen vorgesehen. Der Date
 
 ## Gesicherte Zwischenstände vom 30. Oktober 2026
 
-- **0.2.63:** Prüft Magic Mapper beim Direct-Home-Start nicht mehr; Diagnoseprotokoll bleibt erhalten. Übergang von der älteren Methode berücksichtigt deren Rückbau. Vom Nutzer installiert; Kurztest zeigte nach dem Einschalten LG Home, genaue Ursache offen. Der längere Standby-Test am 31. Oktober war beim Launcher-Start erfolgreich; Wetter zunächst nicht verfügbar.
 
 Die Angaben beschreiben lokale Tests, keine veröffentlichten Versionen. Bei allen drei Versionen wurden automatisierte lokale Prüfungen durchgeführt; sie ersetzen keinen Fernsehtest.
 
 - **0.2.64:** Zusätzliche Wetterabfrage fünf Sekunden nach Start, Wiederöffnen oder Sichtbarwerden; reguläres Intervall bleibt erhalten. Lokale Tests bestanden; Fernsehtest steht aus.
 
 - **0.2.65:** Wetter-Nachabruf aus 0.2.64 und zusätzliche Option für analoge Uhr; laufender Entwicklungsstand, Gerätetest steht aus.
+
+- **0.2.66:** Zusätzlicher Wetterabruf, analoge Uhr, App-Übersicht verwalten, experimenteller Theme-JSON-Import samt Vorlage und experimentelle Notfallgeste; simulierte Oberflächen- und lokale Python-Tests, kein Fernsehtest. Die Notfallgeste ist nur bei zugestellten Home-Relaunch-Ereignissen wirksam und keine unabhängig geprüfte Rückfallebene.
 
 ## Verbindlicher Ablauf je Testversion
 
