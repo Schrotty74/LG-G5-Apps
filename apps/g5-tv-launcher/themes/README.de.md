@@ -2,7 +2,7 @@
 
 [English](README.md) · [Deutsch](README.de.md)
 
-Downloads: [Frühling](fruehling.json) · [Sommer](sommer.json) · [Herbst](herbst.json) · [Theme-Vorlage](template.json)
+Downloads: [Frühling](fruehling.json) · [Sommer](sommer.json) · [Herbst](herbst.json) · [Winter](winter.json) · [Theme-Vorlage](template.json)
 
 Dateiimport und Kategorieauswahl sind in **0.2.70** enthalten. Der Import wurde vom Nutzer am Fernseher getestet; die Darstellung hängt vom Gerät ab. Das Format ist experimentell und kann sich in einer zukünftigen Version ändern.
 
