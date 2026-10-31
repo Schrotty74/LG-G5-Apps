@@ -48,6 +48,18 @@ Das Hinzufügen in Glasshouse wurde auf einem Fernseher getestet. Die Einrichtun
 
 `unzip -n` überschreibt keine vorhandenen Dateien. Bei einer bestehenden älteren Testversion müssen die Dateien gezielt aktualisiert und das Motiv anschließend in Glasshouse erneut ausgewählt werden.
 
+**Bildschirmschoner entfernen:** In Glasshouse zuerst einen anderen Bildschirmschoner auswählen. Danach per SSH den jeweiligen Ordner löschen und den Screensaver-Bereich erneut öffnen:
+
+```sh
+# Retro-Gaming entfernen
+rm -r /var/lib/tvweb/screensavers/retro-gaming
+
+# Jahreszeiten entfernen
+rm -r /var/lib/tvweb/screensavers/season-cycle
+```
+
+Nur den Befehl für das Motiv ausführen, das entfernt werden soll.
+
 ## IPK installieren
 
 1. Die gewünschte `.ipk`-Datei herunterladen und per SFTP, zum Beispiel nach `/tmp` auf den Fernseher übertragen.
