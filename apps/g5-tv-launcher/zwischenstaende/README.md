@@ -16,6 +16,6 @@ Dieser Ordner ist für Quellcode-ZIPs lokaler Testversionen vorgesehen. Der Date
 
 Die Angaben beschreiben lokale Tests, keine veröffentlichten Versionen. Bei allen drei Versionen wurden automatisierte lokale Prüfungen durchgeführt; sie ersetzen keinen Fernsehtest.
 
-## Verbindlicher Ablauf je Testversion
+- **0.2.64:** Zusätzliche Wetterabfrage fünf Sekunden nach Start, Wiederöffnen oder Sichtbarwerden; reguläres Intervall bleibt erhalten. Lokale Tests bestanden; Fernsehtest steht aus.\n\n## Verbindlicher Ablauf je Testversion
 
 Vor der Übergabe einer Test-IPK: Versionsnummern abgleichen, den dazugehörigen Quellcode als ZIP erstellen und prüfen, hier auf GitHub sichern, den Projektstand samt Änderungen und tatsächlichem Teststatus aktualisieren und die veröffentlichten Dateien überprüfen. Nur die drei neuesten Zwischenstands-ZIPs behalten. Die Test-IPK selbst bleibt lokal. Wenn die GitHub-Sicherung scheitert, den Fehler ausdrücklich melden und nicht behaupten, das Backup sei abgeschlossen.
