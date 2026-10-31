@@ -4,6 +4,8 @@ Diese Datei hält den Stand und wichtige Entscheidungen für spätere Weiterentw
 
 ## Aktueller Stand
 
+- **Lokaler Teststand 0.2.69:** Theme-Eingabefeld wird nach erfolgreicher Installation geleert; fehlerhafte Eingaben bleiben erhalten. Nutzer bestätigt Theme-Kategorien, Filterung der Dateien und Entfernen mit 0.2.68. Lokale und simulierte Tests bestanden; TV-Test von 0.2.69 steht aus.
+
 - **Lokaler Teststand 0.2.68:** Getrennte Auswahl für Standard-, Spezial- und importierte Themes; Dateisuche zeigt nur gültige Theme-JSON-Dateien. Nutzer bestätigte den Theme-Import mit 0.2.67. Lokale Prüfungen bestanden, Fernsehtest von 0.2.68 steht aus.
 
 - **Lokaler Teststand 0.2.67:** Theme-JSON aus /tmp am Fernseher auswählen und importieren; Nutzer meldet Uhrwechsel und App-Auswahl von 0.2.66 als funktionierend. Funktion aus 0.2.67 lokal mit simulierten Diensten und Direct-Home-Bridge geprüft, Fernsehtest steht aus. Die unabhängige Notfallrückkehr und das vollständige austauschbare Theme-Layout sind weiterhin nicht nachgewiesen.
