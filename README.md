@@ -48,6 +48,18 @@ Adding the catalog in Glasshouse was tested on a TV. Setup in Homebrew Channel h
 
 `unzip -n` does not overwrite existing files. If an older test version is already installed, update its files explicitly and select the screen saver again in Glasshouse.
 
+**Removing a screen saver:** First select a different screen saver in Glasshouse. Then connect over SSH, delete the corresponding folder and reopen the Screensaver tab:
+
+```sh
+# Remove Retro-Gaming
+rm -r /var/lib/tvweb/screensavers/retro-gaming
+
+# Remove Seasons
+rm -r /var/lib/tvweb/screensavers/season-cycle
+```
+
+Run only the command for the screen saver you want to remove.
+
 ## Installing an IPK
 
 1. Download the `.ipk` file and transfer it to the TV with SFTP, for example to `/tmp`.
