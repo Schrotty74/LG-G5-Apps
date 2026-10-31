@@ -4,11 +4,11 @@
 
 ## Statische Themes
 
-[Frühling](fruehling.json) · [Sommer](sommer.json) · [Herbst](herbst.json) · [Winter](winter.json)
+[Frühling](static/fruehling.json) · [Sommer](static/sommer.json) · [Herbst](static/herbst.json) · [Winter](static/winter.json)
 
 ## Animierte Themes
 
-[Cyberpunk Neon](cyberpunk-neon.json) · [Strand](strand-vektor.json)
+[Cyberpunk Neon](animated/cyberpunk-neon.json) · [Strand](animated/strand-vektor.json)
 
 [Theme-Vorlage](template.json)
 
