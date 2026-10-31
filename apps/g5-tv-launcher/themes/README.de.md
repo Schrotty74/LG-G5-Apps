@@ -2,9 +2,19 @@
 
 [English](README.md) · [Deutsch](README.de.md)
 
-Downloads: [Frühling](fruehling.json) · [Sommer](sommer.json) · [Herbst](herbst.json) · [Winter](winter.json) · [Cyberpunk Neon](cyberpunk-neon.json) · [Theme-Vorlage](template.json)
+## Statische Themes
+
+[Frühling](fruehling.json) · [Sommer](sommer.json) · [Herbst](herbst.json) · [Winter](winter.json)
+
+## Animierte Themes
+
+[Cyberpunk Neon](cyberpunk-neon.json) · [Strand](strand-vektor.json)
+
+[Theme-Vorlage](template.json)
 
 Dateiimport und Kategorieauswahl sind in **0.2.70** enthalten. Der Import wurde vom Nutzer am Fernseher getestet; die Darstellung hängt vom Gerät ab. Das Format ist experimentell und kann sich in einer zukünftigen Version ändern.
+
+**Kompatibilität:** Strand benötigt den Szenenaufbau aus Testversion 0.2.72. Cyberpunk Neon benötigt einen Teststand mit Animationen für importierte Themes. Die veröffentlichte Version 0.2.70 unterstützt diese Animationen nicht.
 
 **Animationen:** Die Effekte für importierte Themes und die Einstellungen unter `animationOptions` sind nur im neueren Teststand enthalten, nicht in der veröffentlichten IPK 0.2.70. Die neuen Einstellmöglichkeiten wurden noch nicht am Fernseher getestet. Der Import und der Neon-Effekt wurden im Teststand am Fernseher ausprobiert. Andere Effekte sind am Fernseher noch nicht bestätigt. Ältere Themes ohne Animationsfeld funktionieren weiterhin.
 
