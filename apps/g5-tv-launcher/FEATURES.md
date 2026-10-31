@@ -11,7 +11,7 @@
 - Add, remove and reorder favorites in the glass-style dock. Show app icons with or without names and choose from three icon sizes when names are hidden.
 - Navigate using the Magic Remote directional controls, pointer and wheel.
 - Open HDMI 1–4 and Live TV. HDMI names can be read from the TV's launch points or customized.
-- Choose from seven illustrated scenes, shown in the banner on Overview, Favorites and Inputs. Halloween and Christmas are grouped under Special themes.
+- Choose from eight illustrated scenes, including Halloween, Christmas and Cyberpunk under Special themes.
 - With animations enabled, Halloween features a spider descending at changing positions, flickering house windows and a glowing pumpkin face. Christmas features falling snow and Santa's reindeer sleigh flying across the scene in alternating directions. The sleigh flies for 12 seconds with a 5-second pause; the effects can be switched off with animations.
 - Show or hide the clock and weather independently, choose a digital or analog clock, and set a weather location.
 - Select Overview, Favorites or Inputs as the start page, including when reopening the launcher.
@@ -31,5 +31,6 @@
 - Navigate settings by category to reduce scrolling.
 - Browse backgrounds in separate Standard, Special and Imported theme categories.
 - Import up to three custom JSON themes by selecting a matching file from the theme folder under /tmp or pasting JSON into the field. Select, update or remove imported themes. [Template and instructions](themes/README.md).
+- Create imported theme scenes from shapes with individual motion, blinking and swaying; customize global effect color, duration, opacity and direction. [Template and guide](themes/README.md).
 - Retry the weather request five seconds after launch, relaunch or return to the foreground.
 - Experimental triple-Home recovery requires delivered Home relaunch events and is not an independent fallback when the interface is unresponsive.

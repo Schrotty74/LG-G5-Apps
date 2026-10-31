@@ -2,6 +2,17 @@
 
 Each entry summarizes the changes present in the uploaded build and source since the previous documented version. Intermediate builds are not listed separately.
 
+## 0.2.80
+
+- Prevent the Direct Home monitor from automatically restoring LG Home solely because a heartbeat is missing. This addresses the unwanted recovery observed after opening the browser; the exact reason the monitor considered Home unresponsive remains unconfirmed. Automatic recovery for a genuinely unresponsive page is also no longer performed; manual LG Home restoration remains available.
+- Independently correct the version used by the manual update check. The published 0.2.70 code compared against 0.2.60; this was a separate issue from the Direct Home recovery.
+- Add an animated Cyberpunk special theme with brighter neon colors, illuminated windows and moving foreground lines; these effects follow the existing animation setting.
+- Extend imported themes with predefined neon, rain, snow and particle effects, configurable color, duration, opacity and playback direction. Existing static themes remain supported.
+- Allow imported themes to define scenes using rectangles, ellipses and polygons, with individual movement, blinking or swaying animations. Add a scene template, guides and a drawn animated beach theme.
+- Keep the existing limit of three imported themes; a higher limit remains a future consideration.
+
+The user confirmed the Cyberpunk appearance and animations, imported-theme animation and basic beach scene rendering on their TV. The separately rebuilt 0.2.80 release IPK has not been tested on the TV; not every imported-effect option or scene combination has been verified on-device.
+
 ## 0.2.70
 
 - Keep Direct Home startup independent of the installed Magic Mapper status check and log the boot stage and traceback when recovery is needed. Preserve the legacy method and its cleanup when switching from it.

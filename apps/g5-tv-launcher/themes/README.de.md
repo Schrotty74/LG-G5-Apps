@@ -14,9 +14,9 @@
 
 Dateiimport und Kategorieauswahl sind in **0.2.70** enthalten. Der Import wurde vom Nutzer am Fernseher getestet; die Darstellung hängt vom Gerät ab. Das Format ist experimentell und kann sich in einer zukünftigen Version ändern.
 
-**Kompatibilität:** Strand benötigt den Szenenaufbau aus Testversion 0.2.72. Cyberpunk Neon benötigt einen Teststand mit Animationen für importierte Themes. Die veröffentlichte Version 0.2.70 unterstützt diese Animationen nicht.
+**Kompatibilität:** Strand und Cyberpunk Neon benötigen Launcher-Version 0.2.80 oder neuer. Ältere Versionen unterstützen die gezeigten Animationen beziehungsweise Szenenelemente nicht vollständig.
 
-**Animationen:** Die Effekte für importierte Themes und die Einstellungen unter `animationOptions` sind nur im neueren Teststand enthalten, nicht in der veröffentlichten IPK 0.2.70. Die neuen Einstellmöglichkeiten wurden noch nicht am Fernseher getestet. Der Import und der Neon-Effekt wurden im Teststand am Fernseher ausprobiert. Andere Effekte sind am Fernseher noch nicht bestätigt. Ältere Themes ohne Animationsfeld funktionieren weiterhin.
+**Animationen:** Effekte für importierte Themes und `animationOptions` sind ab 0.2.80 enthalten. Die neuen Einstellmöglichkeiten wurden noch nicht am Fernseher getestet. Der Import und der Neon-Effekt wurden im Teststand am Fernseher ausprobiert. Andere Effekte sind am Fernseher noch nicht bestätigt. Ältere Themes ohne Animationsfeld funktionieren weiterhin.
 
 ## Auf einem gerooteten Fernseher importieren
 
@@ -40,11 +40,11 @@ Die Dateiauswahl zeigt passende Theme-JSON-Dateien direkt in `/tmp` und ignorier
 | `accent` | Akzentfarbe als `#RRGGBB`. |
 | `glow` | Leuchtfarbe als `#RRGGBB`. |
 | `animation` | Optional: `none`, `neon`, `rain`, `snow` oder `particles`; ohne Feld gilt `none`. Das sind vorgegebene Launcher-Effekte. Animationen müssen in den Launcher-Einstellungen eingeschaltet sein. Sie erscheinen im Hintergrundbanner. |
-| `animationOptions` | Optionales Objekt zum Anpassen des gewählten Effekts; die erlaubten Felder stehen unten. Nur im unterstützenden Teststand verfügbar. |
-| `scene` | Optional: Formen und Einzelanimationen, siehe Abschnitt unten. Nur im Teststand ab 0.2.72. |
+| `animationOptions` | Optionales Objekt zum Anpassen des gewählten Effekts; die erlaubten Felder stehen unten. Ab Version 0.2.80 verfügbar. |
+| `scene` | Optional: Formen und Einzelanimationen, siehe Abschnitt unten. Ab Version 0.2.80. |
 | `image` | Optionales Hintergrundbild als Datenadresse `data:image/png;base64,...`, `data:image/jpeg;base64,...` oder `data:image/webp;base64,...`; höchstens 70.000 Zeichen einschließlich Präfix. Ohne dieses Feld wird ein einfarbiger Hintergrund verwendet. |
 
-Die gesamte Datei darf höchstens 80.000 Bytes groß sein. Theme-Dateien enthalten Daten und keinen Code: Skripte, externe URLs und SVG-Bilddaten werden nicht akzeptiert. Das Format verändert Farben und Hintergrundbild; im unterstützenden Teststand ergänzt es einen wählbaren vorgegebenen Animationseffekt. Freie Animationsskripte und Änderungen am Launcher-Layout werden nicht unterstützt. Eigene oder zur Weitergabe freigegebene Bilder verwenden und bei einer Veröffentlichung Urheber und Lizenz angeben.
+Die gesamte Datei darf höchstens 80.000 Bytes groß sein. Theme-Dateien enthalten Daten und keinen Code: Skripte, externe URLs und SVG-Bilddaten werden nicht akzeptiert. Das Format verändert Farben und Hintergrundbild; ab Version 0.2.80 ergänzt es einen wählbaren vorgegebenen Animationseffekt. Freie Animationsskripte und Änderungen am Launcher-Layout werden nicht unterstützt. Eigene oder zur Weitergabe freigegebene Bilder verwenden und bei einer Veröffentlichung Urheber und Lizenz angeben.
 
 ### Animation anpassen
 
@@ -130,7 +130,7 @@ Die Parameter ändern einen der vorgegebenen Effekte im Banner; sie erzeugen kei
 
 ## Eigene Szenen mit einzelnen Animationen
 
-**Teststatus:** Das Feld `scene` benötigt den Teststand **0.2.72**. Der veröffentlichte Launcher 0.2.70 und der ältere Teststand 0.2.71 zeichnen diese Szenenelemente nicht. Der Import und die grundsätzliche Darstellung einer Szene wurden vom Nutzer am Fernseher ausprobiert; nicht jede Kombination ist getestet.
+**Kompatibilität:** Das Feld `scene` wird ab Version **0.2.80** unterstützt. Die ältere veröffentlichte Version 0.2.70 zeichnet diese Szenenelemente nicht. Der Import und die grundsätzliche Darstellung einer Szene wurden vom Nutzer am Fernseher ausprobiert; nicht jede Kombination ist getestet.
 
 `scene` ist eine Liste von höchstens 100 Formen. Die Formen werden in Listenreihenfolge gezeichnet; spätere liegen darüber. Die Koordinaten beziehen sich auf eine Fläche von **1000 × 500**. Das breite TV-Banner kann oben und unten etwas abschneiden.
 

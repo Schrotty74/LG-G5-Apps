@@ -11,7 +11,7 @@
 - Favoriten in der Glas-Dockleiste hinzufügen, entfernen und sortieren. App-Symbole mit oder ohne Namen anzeigen und für die Ansicht ohne Namen zwischen drei Größen wählen.
 - Bedienung mit Steuerkreuz, Zeiger und Mausrad der Magic Remote.
 - HDMI 1–4 und Live TV öffnen. HDMI-Namen aus den Startpunkten des Fernsehers übernehmen oder selbst vergeben.
-- Zwischen sieben illustrierten Szenen wählen, die im Banner auf Übersicht, Favoriten und Eingängen angezeigt werden. Halloween und Weihnachten sind als Spezial-Themes gruppiert.
+- Zwischen acht illustrierten Szenen wählen, darunter die Spezial-Themes Halloween, Weihnachten und Cyberpunk.
 - Bei eingeschalteten Animationen lässt sich an Halloween eine Spinne an wechselnden Stellen herab, das Hauslicht und das Kürbisgesicht flackern. Beim Weihnachtstheme fallen Schneeflocken und der Weihnachtsmann fliegt mit dem Rentierschlitten abwechselnd in beide Richtungen: zwölf Sekunden Flug, fünf Sekunden Pause. Alle Effekte lassen sich über die Animationseinstellung abschalten.
 - Uhr und Wetter getrennt ein- oder ausblenden, zwischen digitaler und analoger Uhr wählen und einen Wetterstandort festlegen.
 - Übersicht, Favoriten oder Eingänge als Startseite wählen; die Auswahl gilt auch beim erneuten Öffnen.
@@ -31,5 +31,6 @@
 - Einstellungen über Kategorien aufrufen, damit weniger gescrollt werden muss.
 - Hintergrundauswahl nach Standard-Themes, Spezial-Themes und importierten Themes getrennt anzeigen.
 - Bis zu drei eigene JSON-Themes importieren: eine passende Datei aus dem Theme-Ordner unter /tmp auswählen oder JSON in das Eingabefeld einfügen. Importierte Themes lassen sich auswählen, aktualisieren und wieder entfernen. [Vorlage und Anleitung](themes/README.de.md).
+- Eigene Theme-Szenen aus Formen mit einzelnen Bewegungs-, Blink- und Schwenkanimationen erstellen; globale Effekte mit Farbe, Dauer, Deckkraft und Richtung anpassen. [Vorlage und Anleitung](themes/README.de.md).
 - Wetter fünf Sekunden nach Start, erneutem Öffnen oder Sichtbarwerden erneut abrufen.
 - Die experimentelle Notfallgeste mit dreimal Home benötigt zugestellte Home-Relaunch-Ereignisse und ist bei eingefrorener Oberfläche keine unabhängig geprüfte Rückfallebene.

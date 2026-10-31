@@ -529,6 +529,7 @@ def watch():
     with open(PID, 'w', encoding='ascii') as f:
         f.write(str(os.getpid()))
     foreground_since = None
+    reported = False
     try:
         while load(CONFIG, {}).get('method') == 'direct' and own_hook():
             time.sleep(4)
@@ -539,17 +540,17 @@ def watch():
                 front = luna('com.webos.applicationManager/getForegroundAppInfo', {}).get('appId')
                 if front != LG_HOME:
                     foreground_since = None
+                    reported = False
                     continue
                 if foreground_since is None:
                     foreground_since = time.time()
-                if time.time() - foreground_since > 45 and not fresh_beat(time.time() - 45):
-                    with locked():
-                        config = load(CONFIG, {})
-                        if config.get('method') != 'direct' or config.get('transition'):
-                            continue
-                        recover()
-                        atomic(CONFIG, {'method': 'lg', 'error': 'Home page stopped answering; LG Home restored.'})
-                    break
+                if fresh_beat(time.time() - 45):
+                    reported = False
+                elif time.time() - foreground_since > 45 and not reported:
+                    # Foreground reporting can be stale while another app opens.
+                    # A missing heartbeat alone must not disable Direct Home.
+                    print('Home monitor: heartbeat missing; keeping Direct Home active.', flush=True)
+                    reported = True
             except Exception as e:
                 print('Home monitor:', str(e), flush=True)
     finally:

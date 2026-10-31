@@ -1,6 +1,6 @@
 # Direct Home takeover — test build
 
-This is G5 TV Launcher version 0.2.70. Installing the IPK does not enable Home takeover or alter startup/key mappings.
+This is G5 TV Launcher version 0.2.80. Installing the IPK does not enable Home takeover or alter startup/key mappings.
 
 ## Using the test
 
@@ -15,7 +15,7 @@ The switch restores our previous Home mapping using its existing backup, preserv
 
 ## Recovery over SSH
 
-If the page does not answer, the recovery monitor tries to return to LG Home. It checks only when LG Home is foreground, so opening a different app does not trigger recovery. A monitor is not a guarantee against every firmware or process failure. Keep this independent command available:
+The monitor logs a missing heartbeat but does not automatically restore LG Home solely for that reason. If the page is unresponsive, use this independent recovery command:
 
 ```sh
 python3 /media/developer/apps/usr/palm/applications/org.schrotty74.g5launcher/home_mode_helper.py recover
@@ -32,7 +32,7 @@ Always restore LG Home before uninstalling or upgrading this test build. The dir
 - The helper asks SAM to reread only the Home app using block/release. Release is attempted even after a timed-out block. SAM is not restarted globally.
 - Switching is journaled before system changes, uses an exclusive operation lock, and attempts rollback on failure. An interrupted transaction is not activated at boot; recovery is required.
 - Preferences use atomic private JSON writes and remain compatible with the existing JSON backup contents. Importing a preferences backup does not activate Home takeover.
-- A page heartbeat and separate recovery monitor are used. Direct Home accesses app data through a loopback-only token-protected bridge, not the denied Homebrew exec call. The bridge accepts fixed operations only; it does not execute arbitrary shell commands. A failed initial heartbeat causes rollback. Real TV testing is required.
+- A page heartbeat and separate monitor are used. Missing runtime heartbeats are logged rather than causing automatic LG Home restoration. Direct Home accesses app data through a loopback-only token-protected bridge, not the denied Homebrew exec call. The bridge accepts fixed operations only; it does not execute arbitrary shell commands. A failed initial heartbeat causes rollback. Real TV testing is required.
 - The local bridge binds only 127.0.0.1 and uses a random per-run token. Its app-list, icon, status and backup operations are allowlisted.
 - The legacy helpers refuse activation while our direct mount is active. Foreign mounts, foreign startup hooks and active Glasshouse takeover are left alone.
 - The installation paths are webOS platform paths, not paths to a developer's computer. No private TV state, keys, passwords or personal preferences are bundled.
@@ -43,10 +43,10 @@ Always restore LG Home before uninstalling or upgrading this test build. The dir
 - Python and JavaScript syntax checks passed.
 - A test IPK was built and its archives inspected. These checks do not establish hardware functionality.
 - A browser UI test was prepared but could not run here because the Chromium executable is unavailable. `test_ui.cjs` uses mocked service responses and requires a local Playwright/Chromium setup; it is not an app runtime dependency.
-- The owner tested Direct Home on the TV, including overnight standby on test version 0.2.63 and weather icon switching. The rebuilt 0.2.70 package itself has not been tested on TV.
+- The owner tested Direct Home on the TV, including overnight standby on test version 0.2.63 and weather icon switching. The rebuilt 0.2.80 release package itself has not been tested on TV.
 
 ## References
 
 The approach was studied in Glasshouse's [home-takeover.js](https://github.com/rorygallagher2024/glasshouse/blob/main/server/lib/home-takeover.js), [samrescan.js](https://github.com/rorygallagher2024/glasshouse/blob/main/server/lib/samrescan.js) and [home.js](https://github.com/rorygallagher2024/glasshouse/blob/main/server/lib/home.js). Our implementation is independent and does not depend on Glasshouse's server or copy its source modules.
 
-Build with `python3 build.py`. Run the host-side tests with `python3 test_home_mode.py`. The release package uses version 0.2.70.
+Build with `python3 build.py`. Run the host-side tests with `python3 test_home_mode.py`. The release package uses version 0.2.80.

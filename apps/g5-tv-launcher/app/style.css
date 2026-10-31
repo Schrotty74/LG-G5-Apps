@@ -200,3 +200,53 @@
 .scene.custom-theme:before{background:var(--theme-background)}
 .scene.custom-theme .feature-art{background-image:var(--theme-image);background-size:cover;background-position:center}
 #theme-json{display:block;width:100%;min-height:90px;color:#fff;background:#161e32;border:1px solid #8893a8;border-radius:8px;padding:10px}
+
+/* Cyberpunk theme: the existing motion setting controls the neon lights. */
+.scene.cyberpunk{--accent:#40f7ff;--glow:#ff32df}
+.scene.cyberpunk:before{background:linear-gradient(120deg,#090716,#21113a 50%,#421347)}
+.scene.cyberpunk .feature-art{background-image:url('scenes/cyberpunk.svg')}
+.scene.cyberpunk .feature-art:before{content:"";position:absolute;inset:0;background:linear-gradient(115deg,transparent 25%,#fd60ec88 50%,transparent 75%);opacity:.6;pointer-events:none}
+.scene.cyberpunk.motion-subtle .feature-art:before{animation:g5-cyber-glow 5s ease-in-out infinite alternate}
+@keyframes g5-cyber-glow{0%{opacity:.25;transform:translateX(-8%)}100%{opacity:1;transform:translateX(8%)}}
+
+/* Imported theme effects: only fixed, named CSS effects, never theme-supplied code. */
+.scene.custom-theme.motion-subtle[class*="theme-effect-"] .feature-art:before{content:"";position:absolute;inset:0;pointer-events:none}
+.scene.theme-effect-neon.motion-subtle .feature-art:before{background:linear-gradient(115deg,transparent 30%,var(--effect-color,#fd60ec70) 50%,transparent 70%);animation:theme-neon 5s ease-in-out infinite alternate}
+.scene.theme-effect-rain.motion-subtle .feature-art:before{background-image:repeating-linear-gradient(105deg,transparent 0 34px,var(--effect-color,#93dfff70) 35px 37px,transparent 38px 65px);background-size:130px 130px;animation:theme-rain .8s linear infinite}
+.scene.theme-effect-snow.motion-subtle .feature-art:before{background-image:radial-gradient(circle,var(--effect-color,#fff9) 2px,transparent 3px),radial-gradient(circle,var(--effect-color,#fff8) 1px,transparent 3px);background-size:70px 90px,110px 120px;animation:theme-snow 8s linear infinite}
+.scene.theme-effect-particles.motion-subtle .feature-art:before{background-image:radial-gradient(circle,var(--effect-color,#eab3ff99) 2px,transparent 4px),radial-gradient(circle,var(--effect-color,#a5eeff88) 2px,transparent 4px);background-size:115px 125px,175px 145px;animation:theme-particles 8s ease-in-out infinite alternate}
+@keyframes theme-neon{from{opacity:.18;transform:translateX(-5%)}to{opacity:.85;transform:translateX(5%)}}
+@keyframes theme-rain{from{background-position:0 0}to{background-position:-35px 130px}}
+@keyframes theme-snow{from{background-position:0 0,0 0}to{background-position:35px 360px,-25px 360px}}
+@keyframes theme-particles{from{opacity:.3;background-position:0 0,0 0}to{opacity:.85;background-position:45px -55px,-35px -40px}}
+
+.cyber-windows{display:none;position:absolute;inset:0;background-size:cover;background-position:center;background-repeat:no-repeat;pointer-events:none}
+.scene.cyberpunk .cyber-windows{display:block;opacity:.45}
+.scene.cyberpunk .cyber-windows-a{background-image:url('scenes/cyberpunk-windows-a.svg')}
+.scene.cyberpunk .cyber-windows-b{background-image:url('scenes/cyberpunk-windows-b.svg')}
+.scene.cyberpunk.motion-subtle .cyber-windows-a{animation:cyber-window-a 5.3s linear infinite}
+.scene.cyberpunk.motion-subtle .cyber-windows-b{animation:cyber-window-b 7.1s linear infinite}
+@keyframes cyber-window-a{0%,24%,51%,100%{opacity:.85}28%,48%{opacity:.08}34%,62%{opacity:.65}}
+@keyframes cyber-window-b{0%,31%,71%,100%{opacity:.12}35%,54%,78%{opacity:.95}58%{opacity:.25}}
+
+.cyber-grid{display:none;position:absolute;inset:0;background:url('scenes/cyberpunk-grid.svg') center/cover no-repeat;pointer-events:none}
+.scene.cyberpunk .cyber-grid{display:block;opacity:.8}
+.scene.cyberpunk.motion-subtle .cyber-grid{animation:cyber-grid-motion 4s ease-in-out infinite alternate}
+@keyframes cyber-grid-motion{0%{opacity:.48;transform:translateY(-1%)}100%{opacity:1;transform:translateY(1%)}}
+
+.scene.custom-theme.motion-subtle[class*="theme-effect-"] .feature-art:before{animation-duration:var(--effect-duration,initial);animation-direction:var(--effect-direction,normal);opacity:var(--effect-opacity,1)}
+.scene.theme-effect-neon.motion-subtle .feature-art:before,.scene.theme-effect-particles.motion-subtle .feature-art:before{animation-direction:var(--effect-direction,alternate)}
+.scene.theme-effect-neon.motion-subtle .feature-art:before{animation-duration:var(--effect-duration,5s)}
+.scene.theme-effect-rain.motion-subtle .feature-art:before{animation-duration:var(--effect-duration,.8s)}
+.scene.theme-effect-snow.motion-subtle .feature-art:before,.scene.theme-effect-particles.motion-subtle .feature-art:before{animation-duration:var(--effect-duration,8s)}
+@keyframes theme-neon{from{opacity:0;transform:translateX(-5%)}to{opacity:var(--effect-opacity,.85);transform:translateX(5%)}}
+@keyframes theme-particles{from{opacity:0;background-position:0 0,0 0}to{opacity:var(--effect-opacity,.85);background-position:45px -55px,-35px -40px}}
+
+.theme-scene{display:none;position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.scene.custom-theme .theme-scene{display:block}
+.scene.custom-theme.motion-subtle .theme-object-move{animation:theme-object-move var(--object-duration) ease-in-out infinite alternate}
+.scene.custom-theme.motion-subtle .theme-object-blink{animation:theme-object-blink var(--object-duration) ease-in-out infinite alternate}
+.scene.custom-theme.motion-subtle .theme-object-sway{transform-box:fill-box;transform-origin:bottom center;animation:theme-object-sway var(--object-duration) ease-in-out infinite alternate}
+@keyframes theme-object-move{from{transform:translate(0,0)}to{transform:translate(var(--object-dx),var(--object-dy))}}
+@keyframes theme-object-blink{from{opacity:.12}to{opacity:1}}
+@keyframes theme-object-sway{from{transform:rotate(-4deg)}to{transform:rotate(4deg)}}
