@@ -4,6 +4,8 @@ Diese Datei hält den Stand und wichtige Entscheidungen für spätere Weiterentw
 
 ## Aktueller Stand
 
+- **Cyberpunk-Test (interne Version 0.2.70):** Neues Cyberpunk-Spezial-Theme mit Neon-Animation, gesteuert über die vorhandene Animationseinstellung; enthält den vorherigen Watch-Fix. 31 automatisierte Tests, JavaScript-Syntax, IPK-Inhalt und ZIP lokal geprüft. Fernsehtest steht aus. [Test-Quellcode](zwischenstaende/g5-launcher-zwischenstand_0.2.70-cyberpunk-test.zip); Test-IPK nicht veröffentlicht.
+
 - **Lokaler Watch-Fix-Test (interne Version 0.2.70):** Nach dem Öffnen des Browsers meldete die Überwachung „Home page stopped answering; LG Home restored“. Der Teststand stellt LG Home nicht mehr allein wegen fehlender Lebenszeichen automatisch wieder her; die manuelle Rückkehr bleibt verfügbar. Die automatische Wiederherstellung bei tatsächlich eingefrorener Oberfläche entfällt damit ebenfalls. Die Updateprüfung vergleicht nun mit 0.2.70 statt 0.2.60. 30 bestehende automatisierte Tests sowie ein gezielter Überwachungstest bestanden; Paketinhalt und ZIP geprüft. Fernsehtest steht aus. [Gesicherter Quellcode](zwischenstaende/g5-launcher-zwischenstand_0.2.70-watch-fix.zip); Test-IPK bleibt außerhalb von GitHub.
 
 - **Wintertheme:** Das eigenständige [Wintertheme](themes/winter.json) ergänzt Frühling, Sommer und Herbst im öffentlichen Theme-Ordner. JSON-Format, Bild und Größenbegrenzungen wurden lokal geprüft; ein Import auf dem Fernseher wurde noch nicht getestet. Höchstens drei eigene Themes können gleichzeitig gespeichert werden.
