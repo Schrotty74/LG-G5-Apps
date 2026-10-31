@@ -2,9 +2,11 @@
 
 [English](README.md) · [Deutsch](README.de.md)
 
-Download: [Spring](fruehling.json) · [Summer](sommer.json) · [Autumn](herbst.json) · [Winter](winter.json) · [Theme template](template.json)
+Download: [Spring](fruehling.json) · [Summer](sommer.json) · [Autumn](herbst.json) · [Winter](winter.json) · [Cyberpunk Neon](cyberpunk-neon.json) · [Theme template](template.json)
 
 The file importer and category selection are included in **0.2.70**. These examples were tested through the user's TV import flow; the exact appearance depends on the TV. This is an experimental format and may change in a future version.
+
+**Animations:** Effects for imported themes are currently available only in the newer test build, not in the published 0.2.70 IPK. Import and the neon effect were tried on the user's TV with the test build; other effects have not yet been confirmed on a TV. Older themes without an animation field remain compatible.
 
 ## Import on a rooted TV
 
@@ -27,9 +29,10 @@ Copy [template.json](template.json), edit it as UTF-8 and save it with an ASCII 
 | `background` | Background color as `#RRGGBB`. |
 | `accent` | Accent color as `#RRGGBB`. |
 | `glow` | Glow color as `#RRGGBB`. |
+| `animation` | Optional: `none`, `neon`, `rain`, `snow` or `particles`; defaults to `none`. These are built-in launcher effects. Enable animations in the launcher settings. Effects appear in the background banner. |
 | `image` | Optional background image as a `data:image/png;base64,...`, `data:image/jpeg;base64,...` or `data:image/webp;base64,...` data URL, at most 70,000 characters including the prefix. Omit it for a solid-color background. |
 
-The complete file must be at most 80,000 bytes. Theme files contain data, not code: scripts, external URLs and SVG image data are not accepted. The current format changes colors and the background image, not the overall launcher layout or animations. Use original artwork or artwork you have permission to share; include attribution and license information when distributing it.
+The complete file must be at most 80,000 bytes. Theme files contain data, not code: scripts, external URLs and SVG image data are not accepted. The format changes colors and the background image; the supporting test build can also apply a selectable built-in animation effect. Custom animation scripts and changes to the overall launcher layout are not supported. Use original artwork or artwork you have permission to share; include attribution and license information when distributing it.
 
 Example:
 

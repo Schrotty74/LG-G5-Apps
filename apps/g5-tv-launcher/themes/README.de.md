@@ -2,9 +2,11 @@
 
 [English](README.md) · [Deutsch](README.de.md)
 
-Downloads: [Frühling](fruehling.json) · [Sommer](sommer.json) · [Herbst](herbst.json) · [Winter](winter.json) · [Theme-Vorlage](template.json)
+Downloads: [Frühling](fruehling.json) · [Sommer](sommer.json) · [Herbst](herbst.json) · [Winter](winter.json) · [Cyberpunk Neon](cyberpunk-neon.json) · [Theme-Vorlage](template.json)
 
 Dateiimport und Kategorieauswahl sind in **0.2.70** enthalten. Der Import wurde vom Nutzer am Fernseher getestet; die Darstellung hängt vom Gerät ab. Das Format ist experimentell und kann sich in einer zukünftigen Version ändern.
+
+**Animationen:** Die Effekte für importierte Themes sind bisher nur im neueren Teststand enthalten, nicht in der veröffentlichten IPK 0.2.70. Der Import und der Neon-Effekt wurden im Teststand am Fernseher ausprobiert. Andere Effekte sind am Fernseher noch nicht bestätigt. Ältere Themes ohne Animationsfeld funktionieren weiterhin.
 
 ## Auf einem gerooteten Fernseher importieren
 
@@ -27,9 +29,10 @@ Die Dateiauswahl zeigt passende Theme-JSON-Dateien direkt in `/tmp` und ignorier
 | `background` | Hintergrundfarbe als `#RRGGBB`. |
 | `accent` | Akzentfarbe als `#RRGGBB`. |
 | `glow` | Leuchtfarbe als `#RRGGBB`. |
+| `animation` | Optional: `none`, `neon`, `rain`, `snow` oder `particles`; ohne Feld gilt `none`. Das sind vorgegebene Launcher-Effekte. Animationen müssen in den Launcher-Einstellungen eingeschaltet sein. Sie erscheinen im Hintergrundbanner. |
 | `image` | Optionales Hintergrundbild als Datenadresse `data:image/png;base64,...`, `data:image/jpeg;base64,...` oder `data:image/webp;base64,...`; höchstens 70.000 Zeichen einschließlich Präfix. Ohne dieses Feld wird ein einfarbiger Hintergrund verwendet. |
 
-Die gesamte Datei darf höchstens 80.000 Bytes groß sein. Theme-Dateien enthalten Daten und keinen Code: Skripte, externe URLs und SVG-Bilddaten werden nicht akzeptiert. Das aktuelle Format verändert Farben und Hintergrundbild, nicht das gesamte Launcher-Layout oder Animationen. Eigene oder zur Weitergabe freigegebene Bilder verwenden und bei einer Veröffentlichung Urheber und Lizenz angeben.
+Die gesamte Datei darf höchstens 80.000 Bytes groß sein. Theme-Dateien enthalten Daten und keinen Code: Skripte, externe URLs und SVG-Bilddaten werden nicht akzeptiert. Das Format verändert Farben und Hintergrundbild; im unterstützenden Teststand ergänzt es einen wählbaren vorgegebenen Animationseffekt. Freie Animationsskripte und Änderungen am Launcher-Layout werden nicht unterstützt. Eigene oder zur Weitergabe freigegebene Bilder verwenden und bei einer Veröffentlichung Urheber und Lizenz angeben.
 
 Beispiel:
 
