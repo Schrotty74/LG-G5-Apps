@@ -6,7 +6,7 @@ Downloads: [Frühling](fruehling.json) · [Sommer](sommer.json) · [Herbst](herb
 
 Dateiimport und Kategorieauswahl sind in **0.2.70** enthalten. Der Import wurde vom Nutzer am Fernseher getestet; die Darstellung hängt vom Gerät ab. Das Format ist experimentell und kann sich in einer zukünftigen Version ändern.
 
-**Animationen:** Die Effekte für importierte Themes sind bisher nur im neueren Teststand enthalten, nicht in der veröffentlichten IPK 0.2.70. Der Import und der Neon-Effekt wurden im Teststand am Fernseher ausprobiert. Andere Effekte sind am Fernseher noch nicht bestätigt. Ältere Themes ohne Animationsfeld funktionieren weiterhin.
+**Animationen:** Die Effekte für importierte Themes und die Einstellungen unter `animationOptions` sind nur im neueren Teststand enthalten, nicht in der veröffentlichten IPK 0.2.70. Die neuen Einstellmöglichkeiten wurden noch nicht am Fernseher getestet. Der Import und der Neon-Effekt wurden im Teststand am Fernseher ausprobiert. Andere Effekte sind am Fernseher noch nicht bestätigt. Ältere Themes ohne Animationsfeld funktionieren weiterhin.
 
 ## Auf einem gerooteten Fernseher importieren
 
@@ -30,11 +30,23 @@ Die Dateiauswahl zeigt passende Theme-JSON-Dateien direkt in `/tmp` und ignorier
 | `accent` | Akzentfarbe als `#RRGGBB`. |
 | `glow` | Leuchtfarbe als `#RRGGBB`. |
 | `animation` | Optional: `none`, `neon`, `rain`, `snow` oder `particles`; ohne Feld gilt `none`. Das sind vorgegebene Launcher-Effekte. Animationen müssen in den Launcher-Einstellungen eingeschaltet sein. Sie erscheinen im Hintergrundbanner. |
+| `animationOptions` | Optionales Objekt zum Anpassen des gewählten Effekts; die erlaubten Felder stehen unten. Nur im unterstützenden Teststand verfügbar. |
 | `image` | Optionales Hintergrundbild als Datenadresse `data:image/png;base64,...`, `data:image/jpeg;base64,...` oder `data:image/webp;base64,...`; höchstens 70.000 Zeichen einschließlich Präfix. Ohne dieses Feld wird ein einfarbiger Hintergrund verwendet. |
 
 Die gesamte Datei darf höchstens 80.000 Bytes groß sein. Theme-Dateien enthalten Daten und keinen Code: Skripte, externe URLs und SVG-Bilddaten werden nicht akzeptiert. Das Format verändert Farben und Hintergrundbild; im unterstützenden Teststand ergänzt es einen wählbaren vorgegebenen Animationseffekt. Freie Animationsskripte und Änderungen am Launcher-Layout werden nicht unterstützt. Eigene oder zur Weitergabe freigegebene Bilder verwenden und bei einer Veröffentlichung Urheber und Lizenz angeben.
 
-Beispiel:
+### Animation anpassen
+
+Das optionale Objekt `animationOptions` kann diese Felder enthalten. Nicht angegebene Felder behalten die Voreinstellung des Effekts. Für Dezimalzahlen in JSON einen Punkt verwenden.
+
+| Feld | Erlaubter Wert | Wirkung |
+| --- | --- | --- |
+| `color` | Farbe als `#RRGGBB` | Farbe des Effekts. |
+| `duration` | Zahl von 0.5 bis 30 | Dauer eines Durchlaufs in Sekunden; kleinere Werte sind schneller. |
+| `opacity` | Zahl von 0 bis 1 | Deckkraft des Effekts; 0 ist unsichtbar. |
+| `direction` | `normal`, `reverse` oder `alternate` | Richtung des Animationsablaufs. |
+
+Die Parameter ändern einen der vorgegebenen Effekte im Banner; sie erzeugen keine frei programmierbaren Animationen. Animationen müssen im Launcher eingeschaltet sein. Das Beispiel und die [Vorlage](template.json) können angepasst werden:
 
 ```json
 {

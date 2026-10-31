@@ -6,5 +6,11 @@
   "background": "#102030",
   "accent": "#80d0ff",
   "glow": "#4466aa",
-  "animation": "neon"
+  "animation": "neon",
+  "animationOptions": {
+    "color": "#ff45d4",
+    "duration": 4,
+    "opacity": 0.75,
+    "direction": "alternate"
+  }
 }
