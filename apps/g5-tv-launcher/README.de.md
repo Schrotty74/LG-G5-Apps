@@ -89,4 +89,4 @@ Englisch ist die Voreinstellung. Unter Einstellungen → Sprache lässt sich zwi
 
 ## Eigene Themes
 
-[Themes, Importanleitung und Theme-Vorlage](themes/README.de.md). Der Theme-Import ist ab Version 0.2.70 enthalten.
+[Frühling, Sommer, Herbst und Winter sowie Importanleitung und Theme-Vorlage](themes/README.de.md). Der Theme-Import ist ab Version 0.2.70 enthalten.
