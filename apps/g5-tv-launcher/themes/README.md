@@ -2,7 +2,7 @@
 
 [English](README.md) · [Deutsch](README.de.md)
 
-Download: [Spring](fruehling.json) · [Summer](sommer.json) · [Autumn](herbst.json) · [Theme template](template.json)
+Download: [Spring](fruehling.json) · [Summer](sommer.json) · [Autumn](herbst.json) · [Winter](winter.json) · [Theme template](template.json)
 
 The file importer and category selection are included in **0.2.70**. These examples were tested through the user's TV import flow; the exact appearance depends on the TV. This is an experimental format and may change in a future version.
 
