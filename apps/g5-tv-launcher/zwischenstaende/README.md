@@ -19,11 +19,12 @@ Die Angaben beschreiben lokale Tests, keine veröffentlichten Versionen. Bei all
 
 
 
-- **0.2.70 Watch-Fix-Test:** Verhindert die automatische Home-Rücksetzung allein wegen fehlender Lebenszeichen; die manuelle Wiederherstellung bleibt verfügbar. Die Updateprüfung verwendet 0.2.70 als Vergleichsversion. Intern weiterhin 0.2.70; keine veröffentlichte IPK. Automatisierte Prüfungen bestanden, Fernsehtest steht aus. [Quellcode-ZIP](g5-launcher-zwischenstand_0.2.70-watch-fix.zip).
 
 - **Cyberpunk-Test (interne Version 0.2.70):** Animiertes Cyberpunk-Spezial-Theme; Animation über vorhandene Einstellung steuerbar. Enthält den vorherigen Watch-Fix. 31 automatisierte Tests, Syntax-, Paket- und ZIP-Prüfung bestanden; Fernsehtest steht aus. [Quellcode-ZIP](g5-launcher-zwischenstand_0.2.70-cyberpunk-test.zip).
 
 - **Animierte Import-Themes (interne Version 0.2.70):** Optionale Effekte neon, rain, snow und particles, Vorlage, Anleitung und importierbares Cyberpunk-Beispiel. Vorhandene statische Themes bleiben kompatibel. Lokale Prüfungen bestanden; Fernsehtest steht aus. [Quellcode-ZIP](g5-launcher-zwischenstand_0.2.70-animated-themes.zip).
+
+- **Cyberpunk-Leuchteffekt-Test (intern 0.2.70):** Der Leuchteffekt des eingebauten Cyberpunk-Themes wurde verstärkt; importierte Effekte bleiben enthalten. 31 automatisierte Prüfungen und Paketprüfung bestanden; Fernsehtest steht aus. [Quellcode-ZIP](g5-launcher-zwischenstand_0.2.70-cyberglow-test.zip).
 
 ## Verbindlicher Ablauf je Testversion
 

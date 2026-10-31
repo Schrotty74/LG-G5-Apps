@@ -4,6 +4,8 @@ Diese Datei hält den Stand und wichtige Entscheidungen für spätere Weiterentw
 
 ## Aktueller Stand
 
+- **Cyberpunk-Leuchteffekt-Test (intern 0.2.70):** Nutzer meldete, dass das importierte Cyberpunk-Theme animiert ist, das integrierte jedoch nicht sichtbar. Dessen schwacher Lichteffekt wurde verstärkt. 31 automatisierte Tests und Paketprüfung bestanden; Fernsehtest steht aus. [Quellcode-ZIP](zwischenstaende/g5-launcher-zwischenstand_0.2.70-cyberglow-test.zip); Test-IPK bleibt lokal.
+
 - **Animierte Import-Themes, Teststand (intern 0.2.70):** Optionale vorgegebene Effekte `neon`, `rain`, `snow`, `particles` und `none`; die allgemeine Animationseinstellung steuert die Darstellung. Statische Themes ohne Feld bleiben gültig. Lokale Tests der Theme-Validierung und bestehende Tests sowie IPK-/ZIP-Prüfung bestanden. Vorlage, zweisprachige Anleitung und importierbares Cyberpunk-Beispiel im Test-Quellcode; UI- und Fernsehtest ausständig. [Quellcode-ZIP](zwischenstaende/g5-launcher-zwischenstand_0.2.70-animated-themes.zip). IPK nicht veröffentlicht.
 
 - **Cyberpunk-Test (interne Version 0.2.70):** Neues Cyberpunk-Spezial-Theme mit Neon-Animation, gesteuert über die vorhandene Animationseinstellung; enthält den vorherigen Watch-Fix. 31 automatisierte Tests, JavaScript-Syntax, IPK-Inhalt und ZIP lokal geprüft. Fernsehtest steht aus. [Test-Quellcode](zwischenstaende/g5-launcher-zwischenstand_0.2.70-cyberpunk-test.zip); Test-IPK nicht veröffentlicht.
