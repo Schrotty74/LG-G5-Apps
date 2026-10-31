@@ -7,17 +7,17 @@
 - Unter TV-Homescreen LG Home, die bisherige Methode oder die direkte Home-Übernahme wählen. Direct Home benötigt keinen Magic Mapper; die bisherige Methode bleibt verfügbar. [Test und Wiederherstellung](HOME_TAKEOVER_TEST.md).
 - Bei LG Home oder der bisherigen Methode den Launcher optional automatisch starten; vor der Deinstallation ausschalten. Direct Home nutzt einen eigenen Startmechanismus.
 
-- Installierte Apps in der Übersicht durchsehen und starten; HDMI-Eingänge und Live TV haben eine eigene Seite „Eingänge“.
+- Installierte Apps in der Übersicht durchsehen und starten, ausblenden, wieder einblenden und sortieren; HDMI-Eingänge und Live TV haben eine eigene Seite „Eingänge“.
 - Favoriten in der Glas-Dockleiste hinzufügen, entfernen und sortieren. App-Symbole mit oder ohne Namen anzeigen und für die Ansicht ohne Namen zwischen drei Größen wählen.
 - Bedienung mit Steuerkreuz, Zeiger und Mausrad der Magic Remote.
 - HDMI 1–4 und Live TV öffnen. HDMI-Namen aus den Startpunkten des Fernsehers übernehmen oder selbst vergeben.
 - Zwischen sieben illustrierten Szenen wählen, die im Banner auf Übersicht, Favoriten und Eingängen angezeigt werden. Halloween und Weihnachten sind als Spezial-Themes gruppiert.
 - Bei eingeschalteten Animationen lässt sich an Halloween eine Spinne an wechselnden Stellen herab, das Hauslicht und das Kürbisgesicht flackern. Beim Weihnachtstheme fallen Schneeflocken und der Weihnachtsmann fliegt mit dem Rentierschlitten abwechselnd in beide Richtungen: zwölf Sekunden Flug, fünf Sekunden Pause. Alle Effekte lassen sich über die Animationseinstellung abschalten.
-- Uhr und Wetter getrennt ein- oder ausblenden und einen Wetterstandort wählen.
+- Uhr und Wetter getrennt ein- oder ausblenden, zwischen digitaler und analoger Uhr wählen und einen Wetterstandort festlegen.
 - Übersicht, Favoriten oder Eingänge als Startseite wählen; die Auswahl gilt auch beim erneuten Öffnen.
 - Die Oberfläche zwischen Englisch und Deutsch umschalten; Englisch ist voreingestellt.
 - Die Home-Taste optional über Magic Mapper 1.1.2 diesem Launcher zuweisen und die vorherige Belegung wiederherstellen. [Voraussetzungen und Details](README.de.md#optionale-home-tastenbelegung).
-- Launcher-Einstellungen, Favoriten und eigene Eingangsbezeichnungen als JSON-Backup auf dem Fernseher speichern und wiederherstellen.
+- Launcher-Einstellungen einschließlich Favoriten, App-Anordnung, importierter Themes und eigener Eingangsbezeichnungen als JSON-Backup auf dem Fernseher speichern und wiederherstellen.
 - Installierte Apps nach Namen suchen.
 - Die drei Schnellzugriffe in der Übersicht mit Apps, HDMI-Eingängen oder den TV-Einstellungen belegen.
 - Hintergründe bei jedem Öffnen oder abhängig von der Tageszeit wechseln lassen.
@@ -29,8 +29,7 @@
 - Open-Meteo oder das AROME-Modell von GeoSphere Austria über Open-Meteo wählen.
 - Wetterorte in englischer und deutscher Suche finden, Treffer in der TV-Zeitzone bevorzugen und passende Orte mit Region und Land auswählen.
 - Einstellungen über Kategorien aufrufen, damit weniger gescrollt werden muss.
-- Zwischen digitaler und analoger Uhr wählen.
-- Apps auf der Übersicht ausblenden und sortieren.
-- Bis zu drei eigene JSON-Themes aus /tmp oder dem Eingabefeld importieren und zwischen Standard, Spezial und Importiert wählen.
+- Hintergrundauswahl nach Standard-Themes, Spezial-Themes und importierten Themes getrennt anzeigen.
+- Bis zu drei eigene JSON-Themes importieren: eine passende Datei aus dem Theme-Ordner unter /tmp auswählen oder JSON in das Eingabefeld einfügen. Importierte Themes lassen sich auswählen, aktualisieren und wieder entfernen. [Vorlage und Anleitung](themes/README.de.md).
 - Wetter fünf Sekunden nach Start, erneutem Öffnen oder Sichtbarwerden erneut abrufen.
 - Die experimentelle Notfallgeste mit dreimal Home benötigt zugestellte Home-Relaunch-Ereignisse und ist bei eingefrorener Oberfläche keine unabhängig geprüfte Rückfallebene.
