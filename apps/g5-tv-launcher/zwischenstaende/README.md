@@ -16,11 +16,12 @@ Die Angaben beschreiben lokale Tests, keine veröffentlichten Versionen. Bei all
 
 
 
-- **0.2.67:** Theme-JSON-Dateien aus /tmp am TV auswählen und importieren, einschließlich Direct-Home-Bridge. Lokale Prüfungen und simulierte Dienste bestanden; TV-Test steht aus.
 
 - **0.2.68:** Getrennte Theme-Kategorien und Anzeige nur gültiger Theme-JSON-Dateien aus /tmp. Nutzer meldet 0.2.67-Import erfolgreich. Lokal geprüft, TV-Test der Änderungen steht aus.
 
 - **0.2.69:** Theme-JSON-Eingabefeld nach erfolgreichem Import leeren; ungültige Eingaben zur Korrektur erhalten. Simulierter Oberflächentest und lokale Tests bestanden; TV-Test steht aus.
+
+- **0.2.70 Watch-Fix-Test:** Verhindert die automatische Home-Rücksetzung allein wegen fehlender Lebenszeichen; die manuelle Wiederherstellung bleibt verfügbar. Die Updateprüfung verwendet 0.2.70 als Vergleichsversion. Intern weiterhin 0.2.70; keine veröffentlichte IPK. Automatisierte Prüfungen bestanden, Fernsehtest steht aus. [Quellcode-ZIP](g5-launcher-zwischenstand_0.2.70-watch-fix.zip).
 
 ## Verbindlicher Ablauf je Testversion
 
