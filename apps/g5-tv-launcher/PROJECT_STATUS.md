@@ -4,6 +4,8 @@ Diese Datei hält den Stand und wichtige Entscheidungen für spätere Weiterentw
 
 ## Aktueller Stand
 
+- **Konfigurierbare Theme-Effekte, Teststand (intern 0.2.70):** Importierte Themes können die vorhandenen Animationen optional über Farbe, Dauer, Deckkraft und Richtung konfigurieren. Bisherige Themes bleiben verwendbar. Validierungsprüfungen und 31 bestehende Tests sowie IPK-/ZIP-Prüfung bestanden; Bedienungs- und Fernsehtest stehen aus. Vorlage und Anleitung liegen im Test-Quellcode. [Test-Quellcode](zwischenstaende/g5-launcher-zwischenstand_0.2.70-effect-options.zip); Test-IPK bleibt lokal.
+
 - **Cyberpunk-Stadt-Test (intern 0.2.70):** Ergänzt Fenster an bisher fensterlosen Gebäuden und animiert die Bodenlinien im integrierten Cyberpunk-Theme. Animationen sind über die vorhandene Einstellung steuerbar. 31 automatisierte Tests sowie SVG-, IPK- und ZIP-Prüfung bestanden; Fernsehtest steht aus. [Test-Quellcode](zwischenstaende/g5-launcher-zwischenstand_0.2.70-cyber-city-test.zip); Test-IPK bleibt lokal.
 
 - **Cyberpunk-Fenster-Test (intern 0.2.70):** Das eingebaute Cyberpunk-Theme hat kräftigere Neonfarben, ein verstärktes Neonlicht und zwei wechselnd leuchtende Fenstergruppen; die Animationseinstellung steuert beide Effekte. 31 automatisierte Tests sowie IPK- und ZIP-Prüfung bestanden; Fernsehtest steht aus. [Test-Quellcode](zwischenstaende/g5-launcher-zwischenstand_0.2.70-cyberwindows-test.zip); Test-IPK bleibt lokal.
@@ -52,6 +54,8 @@ Diese Datei hält den Stand und wichtige Entscheidungen für spätere Weiterentw
 - Der vollständige Quellcode liegt unter [app/](app/); die IPK und das Quellcode-ZIP liegen im App-Verzeichnis. Die Anwendung ist eine Web-App mit HTML, CSS, JavaScript und lokalen SVG-Szenen.
 
 ## Offene Punkte
+
+- Für später vormerken: eigene, frei programmierbare Animationsskripte für importierte Themes prüfen. Noch nicht umgesetzt; Sicherheitsmodell, Prüfung und Bedienung vor einer Umsetzung festlegen.
 
 - Apps in den Favoriten gezielt ausblenden: Der ursprüngliche Wunsch ist von der umgesetzten App-Verwaltung in der Übersicht getrennt zu betrachten; eine gesonderte Umsetzung ist nicht bestätigt.
 - Wetter-Nachabruf nach längerem Standby und experimentelle Notfallgeste auf dem Fernseher prüfen. Die Geste benötigt Home-Relaunch-Ereignisse und ist keine unabhängig geprüfte Rückfallebene bei eingefrorener Oberfläche.
