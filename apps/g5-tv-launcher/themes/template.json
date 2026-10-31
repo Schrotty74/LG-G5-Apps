@@ -12,5 +12,55 @@
     "duration": 4,
     "opacity": 0.75,
     "direction": "alternate"
-  }
+  },
+  "scene": [
+    {
+      "type": "rect",
+      "x": 100,
+      "y": 250,
+      "width": 180,
+      "height": 80,
+      "color": "#5bbfd1",
+      "animation": {
+        "type": "move",
+        "duration": 4,
+        "dx": 30,
+        "dy": 0
+      }
+    },
+    {
+      "type": "ellipse",
+      "x": 720,
+      "y": 45,
+      "width": 90,
+      "height": 90,
+      "color": "#ffd778",
+      "animation": {
+        "type": "blink",
+        "duration": 4
+      }
+    },
+    {
+      "type": "polygon",
+      "points": [
+        [
+          600,
+          400
+        ],
+        [
+          650,
+          300
+        ],
+        [
+          700,
+          400
+        ]
+      ],
+      "color": "#4fa977",
+      "animation": {
+        "type": "sway",
+        "duration": 5
+      }
+    }
+  ]
 }

@@ -31,6 +31,7 @@ Die Dateiauswahl zeigt passende Theme-JSON-Dateien direkt in `/tmp` und ignorier
 | `glow` | Leuchtfarbe als `#RRGGBB`. |
 | `animation` | Optional: `none`, `neon`, `rain`, `snow` oder `particles`; ohne Feld gilt `none`. Das sind vorgegebene Launcher-Effekte. Animationen müssen in den Launcher-Einstellungen eingeschaltet sein. Sie erscheinen im Hintergrundbanner. |
 | `animationOptions` | Optionales Objekt zum Anpassen des gewählten Effekts; die erlaubten Felder stehen unten. Nur im unterstützenden Teststand verfügbar. |
+| `scene` | Optional: Formen und Einzelanimationen, siehe Abschnitt unten. Nur im Teststand ab 0.2.72. |
 | `image` | Optionales Hintergrundbild als Datenadresse `data:image/png;base64,...`, `data:image/jpeg;base64,...` oder `data:image/webp;base64,...`; höchstens 70.000 Zeichen einschließlich Präfix. Ohne dieses Feld wird ein einfarbiger Hintergrund verwendet. |
 
 Die gesamte Datei darf höchstens 80.000 Bytes groß sein. Theme-Dateien enthalten Daten und keinen Code: Skripte, externe URLs und SVG-Bilddaten werden nicht akzeptiert. Das Format verändert Farben und Hintergrundbild; im unterstützenden Teststand ergänzt es einen wählbaren vorgegebenen Animationseffekt. Freie Animationsskripte und Änderungen am Launcher-Layout werden nicht unterstützt. Eigene oder zur Weitergabe freigegebene Bilder verwenden und bei einer Veröffentlichung Urheber und Lizenz angeben.
@@ -52,10 +53,86 @@ Die Parameter ändern einen der vorgegebenen Effekte im Banner; sie erzeugen kei
 {
   "format": "g5-theme",
   "version": 1,
-  "id": "mein-erstes-theme",
-  "name": "Mein erstes Theme",
+  "id": "my-first-theme",
+  "name": "My first theme",
   "background": "#102030",
   "accent": "#80d0ff",
-  "glow": "#4466aa"
+  "glow": "#4466aa",
+  "animation": "neon",
+  "animationOptions": {
+    "color": "#ff45d4",
+    "duration": 4,
+    "opacity": 0.75,
+    "direction": "alternate"
+  },
+  "scene": [
+    {
+      "type": "rect",
+      "x": 100,
+      "y": 250,
+      "width": 180,
+      "height": 80,
+      "color": "#5bbfd1",
+      "animation": {
+        "type": "move",
+        "duration": 4,
+        "dx": 30,
+        "dy": 0
+      }
+    },
+    {
+      "type": "ellipse",
+      "x": 720,
+      "y": 45,
+      "width": 90,
+      "height": 90,
+      "color": "#ffd778",
+      "animation": {
+        "type": "blink",
+        "duration": 4
+      }
+    },
+    {
+      "type": "polygon",
+      "points": [
+        [
+          600,
+          400
+        ],
+        [
+          650,
+          300
+        ],
+        [
+          700,
+          400
+        ]
+      ],
+      "color": "#4fa977",
+      "animation": {
+        "type": "sway",
+        "duration": 5
+      }
+    }
+  ]
 }
 ```
+
+## Eigene Szenen mit einzelnen Animationen
+
+**Teststatus:** Das Feld `scene` benötigt den Teststand **0.2.72**. Der veröffentlichte Launcher 0.2.70 und der ältere Teststand 0.2.71 zeichnen diese Szenenelemente nicht. Der Import und die grundsätzliche Darstellung einer Szene wurden vom Nutzer am Fernseher ausprobiert; nicht jede Kombination ist getestet.
+
+`scene` ist eine Liste von höchstens 100 Formen. Die Formen werden in Listenreihenfolge gezeichnet; spätere liegen darüber. Die Koordinaten beziehen sich auf eine Fläche von **1000 × 500**. Das breite TV-Banner kann oben und unten etwas abschneiden.
+
+| Feld | Bedeutung |
+| --- | --- |
+| `type` | `rect` für Rechteck, `ellipse` für Ellipse oder `polygon` für eine Form aus Eckpunkten. |
+| `color` | Füllfarbe als `#RRGGBB`. |
+| `x`, `y` | Position bei Rechteck und Ellipse: x von 0 bis 1000, y von 0 bis 500. |
+| `width`, `height` | Breite von 1 bis 1000 und Höhe von 1 bis 500 bei Rechteck und Ellipse. |
+| `points` | Bei Polygonen 3 bis 40 Punkte als `[[x,y], ...]` mit denselben Koordinatengrenzen. |
+| `opacity` | Optional: Deckkraft von 0 bis 1. |
+| `animation` | Optionales Objekt mit `type` und `duration`. `move` bewegt hin und zurück, `blink` lässt die Form aufleuchten, `sway` schwenkt sie mit festem Winkel. Dauer: 0.5 bis 60 Sekunden. Bei `move` legen die optionalen Werte `dx` und `dy` zwischen -300 und 300 die Verschiebung fest. |
+
+Animationen müssen in den Launcher-Einstellungen eingeschaltet sein. Die Vorlage enthält für jede Form ein Beispiel. Bestehende Themes ohne `scene` bleiben verwendbar.
+

@@ -31,6 +31,7 @@ Copy [template.json](template.json), edit it as UTF-8 and save it with an ASCII 
 | `glow` | Glow color as `#RRGGBB`. |
 | `animation` | Optional: `none`, `neon`, `rain`, `snow` or `particles`; defaults to `none`. These are built-in launcher effects. Enable animations in the launcher settings. Effects appear in the background banner. |
 | `animationOptions` | Optional object for configuring the chosen effect; see the fields below. Available only in the supporting test build. |
+| `scene` | Optional shapes and individual animations; see below. Requires test build 0.2.72. |
 | `image` | Optional background image as a `data:image/png;base64,...`, `data:image/jpeg;base64,...` or `data:image/webp;base64,...` data URL, at most 70,000 characters including the prefix. Omit it for a solid-color background. |
 
 The complete file must be at most 80,000 bytes. Theme files contain data, not code: scripts, external URLs and SVG image data are not accepted. The format changes colors and the background image; the supporting test build can also apply a selectable built-in animation effect. Custom animation scripts and changes to the overall launcher layout are not supported. Use original artwork or artwork you have permission to share; include attribution and license information when distributing it.
@@ -56,6 +57,82 @@ These parameters adjust a predefined banner effect; they do not create freely pr
   "name": "My first theme",
   "background": "#102030",
   "accent": "#80d0ff",
-  "glow": "#4466aa"
+  "glow": "#4466aa",
+  "animation": "neon",
+  "animationOptions": {
+    "color": "#ff45d4",
+    "duration": 4,
+    "opacity": 0.75,
+    "direction": "alternate"
+  },
+  "scene": [
+    {
+      "type": "rect",
+      "x": 100,
+      "y": 250,
+      "width": 180,
+      "height": 80,
+      "color": "#5bbfd1",
+      "animation": {
+        "type": "move",
+        "duration": 4,
+        "dx": 30,
+        "dy": 0
+      }
+    },
+    {
+      "type": "ellipse",
+      "x": 720,
+      "y": 45,
+      "width": 90,
+      "height": 90,
+      "color": "#ffd778",
+      "animation": {
+        "type": "blink",
+        "duration": 4
+      }
+    },
+    {
+      "type": "polygon",
+      "points": [
+        [
+          600,
+          400
+        ],
+        [
+          650,
+          300
+        ],
+        [
+          700,
+          400
+        ]
+      ],
+      "color": "#4fa977",
+      "animation": {
+        "type": "sway",
+        "duration": 5
+      }
+    }
+  ]
 }
 ```
+
+## Custom scenes with individual animations
+
+**Test status:** The `scene` field requires test build **0.2.72**. Published launcher 0.2.70 and the older 0.2.71 test build do not draw these scene elements. The user tested scene import and basic rendering on a TV; not every combination has been tested.
+
+`scene` is a list of up to 100 shapes. They are drawn in list order, with later shapes on top. Coordinates refer to a **1000 × 500** canvas. A wide TV banner can crop the top and bottom.
+
+| Field | Meaning |
+| --- | --- |
+| `type` | `rect` for a rectangle, `ellipse` for an ellipse, or `polygon` for a shape made of points. |
+| `color` | Fill color as `#RRGGBB`. |
+| `x`, `y` | Rectangle or ellipse position: x from 0 to 1000, y from 0 to 500. |
+| `width`, `height` | Rectangle or ellipse width from 1 to 1000 and height from 1 to 500. |
+| `points` | For polygons, 3 to 40 points as `[[x,y], ...]`, within the same coordinate limits. |
+| `opacity` | Optional opacity from 0 to 1. |
+| `animation` | Optional object with `type` and `duration`. `move` moves back and forth, `blink` fades the shape, and `sway` rotates it through a fixed angle. Duration: 0.5–60 seconds. For `move`, optional `dx` and `dy` values between -300 and 300 set the displacement. |
+
+Enable animations in the launcher settings. The template contains an example of each shape. Existing themes without `scene` remain compatible.
+
