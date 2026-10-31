@@ -89,4 +89,4 @@ English is the default. Change the language to English or German under Settings 
 
 ## Custom themes
 
-[Download themes, import instructions and the theme template](themes/README.md). Theme import is included in version 0.2.70.
+[Download Spring, Summer, Autumn and Winter themes, import instructions and the theme template](themes/README.md). Theme import is included in version 0.2.70.
