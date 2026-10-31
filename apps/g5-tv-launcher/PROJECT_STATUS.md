@@ -4,6 +4,8 @@ Diese Datei hält den Stand und wichtige Entscheidungen für spätere Weiterentw
 
 ## Aktueller Stand
 
+- **Veröffentlichung 0.2.70:** Aus dem lokalen Teststand 0.2.69 neu gebaut. Die IPK 0.2.70 selbst wurde noch nicht auf dem Fernseher getestet; Nutzer bestätigte die Theme-Kategorien, Dateifilter, Import, Entfernung und Leeren des Eingabefelds im vorherigen Test. Der Wetter-Nachabruf und die experimentelle Notfallgeste benötigen noch einen Gerätetest.
+
 - **Lokaler Teststand 0.2.69:** Theme-Eingabefeld wird nach erfolgreicher Installation geleert; fehlerhafte Eingaben bleiben erhalten. Nutzer bestätigt Theme-Kategorien, Filterung der Dateien und Entfernen mit 0.2.68. Lokale und simulierte Tests bestanden; TV-Test von 0.2.69 steht aus.
 
 - **Lokaler Teststand 0.2.68:** Getrennte Auswahl für Standard-, Spezial- und importierte Themes; Dateisuche zeigt nur gültige Theme-JSON-Dateien. Nutzer bestätigte den Theme-Import mit 0.2.67. Lokale Prüfungen bestanden, Fernsehtest von 0.2.68 steht aus.
@@ -22,13 +24,13 @@ Diese Datei hält den Stand und wichtige Entscheidungen für spätere Weiterentw
 - Der frühere Startfehler lautete `Boot recovery: [Errno 13] Permission denied: ''`; dessen genaue Ursache ist offen. Die vorherige Vermutung zu einem leeren Python-Pfad ist nicht belegt.
 
 - **Testversion 0.2.60 nach 0.2.50:** Direct Home Takeover, Wettersymbol-Sets Meteocons und Makin’ Things sowie GeoSphere Austria über Open-Meteo. Das getrennte [Testpaket](g5-tv-launcher_0.2.60_all.ipk) enthält diesen Stand; die veröffentlichte IPK 0.2.50 bleibt unverändert.
-- Direct Home und der Wechsel der Wettersymbol-Sets wurden auf dem Fernseher ausprobiert. Start nach kurzem Ausschalten funktionierte; der Test nach mehreren Stunden Standby steht aus. Die bisherige Home-Methode bleibt als Rückfalllösung erhalten. Die Ursache eines früheren Absturzes ist ungeklärt; derzeit tritt er laut Nutzer nicht mehr auf.
+- Direct Home und der Wechsel der Wettersymbol-Sets wurden auf dem Fernseher ausprobiert. Ein späterer Teststand startete nach einer Nacht im Standby. Die bisherige Home-Methode bleibt als Rückfalllösung erhalten. Die Ursache eines früheren Absturzes ist ungeklärt; derzeit tritt er laut Nutzer nicht mehr auf.
 - Wettersymbol-Animationen und der aktualisierte Wetterdienst wurden nicht umfassend auf dem Fernseher geprüft.
 
 - Der optionale Autostart der bisherigen Methode wurde auf dem Fernseher getestet, einschließlich Start aus tiefem Standby. Dieser Test bezieht sich nicht auf Direct Home; dessen Langzeittest steht noch aus. Vor der Deinstallation Autostart ausschalten.
 - IPK-Bauvorgaben für beide Apps und künftige Apps: [IPK_PACKAGING.md](../../IPK_PACKAGING.md).
 
-- Version: **0.2.60**; App-ID: `org.schrotty74.g5launcher`.
+- Version: **0.2.70**; App-ID: `org.schrotty74.g5launcher`.
 - Eigenständiger Homebrew-Launcher für einen gerooteten LG G5 mit webOS 25. Der Nutzer meldete, dass die Ortsanzeige beim Wechsel auf Englisch richtig war. Gerätetests einzelner Funktionen gelten für den verwendeten Fernseher.
 - Der vollständige Quellcode liegt unter [app/](app/); die IPK und das Quellcode-ZIP liegen im App-Verzeichnis. Die Anwendung ist eine Web-App mit HTML, CSS, JavaScript und lokalen SVG-Szenen.
 
@@ -42,9 +44,9 @@ Diese Datei hält den Stand und wichtige Entscheidungen für spätere Weiterentw
 
 ## Übergabe für den nächsten Chat
 
-- Regulärer Launcher-Stand unter `app/`: 0.2.60. Der aktuellere lokale Teststand 0.2.63 ist als separates Quellcode-ZIP im Zwischenstandsordner gesichert; seine IPK wurde nicht auf GitHub hochgeladen.
-- Auf dem Fernseher ist laut Nutzer inzwischen die lokale Testversion 0.2.63 installiert; der zugehörige Quellcode liegt separat im Zwischenstandsordner.
-- Direct Home startet nach kurzem Ausschalten; der Test nach mehreren Stunden Standby steht noch aus. Die bisherige Methode bleibt als Rückfalllösung erhalten.
+- Regulärer Launcher-Stand unter `app/`: 0.2.70. Die ZIP-Dateien im Zwischenstandsordner bleiben separate lokale Teststände.
+- Der Nutzer testete die Funktionen des vorherigen lokalen Stands; die neu gebaute Veröffentlichung 0.2.70 selbst ist noch nicht auf dem Fernseher getestet.
+- Direct Home startete im Teststand 0.2.63 nach einer Nacht im Standby. Das neu gebaute Paket 0.2.70 ist noch nicht auf dem Fernseher getestet. Die bisherige Methode bleibt als Rückfalllösung erhalten.
 - Nach wichtigen Arbeitsschritten diesen Abschnitt knapp aktualisieren: Was geändert wurde, welche lokale Testversion vorliegt, was tatsächlich getestet wurde, was offen ist und ob der Quellcode bereits auf GitHub liegt. Veraltete Zwischenstände ersetzen; keine persönlichen Daten eintragen.
 - Ein Markdown-Zwischenstand beschreibt die Arbeit, ersetzt aber keine Sicherung des Quellcodes. Nach jeder lokalen Testversion ein separates versioniertes Quellcode-ZIP erstellen und im [Zwischenstandsordner](zwischenstaende/) sichern. Die zugehörige IPK bleibt lokal, bis ihr Upload ausdrücklich beauftragt wird.
 

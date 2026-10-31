@@ -4,7 +4,7 @@
 
 Download: [Spring](fruehling.json) · [Summer](sommer.json) · [Autumn](herbst.json) · [Theme template](template.json)
 
-The file importer is available in local test versions starting with **0.2.67**; the category selection below requires **0.2.68 or newer**; the publicly linked 0.2.60 package does not include it. These examples were tested through the user's TV import flow; the exact appearance depends on the TV. This is an experimental format and may change before a public release.
+The file importer and category selection are included in **0.2.70**. These examples were tested through the user's TV import flow; the exact appearance depends on the TV. This is an experimental format and may change in a future version.
 
 ## Import on a rooted TV
 

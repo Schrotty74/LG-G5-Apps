@@ -194,3 +194,9 @@
 @keyframes g5-sleigh-left{from{left:100%;transform:translateX(0)}to{left:0;transform:translateX(-100%)}}
 
 #weather-icon img{display:block;width:1.8em;height:1.8em;object-fit:contain}
+
+.analog-clock{display:block;width:2.2em;height:2.2em}
+
+.scene.custom-theme:before{background:var(--theme-background)}
+.scene.custom-theme .feature-art{background-image:var(--theme-image);background-size:cover;background-position:center}
+#theme-json{display:block;width:100%;min-height:90px;color:#fff;background:#161e32;border:1px solid #8893a8;border-radius:8px;padding:10px}

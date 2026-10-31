@@ -1,10 +1,10 @@
 # Development notes
 
-- Test version 0.2.60 after the published 0.2.50: the repository source includes the opt-in Direct Home takeover and weather icon sets. The test IPK has its own version and does not replace the published 0.2.50 package. Direct Home started after a short standby; long standby remains to be tested.
+- Version 0.2.70 is rebuilt from the local 0.2.69 test source. Direct Home started after overnight standby in 0.2.63. The new 0.2.70 package itself has not yet been tested on the TV; weather retry and the experimental emergency gesture require device verification.
 - GeoSphere AROME weather data is requested through Open-Meteo. Meteocons and Makin’ Things SVG icons include their MIT licenses in `app/weather-icons/`. Each set has an independent animation setting.
 - Direct Home stages the icon assets with the app. Return to LG Home before updating the test installation, then re-enable Direct Home. Existing Magic Mapper and autostart options remain available.
 
-- App ID: `org.schrotty74.g5launcher`; package version: 0.2.60.
+- App ID: `org.schrotty74.g5launcher`; package version: 0.2.70.
 - `app/` contains the webOS app: HTML, JavaScript, CSS, app icon, and seven illustrated themes with local SVG assets. The IPK is built from this directory.
 - The app lists launch points using the existing Homebrew Channel Luna service and launches apps via the webOS Application Manager. HDMI launch points are filtered from the app collection but retained to resolve input labels. Live TV is exposed under Inputs.
 - The Homebrew exec service reads local icon paths with an allowlist and size limit. Fallback initials are used when an icon cannot be read. Weather requests go to Open-Meteo.

@@ -58,6 +58,14 @@ def execute(action, data, helper, backup):
         if not result.get('ok'):
             raise ValueError(result.get('message', 'Home operation failed'))
         return json.dumps(result, ensure_ascii=False)
+    if action in ('theme-list', 'theme-read'):
+        import importlib.util
+        script = os.path.join(os.path.dirname(helper), 'theme_import.py')
+        spec = importlib.util.spec_from_file_location('g5_theme_import', script)
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        result = module.main(['list'] if action == 'theme-list' else ['read', data.get('name')])
+        return json.dumps(result, ensure_ascii=False)
     if action == 'settings':
         p = subprocess.run(['luna-send', '-n', '1', '-f',
                             'luna://com.webos.service.applicationManager/launch',

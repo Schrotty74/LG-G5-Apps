@@ -7,7 +7,7 @@ Homebrew-Apps und Werkzeuge für LG-Fernseher der G-Serie. Jede App hat ein eige
 | Icon | App | Kurzbeschreibung | Quellcode, Downloads und Anleitung | Kontext |
 |---|---|---|---|---|
 | <img src="apps/system-monitor/app/icon.png" width="72" alt="G5 System Monitor"> | [G5 System Monitor](apps/system-monitor/README.de.md) | Nur lesendes Dashboard für CPU, RAM, Laufzeit, Systeminformationen, Speicherplatz, Netzwerk und aktive Prozesse | [English](apps/system-monitor/README.md) · [Deutsch](apps/system-monitor/README.de.md) · [IPK 0.9.3](https://github.com/Schrotty74/LG-G5-Apps/raw/refs/heads/main/apps/system-monitor/g5-system-monitor_0.9.3_all.ipk) · [Quellcode-ZIP](apps/system-monitor/g5-system-monitor-source-v0.9.3.zip) · [Quellcode](apps/system-monitor/app/) | [Entwicklungsnotizen](apps/system-monitor/DEVELOPMENT.md) · [Changelog (English)](apps/system-monitor/CHANGELOG.md) · [Vorschau](apps/system-monitor/preview.png) |
-| <img src="apps/g5-tv-launcher/app/icon.png" width="72" alt="G5 TV Launcher"> | [G5 TV Launcher](apps/g5-tv-launcher/README.de.md) | Anpassbarer Homebrew-Launcher mit Favoriten, illustrierten Hintergründen, Wetter und Eingängen | [English](apps/g5-tv-launcher/README.md) · [Deutsch](apps/g5-tv-launcher/README.de.md) · [Test-IPK 0.2.60](apps/g5-tv-launcher/g5-tv-launcher_0.2.60_all.ipk) · [Quellcode-ZIP](apps/g5-tv-launcher/g5-tv-launcher-source_0.2.60.zip) · [Quellcode](apps/g5-tv-launcher/app/) | [Entwicklungsnotizen (English)](apps/g5-tv-launcher/DEVELOPMENT.md) · [Changelog (English)](apps/g5-tv-launcher/CHANGELOG.md) |
+| <img src="apps/g5-tv-launcher/app/icon.png" width="72" alt="G5 TV Launcher"> | [G5 TV Launcher](apps/g5-tv-launcher/README.de.md) | Anpassbarer Homebrew-Launcher mit Favoriten, illustrierten Hintergründen, Wetter und Eingängen | [English](apps/g5-tv-launcher/README.md) · [Deutsch](apps/g5-tv-launcher/README.de.md) · [IPK 0.2.70](apps/g5-tv-launcher/g5-tv-launcher_0.2.70_all.ipk) · [Quellcode-ZIP](apps/g5-tv-launcher/g5-tv-launcher-source_0.2.70.zip) · [Quellcode](apps/g5-tv-launcher/app/) | [Entwicklungsnotizen (English)](apps/g5-tv-launcher/DEVELOPMENT.md) · [Changelog (English)](apps/g5-tv-launcher/CHANGELOG.md) |
 
 G5 System Monitor 0.9.3 ist das aktuelle Paket. Die UI-Vorschau ist eine Darstellung anhand des App-Quellcodes. Alle darin gezeigten Werte sind Demodaten und keine Aufnahme vom Fernseher.
 
@@ -31,4 +31,4 @@ Im Repository bleiben pro App die drei neuesten IPK-Pakete und die zugehörigen 
 
 ## Themes für den G5 TV Launcher
 
-[Themes herunterladen, importieren und selbst erstellen](apps/g5-tv-launcher/themes/README.de.md). Der Import benötigt derzeit eine neuere lokale Testversion; im verlinkten Paket 0.2.60 ist er noch nicht enthalten.
+[Themes herunterladen, importieren und selbst erstellen](apps/g5-tv-launcher/themes/README.de.md). Der Theme-Import ist ab Version 0.2.70 im verlinkten Paket enthalten.

@@ -2,6 +2,19 @@
 
 Each entry summarizes the changes present in the uploaded build and source since the previous documented version. Intermediate builds are not listed separately.
 
+## 0.2.70
+
+- Keep Direct Home startup independent of the installed Magic Mapper status check and log the boot stage and traceback when recovery is needed. Preserve the legacy method and its cleanup when switching from it.
+- Refresh weather once more five seconds after startup, relaunch or returning to the foreground, while retaining the chosen regular update interval.
+- Add a choice between digital and analog clock displays, with the existing clock size setting and settings backup.
+- Add Overview app management to hide, restore and reorder apps. Existing favorite selection and ordering remain available.
+- Add experimental custom background themes, with separate Standard, Special and Imported categories. Install supported JSON files from `/tmp` or the JSON entry field; validate theme content, ignore unrelated JSON files, and clear the entry field after successful import. Retain up to three custom themes.
+- Add Spring, Summer and Autumn theme downloads, a reusable JSON template, and English and German guides explaining import, format and authoring.
+- Add an experimental triple-Home recovery gesture for Direct Home. It depends on Home relaunch events reaching the running launcher and is not an independently verified recovery path if the interface is unresponsive. The existing LG Home restore option remains available.
+- Add tests for local theme file access and validation, including unrelated files and unsafe paths.
+
+The previous Direct Home version started after an overnight standby on the user's LG G5. The user confirmed clock switching, Overview app management, theme import, category selection, filtering, removal and clearing the entry field in the preceding local tests. The 0.2.70 package is rebuilt from that test source and has not itself been tested on the TV. The delayed weather retry and emergency gesture still require device verification.
+
 ## 0.2.60 (test version)
 
 - Add an opt-in TV Home screen selector with LG Home, the legacy Magic Mapper/autostart method and Direct Home takeover. Applying the selection requires confirmation; the legacy method remains available as a fallback.

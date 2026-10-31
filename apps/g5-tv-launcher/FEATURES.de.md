@@ -29,3 +29,8 @@
 - Open-Meteo oder das AROME-Modell von GeoSphere Austria über Open-Meteo wählen.
 - Wetterorte in englischer und deutscher Suche finden, Treffer in der TV-Zeitzone bevorzugen und passende Orte mit Region und Land auswählen.
 - Einstellungen über Kategorien aufrufen, damit weniger gescrollt werden muss.
+- Zwischen digitaler und analoger Uhr wählen.
+- Apps auf der Übersicht ausblenden und sortieren.
+- Bis zu drei eigene JSON-Themes aus /tmp oder dem Eingabefeld importieren und zwischen Standard, Spezial und Importiert wählen.
+- Wetter fünf Sekunden nach Start, erneutem Öffnen oder Sichtbarwerden erneut abrufen.
+- Die experimentelle Notfallgeste mit dreimal Home benötigt zugestellte Home-Relaunch-Ereignisse und ist bei eingefrorener Oberfläche keine unabhängig geprüfte Rückfallebene.

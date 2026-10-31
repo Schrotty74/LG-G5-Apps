@@ -29,3 +29,8 @@
 - Select Open-Meteo or GeoSphere Austria’s AROME model via Open-Meteo.
 - Find weather locations in English and German, prefer a match in the TV's time zone, and choose among matching cities with region and country shown.
 - Navigate settings by category to reduce scrolling.
+- Choose a digital or analog clock.
+- Hide and reorder Overview apps.
+- Import up to three custom JSON themes from /tmp or the JSON field, with Standard, Special and Imported categories.
+- Retry the weather request five seconds after launch, relaunch or return to the foreground.
+- Experimental triple-Home recovery requires delivered Home relaunch events and is not an independent fallback when the interface is unresponsive.

@@ -1,6 +1,6 @@
 # Direct Home takeover — test build
 
-This is G5 TV Launcher test version 0.2.60, based on the earlier 0.2.50 release. Installing the IPK does not enable Home takeover or alter startup/key mappings.
+This is G5 TV Launcher version 0.2.70. Installing the IPK does not enable Home takeover or alter startup/key mappings.
 
 ## Using the test
 
@@ -43,10 +43,10 @@ Always restore LG Home before uninstalling or upgrading this test build. The dir
 - Python and JavaScript syntax checks passed.
 - A test IPK was built and its archives inspected. These checks do not establish hardware functionality.
 - A browser UI test was prepared but could not run here because the Chromium executable is unavailable. `test_ui.cjs` uses mocked service responses and requires a local Playwright/Chromium setup; it is not an app runtime dependency.
-- The owner tested Direct Home on the TV, including a short standby and weather icon switching. A test after several hours of standby remains open.
+- The owner tested Direct Home on the TV, including overnight standby on test version 0.2.63 and weather icon switching. The rebuilt 0.2.70 package itself has not been tested on TV.
 
 ## References
 
 The approach was studied in Glasshouse's [home-takeover.js](https://github.com/rorygallagher2024/glasshouse/blob/main/server/lib/home-takeover.js), [samrescan.js](https://github.com/rorygallagher2024/glasshouse/blob/main/server/lib/samrescan.js) and [home.js](https://github.com/rorygallagher2024/glasshouse/blob/main/server/lib/home.js). Our implementation is independent and does not depend on Glasshouse's server or copy its source modules.
 
-Build with `python3 build.py`. Run the host-side tests with `python3 test_home_mode.py`. The test package uses version 0.2.60 and is separate from the published 0.2.50 package.
+Build with `python3 build.py`. Run the host-side tests with `python3 test_home_mode.py`. The release package uses version 0.2.70.

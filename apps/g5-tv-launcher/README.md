@@ -1,6 +1,6 @@
-# G5 TV Launcher 0.2.60
+# G5 TV Launcher 0.2.70
 
-**Test version 0.2.60:** Direct Home and weather changes are available for testing. The long standby test remains open; see [project status](PROJECT_STATUS.md).
+**Version 0.2.70:** Includes the tested launcher features and experimental custom themes. The rebuilt release package itself has not yet been tested on the TV; see [project status](PROJECT_STATUS.md).
 
 [English](README.md) · [Deutsch](README.de.md)
 
@@ -31,19 +31,22 @@ See the complete [feature overview with full feature list](FEATURES.md) for furt
 
 ## Downloads and source
 
-- [Download current test IPK](g5-tv-launcher_0.2.60_all.ipk)
-- [Download current test source ZIP](g5-tv-launcher-source_0.2.60.zip)
+- [Download current IPK](g5-tv-launcher_0.2.70_all.ipk)
+- [Download current source ZIP](g5-tv-launcher-source_0.2.70.zip)
 - [Complete app source](app/)
 - [Development notes](DEVELOPMENT.md)
 - [Project status and continuation notes (German)](PROJECT_STATUS.md)
 - [Changelog](CHANGELOG.md)
+
+
+- [QR code for version 0.2.70](g5-tv-launcher-qr_0.2.70.png)
 
 ## Installation
 
 A rooted TV and a working Homebrew Channel service are required. Transfer the IPK to `/tmp` using SFTP, then install it via SSH:
 
 ```sh
-luna-send-pub -i 'luna://com.webos.appInstallService/dev/install' '{"id":"com.ares.defaultName","ipkUrl":"/tmp/g5-tv-launcher_0.2.60_all.ipk","subscribe":true}'
+luna-send-pub -i 'luna://com.webos.appInstallService/dev/install' '{"id":"com.ares.defaultName","ipkUrl":"/tmp/g5-tv-launcher_0.2.70_all.ipk","subscribe":true}'
 ```
 
 Glasshouse's IPK upload can also be used. The app ID is `org.schrotty74.g5launcher`. If Direct Home takeover is active, restore LG Home before updating or uninstalling; re-enable takeover after installation. See [Direct Home test and recovery](HOME_TAKEOVER_TEST.md).
@@ -52,7 +55,7 @@ Glasshouse's IPK upload can also be used. The app ID is `org.schrotty74.g5launch
 
 Under Settings → Start & Home → TV Home screen, choose **LG Home**, **Legacy method**, or **Direct Home takeover**, then select **Apply method**. Direct Home uses the launcher as the TV Home screen without Magic Mapper. The legacy method uses the existing Home mapping and autostart as a fallback. Disable Glasshouse Home before switching methods. Restore LG Home before updating or uninstalling.
 
-Direct Home has been tested after a short standby; the test after several hours remains open. See [test and recovery instructions](HOME_TAKEOVER_TEST.md).
+Direct Home started after overnight standby in the preceding 0.2.63 device test. See [test and recovery instructions](HOME_TAKEOVER_TEST.md).
 
 ## Optional autostart
 
@@ -70,7 +73,7 @@ Install Python 3, open Terminal in this app directory, and run:
 python3 build.py
 ```
 
-The script writes `dist/g5-tv-launcher_0.2.60_all.ipk`. Use `python3 build.py --output /path/to/output` to choose another output directory. It uses only Python's standard library; no absolute path to the developer's computer is needed.
+The script writes `dist/g5-tv-launcher_0.2.70_all.ipk`. Use `python3 build.py --output /path/to/output` to choose another output directory. It uses only Python's standard library; no absolute path to the developer's computer is needed.
 
 ## Optional Home button mapping
 
@@ -86,4 +89,4 @@ English is the default. Change the language to English or German under Settings 
 
 ## Custom themes
 
-[Download themes, import instructions and the theme template](themes/README.md). Theme import currently requires a newer local test version than the linked 0.2.60 IPK.
+[Download themes, import instructions and the theme template](themes/README.md). Theme import is included in version 0.2.70.

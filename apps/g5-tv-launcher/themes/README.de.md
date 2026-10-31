@@ -4,7 +4,7 @@
 
 Downloads: [Frühling](fruehling.json) · [Sommer](sommer.json) · [Herbst](herbst.json) · [Theme-Vorlage](template.json)
 
-Der Dateiimport ist in lokalen Testversionen ab **0.2.67** enthalten; die unten beschriebene Kategorieauswahl benötigt **0.2.68 oder neuer**; die öffentlich verlinkte Version 0.2.60 bietet ihn noch nicht. Der Import wurde vom Nutzer am Fernseher getestet; die Darstellung hängt vom Gerät ab. Das Format ist experimentell und kann sich vor einer Veröffentlichung ändern.
+Dateiimport und Kategorieauswahl sind in **0.2.70** enthalten. Der Import wurde vom Nutzer am Fernseher getestet; die Darstellung hängt vom Gerät ab. Das Format ist experimentell und kann sich in einer zukünftigen Version ändern.
 
 ## Auf einem gerooteten Fernseher importieren
 

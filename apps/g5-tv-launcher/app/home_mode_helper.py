@@ -16,6 +16,7 @@ import subprocess
 import sys
 import tempfile
 import time
+import traceback
 
 APP_ID = 'org.schrotty74.g5launcher'
 LG_HOME = 'com.webos.app.home'
@@ -375,8 +376,8 @@ def state_status():
     config = load(CONFIG, {})
     mounted = owned_mount()
     current = info()
-    legacy = snapshot_legacy()
     direct = mounted and direct_manifest(current)
+    legacy = {'auto': False, 'mapped': False} if direct else snapshot_legacy()
     foreign = foreign_mount() or glasshouse_enabled()
     method = 'direct' if direct else ('legacy' if legacy['mapped'] or legacy['auto'] else 'lg')
     return {'ok': True, 'method': method, 'configured': config.get('method', 'lg'),
@@ -421,7 +422,7 @@ def switch(method, encoded=None):
         raise RuntimeError('A previous switch was interrupted. Use Restore LG Home first.')
     if foreign_mount() or glasshouse_enabled():
         raise RuntimeError('Switch Glasshouse Home off before changing the launcher method.')
-    saved = snapshot_legacy()
+    saved = snapshot_legacy() if method != 'direct' or config.get('method') == 'legacy' else {'auto': False, 'mapped': False}
     previous = 'direct' if owned_mount() else 'legacy'
     if method == 'direct' and owned_mount() and direct_manifest(info()):
         start_watch()
@@ -434,7 +435,8 @@ def switch(method, encoded=None):
             if not encoded:
                 raise RuntimeError('Launcher settings are required before switching.')
             preferences(encoded)
-            remove_legacy()
+            if config.get('method') == 'legacy':
+                remove_legacy()
             hook(True)
             take()
             verify_view()
@@ -455,7 +457,6 @@ def switch(method, encoded=None):
         rollback_error = None
         try:
             if previous == 'direct':
-                remove_legacy()
                 hook(True)
                 take()
                 atomic(CONFIG, {'method': 'direct', 'legacy': saved, 'error': str(failure)})
@@ -466,7 +467,8 @@ def switch(method, encoded=None):
                 else:
                     bridge_stop()
                 hook(False)
-                restore_legacy(saved)
+                if method != 'direct' or config.get('method') == 'legacy':
+                    restore_legacy(saved)
                 atomic(CONFIG, {'method': 'legacy' if saved['auto'] or saved['mapped'] else 'lg', 'error': str(failure)})
         except Exception as e:
             rollback_error = str(e)
@@ -493,6 +495,8 @@ def recover():
 
 
 def boot():
+    print('BOOT DIAGNOSTIC: time=%s python=%r PATH=%r' %
+          (time.strftime('%Y-%m-%dT%H:%M:%S%z'), sys.executable, os.environ.get('PATH')), flush=True)
     config = load(CONFIG, {})
     if config.get('transition'):
         # An interrupted transaction must never turn a takeover on at boot.
@@ -500,11 +504,16 @@ def boot():
     if config.get('method') != 'direct' or not own_hook():
         return {'ok': True}
     try:
-        remove_legacy()
+        print('BOOT DIAGNOSTIC: take', flush=True)
         take()
+        print('BOOT DIAGNOSTIC: verify_view', flush=True)
         verify_view()
+        print('BOOT DIAGNOSTIC: start_watch', flush=True)
         start_watch()
+        print('BOOT DIAGNOSTIC: success', flush=True)
     except Exception as e:
+        print('BOOT DIAGNOSTIC: error traceback follows', flush=True)
+        traceback.print_exc()
         recover()
         atomic(CONFIG, {'method': 'lg', 'error': 'Boot recovery: ' + str(e)})
     return {'ok': True}
@@ -599,6 +608,8 @@ if __name__ == '__main__':
     try:
         result = main(sys.argv[1:])
     except Exception as error:
+        if len(sys.argv) > 1 and sys.argv[1] == 'boot':
+            traceback.print_exc()
         result = {'ok': False, 'message': str(error)}
     print(json.dumps(result, ensure_ascii=False))
     sys.exit(0 if result.get('ok') else 1)

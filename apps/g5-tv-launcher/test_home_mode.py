@@ -2,6 +2,8 @@
 import base64
 import importlib.util
 import json
+import io
+from contextlib import redirect_stdout, redirect_stderr
 import os
 from pathlib import Path
 import tempfile
@@ -33,6 +35,21 @@ class HomeModeTests(unittest.TestCase):
         self.assertTrue(expected)
         for item in expected:
             self.assertEqual((Path(h.STAGE) / 'weather-icons' / item).read_bytes(), (source / item).read_bytes())
+
+    def test_boot_failure_records_traceback_and_recovers(self):
+        h.atomic(h.CONFIG, {'method': 'direct'})
+        stdout, stderr = io.StringIO(), io.StringIO()
+        with patch.object(h, 'own_hook', return_value=True), patch.object(h, 'take', side_effect=PermissionError(13, 'Permission denied', '')), patch.object(h, 'recover') as recover, redirect_stdout(stdout), redirect_stderr(stderr):
+            self.assertEqual(h.boot(), {'ok': True})
+        recover.assert_called_once()
+        self.assertIn('BOOT DIAGNOSTIC: take', stdout.getvalue())
+        self.assertIn('PermissionError', stderr.getvalue())
+        self.assertEqual(h.load(h.CONFIG)['method'], 'lg')
+
+    def test_direct_boot_does_not_check_magic_mapper(self):
+        h.atomic(h.CONFIG, {'method': 'direct'})
+        with patch.object(h, 'own_hook', return_value=True), patch.object(h, 'remove_legacy', side_effect=AssertionError('Magic Mapper checked')), patch.object(h, 'take'), patch.object(h, 'verify_view'), patch.object(h, 'start_watch'), redirect_stdout(io.StringIO()):
+            self.assertEqual(h.boot(), {'ok': True})
 
     def test_preferences_preserve_favorites_and_unknown_existing_keys(self):
         data = h.preferences(self.payload)
@@ -162,6 +179,7 @@ class HomeModeTests(unittest.TestCase):
 
     def test_view_failure_restores_previous_legacy_method(self):
         mocks, saved = self.transaction(failure=True)
+        h.atomic(h.CONFIG, {'method': 'legacy'})
         with self.assertRaisesRegex(RuntimeError, 'Previous method restored'):
             h.switch('direct', self.payload)
         mocks['restore_legacy'].assert_called_once_with(saved)
@@ -170,6 +188,7 @@ class HomeModeTests(unittest.TestCase):
 
     def test_failed_rollback_keeps_journal_for_recovery(self):
         mocks, _ = self.transaction(failure=True)
+        h.atomic(h.CONFIG, {'method': 'legacy'})
         mocks['restore_legacy'].side_effect = RuntimeError('mapper unavailable')
         with self.assertRaisesRegex(RuntimeError, 'Recovery incomplete'):
             h.switch('direct', self.payload)

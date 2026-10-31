@@ -95,6 +95,10 @@
     request('heartbeat', null, function (error) { if (error) status(msg('error') + error.message); });
   }
   window.G5HomeMode = {
+    emergency: function (done) {
+      if (!direct) return done(new Error('Direct Home is not active'));
+      request('recover', null, done);
+    },
     load: function (done) {
       request('prefs-load', null, function (error, result) {
         // On failure do not overwrite an unreadable shared store with local defaults.
