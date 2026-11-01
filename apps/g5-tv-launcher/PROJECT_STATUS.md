@@ -4,6 +4,8 @@ Diese Datei hält den Stand und wichtige Entscheidungen für spätere Weiterentw
 
 ## Aktueller Stand
 
+- **Lokaler Teststand 0.2.81:** Nach erneutem Boot-Recovery dokumentierte das TV-Protokoll `sys.executable` leer und `PATH` nicht gesetzt; der Bridge-Prozess konnte deshalb nicht starten. Fester Python-Pfad als Rückfall und gesetzter Boot-PATH; 32 lokale Tests inklusive leerer Umgebung bestanden. Test-IPK nicht veröffentlicht; Fernsehtest und längerer Standby noch offen. [Gesicherter Quellstand](zwischenstaende/g5-launcher-zwischenstand_0.2.81.zip).
+
 - **Veröffentlichung 0.2.80:** Aus Teststand 0.2.72 neu gebaut; die Release-IPK selbst wurde noch nicht am Fernseher getestet. Nutzer bestätigte Cyberpunk-Darstellung und Animationen sowie Import und grundsätzliche Darstellung der Strand-Szene. Nicht jede Effektoption wurde am Fernseher geprüft.
 - **Direct Home:** Nach Browserstart wurde zuvor automatisch LG Home wiederhergestellt. Der Laufzeitmonitor setzt bei fehlendem Lebenszeichen nicht mehr automatisch zurück; manuelle Wiederherstellung bleibt verfügbar. Bei tatsächlich eingefrorener Oberfläche erfolgt ebenfalls keine automatische Rücksetzung. Der Grund der früheren fehlenden Rückmeldung ist nicht bestätigt.
 - **Updateprüfung:** Der alte Versionsvergleich (0.2.60 in 0.2.70) wurde unabhängig vom Direct-Home-Vorfall korrigiert.

@@ -25,11 +25,12 @@ Die Angaben beschreiben lokale Tests, keine veröffentlichten Versionen. Bei all
 
 
 
-- **Konfigurierbare Theme-Effekte (intern 0.2.70):** Optionale Farbe, Dauer, Deckkraft und Richtung für importierte Animationen. Vorhandene Themes bleiben kompatibel. Lokale Validierungs- und Paketprüfungen bestanden; Fernsehtest steht aus. [Quellcode-ZIP](g5-launcher-zwischenstand_0.2.70-effect-options.zip).
 
 - **0.2.71:** Aktueller Teststand mit konfigurierbaren Theme-Effekten und Cyberpunk-Stadt; Versionsangaben in App, Updateprüfung und IPK angeglichen. Lokale automatisierte Prüfungen bestanden; Fernsehtest dieser IPK steht aus. [Quellcode-ZIP](g5-launcher-zwischenstand_0.2.71.zip).
 
 - **0.2.72:** Importierbare Szenen aus Formen mit Einzelanimationen; Strand-Beispiel und Vorlage. Lokale Validator-, DOM-, Bestands- und Paketprüfungen bestanden; Fernsehtest und visuelle Browserprüfung stehen aus. [Quellcode-ZIP](g5-launcher-zwischenstand_0.2.72.zip).
+
+- **0.2.81 (1. November 2026):** Behebt den anhand des Boot-Protokolls festgestellten leeren Python-Pfad bei Direct Home; fester Interpreterpfad und Boot-PATH, Regressionstest für leere Umgebung bestanden. Fernsehtest und erneuter Start nach längerem Standby stehen aus. [Quellcode-ZIP](g5-launcher-zwischenstand_0.2.81.zip).
 
 ## Verbindlicher Ablauf je Testversion
 
