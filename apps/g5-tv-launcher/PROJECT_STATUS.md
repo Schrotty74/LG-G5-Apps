@@ -26,6 +26,8 @@ Diese Datei hält den Stand und wichtige Entscheidungen für spätere Weiterentw
 
 ## Übergabe für den nächsten Chat
 
+- Vor einem Glasshouse-Server-Update Direct Home auf LG Home umstellen. Bei einer gegenseitigen Blockade durch Glasshouses `restorePending` und die G5-Home-Übernahme die Voraussetzungen und den dokumentierten Wiederherstellungsweg beachten: [Glasshouse und LG Home](GLASSHOUSE_WIEDERHERSTELLUNG.md). Die Ursache des damaligen Updatefehlers ist nicht abschließend geklärt.
+
 - Das eigenständige Wintertheme liegt auf GitHub im Theme-Ordner; Format und Bild wurden lokal geprüft, der Fernsehtest steht aus. Die Theme-Übersichten enthalten den Download.
 - Launcher-Änderungen und bestätigte Gerätetests stehen im Abschnitt „Aktueller Stand“; Wetter-Nachabruf und Notfallgeste bleiben zu prüfen.
 - Regulärer Launcher-Stand unter `app/`: 0.2.80. Die ZIP-Dateien im Zwischenstandsordner bleiben separate lokale Teststände.
