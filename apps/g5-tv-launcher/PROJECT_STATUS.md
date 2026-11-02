@@ -4,6 +4,9 @@ Diese Datei hält den Stand und wichtige Entscheidungen für spätere Weiterentw
 
 ## Aktueller Stand
 
+- **Lokaler Teststand 0.2.82:** Nur die Direct-Home-Boot-Wartezeit von zehn auf fünf Sekunden verkürzt; Testversion und Paketnummer entsprechend erhöht. Der Nutzer meldete den erfolgreichen Start nach längerem Standby mit dem vorherigen Teststand. Die neue Wartezeit wurde lokal geprüft, am Fernseher noch nicht. [Gesicherter Quellstand](zwischenstaende/g5-launcher-zwischenstand_0.2.82.zip).
+
+
 - **Lokaler Teststand 0.2.81:** Nach erneutem Boot-Recovery dokumentierte das TV-Protokoll `sys.executable` leer und `PATH` nicht gesetzt; der Bridge-Prozess konnte deshalb nicht starten. Fester Python-Pfad als Rückfall und gesetzter Boot-PATH; 32 lokale Tests inklusive leerer Umgebung bestanden. Test-IPK nicht veröffentlicht; Fernsehtest und längerer Standby noch offen. [Gesicherter Quellstand](zwischenstaende/g5-launcher-zwischenstand_0.2.81.zip).
 
 - **Veröffentlichung 0.2.80:** Aus Teststand 0.2.72 neu gebaut; die Release-IPK selbst wurde noch nicht am Fernseher getestet. Nutzer bestätigte Cyberpunk-Darstellung und Animationen sowie Import und grundsätzliche Darstellung der Strand-Szene. Nicht jede Effektoption wurde am Fernseher geprüft.
