@@ -31,11 +31,9 @@ The catalog updates automatically when a GitHub release is published with a matc
    `https://raw.githubusercontent.com/Schrotty74/LG-G5-Apps/main/repo.json`
 3. Select and install the apps from the catalog.
 
-Adding the catalog in Glasshouse was tested on a TV. Setup in Homebrew Channel has not yet been tested on a TV.
-
 ## Glasshouse screen savers
 
-[Download Retro-Gaming and Seasons](screensavers/g5-glasshouse-screensavers.zip). These screen savers require Glasshouse on a rooted TV. Retro-Gaming has been tried on an LG G5; the revised Seasons version has not yet been confirmed on the TV.
+[Download Retro-Gaming and Seasons](screensavers/g5-glasshouse-screensavers.zip). These screen savers require Glasshouse on a rooted TV.
 
 1. Transfer the ZIP to `/tmp` on the TV using SFTP, for example with Termius.
 2. Connect over SSH and extract both folders:

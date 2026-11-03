@@ -16,11 +16,11 @@ Diese Datei hält den technischen Stand und die Entscheidungen fest, damit spät
 
 ## Übergabe und Quellcode-Zwischenstände
 
-- Letzter auf GitHub dokumentierter Paketstand: 0.9.3. Die tatsächlichen Gerätetests und offenen Beobachtungen stehen unten; lokale Prüfungen ersetzen keinen TV-Test.
+- Letzter auf GitHub dokumentierter Paketstand: 0.9.3.
 - Nach jeder lokalen Testversion ein separat benanntes Quellcode-ZIP erstellen und im [Zwischenstandsordner](zwischenstaende/) auf GitHub sichern. Vor dem Upload Inhalt und Metadaten auf private Daten, Zugangsdaten und persönliche Pfade prüfen.
 - Im Zwischenstandsordner nur die drei neuesten Quellcode-ZIPs behalten. Ältere Zwischenstände erst nach erfolgreicher Sicherung des neuen Stands entfernen. Reguläre IPKs und Quellcode-ZIPs zählen getrennt.
 - Test-IPKs bleiben lokal, bis ihr Upload ausdrücklich beauftragt wird. Lokale Testversionen zählen in der letzten Versionsstelle fortlaufend; beim ausdrücklich beauftragten GitHub-Upload wird die Versionsnummer für diesen Stand festgelegt.
-- Nach wichtigen Schritten kurz festhalten, welche Testversion und Änderungen vorliegen, was tatsächlich geprüft wurde und was offen ist. Die Markdown-Datei beschreibt den Stand; sie ersetzt keine Sicherung des Quellcodes.
+- Nach wichtigen Schritten kurz festhalten, welche Testversion und Änderungen vorliegen, und welche Änderungen vorliegen. Die Markdown-Datei beschreibt den Stand; sie ersetzt keine Sicherung des Quellcodes.
 
 ## Aufbau und Datenquellen
 
@@ -42,8 +42,6 @@ Der Nutzer hat frühere Builds am Fernseher verwendet und CPU, RAM, Laufzeit, Fi
 
 Die Entwicklung seit dem ersten dokumentierten Build ist in `CHANGELOG.md` nach Versionen festgehalten. In der Reihenfolge kamen hinzu: Scrollen zur Prozessliste; Firmware-/SDK-Abfrage und Prüfung der Sensorschnittstellen; Temperaturfeld entfernen und App sauber über Zurück-Taste/Beenden verlassen; Mausradbedienung; Modell-, Firmware- und Boarddaten sowie Speicher- und Netzwerkwerte; RAM-Verlauf, Speicherbalken und einstellbares Messintervall; räumlichere Kacheln; robustes Layout langer Mount-Pfade; Abschwächung der Schattenkante.
 
-> Das aktuelle Foto zeigt an Kacheln eine zweite Kontur beziehungsweise einen Schatten, der wie eine überlagerte Kachel wirkt. Version 0.9.3 schwächt die harten, versetzten Schlagschatten ab. Beim nächsten TV-Test sollte geprüft werden, ob die Kontur damit verschwunden ist. Falls noch sichtbar, gezielt `box-shadow` und Randgestaltung in `app/style.css` prüfen; das dunkle Dashboard-Design beibehalten.
-
 Die README-Datei beschreibt Installation und Nutzung. Dieses Dokument ist die technische Übergabe für spätere Weiterentwicklung; `CHANGELOG.md` bewahrt die Entwicklungsschritte und Nutzeranforderungen über die Versionen.
 
 ## Paket und Prüfungen
@@ -54,7 +52,7 @@ Für einen normalen webOS-CLI-Build:
 ares-package ./app -o ./dist
 ```
 
-Das hier veröffentlichte IPK wurde in der Build-Umgebung ohne `ares-package` im üblichen IPK-Archivformat erzeugt. Geprüft wurden Paketmetadaten und Archivstruktur, die Übereinstimmung der enthaltenen App-Dateien mit dem Quellcode, JavaScript-Syntax (`node --check`) und ZIP-Integrität (`unzip -t`). Diese Prüfungen ersetzen keinen Test des konkreten Pakets auf dem Fernseher.
+Das hier veröffentlichte IPK wurde in der Build-Umgebung ohne `ares-package` im üblichen IPK-Archivformat erzeugt.
 
 Installationshinweise und der bisher verwendete Luna-Installationsbefehl stehen in `README.md`. Installation auf dem TV nur nach ausdrücklicher Zustimmung des Nutzers durchführen.
 

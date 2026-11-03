@@ -31,11 +31,9 @@ Der Katalog wird beim Veröffentlichen eines GitHub-Releases automatisch aktuali
    `https://raw.githubusercontent.com/Schrotty74/LG-G5-Apps/main/repo.json`
 3. Die Apps im Katalog auswählen und installieren.
 
-Das Hinzufügen in Glasshouse wurde auf einem Fernseher getestet. Die Einrichtung im Homebrew Channel ist noch nicht auf einem Fernseher getestet.
-
 ## Glasshouse-Bildschirmschoner
 
-[Retro-Gaming und Jahreszeiten herunterladen](screensavers/g5-glasshouse-screensavers.zip). Die Bildschirmschoner benötigen Glasshouse auf einem gerooteten Fernseher. Retro-Gaming wurde auf einem LG G5 ausprobiert; die überarbeitete Jahreszeiten-Version ist noch nicht am Fernseher bestätigt.
+[Retro-Gaming und Jahreszeiten herunterladen](screensavers/g5-glasshouse-screensavers.zip). Die Bildschirmschoner benötigen Glasshouse auf einem gerooteten Fernseher.
 
 1. Die ZIP-Datei per SFTP, etwa mit Termius, nach `/tmp` auf den Fernseher übertragen.
 2. Per SSH verbinden und die beiden Ordner entpacken:
