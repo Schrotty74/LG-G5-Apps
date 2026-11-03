@@ -4,6 +4,8 @@ Diese Datei hält den Stand und wichtige Entscheidungen für spätere Weiterentw
 
 ## Aktueller Stand
 
+- **Theme-Teststand 0.2.91:** China-Theme mit mittigem Kirschblütenbaum, kleinerem Tempel, leuchtender Laterne und fallenden Blüten. Der Nutzer bestätigte die Darstellung am Fernseher. Eingebettete Grafikelemente und `flow`-Animationen sind im Teststand ergänzt; Version 0.2.90 unterstützt sie nicht. Teststand und Anleitung liegen auf dem Entwicklungszweig; ein Release ist nicht erfolgt.
+
 - **Lokaler Teststand 0.2.91:** Importierte Themes können eigene eingebettete Bildobjekte und einen begrenzten Bewegungsablauf mit Drehung, Verzögerung und Ausblenden verwenden. Der Nutzer bestätigte am Fernseher, dass beim China-Theme Blütenblätter über das ganze Bild herunterfallen. 32 bestehende Tests, Validatorprüfungen und IPK-Quellcodevergleich lokal bestanden. Weitere Effekte und Kombinationen wurden nicht am Fernseher bestätigt. Test-IPK bleibt lokal. [Quellcode-Zwischenstand](zwischenstaende/g5-launcher-zwischenstand_0.2.91.zip).
 
 - **Veröffentlichung 0.2.90:** Boot-Pfad-Korrektur und fünf Sekunden Direct-Home-Boot-Wartezeit. Der Nutzer meldete einen erfolgreichen Start nach längerem Standby mit dem vorherigen Zehn-Sekunden-Test; die kürzere Wartezeit und die neu gebaute Release-IPK wurden noch nicht am Fernseher getestet.

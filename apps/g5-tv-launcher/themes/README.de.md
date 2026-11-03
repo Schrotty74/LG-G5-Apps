@@ -8,7 +8,7 @@
 
 ## Animierte Themes
 
-[Cyberpunk Neon](animated/cyberpunk-neon.json) · [Strand](animated/strand-vektor.json)
+[Cyberpunk Neon](animated/cyberpunk-neon.json) · [Strand](animated/strand-vektor.json) · [China – Kirschblüten (Teststand 0.2.91)](animated/china-kirschbluete.json)
 
 [Theme-Vorlage](template.json)
 
@@ -17,6 +17,15 @@ Dateiimport und Kategorieauswahl sind in **0.2.70** enthalten. Der Import wurde 
 **Kompatibilität:** Strand und Cyberpunk Neon benötigen Launcher-Version 0.2.80 oder neuer. Ältere Versionen unterstützen die gezeigten Animationen beziehungsweise Szenenelemente nicht vollständig.
 
 **Animationen:** Effekte für importierte Themes und `animationOptions` sind ab 0.2.80 enthalten. Die neuen Einstellmöglichkeiten wurden noch nicht am Fernseher getestet. Der Import und der Neon-Effekt wurden im Teststand am Fernseher ausprobiert. Andere Effekte sind am Fernseher noch nicht bestätigt. Ältere Themes ohne Animationsfeld funktionieren weiterhin.
+
+
+## Erweiterte Animationen im Teststand 0.2.91
+
+Das China-Theme benötigt die Testversion 0.2.91 mit der erweiterten Theme-Engine. Die veröffentlichte Version 0.2.90 kann dieses Theme nicht importieren. Die Animation der fallenden Blüten und die Darstellung des China-Themes wurden vom Nutzer am Fernseher bestätigt; weitere Kombinationen sind nicht vollständig am Fernseher geprüft.
+
+Theme-Dateien können in `scene` bis zu 100 Objekte aus Formen und eingebetteten PNG-, JPEG- oder WebP-Bildern enthalten. Bildobjekte nutzen `type: "image"`, `x`, `y`, `width`, `height` und `image` als Daten-URL; pro Bildobjekt sind höchstens 12.000 Zeichen erlaubt. Die gesamte Theme-Datei bleibt auf 80.000 Bytes begrenzt. Externe Bildadressen, SVG-Daten und Skripte sind nicht erlaubt.
+
+Für ein Objekt ermöglicht `animation` mit `type: "flow"` eine fortlaufende Bewegung von der Ausgangsposition bis zum Ziel und einen Neustart. `duration` (0,5–60 Sekunden), `dx` und `dy` (je -300 bis 300), `delay` (-60 bis 60 Sekunden), `rotation` (-360 bis 360 Grad) und `fade` (true/false) steuern den Ablauf. Vorzeichen und Dezimalzahlen werden im JSON mit Punkt geschrieben. Die vorhandenen Animationen `move`, `blink` und `sway` bleiben verfügbar. Animationen müssen in den Launcher-Einstellungen eingeschaltet sein. Siehe das [China-Theme](animated/china-kirschbluete.json) als Beispiel.
 
 ## Auf einem gerooteten Fernseher importieren
 

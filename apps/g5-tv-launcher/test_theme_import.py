@@ -26,5 +26,17 @@ class ImportTests(unittest.TestCase):
                 with self.assertRaises((ValueError, OSError)):
                     mod.read_theme(name)
 
+    def test_animated_image_and_unsafe_sources(self):
+        theme = json.loads((Path(__file__).parent / 'themes/animated/china-kirschbluete.json').read_text(encoding='utf-8'))
+        self.assertTrue(mod.valid_theme(theme))
+        image = next(item for item in theme['scene'] if item['type'] == 'image')
+        original = image['image']
+        for invalid in ('https://example.com/a.png', 'data:image/svg+xml;base64,PHN2Zz4='):
+            image['image'] = invalid
+            self.assertFalse(mod.valid_theme(theme))
+        image['image'] = original
+        image['animation']['rotation'] = 361
+        self.assertFalse(mod.valid_theme(theme))
+
 if __name__ == '__main__':
     unittest.main()

@@ -32,11 +32,15 @@ def valid_scene(scene):
     def number(value, low, high):
         return not isinstance(value, bool) and isinstance(value, (int, float)) and math.isfinite(value) and low <= value <= high
     for item in scene:
-        if not isinstance(item, dict) or item.get('type') not in ('rect', 'ellipse', 'polygon'):
+        if not isinstance(item, dict) or item.get('type') not in ('rect', 'ellipse', 'polygon', 'image'):
             return False
-        if any(k not in ('type', 'color', 'x', 'y', 'width', 'height', 'points', 'opacity', 'animation') for k in item):
+        if any(k not in ('type', 'color', 'x', 'y', 'width', 'height', 'points', 'opacity', 'animation', 'image') for k in item):
             return False
-        if not isinstance(item.get('color'), str) or not re.fullmatch(r'#[0-9a-fA-F]{6}', item['color']):
+        if item['type'] == 'image':
+            image = item.get('image')
+            if not isinstance(image, str) or len(image) > 12000 or not re.fullmatch(r'data:image/(?:png|jpeg|webp);base64,[A-Za-z0-9+/]+={0,2}', image):
+                return False
+        elif not isinstance(item.get('color'), str) or not re.fullmatch(r'#[0-9a-fA-F]{6}', item['color']):
             return False
         if item['type'] == 'polygon':
             points = item.get('points')
@@ -48,9 +52,15 @@ def valid_scene(scene):
             return False
         if 'animation' in item:
             a = item['animation']
-            if not isinstance(a, dict) or any(k not in ('type','duration','dx','dy') for k in a) or a.get('type') not in ('move','blink','sway') or not number(a.get('duration'), .5, 60):
+            if not isinstance(a, dict) or any(k not in ('type','duration','dx','dy','delay','rotation','fade') for k in a) or a.get('type') not in ('move','blink','sway','flow') or not number(a.get('duration'), .5, 60):
                 return False
             if any(k in a and not number(a[k], -300, 300) for k in ('dx','dy')):
+                return False
+            if 'delay' in a and not number(a['delay'], -60, 60):
+                return False
+            if 'rotation' in a and not number(a['rotation'], -360, 360):
+                return False
+            if 'fade' in a and not isinstance(a['fade'], bool):
                 return False
     return True
 
