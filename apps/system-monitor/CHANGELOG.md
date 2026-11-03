@@ -35,7 +35,7 @@
 
 ## 0.6.0
 
-- Removed the temperature tile because the tested device exposed no usable sensor reading.
+- Removed the temperature tile because the device exposed no usable sensor reading.
 - Added an Exit button and Magic Remote Back handling through `webOS.platformBack()`.
 - Added mouse-wheel scrolling.
 
