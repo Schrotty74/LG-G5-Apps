@@ -23,7 +23,7 @@ Diese Datei hält den Stand und wichtige Entscheidungen für spätere Weiterentw
 
 ## Offene Punkte
 
-- **Für später: einfacher Theme-Editor.** Browserbasierter Baukasten, auch auf dem iPhone gut bedienbar: Hintergrund und Farben wählen, Objekte oder eigene Bilder hinzufügen, per Touch oder Maus positionieren und ihre Größe ändern; Animationen wie Fallen, Schweben, Blinken und Drehen über verständliche Auswahl und einfache Einstellungen erstellen. Änderungen und Animationen sofort in einer Vorschau zeigen. Bestehende Themes öffnen und bearbeiten, fertige Themes als kompatible JSON-Datei exportieren. Formatgrenzen prüfen und verständlich anzeigen; JSON und Bildkodierung im Hintergrund erledigen. Keine Umsetzung beauftragt.
+- **Für später: einfacher Theme-Editor.** Browserbasierter Baukasten, in gängigen Browsern auf Smartphone, Tablet und Desktop gut bedienbar; für Touch, Maus und Tastatur geeignet: Hintergrund und Farben wählen, Objekte oder eigene Bilder hinzufügen, per Touch oder Maus positionieren und ihre Größe ändern; Animationen wie Fallen, Schweben, Blinken und Drehen über verständliche Auswahl und einfache Einstellungen erstellen. Änderungen und Animationen sofort in einer Vorschau zeigen. Bestehende Themes öffnen und bearbeiten, fertige Themes als kompatible JSON-Datei exportieren. Formatgrenzen prüfen und verständlich anzeigen; JSON und Bildkodierung im Hintergrund erledigen. Keine Umsetzung beauftragt.
 
 
 - Für später vormerken: eigene, frei programmierbare Animationsskripte für importierte Themes prüfen. Noch nicht umgesetzt; Sicherheitsmodell, Prüfung und Bedienung vor einer Umsetzung festlegen.
