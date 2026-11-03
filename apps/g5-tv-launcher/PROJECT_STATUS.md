@@ -26,8 +26,6 @@ Diese Datei hält den Stand und wichtige Entscheidungen für spätere Weiterentw
 
 - Für später vormerken: eigene, frei programmierbare Animationsskripte für importierte Themes prüfen. Noch nicht umgesetzt; Sicherheitsmodell, Prüfung und Bedienung vor einer Umsetzung festlegen.
 
-- Apps in den Favoriten gezielt ausblenden: Der ursprüngliche Wunsch ist von der umgesetzten App-Verwaltung in der Übersicht getrennt zu betrachten; eine gesonderte Umsetzung ist nicht bestätigt.
-- Wetter-Nachabruf nach längerem Standby und experimentelle Notfallgeste auf dem Fernseher prüfen. Die Geste benötigt Home-Relaunch-Ereignisse und ist keine unabhängig geprüfte Rückfallebene bei eingefrorener Oberfläche.
 - Ein vollständiges austauschbares Theme-Layout ist nicht umgesetzt; das JSON-Format unterstützt Farben, Hintergrundbilder, vorgegebene Effekte und einfache Szenen.
 
 ## Übergabe für den nächsten Chat
@@ -35,7 +33,7 @@ Diese Datei hält den Stand und wichtige Entscheidungen für spätere Weiterentw
 - Vor einem Glasshouse-Server-Update Direct Home auf LG Home umstellen. Bei einer gegenseitigen Blockade durch Glasshouses `restorePending` und die G5-Home-Übernahme die Voraussetzungen und den dokumentierten Wiederherstellungsweg beachten: [Glasshouse und LG Home](GLASSHOUSE_WIEDERHERSTELLUNG.md). Die Ursache des damaligen Updatefehlers ist nicht abschließend geklärt.
 
 - Das eigenständige Wintertheme liegt im Theme-Ordner; der Nutzer bestätigte, dass es am Fernseher funktioniert. Die Theme-Übersichten enthalten den Download.
-- Launcher-Änderungen und bestätigte Gerätetests stehen im Abschnitt „Aktueller Stand“; Wetter-Nachabruf und Notfallgeste bleiben zu prüfen.
+- Launcher-Änderungen und bestätigte Gerätetests stehen im Abschnitt „Aktueller Stand“.
 - Regulärer Launcher-Stand unter `app/`: 0.2.90. Die ZIP-Dateien im Zwischenstandsordner bleiben separate lokale Teststände.
 - Die neu gebaute Veröffentlichung 0.2.90 und die verkürzte Boot-Wartezeit wurden noch nicht auf dem Fernseher getestet.
 - Direct Home startete mit dem Teststand 0.2.81 nach längerem Standby. Das neu gebaute Paket 0.2.90 und die kürzere Wartezeit sind noch nicht auf dem Fernseher getestet. Die bisherige Methode bleibt als Rückfalllösung erhalten.
