@@ -32,7 +32,7 @@ Die Angaben beschreiben lokale Tests, keine veröffentlichten Versionen. Bei all
 
 - **0.2.82 (2. November 2026):** Direct-Home-Boot-Wartezeit von zehn auf fünf Sekunden verkürzt. Der Nutzer bestätigte den Start nach längerer Standby-Zeit mit dem vorherigen Teststand; die neue Wartezeit wurde lokal geprüft, ein Fernsehtest steht aus. [Quellcode-ZIP](g5-launcher-zwischenstand_0.2.82.zip).
 
-- **0.2.91:** Eingebettete Bildobjekte und vielseitige Bewegung für importierte Themes; China-Theme mit Blütenblättern. Lokal geprüft, nicht am Fernseher getestet. [Quellcode-ZIP](g5-launcher-zwischenstand_0.2.91.zip).
+- **0.2.91:** Eingebettete Bildobjekte und vielseitige Bewegung für importierte Themes; China-Theme mit Blütenblättern. Lokal geprüft; der Nutzer bestätigte am Fernseher, dass Blütenblätter über das ganze Bild herunterfallen. Weitere Effekte und Kombinationen sind nicht am Fernseher bestätigt. [Quellcode-ZIP](g5-launcher-zwischenstand_0.2.91.zip).
 
 ## Verbindlicher Ablauf je Testversion
 
