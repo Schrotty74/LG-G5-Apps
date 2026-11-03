@@ -60,7 +60,7 @@ For LG Home and the legacy method, enable or disable the optional launcher autos
 
 ## Notes
 
-Installing the launcher does not automatically replace LG Home or configure the Home button or autostart; these options require explicit activation. It uses the Homebrew service to read launch points and local app icons; unavailable icons fall back to a letter. Weather and location lookup use Open-Meteo and require an internet connection; the GeoSphere option selects GeoSphere Austria’s AROME model via Open-Meteo. Backups are stored at `/media/developer/g5-tv-launcher/backup.json` on the TV and can be copied via SFTP. Saving again replaces the previous backup. The Live TV shortcut and exact appearance should be checked on the target TV.
+Installing the launcher does not automatically replace LG Home or configure the Home button or autostart; these options require explicit activation. It uses the Homebrew service to read launch points and local app icons; unavailable icons fall back to a letter. Weather and location lookup use Open-Meteo and require an internet connection; the GeoSphere option selects GeoSphere Austria’s AROME model via Open-Meteo. Backups are stored at `/media/developer/g5-tv-launcher/backup.json` on the TV and can be copied via SFTP. Saving again replaces the previous backup.
 
 ## Build from source on macOS
 
