@@ -2,6 +2,13 @@
 
 Each entry summarizes the changes present in the uploaded build and source since the previous documented version. Intermediate builds are not listed separately.
 
+## 0.2.90
+
+- Fix Direct Home startup when the boot environment has no PATH and Python reports an empty executable path: set a boot PATH, start Python by its absolute path and provide a fallback executable for the bridge and monitor.
+- Shorten the Direct Home boot wait from ten to five seconds.
+
+The user reported a successful overnight start with the earlier test build using the boot-path fix and ten-second wait. The five-second wait and the rebuilt 0.2.90 IPK have not been tested on the TV.
+
 ## 0.2.80
 
 - Prevent the Direct Home monitor from automatically restoring LG Home solely because a heartbeat is missing. This addresses the unwanted recovery observed after opening the browser; the exact reason the monitor considered Home unresponsive remains unconfirmed. Automatic recovery for a genuinely unresponsive page is also no longer performed; manual LG Home restoration remains available.

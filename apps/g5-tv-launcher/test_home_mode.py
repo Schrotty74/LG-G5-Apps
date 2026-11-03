@@ -5,6 +5,7 @@ import json
 import io
 from contextlib import redirect_stdout, redirect_stderr
 import os
+import sys
 from pathlib import Path
 import tempfile
 import unittest
@@ -45,6 +46,16 @@ class HomeModeTests(unittest.TestCase):
         self.assertIn('BOOT DIAGNOSTIC: take', stdout.getvalue())
         self.assertIn('PermissionError', stderr.getvalue())
         self.assertEqual(h.load(h.CONFIG)['method'], 'lg')
+
+    def test_empty_python_executable_still_starts_child(self):
+        spec = importlib.util.spec_from_file_location('home_mode_boot_environment', Path(__file__).parent / 'app/home_mode_helper.py')
+        module = importlib.util.module_from_spec(spec)
+        with patch.object(sys, 'executable', ''):
+            spec.loader.exec_module(module)
+        self.assertEqual(module.PYTHON, '/usr/bin/python3')
+        result = module.subprocess.run([module.PYTHON, '-c', 'print("child started")'], capture_output=True, text=True, env={})
+        self.assertEqual(result.returncode, 0)
+        self.assertEqual(result.stdout.strip(), 'child started')
 
     def test_direct_boot_does_not_check_magic_mapper(self):
         h.atomic(h.CONFIG, {'method': 'direct'})

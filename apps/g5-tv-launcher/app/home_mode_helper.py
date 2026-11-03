@@ -19,6 +19,7 @@ import time
 import traceback
 
 APP_ID = 'org.schrotty74.g5launcher'
+PYTHON = sys.executable or '/usr/bin/python3'
 LG_HOME = 'com.webos.app.home'
 APP = os.path.dirname(os.path.realpath(__file__))
 TARGET = '/usr/palm/applications/' + LG_HOME
@@ -198,7 +199,7 @@ def bridge_start():
     token = secrets.token_urlsafe(32)
     atomic(BRIDGE_CONFIG, {'token': token})
     with open(os.devnull, 'rb') as inp, open(STATE + '/bridge.log', 'ab') as out:
-        proc = subprocess.Popen([sys.executable, BRIDGE, BRIDGE_CONFIG, HELPER, BACKUP],
+        proc = subprocess.Popen([PYTHON, BRIDGE, BRIDGE_CONFIG, HELPER, BACKUP],
                                 stdin=inp, stdout=out, stderr=out, start_new_session=True, close_fds=True)
     for _ in range(40):
         cfg = load(BRIDGE_CONFIG, {})
@@ -407,7 +408,7 @@ def start_watch():
     if watch_pid():
         return
     with open(os.devnull, 'rb') as inp, open(STATE + '/watch.log', 'ab') as out:
-        subprocess.Popen([sys.executable, HELPER, 'watch'], stdin=inp, stdout=out,
+        subprocess.Popen([PYTHON, HELPER, 'watch'], stdin=inp, stdout=out,
                          stderr=out, start_new_session=True, close_fds=True)
     for _ in range(30):
         if watch_pid():

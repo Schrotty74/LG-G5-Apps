@@ -5,7 +5,7 @@
 ## Funktionen
 
 - Unter TV-Homescreen LG Home, die bisherige Methode oder die direkte Home-Übernahme wählen. Direct Home benötigt keinen Magic Mapper; die bisherige Methode bleibt verfügbar. [Test und Wiederherstellung](HOME_TAKEOVER_TEST.md).
-- Bei LG Home oder der bisherigen Methode den Launcher optional automatisch starten; vor der Deinstallation ausschalten. Direct Home nutzt einen eigenen Startmechanismus.
+- Bei LG Home oder der bisherigen Methode den Launcher optional automatisch starten; vor der Deinstallation ausschalten. Direct Home nutzt einen eigenen Startmechanismus mit fünf Sekunden Boot-Wartezeit.
 
 - Installierte Apps in der Übersicht durchsehen und starten, ausblenden, wieder einblenden und sortieren; HDMI-Eingänge und Live TV haben eine eigene Seite „Eingänge“.
 - Favoriten in der Glas-Dockleiste hinzufügen, entfernen und sortieren. App-Symbole mit oder ohne Namen anzeigen und für die Ansicht ohne Namen zwischen drei Größen wählen.

@@ -5,7 +5,7 @@
 ## Features
 
 - Choose LG Home, the legacy method or Direct Home takeover under TV Home screen. Direct Home does not require Magic Mapper; the legacy method remains available. [Test and recovery](HOME_TAKEOVER_TEST.md).
-- Optionally start the launcher with LG Home or the legacy method; turn it off before uninstalling. Direct Home uses its own startup mechanism.
+- Optionally start the launcher with LG Home or the legacy method; turn it off before uninstalling. Direct Home uses its own startup mechanism with a five-second boot wait.
 
 - Browse, launch, hide, restore and reorder installed apps on Overview; HDMI inputs and Live TV have their own Inputs page.
 - Add, remove and reorder favorites in the glass-style dock. Show app icons with or without names and choose from three icon sizes when names are hidden.

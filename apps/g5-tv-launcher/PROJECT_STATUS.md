@@ -4,16 +4,18 @@ Diese Datei hält den Stand und wichtige Entscheidungen für spätere Weiterentw
 
 ## Aktueller Stand
 
+- **Veröffentlichung 0.2.90:** Boot-Pfad-Korrektur und fünf Sekunden Direct-Home-Boot-Wartezeit. Der Nutzer meldete einen erfolgreichen Start nach längerem Standby mit dem vorherigen Zehn-Sekunden-Test; die kürzere Wartezeit und die neu gebaute Release-IPK wurden noch nicht am Fernseher getestet.
+
 - **Lokaler Teststand 0.2.82:** Nur die Direct-Home-Boot-Wartezeit von zehn auf fünf Sekunden verkürzt; Testversion und Paketnummer entsprechend erhöht. Der Nutzer meldete den erfolgreichen Start nach längerem Standby mit dem vorherigen Teststand. Die neue Wartezeit wurde lokal geprüft, am Fernseher noch nicht. [Gesicherter Quellstand](zwischenstaende/g5-launcher-zwischenstand_0.2.82.zip).
 
 
-- **Lokaler Teststand 0.2.81:** Nach erneutem Boot-Recovery dokumentierte das TV-Protokoll `sys.executable` leer und `PATH` nicht gesetzt; der Bridge-Prozess konnte deshalb nicht starten. Fester Python-Pfad als Rückfall und gesetzter Boot-PATH; 32 lokale Tests inklusive leerer Umgebung bestanden. Test-IPK nicht veröffentlicht; Fernsehtest und längerer Standby noch offen. [Gesicherter Quellstand](zwischenstaende/g5-launcher-zwischenstand_0.2.81.zip).
+- **Lokaler Teststand 0.2.81:** Nach erneutem Boot-Recovery dokumentierte das TV-Protokoll `sys.executable` leer und `PATH` nicht gesetzt; der Bridge-Prozess konnte deshalb nicht starten. Fester Python-Pfad als Rückfall und gesetzter Boot-PATH; 32 lokale Tests inklusive leerer Umgebung bestanden. Der Nutzer meldete einen erfolgreichen Start nach längerem Standby mit diesem Teststand. [Gesicherter Quellstand](zwischenstaende/g5-launcher-zwischenstand_0.2.81.zip).
 
 - **Veröffentlichung 0.2.80:** Aus Teststand 0.2.72 neu gebaut; die Release-IPK selbst wurde noch nicht am Fernseher getestet. Nutzer bestätigte Cyberpunk-Darstellung und Animationen sowie Import und grundsätzliche Darstellung der Strand-Szene. Nicht jede Effektoption wurde am Fernseher geprüft.
 - **Direct Home:** Nach Browserstart wurde zuvor automatisch LG Home wiederhergestellt. Der Laufzeitmonitor setzt bei fehlendem Lebenszeichen nicht mehr automatisch zurück; manuelle Wiederherstellung bleibt verfügbar. Bei tatsächlich eingefrorener Oberfläche erfolgt ebenfalls keine automatische Rücksetzung. Der Grund der früheren fehlenden Rückmeldung ist nicht bestätigt.
 - **Updateprüfung:** Der alte Versionsvergleich (0.2.60 in 0.2.70) wurde unabhängig vom Direct-Home-Vorfall korrigiert.
 - **Themes:** Cyberpunk ist integriert; importierte Themes unterstützen voreingestellte Effekte mit Optionen sowie Szenen aus Formen und Einzelanimationen. Höchstens drei importierte Themes sind gleichzeitig gespeichert. [Vorlage und Anleitung](themes/README.de.md).
-- Version: **0.2.80**; App-ID: `org.schrotty74.g5launcher`. Die aktuell veröffentlichten IPK- und Quellcode-Dateien liegen im App-Verzeichnis.
+- Version: **0.2.90**; App-ID: `org.schrotty74.g5launcher`. Die aktuell veröffentlichten IPK- und Quellcode-Dateien liegen im App-Verzeichnis.
 
 ## Offene Punkte
 
@@ -30,9 +32,9 @@ Diese Datei hält den Stand und wichtige Entscheidungen für spätere Weiterentw
 
 - Das eigenständige Wintertheme liegt auf GitHub im Theme-Ordner; Format und Bild wurden lokal geprüft, der Fernsehtest steht aus. Die Theme-Übersichten enthalten den Download.
 - Launcher-Änderungen und bestätigte Gerätetests stehen im Abschnitt „Aktueller Stand“; Wetter-Nachabruf und Notfallgeste bleiben zu prüfen.
-- Regulärer Launcher-Stand unter `app/`: 0.2.80. Die ZIP-Dateien im Zwischenstandsordner bleiben separate lokale Teststände.
-- Der Nutzer testete Teile des vorherigen Teststands; die neu gebaute Veröffentlichung 0.2.80 selbst ist noch nicht auf dem Fernseher getestet.
-- Direct Home startete im Teststand 0.2.63 nach einer Nacht im Standby. Das neu gebaute Paket 0.2.80 ist noch nicht auf dem Fernseher getestet. Die bisherige Methode bleibt als Rückfalllösung erhalten.
+- Regulärer Launcher-Stand unter `app/`: 0.2.90. Die ZIP-Dateien im Zwischenstandsordner bleiben separate lokale Teststände.
+- Die neu gebaute Veröffentlichung 0.2.90 und die verkürzte Boot-Wartezeit wurden noch nicht auf dem Fernseher getestet.
+- Direct Home startete mit dem Teststand 0.2.81 nach längerem Standby. Das neu gebaute Paket 0.2.90 und die kürzere Wartezeit sind noch nicht auf dem Fernseher getestet. Die bisherige Methode bleibt als Rückfalllösung erhalten.
 - Nach wichtigen Arbeitsschritten diesen Abschnitt knapp aktualisieren: Was geändert wurde, welche lokale Testversion vorliegt, was tatsächlich getestet wurde, was offen ist und ob der Quellcode bereits auf GitHub liegt. Veraltete Zwischenstände ersetzen; keine persönlichen Daten eintragen.
 - Ein Markdown-Zwischenstand beschreibt die Arbeit, ersetzt aber keine Sicherung des Quellcodes. Nach jeder lokalen Testversion ein separates versioniertes Quellcode-ZIP erstellen und im [Zwischenstandsordner](zwischenstaende/) sichern. Die zugehörige IPK bleibt lokal, bis ihr Upload ausdrücklich beauftragt wird.
 

@@ -1,6 +1,6 @@
-# G5 TV Launcher 0.2.80
+# G5 TV Launcher 0.2.90
 
-**Version 0.2.80:** Enthält das Cyberpunk-Theme und erweiterte importierbare Themes mit Animationen und eigenen Szenen. Das neu gebaute Veröffentlichungspaket selbst wurde noch nicht auf dem Fernseher getestet; siehe [Projektstand](PROJECT_STATUS.md).
+**Version 0.2.90:** Korrigiert den Direct-Home-Start bei leerer Boot-Umgebung und verkürzt die Boot-Wartezeit auf fünf Sekunden. Das Release-Paket und die kürzere Wartezeit wurden noch nicht am Fernseher getestet; siehe [Projektstand](PROJECT_STATUS.md).
 
 [English](README.md) · [Deutsch](README.de.md)
 
@@ -31,22 +31,22 @@ Die vollständige [Funktionsübersicht](FEATURES.de.md) enthält weitere Details
 
 ## Downloads und Quellcode
 
-- [Aktuelle IPK herunterladen](g5-tv-launcher_0.2.80_all.ipk)
-- [Aktuelles Quellcode-ZIP herunterladen](g5-tv-launcher-source_0.2.80.zip)
+- [Aktuelle IPK herunterladen](g5-tv-launcher_0.2.90_all.ipk)
+- [Aktuelles Quellcode-ZIP herunterladen](g5-tv-launcher-source_0.2.90.zip)
 - [Vollständiger App-Quellcode](app/)
 - [Entwicklungsnotizen (English)](DEVELOPMENT.md)
 - [Projektstand und Hinweise für die Weiterentwicklung](PROJECT_STATUS.md)
 - [Changelog (English)](CHANGELOG.md)
 
 
-- [QR-Code für Version 0.2.80](g5-tv-launcher-qr_0.2.80.png)
+- [QR-Code für Version 0.2.90](g5-tv-launcher-qr_0.2.90.png)
 
 ## Installation
 
 Voraussetzungen sind ein gerooteter Fernseher und ein funktionierender Homebrew-Channel-Dienst. Die IPK per SFTP nach `/tmp` übertragen und dann per SSH installieren:
 
 ```sh
-luna-send-pub -i 'luna://com.webos.appInstallService/dev/install' '{"id":"com.ares.defaultName","ipkUrl":"/tmp/g5-tv-launcher_0.2.80_all.ipk","subscribe":true}'
+luna-send-pub -i 'luna://com.webos.appInstallService/dev/install' '{"id":"com.ares.defaultName","ipkUrl":"/tmp/g5-tv-launcher_0.2.90_all.ipk","subscribe":true}'
 ```
 
 Alternativ kann die IPK über Glasshouse hochgeladen werden. Die App-ID lautet `org.schrotty74.g5launcher`. Ist die direkte Home-Übernahme aktiv, vor einem Update oder der Deinstallation LG Home wiederherstellen; nach der Installation kann Direct Home erneut aktiviert werden. Siehe [Direct-Home-Test und Wiederherstellung](HOME_TAKEOVER_TEST.md).
@@ -55,7 +55,7 @@ Alternativ kann die IPK über Glasshouse hochgeladen werden. Die App-ID lautet `
 
 Unter Einstellungen → Start & Home → TV-Homescreen **LG Home**, **Bisherige Methode** oder **Direkte Home-Übernahme** wählen und anschließend **Methode anwenden** drücken. Direct Home verwendet den Launcher als TV-Homescreen und benötigt keinen Magic Mapper. Die bisherige Methode mit Home-Tastenbelegung und Autostart bleibt als Rückfalllösung erhalten. Vor dem Wechsel Glasshouse Home ausschalten. Vor einem Update oder der Deinstallation LG Home wiederherstellen.
 
-Direct Home startete beim vorigen Teststand 0.2.63 nach einer Nacht im Standby. Das neu gebaute Paket 0.2.80 selbst wurde noch nicht auf dem Fernseher geprüft. Weitere Hinweise stehen unter [Test und Wiederherstellung](HOME_TAKEOVER_TEST.md).
+Der Nutzer meldete einen erfolgreichen Start nach längerem Standby mit der Boot-Pfad-Korrektur und zehn Sekunden Wartezeit. Die kürzere Wartezeit wurde noch nicht am Fernseher geprüft. Weitere Hinweise stehen unter [Test und Wiederherstellung](HOME_TAKEOVER_TEST.md).
 
 ## Optionaler Autostart
 
@@ -73,7 +73,7 @@ Python 3 installieren, das Terminal in diesem App-Ordner öffnen und ausführen:
 python3 build.py
 ```
 
-Das Paket liegt danach unter `dist/g5-tv-launcher_0.2.80_all.ipk`. Mit `python3 build.py --output /pfad/zum/ausgabeordner` lässt sich ein anderer Ausgabeordner wählen. Das Skript nutzt nur die Python-Standardbibliothek und benötigt keinen festen Pfad auf dem Computer.
+Das Paket liegt danach unter `dist/g5-tv-launcher_0.2.90_all.ipk`. Mit `python3 build.py --output /pfad/zum/ausgabeordner` lässt sich ein anderer Ausgabeordner wählen. Das Skript nutzt nur die Python-Standardbibliothek und benötigt keinen festen Pfad auf dem Computer.
 
 ## Optionale Home-Tastenbelegung
 
