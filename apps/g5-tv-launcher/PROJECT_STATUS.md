@@ -4,6 +4,8 @@ Diese Datei hält den Stand und wichtige Entscheidungen für spätere Weiterentw
 
 ## Aktueller Stand
 
+- **Lokaler Teststand 0.2.91:** Importierte Themes können eigene eingebettete Bildobjekte und einen begrenzten Bewegungsablauf mit Drehung, Verzögerung und Ausblenden verwenden. Das China-Theme zeigt Blütenblätter. 32 bestehende Tests, Validatorprüfungen und IPK-Quellcodevergleich lokal bestanden; Import, Animation und Release-Stand wurden nicht auf dem Fernseher getestet. Test-IPK bleibt lokal. [Quellcode-Zwischenstand](zwischenstaende/g5-launcher-zwischenstand_0.2.91.zip).
+
 - **Veröffentlichung 0.2.90:** Boot-Pfad-Korrektur und fünf Sekunden Direct-Home-Boot-Wartezeit. Der Nutzer meldete einen erfolgreichen Start nach längerem Standby mit dem vorherigen Zehn-Sekunden-Test; die kürzere Wartezeit und die neu gebaute Release-IPK wurden noch nicht am Fernseher getestet.
 
 - **Lokaler Teststand 0.2.82:** Nur die Direct-Home-Boot-Wartezeit von zehn auf fünf Sekunden verkürzt; Testversion und Paketnummer entsprechend erhöht. Der Nutzer meldete den erfolgreichen Start nach längerem Standby mit dem vorherigen Teststand. Die neue Wartezeit wurde lokal geprüft, am Fernseher noch nicht. [Gesicherter Quellstand](zwischenstaende/g5-launcher-zwischenstand_0.2.82.zip).

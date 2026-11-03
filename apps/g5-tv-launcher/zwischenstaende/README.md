@@ -27,11 +27,12 @@ Die Angaben beschreiben lokale Tests, keine veröffentlichten Versionen. Bei all
 
 
 
-- **0.2.72:** Importierbare Szenen aus Formen mit Einzelanimationen; Strand-Beispiel und Vorlage. Lokale Validator-, DOM-, Bestands- und Paketprüfungen bestanden; Fernsehtest und visuelle Browserprüfung stehen aus. [Quellcode-ZIP](g5-launcher-zwischenstand_0.2.72.zip).
 
 - **0.2.81 (1. November 2026):** Behebt den anhand des Boot-Protokolls festgestellten leeren Python-Pfad bei Direct Home; fester Interpreterpfad und Boot-PATH, Regressionstest für leere Umgebung bestanden. Der Nutzer meldete einen erfolgreichen Start nach längerem Standby mit diesem Teststand. [Quellcode-ZIP](g5-launcher-zwischenstand_0.2.81.zip).
 
 - **0.2.82 (2. November 2026):** Direct-Home-Boot-Wartezeit von zehn auf fünf Sekunden verkürzt. Der Nutzer bestätigte den Start nach längerer Standby-Zeit mit dem vorherigen Teststand; die neue Wartezeit wurde lokal geprüft, ein Fernsehtest steht aus. [Quellcode-ZIP](g5-launcher-zwischenstand_0.2.82.zip).
+
+- **0.2.91:** Eingebettete Bildobjekte und vielseitige Bewegung für importierte Themes; China-Theme mit Blütenblättern. Lokal geprüft, nicht am Fernseher getestet. [Quellcode-ZIP](g5-launcher-zwischenstand_0.2.91.zip).
 
 ## Verbindlicher Ablauf je Testversion
 
