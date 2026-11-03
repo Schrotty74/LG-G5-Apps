@@ -17,7 +17,7 @@ Homebrew-Dashboard für LG G5 mit webOS 25. Die Oberfläche zeigt Systemwerte in
 - Prozessmomentaufnahme und Swap-Belegung
 - Aktualisierungsintervall von 3, 5 oder 10 Sekunden
 - Scrollen per Magic Remote oder Mausrad sowie Zurück- und Beenden-Schaltfläche
-- Kein Temperaturfeld: auf dem getesteten G5 ließ sich kein Sensorwert auslesen
+- Kein Temperaturfeld: auf dem G5 ließ sich kein Sensorwert auslesen
 
 ## Dateien
 
