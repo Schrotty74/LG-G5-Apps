@@ -10,7 +10,7 @@
 
 [Cyberpunk Neon](animated/cyberpunk-neon.json) · [Beach](animated/strand-vektor.json) · [China cherry blossoms (test 0.2.91)](animated/china-kirschbluete.json)
 
-[Theme template](template.json)
+[Standard template](template.json) · [Extended template for test build 0.2.91](template-extended.json)
 
 The file importer and category selection are included in **0.2.70**. These examples were tested through the user's TV import flow; the exact appearance depends on the TV. This is an experimental format and may change in a future version.
 
@@ -22,6 +22,8 @@ The file importer and category selection are included in **0.2.70**. These examp
 ## Extended animations in test build 0.2.91
 
 The China theme requires test build 0.2.91 with the extended theme engine. Published version 0.2.90 cannot import it. The user confirmed the falling petals and China theme appearance on their TV; other combinations have not all been tested on a TV.
+
+The [extended template](template-extended.json) demonstrates a swaying shape, a falling embedded petal image and a blinking shape. Copy the file, change `id` and `name`, and adjust the objects and animations. Replace the example image with your own supported data URL as needed. Importing an existing `id` replaces that theme.
 
 A `scene` may contain up to 100 shapes and embedded PNG, JPEG or WebP image objects. For an image object use `type: "image"`, `x`, `y`, `width`, `height`, and an `image` data URL of at most 12,000 characters. The complete theme file remains limited to 80,000 bytes. External image URLs, SVG image data and scripts are not accepted.
 

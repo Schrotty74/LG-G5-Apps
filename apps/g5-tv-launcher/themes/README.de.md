@@ -10,7 +10,7 @@
 
 [Cyberpunk Neon](animated/cyberpunk-neon.json) · [Strand](animated/strand-vektor.json) · [China – Kirschblüten (Teststand 0.2.91)](animated/china-kirschbluete.json)
 
-[Theme-Vorlage](template.json)
+[Standardvorlage](template.json) · [Erweiterte Vorlage für Teststand 0.2.91](template-extended.json)
 
 Dateiimport und Kategorieauswahl sind in **0.2.70** enthalten. Der Import wurde vom Nutzer am Fernseher getestet; die Darstellung hängt vom Gerät ab. Das Format ist experimentell und kann sich in einer zukünftigen Version ändern.
 
@@ -22,6 +22,8 @@ Dateiimport und Kategorieauswahl sind in **0.2.70** enthalten. Der Import wurde 
 ## Erweiterte Animationen im Teststand 0.2.91
 
 Das China-Theme benötigt die Testversion 0.2.91 mit der erweiterten Theme-Engine. Die veröffentlichte Version 0.2.90 kann dieses Theme nicht importieren. Die Animation der fallenden Blüten und die Darstellung des China-Themes wurden vom Nutzer am Fernseher bestätigt; weitere Kombinationen sind nicht vollständig am Fernseher geprüft.
+
+Die [erweiterte Vorlage](template-extended.json) zeigt eine schwenkende Form, ein fallendes Blütenblatt als eingebettete Grafik und eine blinkende Form. Kopiere die Datei, ändere `id` und `name` und passe die Objekte sowie ihre Animationen an. Ersetze das Beispielbild bei Bedarf durch eine eigene zulässige Daten-URL. Beim Import ersetzt eine bereits verwendete `id` das bestehende Theme.
 
 Theme-Dateien können in `scene` bis zu 100 Objekte aus Formen und eingebetteten PNG-, JPEG- oder WebP-Bildern enthalten. Bildobjekte nutzen `type: "image"`, `x`, `y`, `width`, `height` und `image` als Daten-URL; pro Bildobjekt sind höchstens 12.000 Zeichen erlaubt. Die gesamte Theme-Datei bleibt auf 80.000 Bytes begrenzt. Externe Bildadressen, SVG-Daten und Skripte sind nicht erlaubt.
 
