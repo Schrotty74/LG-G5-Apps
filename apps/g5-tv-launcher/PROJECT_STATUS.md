@@ -10,7 +10,6 @@ Diese Datei hält den Stand und wichtige Entscheidungen für spätere Weiterentw
 
 - **Lokaler Teststand 0.2.82:** Nur die Direct-Home-Boot-Wartezeit von zehn auf fünf Sekunden verkürzt; Testversion und Paketnummer entsprechend erhöht. Der Nutzer meldete den erfolgreichen Start nach längerem Standby mit dem vorherigen Teststand. Die neue Wartezeit wurde lokal geprüft, am Fernseher noch nicht. [Gesicherter Quellstand](zwischenstaende/g5-launcher-zwischenstand_0.2.82.zip).
 
-
 - **Lokaler Teststand 0.2.81:** Nach erneutem Boot-Recovery dokumentierte das TV-Protokoll `sys.executable` leer und `PATH` nicht gesetzt; der Bridge-Prozess konnte deshalb nicht starten. Fester Python-Pfad als Rückfall und gesetzter Boot-PATH; 32 lokale Tests inklusive leerer Umgebung bestanden. Der Nutzer meldete einen erfolgreichen Start nach längerem Standby mit diesem Teststand. [Gesicherter Quellstand](zwischenstaende/g5-launcher-zwischenstand_0.2.81.zip).
 
 - **Veröffentlichung 0.2.80:** Aus Teststand 0.2.72 neu gebaut; die Release-IPK selbst wurde noch nicht am Fernseher getestet. Nutzer bestätigte Cyberpunk-Darstellung und Animationen sowie Import und grundsätzliche Darstellung der Strand-Szene. Nicht jede Effektoption wurde am Fernseher geprüft.
@@ -23,19 +22,14 @@ Diese Datei hält den Stand und wichtige Entscheidungen für spätere Weiterentw
 
 - **Für später: einfacher Theme-Editor.** Browserbasierter Baukasten, in gängigen Browsern auf Smartphone, Tablet und Desktop gut bedienbar; für Touch, Maus und Tastatur geeignet: Hintergrund und Farben wählen, Objekte oder eigene Bilder hinzufügen, per Touch oder Maus positionieren und ihre Größe ändern; Animationen wie Fallen, Schweben, Blinken und Drehen über verständliche Auswahl und einfache Einstellungen erstellen. Änderungen und Animationen sofort in einer Vorschau zeigen. Bestehende Themes öffnen und bearbeiten, fertige Themes als kompatible JSON-Datei exportieren. Formatgrenzen prüfen und verständlich anzeigen; JSON und Bildkodierung im Hintergrund erledigen. Keine Umsetzung beauftragt.
 
-
 - Für später vormerken: eigene, frei programmierbare Animationsskripte für importierte Themes prüfen. Noch nicht umgesetzt; Sicherheitsmodell, Prüfung und Bedienung vor einer Umsetzung festlegen.
-
-- Ein vollständiges austauschbares Theme-Layout ist nicht umgesetzt; das JSON-Format unterstützt Farben, Hintergrundbilder, vorgegebene Effekte und einfache Szenen.
 
 ## Übergabe für den nächsten Chat
 
 - Vor einem Glasshouse-Server-Update Direct Home auf LG Home umstellen. Bei einer gegenseitigen Blockade durch Glasshouses `restorePending` und die G5-Home-Übernahme die Voraussetzungen und den dokumentierten Wiederherstellungsweg beachten: [Glasshouse und LG Home](GLASSHOUSE_WIEDERHERSTELLUNG.md). Die Ursache des damaligen Updatefehlers ist nicht abschließend geklärt.
 
 - Das eigenständige Wintertheme liegt im Theme-Ordner; der Nutzer bestätigte, dass es am Fernseher funktioniert. Die Theme-Übersichten enthalten den Download.
-- Launcher-Änderungen und bestätigte Gerätetests stehen im Abschnitt „Aktueller Stand“.
 - Regulärer Launcher-Stand unter `app/`: 0.2.90. Die ZIP-Dateien im Zwischenstandsordner bleiben separate lokale Teststände.
-- Die neu gebaute Veröffentlichung 0.2.90 und die verkürzte Boot-Wartezeit wurden noch nicht auf dem Fernseher getestet.
 - Direct Home startete mit dem Teststand 0.2.81 nach längerem Standby. Das neu gebaute Paket 0.2.90 und die kürzere Wartezeit sind noch nicht auf dem Fernseher getestet. Die bisherige Methode bleibt als Rückfalllösung erhalten.
 - Nach wichtigen Arbeitsschritten diesen Abschnitt knapp aktualisieren: Was geändert wurde, welche lokale Testversion vorliegt, was tatsächlich getestet wurde, was offen ist und ob der Quellcode bereits auf GitHub liegt. Veraltete Zwischenstände ersetzen; keine persönlichen Daten eintragen.
 - Ein Markdown-Zwischenstand beschreibt die Arbeit, ersetzt aber keine Sicherung des Quellcodes. Nach jeder lokalen Testversion ein separates versioniertes Quellcode-ZIP erstellen und im [Zwischenstandsordner](zwischenstaende/) sichern. Die zugehörige IPK bleibt lokal, bis ihr Upload ausdrücklich beauftragt wird.
