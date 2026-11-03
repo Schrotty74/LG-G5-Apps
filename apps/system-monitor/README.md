@@ -17,7 +17,7 @@ A homebrew dashboard for the LG G5 running webOS 25, with a dark layout designed
 - Snapshot of active processes and swap usage
 - Refresh interval selectable between 3, 5, and 10 seconds
 - Scrolling with the Magic Remote or mouse wheel; Back and Exit controls
-- No temperature tile: no readable sensor value was found on the tested G5
+- No temperature tile: no readable sensor value was found on the G5
 
 ## Files
 
