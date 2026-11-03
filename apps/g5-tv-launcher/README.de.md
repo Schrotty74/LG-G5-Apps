@@ -1,6 +1,6 @@
 # G5 TV Launcher 0.2.90
 
-**Version 0.2.90:** Korrigiert den Direct-Home-Start bei leerer Boot-Umgebung und verkürzt die Boot-Wartezeit auf fünf Sekunden. Das Release-Paket und die kürzere Wartezeit wurden noch nicht am Fernseher getestet; siehe [Projektstand](PROJECT_STATUS.md).
+**Version 0.2.90:** Korrigiert den Direct-Home-Start bei leerer Boot-Umgebung und verkürzt die Boot-Wartezeit auf fünf Sekunden.
 
 [English](README.md) · [Deutsch](README.de.md)
 
@@ -38,7 +38,6 @@ Die vollständige [Funktionsübersicht](FEATURES.de.md) enthält weitere Details
 - [Projektstand und Hinweise für die Weiterentwicklung](PROJECT_STATUS.md)
 - [Changelog (English)](CHANGELOG.md)
 
-
 - [QR-Code für Version 0.2.90](g5-tv-launcher-qr_0.2.90.png)
 
 ## Installation
@@ -55,15 +54,13 @@ Alternativ kann die IPK über Glasshouse hochgeladen werden. Die App-ID lautet `
 
 Unter Einstellungen → Start & Home → TV-Homescreen **LG Home**, **Bisherige Methode** oder **Direkte Home-Übernahme** wählen und anschließend **Methode anwenden** drücken. Direct Home verwendet den Launcher als TV-Homescreen und benötigt keinen Magic Mapper. Die bisherige Methode mit Home-Tastenbelegung und Autostart bleibt als Rückfalllösung erhalten. Vor dem Wechsel Glasshouse Home ausschalten. Vor einem Update oder der Deinstallation LG Home wiederherstellen.
 
-Der Nutzer meldete einen erfolgreichen Start nach längerem Standby mit der Boot-Pfad-Korrektur und zehn Sekunden Wartezeit. Die kürzere Wartezeit wurde noch nicht am Fernseher geprüft. Weitere Hinweise stehen unter [Test und Wiederherstellung](HOME_TAKEOVER_TEST.md).
-
 ## Optionaler Autostart
 
 Für LG Home und die bisherige Methode lässt sich der optionale Launcher-Autostart unter Start & Home ein- und ausschalten. Direct Home nutzt einen eigenen Startmechanismus und schaltet den bisherigen Autostart beim Wechsel ab. Vor der Deinstallation LG Home wiederherstellen und den optionalen Autostart ausschalten.
 
 ## Hinweise
 
-Durch die Installation werden LG Home, die Home-Taste und der Autostart nicht automatisch umgestellt; diese Optionen müssen ausdrücklich aktiviert werden. Er nutzt den Homebrew-Dienst zum Lesen der App-Liste und lokaler App-Symbole; nicht verfügbare Symbole werden durch einen Buchstaben ersetzt. Wetter und Standortsuche nutzen Open-Meteo und benötigen Internet; die GeoSphere-Auswahl verwendet das AROME-Modell von GeoSphere Austria über Open-Meteo. Das Backup liegt auf dem Fernseher unter `/media/developer/g5-tv-launcher/backup.json` und kann per SFTP kopiert werden. Eine neue Sicherung ersetzt die vorige. Der Live-TV-Schnellzugriff und die Darstellung sollten auf dem jeweiligen Fernseher geprüft werden.
+Durch die Installation werden LG Home, die Home-Taste und der Autostart nicht automatisch umgestellt; diese Optionen müssen ausdrücklich aktiviert werden. Er nutzt den Homebrew-Dienst zum Lesen der App-Liste und lokaler App-Symbole; nicht verfügbare Symbole werden durch einen Buchstaben ersetzt. Wetter und Standortsuche nutzen Open-Meteo und benötigen Internet; die GeoSphere-Auswahl verwendet das AROME-Modell von GeoSphere Austria über Open-Meteo. Das Backup liegt auf dem Fernseher unter `/media/developer/g5-tv-launcher/backup.json` und kann per SFTP kopiert werden. Eine neue Sicherung ersetzt die vorige.
 
 ## Auf dem Mac aus dem Quellcode bauen
 

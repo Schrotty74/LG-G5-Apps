@@ -1,6 +1,6 @@
 # G5 TV Launcher 0.2.90
 
-**Version 0.2.90:** Fixes Direct Home startup with an empty boot environment and reduces the boot wait to five seconds. The rebuilt release package and shorter wait have not been tested on the TV; see [project status](PROJECT_STATUS.md).
+**Version 0.2.90:** Fixes Direct Home startup with an empty boot environment and reduces the boot wait to five seconds.
 
 [English](README.md) · [Deutsch](README.de.md)
 
@@ -38,7 +38,6 @@ See the complete [feature overview with full feature list](FEATURES.md) for furt
 - [Project status and continuation notes (German)](PROJECT_STATUS.md)
 - [Changelog](CHANGELOG.md)
 
-
 - [QR code for version 0.2.90](g5-tv-launcher-qr_0.2.90.png)
 
 ## Installation
@@ -54,8 +53,6 @@ Glasshouse's IPK upload can also be used. The app ID is `org.schrotty74.g5launch
 ## TV Home screen
 
 Under Settings → Start & Home → TV Home screen, choose **LG Home**, **Legacy method**, or **Direct Home takeover**, then select **Apply method**. Direct Home uses the launcher as the TV Home screen without Magic Mapper. The legacy method uses the existing Home mapping and autostart as a fallback. Disable Glasshouse Home before switching methods. Restore LG Home before updating or uninstalling.
-
-The user reported an overnight start with the boot-path fix and ten-second wait; the shorter five-second wait has not been tested on the TV. See [test and recovery instructions](HOME_TAKEOVER_TEST.md).
 
 ## Optional autostart
 

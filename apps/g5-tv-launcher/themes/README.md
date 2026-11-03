@@ -12,16 +12,15 @@
 
 [Standard template](template.json) · [Extended template for test build 0.2.91](template-extended.json)
 
-The file importer and category selection are included in **0.2.70**. These examples were tested through the user's TV import flow; the exact appearance depends on the TV. This is an experimental format and may change in a future version.
+The file importer and category selection are included in **0.2.70**. This is an experimental format and may change in a future version.
 
 **Compatibility:** Beach and Cyberpunk Neon require launcher version 0.2.80 or newer. Older versions do not fully support the animations or scene elements shown.
 
-**Animations:** Imported-theme effects and `animationOptions` are included from 0.2.80. The new customization options have not yet been tested on a TV. Import and the neon effect were tried on the user's TV with the test build; other effects have not yet been confirmed on a TV. Older themes without an animation field remain compatible.
-
+**Animations:** Imported-theme effects and `animationOptions` are included from 0.2.80. Older themes without an animation field remain compatible.
 
 ## Extended animations in test build 0.2.91
 
-The China theme requires test build 0.2.91 with the extended theme engine. Published version 0.2.90 cannot import it. The user confirmed the falling petals and China theme appearance on their TV; other combinations have not all been tested on a TV.
+The China theme requires test build 0.2.91 with the extended theme engine. Published version 0.2.90 cannot import it.
 
 The [extended template](template-extended.json) demonstrates a swaying shape, a falling embedded petal image and a blinking shape. Copy the file, change `id` and `name`, and adjust the objects and animations. Replace the example image with your own supported data URL as needed. Importing an existing `id` replaces that theme.
 
@@ -141,7 +140,7 @@ These parameters adjust a predefined banner effect; they do not create freely pr
 
 ## Custom scenes with individual animations
 
-**Compatibility:** The `scene` field is supported from version **0.2.80**. The older published version 0.2.70 does not draw these scene elements. The user tested scene import and basic rendering on a TV; not every combination has been tested.
+**Compatibility:** The `scene` field is supported from version **0.2.80**. The older published version 0.2.70 does not draw these scene elements.
 
 `scene` is a list of up to 100 shapes. They are drawn in list order, with later shapes on top. Coordinates refer to a **1000 × 500** canvas. A wide TV banner can crop the top and bottom.
 

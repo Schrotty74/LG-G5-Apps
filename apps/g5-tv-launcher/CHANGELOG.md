@@ -7,8 +7,6 @@ Each entry summarizes the changes present in the uploaded build and source since
 - Fix Direct Home startup when the boot environment has no PATH and Python reports an empty executable path: set a boot PATH, start Python by its absolute path and provide a fallback executable for the bridge and monitor.
 - Shorten the Direct Home boot wait from ten to five seconds.
 
-The user reported a successful overnight start with the earlier test build using the boot-path fix and ten-second wait. The five-second wait and the rebuilt 0.2.90 IPK have not been tested on the TV.
-
 ## 0.2.80
 
 - Prevent the Direct Home monitor from automatically restoring LG Home solely because a heartbeat is missing. This addresses the unwanted recovery observed after opening the browser; the exact reason the monitor considered Home unresponsive remains unconfirmed. Automatic recovery for a genuinely unresponsive page is also no longer performed; manual LG Home restoration remains available.
@@ -17,8 +15,6 @@ The user reported a successful overnight start with the earlier test build using
 - Extend imported themes with predefined neon, rain, snow and particle effects, configurable color, duration, opacity and playback direction. Existing static themes remain supported.
 - Allow imported themes to define scenes using rectangles, ellipses and polygons, with individual movement, blinking or swaying animations. Add a scene template, guides and a drawn animated beach theme.
 - Keep the existing limit of three imported themes; a higher limit remains a future consideration.
-
-The user confirmed the Cyberpunk appearance and animations, imported-theme animation and basic beach scene rendering on their TV. The separately rebuilt 0.2.80 release IPK has not been tested on the TV; not every imported-effect option or scene combination has been verified on-device.
 
 ## 0.2.70
 
@@ -31,8 +27,6 @@ The user confirmed the Cyberpunk appearance and animations, imported-theme anima
 - Add an experimental triple-Home recovery gesture for Direct Home. It depends on Home relaunch events reaching the running launcher and is not an independently verified recovery path if the interface is unresponsive. The existing LG Home restore option remains available.
 - Add tests for local theme file access and validation, including unrelated files and unsafe paths.
 
-The previous Direct Home version started after an overnight standby on the user's LG G5. The user confirmed clock switching, Overview app management, theme import, category selection, filtering, removal and clearing the entry field in the preceding local tests. The 0.2.70 package is rebuilt from that test source and has not itself been tested on the TV. The delayed weather retry and emergency gesture still require device verification.
-
 ## 0.2.60 (test version)
 
 - Add an opt-in TV Home screen selector with LG Home, the legacy Magic Mapper/autostart method and Direct Home takeover. Applying the selection requires confirmation; the legacy method remains available as a fallback.
@@ -43,8 +37,6 @@ The previous Direct Home version started after an overnight standby on the user'
 - Add Meteocons and Makin’ Things SVG weather icon sets, with independent animation settings for each set. Include their licenses and copy the icons into the Direct Home stage.
 - Preserve the new weather settings in launcher backups and restore them with existing settings.
 - Add host-side tests for Home method transitions, recovery, bridge operations and staging of weather icons.
-
-Direct Home and weather icon switching were tested on the TV; the launcher returned after a short standby. Testing after several hours of standby remains open. A previous crash is no longer occurring, but its cause was not identified. Version 0.2.60 is a test version and is separate from the published 0.2.50 IPK.
 
 ## 0.2.50
 

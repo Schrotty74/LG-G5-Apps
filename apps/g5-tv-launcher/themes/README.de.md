@@ -12,16 +12,15 @@
 
 [Standardvorlage](template.json) · [Erweiterte Vorlage für Teststand 0.2.91](template-extended.json)
 
-Dateiimport und Kategorieauswahl sind in **0.2.70** enthalten. Der Import wurde vom Nutzer am Fernseher getestet; die Darstellung hängt vom Gerät ab. Das Format ist experimentell und kann sich in einer zukünftigen Version ändern.
+Dateiimport und Kategorieauswahl sind in **0.2.70** enthalten. Das Format ist experimentell und kann sich in einer zukünftigen Version ändern.
 
 **Kompatibilität:** Strand und Cyberpunk Neon benötigen Launcher-Version 0.2.80 oder neuer. Ältere Versionen unterstützen die gezeigten Animationen beziehungsweise Szenenelemente nicht vollständig.
 
-**Animationen:** Effekte für importierte Themes und `animationOptions` sind ab 0.2.80 enthalten. Die neuen Einstellmöglichkeiten wurden noch nicht am Fernseher getestet. Der Import und der Neon-Effekt wurden im Teststand am Fernseher ausprobiert. Andere Effekte sind am Fernseher noch nicht bestätigt. Ältere Themes ohne Animationsfeld funktionieren weiterhin.
-
+**Animationen:** Effekte für importierte Themes und `animationOptions` sind ab 0.2.80 enthalten. Ältere Themes ohne Animationsfeld funktionieren weiterhin.
 
 ## Erweiterte Animationen im Teststand 0.2.91
 
-Das China-Theme benötigt die Testversion 0.2.91 mit der erweiterten Theme-Engine. Die veröffentlichte Version 0.2.90 kann dieses Theme nicht importieren. Die Animation der fallenden Blüten und die Darstellung des China-Themes wurden vom Nutzer am Fernseher bestätigt; weitere Kombinationen sind nicht vollständig am Fernseher geprüft.
+Das China-Theme benötigt die Testversion 0.2.91 mit der erweiterten Theme-Engine. Die veröffentlichte Version 0.2.90 kann dieses Theme nicht importieren.
 
 Die [erweiterte Vorlage](template-extended.json) zeigt eine schwenkende Form, ein fallendes Blütenblatt als eingebettete Grafik und eine blinkende Form. Kopiere die Datei, ändere `id` und `name` und passe die Objekte sowie ihre Animationen an. Ersetze das Beispielbild bei Bedarf durch eine eigene zulässige Daten-URL. Beim Import ersetzt eine bereits verwendete `id` das bestehende Theme.
 
@@ -141,7 +140,7 @@ Die Parameter ändern einen der vorgegebenen Effekte im Banner; sie erzeugen kei
 
 ## Eigene Szenen mit einzelnen Animationen
 
-**Kompatibilität:** Das Feld `scene` wird ab Version **0.2.80** unterstützt. Die ältere veröffentlichte Version 0.2.70 zeichnet diese Szenenelemente nicht. Der Import und die grundsätzliche Darstellung einer Szene wurden vom Nutzer am Fernseher ausprobiert; nicht jede Kombination ist getestet.
+**Kompatibilität:** Das Feld `scene` wird ab Version **0.2.80** unterstützt. Die ältere veröffentlichte Version 0.2.70 zeichnet diese Szenenelemente nicht.
 
 `scene` ist eine Liste von höchstens 100 Formen. Die Formen werden in Listenreihenfolge gezeichnet; spätere liegen darüber. Die Koordinaten beziehen sich auf eine Fläche von **1000 × 500**. Das breite TV-Banner kann oben und unten etwas abschneiden.
 
