@@ -7,13 +7,13 @@
       "manifest": {
         "id": "org.schrotty74.g5launcher",
         "title": "G5 TV Launcher",
-        "version": "0.2.90",
+        "version": "0.3.0",
         "type": "web",
-        "ipkUrl": "https://github.com/Schrotty74/LG-G5-Apps/releases/download/g5-tv-launcher-v0.2.90/g5-tv-launcher_0.2.90_all.ipk",
+        "ipkUrl": "https://github.com/Schrotty74/LG-G5-Apps/releases/download/g5-tv-launcher-v0.3.0/g5-tv-launcher_0.3.0_all.ipk",
         "ipkHash": {
-          "sha256": "1536c079e3bbd8807db35da37cccb0ac76f4c6bcfbf9ed476a69aa04f934291d"
+          "sha256": "df71371ec800e52ed658bae87b82c036256b33c7f4c8690331e0488d92ecb912"
         },
-        "ipkSize": 179342,
+        "ipkSize": 179628,
         "sourceUrl": "https://github.com/Schrotty74/LG-G5-Apps"
       }
     },
@@ -26,7 +26,7 @@
         "title": "G5 System Monitor",
         "version": "0.9.3",
         "type": "web",
-        "ipkUrl": "https://github.com/Schrotty74/LG-G5-Apps/releases/download/g5-tv-launcher-v0.2.90/g5-system-monitor_0.9.3_all.ipk",
+        "ipkUrl": "https://github.com/Schrotty74/LG-G5-Apps/releases/download/g5-tv-launcher-v0.3.0/g5-system-monitor_0.9.3_all.ipk",
         "ipkHash": {
           "sha256": "bef9fd2119c7b928ba9599cbe98126ba8248eb606bbfad8c36e916cd4574ee18"
         },
