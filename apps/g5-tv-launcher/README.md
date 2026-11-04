@@ -1,6 +1,6 @@
-# G5 TV Launcher 0.2.90
+# G5 TV Launcher 0.3.0
 
-**Version 0.2.90:** Fixes Direct Home startup with an empty boot environment and reduces the boot wait to five seconds.
+**Version 0.3.0:** Improves HDMI startup with Direct Home and adds animated image objects for custom themes.
 
 [English](README.md) · [Deutsch](README.de.md)
 
@@ -31,21 +31,21 @@ See the complete [feature overview with full feature list](FEATURES.md) for furt
 
 ## Downloads and source
 
-- [Download current IPK](g5-tv-launcher_0.2.90_all.ipk)
-- [Download current source ZIP](g5-tv-launcher-source_0.2.90.zip)
+- [Download current IPK](g5-tv-launcher_0.3.0_all.ipk)
+- [Download current source ZIP](g5-tv-launcher-source_0.3.0.zip)
 - [Complete app source](app/)
 - [Development notes](DEVELOPMENT.md)
 - [Project status and continuation notes (German)](PROJECT_STATUS.md)
 - [Changelog](CHANGELOG.md)
 
-- [QR code for version 0.2.90](g5-tv-launcher-qr_0.2.90.png)
+- [QR code for version 0.3.0](g5-tv-launcher-qr_0.3.0.png)
 
 ## Installation
 
 A rooted TV and a working Homebrew Channel service are required. Transfer the IPK to `/tmp` using SFTP, then install it via SSH:
 
 ```sh
-luna-send-pub -i 'luna://com.webos.appInstallService/dev/install' '{"id":"com.ares.defaultName","ipkUrl":"/tmp/g5-tv-launcher_0.2.90_all.ipk","subscribe":true}'
+luna-send-pub -i 'luna://com.webos.appInstallService/dev/install' '{"id":"com.ares.defaultName","ipkUrl":"/tmp/g5-tv-launcher_0.3.0_all.ipk","subscribe":true}'
 ```
 
 Glasshouse's IPK upload can also be used. The app ID is `org.schrotty74.g5launcher`. If Direct Home takeover is active, restore LG Home before updating or uninstalling; re-enable takeover after installation. See [Direct Home test and recovery](HOME_TAKEOVER_TEST.md).
@@ -70,7 +70,7 @@ Install Python 3, open Terminal in this app directory, and run:
 python3 build.py
 ```
 
-The script writes `dist/g5-tv-launcher_0.2.90_all.ipk`. Use `python3 build.py --output /path/to/output` to choose another output directory. It uses only Python's standard library; no absolute path to the developer's computer is needed.
+The script writes `dist/g5-tv-launcher_0.3.0_all.ipk`. Use `python3 build.py --output /path/to/output` to choose another output directory. It uses only Python's standard library; no absolute path to the developer's computer is needed.
 
 ## Optional Home button mapping
 

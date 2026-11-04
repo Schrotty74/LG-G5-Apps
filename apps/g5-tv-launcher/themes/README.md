@@ -8,15 +8,25 @@
 
 ## Animated themes
 
-[Cyberpunk Neon](animated/cyberpunk-neon.json) · [Beach](animated/strand-vektor.json)
+[Cyberpunk Neon](animated/cyberpunk-neon.json) · [Beach](animated/strand-vektor.json) · [China cherry blossoms (0.3.0)](animated/china-kirschbluete.json)
 
-[Theme template](template.json)
+[Standard template](template.json) · [Extended template for 0.3.0](template-extended.json)
 
 The file importer and category selection are included in **0.2.70**. This is an experimental format and may change in a future version.
 
 **Compatibility:** Beach and Cyberpunk Neon require launcher version 0.2.80 or newer. Older versions do not fully support the animations or scene elements shown.
 
 **Animations:** Imported-theme effects and `animationOptions` are included from 0.2.80. Older themes without an animation field remain compatible.
+
+## Extended animations in 0.3.0
+
+The China theme requires 0.3.0 with the extended theme engine. Version 0.2.90 cannot import it.
+
+The [extended template](template-extended.json) demonstrates a swaying shape, a falling embedded petal image and a blinking shape. Copy the file, change `id` and `name`, and adjust the objects and animations. Replace the example image with your own supported data URL as needed. Importing an existing `id` replaces that theme.
+
+A `scene` may contain up to 100 shapes and embedded PNG, JPEG or WebP image objects. For an image object use `type: "image"`, `x`, `y`, `width`, `height`, and an `image` data URL of at most 12,000 characters. The complete theme file remains limited to 80,000 bytes. External image URLs, SVG image data and scripts are not accepted.
+
+An object's `animation` with `type: "flow"` moves it from its starting position to its destination and restarts. Set `duration` (0.5–60 seconds), `dx` and `dy` (-300 to 300 each), `delay` (-60 to 60 seconds), `rotation` (-360 to 360 degrees) and `fade` (true/false). JSON decimal numbers use a dot. Existing `move`, `blink` and `sway` animations remain available. Enable animations in launcher settings. See the [China theme](animated/china-kirschbluete.json) for an example.
 
 ## Import on a rooted TV
 

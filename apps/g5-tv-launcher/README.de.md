@@ -1,6 +1,6 @@
-# G5 TV Launcher 0.2.90
+# G5 TV Launcher 0.3.0
 
-**Version 0.2.90:** Korrigiert den Direct-Home-Start bei leerer Boot-Umgebung und verkürzt die Boot-Wartezeit auf fünf Sekunden.
+**Version 0.3.0:** Verbessert den HDMI-Signalaufbau mit Direct Home und ergänzt animierte Bildobjekte für eigene Themes.
 
 [English](README.md) · [Deutsch](README.de.md)
 
@@ -31,21 +31,21 @@ Die vollständige [Funktionsübersicht](FEATURES.de.md) enthält weitere Details
 
 ## Downloads und Quellcode
 
-- [Aktuelle IPK herunterladen](g5-tv-launcher_0.2.90_all.ipk)
-- [Aktuelles Quellcode-ZIP herunterladen](g5-tv-launcher-source_0.2.90.zip)
+- [Aktuelle IPK herunterladen](g5-tv-launcher_0.3.0_all.ipk)
+- [Aktuelles Quellcode-ZIP herunterladen](g5-tv-launcher-source_0.3.0.zip)
 - [Vollständiger App-Quellcode](app/)
 - [Entwicklungsnotizen (English)](DEVELOPMENT.md)
 - [Projektstand und Hinweise für die Weiterentwicklung](PROJECT_STATUS.md)
 - [Changelog (English)](CHANGELOG.md)
 
-- [QR-Code für Version 0.2.90](g5-tv-launcher-qr_0.2.90.png)
+- [QR-Code für Version 0.3.0](g5-tv-launcher-qr_0.3.0.png)
 
 ## Installation
 
 Voraussetzungen sind ein gerooteter Fernseher und ein funktionierender Homebrew-Channel-Dienst. Die IPK per SFTP nach `/tmp` übertragen und dann per SSH installieren:
 
 ```sh
-luna-send-pub -i 'luna://com.webos.appInstallService/dev/install' '{"id":"com.ares.defaultName","ipkUrl":"/tmp/g5-tv-launcher_0.2.90_all.ipk","subscribe":true}'
+luna-send-pub -i 'luna://com.webos.appInstallService/dev/install' '{"id":"com.ares.defaultName","ipkUrl":"/tmp/g5-tv-launcher_0.3.0_all.ipk","subscribe":true}'
 ```
 
 Alternativ kann die IPK über Glasshouse hochgeladen werden. Die App-ID lautet `org.schrotty74.g5launcher`. Ist die direkte Home-Übernahme aktiv, vor einem Update oder der Deinstallation LG Home wiederherstellen; nach der Installation kann Direct Home erneut aktiviert werden. Siehe [Direct-Home-Test und Wiederherstellung](HOME_TAKEOVER_TEST.md).
@@ -70,7 +70,7 @@ Python 3 installieren, das Terminal in diesem App-Ordner öffnen und ausführen:
 python3 build.py
 ```
 
-Das Paket liegt danach unter `dist/g5-tv-launcher_0.2.90_all.ipk`. Mit `python3 build.py --output /pfad/zum/ausgabeordner` lässt sich ein anderer Ausgabeordner wählen. Das Skript nutzt nur die Python-Standardbibliothek und benötigt keinen festen Pfad auf dem Computer.
+Das Paket liegt danach unter `dist/g5-tv-launcher_0.3.0_all.ipk`. Mit `python3 build.py --output /pfad/zum/ausgabeordner` lässt sich ein anderer Ausgabeordner wählen. Das Skript nutzt nur die Python-Standardbibliothek und benötigt keinen festen Pfad auf dem Computer.
 
 ## Optionale Home-Tastenbelegung
 

@@ -2,6 +2,12 @@
 
 Each entry summarizes the changes present in the uploaded build and source since the previous documented version. Intermediate builds are not listed separately.
 
+## 0.3.0
+
+- Improve HDMI startup with Direct Home by removing recurring foreground-app requests from its monitor.
+- Add embedded image objects and configurable movement, rotation, timing and fading for imported themes.
+- Include a China cherry blossom theme and an extended template.
+
 ## 0.2.90
 
 - Fix Direct Home startup when the boot environment has no PATH and Python reports an empty executable path: set a boot PATH, start Python by its absolute path and provide a fallback executable for the bridge and monitor.

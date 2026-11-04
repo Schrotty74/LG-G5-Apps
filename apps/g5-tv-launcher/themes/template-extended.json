@@ -1,0 +1,65 @@
+{
+  "format": "g5-theme",
+  "version": 1,
+  "id": "meine-animation",
+  "name": "Meine Animation",
+  "background": "#192B43",
+  "accent": "#F4B7C8",
+  "glow": "#DD91AA",
+  "animation": "none",
+  "scene": [
+    {
+      "type": "ellipse",
+      "x": 100,
+      "y": 150,
+      "width": 90,
+      "height": 90,
+      "color": "#F6BDCA",
+      "opacity": 0.9,
+      "animation": {
+        "type": "sway",
+        "duration": 5
+      }
+    },
+    {
+      "type": "image",
+      "x": 450,
+      "y": 80,
+      "width": 28,
+      "height": 36,
+      "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAA0CAYAAAD46nqNAAAA9ElEQVR42u2Y2w3CMAxFY6/EBizJNrAA7MEW5QupqgL1O05kfyf26b2x26Y1YWz31+a5/htgAQbXC1itFwNSFNgX5q5XAUrtISl0AgmjwKigMBrsDBRb8sBM6vXqmyv4fjxvrgqmtzg14Ojz1+Moi80As9h75CmLC7AACzAKkPMjE/nhWhYXYAEuBZhl1Ow55rN4tIqkm4VRkL2683ZxtIq/6s09B6NU/FcHNZu94dZ51XmpSMmLlsms4dgWW0Fy8qBncov9GFFEsw+jlBA/lMYuzpWdFBAjzpPm3KJ3R2qbCj3HhsVYMnvVHWGyXaWIGmeJ+ACOQFMGY9x7eQAAAABJRU5ErkJggg==",
+      "opacity": 0.9,
+      "animation": {
+        "type": "flow",
+        "duration": 9,
+        "dx": 70,
+        "dy": 280,
+        "delay": -3,
+        "rotation": 180,
+        "fade": true
+      }
+    },
+    {
+      "type": "polygon",
+      "points": [
+        [
+          700,
+          200
+        ],
+        [
+          730,
+          140
+        ],
+        [
+          760,
+          200
+        ]
+      ],
+      "color": "#FFDDAA",
+      "animation": {
+        "type": "blink",
+        "duration": 4
+      }
+    }
+  ]
+}
